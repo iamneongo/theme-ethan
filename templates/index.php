@@ -125,8 +125,8 @@
           <div class="reveal">
             <span class="h-kicker">Gặp Gỡ Ethan</span>
             <h2 class="h-section-title">Realtor Của Bạn Tại <span>Dallas-Fort Worth</span></h2>
-            <p>Ethan Dao (Tùng Đào) là Realtor thuộc eXp Realty và Texas Ace Team. Ethan phục vụ người mua, người bán và nhà đầu tư tại Dallas-Fort Worth. Anh kết hợp am hiểu địa phương với hệ thống video marketing tiếp cận cộng đồng 15.000+ người theo dõi trên mạng xã hội. Sinh ra tại Tây Hồ (Hà Nội) và tốt nghiệp Đại học FPT, Ethan mang đến góc nhìn quốc tế cùng dịch vụ song ngữ Việt-Anh. Hành trình mua bán nhà của bạn tại Mỹ sẽ rõ ràng, tự tin và hiệu quả. Dù bạn mua nhà lần đầu tại Lavon, McKinney hay đầu tư lâu dài tại DFW, Ethan luôn đặt kết quả thực tế và lợi ích của bạn lên hàng đầu.</p>
-            <div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">làm việc cùng Ethan</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>">xem nhà đã bán</a></div>
+            <p>Ethan Dao (Tùng Đào) là Realtor thuộc eXp Realty và Texas Ace Team, hỗ trợ người mua, người bán và nhà đầu tư tại Dallas-Fort Worth. Anh kết hợp am hiểu địa phương với hệ thống video marketing tiếp cận cộng đồng 15.000+ người theo dõi trên mạng xã hội. Sinh ra tại Tây Hồ (Hà Nội) và tốt nghiệp Đại học FPT, Ethan mang đến góc nhìn quốc tế cùng dịch vụ song ngữ Việt-Anh. Dù bạn mua nhà lần đầu tại Lavon, McKinney hay đầu tư lâu dài tại DFW, Ethan luôn đặt lợi ích và kết quả thực tế của bạn lên hàng đầu.</p>
+            <div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Làm việc cùng Ethan</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>">Xem nhà đã bán</a></div>
           </div>
         </div>
       </section>
@@ -137,14 +137,14 @@
 
       <section class="map-section zillow-profile-section">
         <div class="zillow-profile-inner reveal">
-          <h2>Giao dịch đã bán và nhà đang bán của Tung Dao (40)</h2>
+          <h2>Giao dịch đã bán và nhà đang bán của Ethan Dao (40)</h2>
           <p>Bản đồ và danh sách này hiển thị các giao dịch đã bán và nhà đang bán gần đây nhất.</p>
           <div class="profile-map-filters" role="tablist" aria-label="Sales and listings map filters">
             <button class="active" type="button" data-profile-map-filter="all">Tất cả</button>
             <button type="button" data-profile-map-filter="sold"><span></span>Đã bán</button>
             <button type="button" data-profile-map-filter="sale"><span></span>Đang bán</button>
           </div>
-          <div id="ethan-profile-map" class="profile-map" data-profile-map aria-label="Tung Dao sales and listings map"></div>
+          <div id="ethan-profile-map" class="profile-map" data-profile-map aria-label="Ethan Dao sales and listings map"></div>
         </div>
       </section>
 
@@ -154,26 +154,26 @@
         <p class="reveal">"Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại Dallas-Fort Worth và chia sẻ kinh nghiệm thực tế về bất động sản tại Mỹ."</p>
       </section>
 
-      <section class="split">
+      <section class="split reverse">
         <div class="split-wrap">
           <div class="split-image right"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Buy with Confidence" /></div>
           <div class="split-card reveal">
             <p class="h-eyebrow">Cho Người Mua</p>
             <h2 class="h-section-title">Mua nhà tự tin</h2>
             <p>Bạn mua nhà lần đầu tại Lavon, McKinney hay tìm cơ hội đầu tư tại Dallas-Fort Worth? Ethan sẽ hướng dẫn từng bước bằng kiến thức địa phương. Với thế mạnh song ngữ Việt-Anh, Ethan giúp bạn nắm rõ tài chính, khu vực và đàm phán thành công.</p>
-            <div class="button-row"><a href="<?php echo esc_url(home_url('/buyer-guide/')); ?>" class="btn-outline-dark">Hướng Dẫn Mua Nhà</a><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-outline-dark">Tìm Nhà</a></div>
+            <div class="button-row"><a href="<?php echo esc_url(home_url('/buyer-guide/')); ?>" class="btn-outline-dark">Hướng dẫn mua nhà</a><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-outline-dark">Tìm nhà</a></div>
           </div>
         </div>
       </section>
 
-      <section class="split reverse">
+      <section class="split">
         <div class="split-wrap">
           <div class="split-image left"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Sell with Strategy" /></div>
           <div class="split-card reveal">
             <p class="h-eyebrow">Cho Người Bán</p>
             <h2 class="h-section-title">Bán nhà có chiến lược</h2>
             <p>Marketing tốt giúp bán nhà giá cao hơn. Ethan kết hợp chiến lược định giá và hệ thống video marketing, đưa nhà của bạn tiếp cận trực tiếp 15.000+ người mua tiềm năng trên mạng xã hội. Từng giao dịch luôn rõ ràng, có kế hoạch và hướng đến kết quả.</p>
-            <div class="button-row"><a href="<?php echo esc_url(home_url('/seller-guide/')); ?>" class="btn-outline-dark">Hướng Dẫn Bán Nhà</a><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>" class="btn-outline-dark">Định Giá Nhà</a></div>
+            <div class="button-row"><a href="<?php echo esc_url(home_url('/seller-guide/')); ?>" class="btn-outline-dark">Hướng dẫn bán nhà</a><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>" class="btn-outline-dark">Định giá nhà</a></div>
           </div>
         </div>
       </section>
@@ -185,7 +185,7 @@
           <div class="reveal">
             <span class="h-kicker light">Thành Tích</span>
             <h2 class="h-section-title">Hai năm liên tiếp <span>chuyên viên nổi bật</span></h2>
-            <p>Được vinh danh Chuyên viên nổi bật của <strong>Texas Ace Team tại eXp Realty</strong> năm 2024 và 2025. Giải thưởng minh chứng cho thành tích bán hàng, kết quả thực tế mang lại cho khách hàng tại DFW và sức ảnh hưởng cộng đồng.</p>
+            <p>Được vinh danh Chuyên viên nổi bật của <strong>Texas Ace Team tại eXp Realty</strong> năm 2024 và 2025. Giải thưởng là sự công nhận cho thành tích bán hàng và kết quả thực tế mang lại cho khách hàng tại DFW.</p>
             <div class="badges"><span>Chuyên viên nổi bật 2024</span><span>Chuyên viên nổi bật 2025</span><span>Cộng Đồng 15K+</span></div>
           </div>
         </div>
@@ -194,9 +194,9 @@
       <section class="beyond">
         <div class="container">
           <h2 class="h-section-title reveal">Không chỉ là bất động sản cùng Ethan</h2>
-          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="Ethan Dao - Mua Ban Nha Dallas Texas" /><div><i></i><h3>Ethan Dao - Mua BÃ¡n NhÃ  Dallas Texas</h3><p>A YouTube channel hunting for beautiful, well-priced homes across Dallas-Fort Worth, with a new video every week.</p></div></article>
-          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.20" alt="bất động sản cho cộng đồng Việt" /><div><i></i><h3>bất động sản cho cộng đồng Việt</h3><p>Bilingual guidance on buying, selling, and investing in the U.S. - breaking down the process step by step.</p></div></article>
-          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="Life & Business in Texas" /><div><i></i><h3>cuộc sống và kinh doanh tại Texas</h3><p>Behind-the-scenes on TikTok and Instagram - neighborhoods, open houses, and everyday life in DFW.</p></div></article>
+          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="Ethan Dao - Mua Ban Nha Dallas Texas" /><div><i></i><h3>Ethan Dao - Mua Bán Nhà Dallas Texas</h3><p>A YouTube channel hunting for beautiful, well-priced homes across Dallas-Fort Worth, with a new video every week.</p></div></article>
+          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.20" alt="Bất động sản cho cộng đồng Việt" /><div><i></i><h3>Bất động sản cho cộng đồng Việt</h3><p>Bilingual guidance on buying, selling, and investing in the U.S. - breaking down the process step by step.</p></div></article>
+          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="Life & Business in Texas" /><div><i></i><h3>Cuộc sống và kinh doanh tại Texas</h3><p>Behind-the-scenes on TikTok and Instagram - neighborhoods, open houses, and everyday life in DFW.</p></div></article>
         </div>
       </section>
 
@@ -255,7 +255,7 @@
             <a href="<?php echo esc_url(home_url('/lavon/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Homes in Lavon, Texas" /><div><h3>Lavon</h3><span>View homes â†’</span></div></a>
             <a href="<?php echo esc_url(home_url('/garland/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.20" alt="Homes in Garland, Texas" /><div><h3>Garland</h3><span>View homes â†’</span></div></a>
           </div>
-          <div class="center last"><a href="<?php echo esc_url(home_url('/neighborhoods/')); ?>" class="btn-outline-light">View Tất cả Areas</a></div>
+          <div class="center last"><a href="<?php echo esc_url(home_url('/neighborhoods/')); ?>" class="btn-outline-light">Xem tất cả khu vực</a></div>
         </div>
       </section>
 
@@ -263,8 +263,8 @@
         <div class="newsletter-inner reveal">
           <h2 class="h-section-title">Kinh nghiệm gặp gỡ sự tận tâm</h2>
           <p>Đăng ký nhận thông tin nhà mới, phân tích thị trường và ưu đãi nổi bật nhất tại Dallas-Fort Worth.</p>
-          <form data-static-form><input type="text" placeholder="HỌ TÊN" /><input type="email" placeholder="EMAIL" /><button class="btn-gold">Gửi thông tin</button></form>
-          <label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính Sách Bảo Mật</a>.</span></label>
+          <form data-static-form><input type="text" placeholder="Họ tên" /><input type="email" placeholder="Email" /><button class="btn-gold">Gửi thông tin</button></form>
+          <label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a>.</span></label>
         </div>
       </section>
 
@@ -275,17 +275,17 @@
           <span class="h-kicker light">Cùng bắt đầu</span>
           <h2 class="h-section-title">Làm việc cùng Ethan</h2>
           <p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p>
-          <a href="tel:(469) 989-5786" class="btn-gold">Kết Nối Ngay</a>
+          <a href="tel:(469) 989-5786" class="btn-gold">Kết nối ngay</a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo"><svg viewBox="0 0 200 200"><rect x="8" y="8" width="184" height="184" rx="16" fill="none" stroke="#0a0a0a" stroke-width="6"/><text x="100" y="100" dominant-baseline="central" text-anchor="middle" font-family="Google Sans Flex, sans-serif" font-weight="700" font-size="96" letter-spacing="-4" fill="#0a0a0a">ED</text></svg><span><strong>ETHAN DAO</strong><small>REALTOR</small></span></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandao.realtor@gmail.com">ethandao.realtor@gmail.com</a></div><div><h3>môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>Serving the Dallas-Fort Worth Metroplex, TX</p></div><div><h3>tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">định giá nhà</a></p></div><div><h3>liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lýs</a></p></div></div>
+        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandao.realtor@gmail.com">ethandao.realtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>Serving the Dallas-Fort Worth Metroplex, TX</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lý</a></p></div></div>
         <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
         <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
-        <p class="copyright">©2026 NTREIS. Tất cả rights reserved.</p>
+        <p class="copyright">©2026 NTREIS. All rights reserved.</p>
       </div>
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>

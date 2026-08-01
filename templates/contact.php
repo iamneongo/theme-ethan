@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Ethan Dao | DFW Realtor</title>
+    <title>Liên hệ Ethan Dao | DFW Realtor</title>
     <meta name="description" content="Contact Ethan Dao for buying, selling, and investing in Dallas-Fort Worth real estate." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,10 +45,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo"><svg viewBox="0 0 200 200"><rect x="8" y="8" width="184" height="184" rx="16" fill="none" stroke="#0a0a0a" stroke-width="6"/><text x="100" y="100" dominant-baseline="central" text-anchor="middle" font-family="Google Sans Flex, sans-serif" font-weight="700" font-size="96" letter-spacing="-4" fill="#0a0a0a">ED</text></svg><span><strong>ETHAN DAO</strong><small>REALTOR</small></span></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">định giá nhà</a></p></div><div><h3>liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lýs</a></p></div></div>
+        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lý</a></p></div></div>
         <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
         <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
-        <p class="copyright">©2026 NTREIS. Tất cả rights reserved.</p>
+        <p class="copyright">©2026 NTREIS. All rights reserved.</p>
       </div>
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
