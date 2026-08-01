@@ -83,9 +83,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     track.addEventListener('mouseenter', () => clearInterval(autoScrollTimer));
-    track.addEventListener('mouseleave', resetTimer);
     track.addEventListener('touchstart', () => clearInterval(autoScrollTimer), {passive: true});
     track.addEventListener('touchend', resetTimer);
+
+    // Mouse Drag to Scroll
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      track.classList.add('is-dragging');
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+      clearInterval(autoScrollTimer);
+    });
+
+    track.addEventListener('mouseleave', () => {
+      isDown = false;
+      track.classList.remove('is-dragging');
+      resetTimer();
+    });
+
+    track.addEventListener('mouseup', () => {
+      isDown = false;
+      track.classList.remove('is-dragging');
+      resetTimer();
+    });
+
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 2; // Scroll-fast multiplier
+      track.scrollLeft = scrollLeft - walk;
+    });
   }
 
   // 6. Property tabs (Search/Hero)

@@ -1656,3 +1656,20 @@ body, p, a, button, input, select, textarea {
   border-color: #fff;
   transform: translateY(-3px);
 }
+
+/* Drag to Scroll for Carousel */
+.sales-track {
+  cursor: grab;
+}
+
+.sales-track:active {
+  cursor: grabbing;
+}
+
+.sales-track.is-dragging {
+  scroll-snap-type: none; /* Disable snapping while dragging for smoother feel */
+}
+
+.sales-track.is-dragging article {
+  pointer-events: none; /* Prevent accidental clicks on links/images while dragging */
+}
