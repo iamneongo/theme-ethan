@@ -159,27 +159,37 @@
         <p class="reveal">"Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại Dallas-Fort Worth và chia sẻ kinh nghiệm thực tế về bất động sản tại Mỹ."</p>
       </section>
 
-      <section class="split reverse">
-        <div class="split-wrap">
-          <div class="split-image right"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Buy with Confidence" /></div>
-          <div class="split-card reveal">
-            <p class="h-eyebrow">Cho Người Mua</p>
-            <h2 class="h-section-title">Mua nhà tự tin</h2>
-            <p>Bạn mua nhà lần đầu tại Lavon, McKinney hay tìm cơ hội đầu tư tại Dallas-Fort Worth? Ethan sẽ hướng dẫn từng bước bằng kiến thức địa phương. Với thế mạnh song ngữ Việt-Anh, Ethan giúp bạn nắm rõ tài chính, khu vực và đàm phán thành công.</p>
-            <div class="button-row"><a href="<?php echo esc_url(home_url('/buyer-guide/')); ?>" class="btn-outline-dark">Hướng dẫn mua nhà</a><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-outline-dark">Tìm nhà</a></div>
+      <section class="services-dual">
+        <div class="dual-wrap">
+          
+          <div class="dual-card reveal">
+            <div class="dual-bg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Buy with Confidence" /></div>
+            <div class="dual-overlay"></div>
+            <div class="dual-content">
+              <p class="h-eyebrow">Cho Người Mua</p>
+              <h2 class="h-section-title">Mua nhà tự tin</h2>
+              <p>Bạn mua nhà lần đầu tại Lavon, McKinney hay tìm cơ hội đầu tư tại Dallas-Fort Worth? Ethan sẽ hướng dẫn từng bước bằng kiến thức địa phương. Với thế mạnh song ngữ Việt-Anh, Ethan giúp bạn nắm rõ tài chính, khu vực và đàm phán thành công.</p>
+              <div class="button-row">
+                <a href="<?php echo esc_url(home_url('/buyer-guide/')); ?>" class="btn-dual">Hướng dẫn mua nhà</a>
+                <a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-dual-outline">Tìm nhà</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section class="split">
-        <div class="split-wrap">
-          <div class="split-image left"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Sell with Strategy" /></div>
-          <div class="split-card reveal">
-            <p class="h-eyebrow">Cho Người Bán</p>
-            <h2 class="h-section-title">Bán nhà có chiến lược</h2>
-            <p>Marketing tốt giúp bán nhà giá cao hơn. Ethan kết hợp chiến lược định giá và hệ thống video marketing, đưa nhà của bạn tiếp cận trực tiếp 15.000+ người mua tiềm năng trên mạng xã hội. Từng giao dịch luôn rõ ràng, có kế hoạch và hướng đến kết quả.</p>
-            <div class="button-row"><a href="<?php echo esc_url(home_url('/seller-guide/')); ?>" class="btn-outline-dark">Hướng dẫn bán nhà</a><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>" class="btn-outline-dark">Định giá nhà</a></div>
+          <div class="dual-card reveal">
+            <div class="dual-bg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Sell with Strategy" /></div>
+            <div class="dual-overlay"></div>
+            <div class="dual-content">
+              <p class="h-eyebrow">Cho Người Bán</p>
+              <h2 class="h-section-title">Bán nhà có chiến lược</h2>
+              <p>Marketing tốt giúp bán nhà giá cao hơn. Ethan kết hợp chiến lược định giá và hệ thống video marketing, đưa nhà của bạn tiếp cận trực tiếp 15.000+ người mua tiềm năng trên mạng xã hội. Từng giao dịch luôn rõ ràng, có kế hoạch và hướng đến kết quả.</p>
+              <div class="button-row">
+                <a href="<?php echo esc_url(home_url('/seller-guide/')); ?>" class="btn-dual">Hướng dẫn bán nhà</a>
+                <a href="<?php echo esc_url(home_url('/home-valuation/')); ?>" class="btn-dual-outline">Định giá nhà</a>
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
 
