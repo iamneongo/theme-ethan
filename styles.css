@@ -1815,7 +1815,16 @@ section.browse-cta {
   display: none !important;
 }
 
+/* Cho phép SVG icons giữ nguyên màu sắc gốc (FB, YT, IG, Zillow, TikTok...) */
+.social-links svg,
+.floating-social svg,
+.alwayzz-brand-marquee svg,
+.btn-icon-badge svg {
+  fill: unset !important;
+}
+
 /* Style mới cho 2 Nút Bấm Hero Actions (Primary Navy + Book Call Outline) */
+
 .alwayzz-actions {
   display: flex !important;
   align-items: center !important;
