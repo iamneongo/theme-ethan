@@ -63,7 +63,7 @@
               </div>
             </div>
             <h2>Real estate guidance <span>alwayzz</span> with Ethan.</h2>
-            <p>Tư vấn mua bán nhà Dallas-Fort Worth. Chiến lược rõ ràng, dữ liệu thực tế, hỗ trợ song ngữ Việt-Anh trọn vẹn.</p>
+            <p>Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại <span>Dallas-Fort Worth</span> và chia sẻ <span>kinh nghiệm thực tế</span> về bất động sản tại Mỹ.</p>
             <div class="alwayzz-actions">
               <a class="alwayzz-primary" href="<?php echo esc_url(home_url('/buyer-guide/')); ?>">
                 <span class="btn-icon-badge"><svg><use href="#icon-home"/></svg></span>

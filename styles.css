@@ -1909,7 +1909,8 @@ section.browse-cta {
 .h-section-title span,
 .h-kicker span,
 .recognition h2 span,
-.alwayzz-content h2 span {
+.alwayzz-content h2 span,
+.alwayzz-content p span {
   font-family: "Pattaya", cursive !important;
   font-style: normal !important;
   font-weight: 400 !important;
