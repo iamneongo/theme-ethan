@@ -137,12 +137,17 @@
 
       <section class="map-section zillow-profile-section">
         <div class="zillow-profile-inner reveal">
-          <h2>Giao dịch đã bán và nhà đang bán của Ethan Dao (40)</h2>
-          <p>Bản đồ và danh sách này hiển thị các giao dịch đã bán và nhà đang bán gần đây nhất.</p>
-          <div class="profile-map-filters" role="tablist" aria-label="Sales and listings map filters">
-            <button class="active" type="button" data-profile-map-filter="all">Tất cả</button>
-            <button type="button" data-profile-map-filter="sold"><span></span>Đã bán</button>
-            <button type="button" data-profile-map-filter="sale"><span></span>Đang bán</button>
+          <div class="map-section-header">
+            <div>
+              <span class="h-kicker">Hoạt Động Giao Dịch</span>
+              <h2 class="h-section-title">Giao dịch đã bán & nhà đang bán <span>(40)</span></h2>
+              <p>Bản đồ tương tác hiển thị các giao dịch tiêu biểu và danh mục nhà đang rao bán của Ethan Dao tại khu vực Dallas-Fort Worth.</p>
+            </div>
+            <div class="profile-map-filters" role="tablist" aria-label="Sales and listings map filters">
+              <button class="active" type="button" data-profile-map-filter="all">Tất cả (40)</button>
+              <button type="button" data-profile-map-filter="sold"><span class="filter-dot sold"></span>Đã bán</button>
+              <button type="button" data-profile-map-filter="sale"><span class="filter-dot sale"></span>Đang bán</button>
+            </div>
           </div>
           <div id="ethan-profile-map" class="profile-map" data-profile-map aria-label="Ethan Dao sales and listings map"></div>
         </div>

@@ -102,24 +102,45 @@ document.addEventListener("DOMContentLoaded", () => {
   // 8. Map
   const mapEl = document.getElementById('ethan-profile-map');
   if(mapEl && typeof L !== 'undefined') {
-    const map = L.map('ethan-profile-map').setView([32.7767, -96.7970], 9);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap'
+    const map = L.map('ethan-profile-map', {
+      zoomControl: true,
+      scrollWheelZoom: false
+    }).setView([32.9000, -96.7970], 9);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
     }).addTo(map);
 
     const locations = [
-      { coords: [33.1976, -96.6154], status: 'sale', title: '3508 Almond Ln, McKinney' },
-      { coords: [32.9126, -96.6389], status: 'sold', title: '2610 Dodson St, Garland' },
-      { coords: [32.9771, -96.5906], status: 'sold', title: '5816 Mandarin Ln, Sachse' },
-      { coords: [32.6565, -97.1089], status: 'sold', title: '1729 Duster Cir, Arlington' },
-      { coords: [33.0298, -96.4355], status: 'sold', title: '697 Poppy Ln, Lavon' },
-      { coords: [33.2084, -96.6146], status: 'sold', title: '604 Tidal Dr, McKinney' },
-      { coords: [32.2207, -98.2023], status: 'sale', title: 'LOT 156 Bison Ridge Dr, Stephenville' }
+      { coords: [33.1976, -96.6154], status: 'sale', title: '3508 Almond Ln', city: 'McKinney, TX 75070', price: '$495,000' },
+      { coords: [32.9126, -96.6389], status: 'sold', title: '2610 Dodson St', city: 'Garland, TX 75042', price: 'Đã bán' },
+      { coords: [32.9771, -96.5906], status: 'sold', title: '5816 Mandarin Ln', city: 'Sachse, TX 75048', price: 'Đã bán' },
+      { coords: [32.6565, -97.1089], status: 'sold', title: '1729 Duster Cir', city: 'Arlington, TX 76018', price: 'Đã bán' },
+      { coords: [33.0298, -96.4355], status: 'sold', title: '697 Poppy Ln', city: 'Lavon, TX 75166', price: 'Đã bán' },
+      { coords: [33.2084, -96.6146], status: 'sold', title: '604 Tidal Dr', city: 'McKinney, TX 75071', price: 'Đã bán' },
+      { coords: [32.2207, -98.2023], status: 'sale', title: 'LOT 156 Bison Ridge Dr', city: 'Stephenville, TX 76401', price: '$99,000' }
     ];
 
     const markers = locations.map(loc => {
-      const marker = L.marker(loc.coords).addTo(map);
-      marker.bindPopup(`<b>${loc.title}</b><br>${loc.status === 'sold' ? 'Đã bán' : 'Đang bán'}`);
+      const isSale = loc.status === 'sale';
+      const icon = L.divIcon({
+        className: `custom-map-pin pin-${loc.status}`,
+        html: `<div class="pin-badge ${loc.status}"><span class="pin-dot"></span><span class="pin-text">${loc.price}</span></div>`,
+        iconSize: [90, 34],
+        iconAnchor: [45, 17]
+      });
+
+      const marker = L.marker(loc.coords, { icon }).addTo(map);
+      marker.bindPopup(`
+        <div class="map-popup-card">
+          <span class="popup-tag ${loc.status}">${isSale ? 'Đang bán' : 'Đã bán'}</span>
+          <strong>${loc.title}</strong>
+          <small>${loc.city}</small>
+          <div class="popup-price">${loc.price}</div>
+        </div>
+      `);
       marker.status = loc.status;
       return marker;
     });
