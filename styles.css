@@ -1905,12 +1905,12 @@ section.browse-cta {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22) !important;
 }
 
-/* Style cách điệu chữ nghiêng cao cấp cho section titles giống hệt Ethan Dao ® */
+/* Style cách điệu chữ viết tay font Pattaya cho section titles */
 .h-section-title span {
-  font-family: "Source Serif 4", Georgia, serif !important;
-  font-style: italic !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.05em !important;
+  font-family: "Pattaya", cursive !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: 0em !important;
   color: var(--gold-dark, #c5a880) !important;
   text-transform: none !important;
 }
