@@ -1949,7 +1949,7 @@ section.browse-cta {
   border-radius: 999px !important;
   background: #0d2238 !important;
   color: #ffffff !important;
-  padding: 0 28px 0 10px !important;
+  padding: 0 24px 0 8px !important;
   border: 4px solid rgba(220, 230, 245, 0.75) !important;
   box-shadow: 0 6px 20px rgba(13, 34, 56, 0.22) !important;
   font-size: 15px !important;
@@ -1967,8 +1967,8 @@ section.browse-cta {
 }
 
 .alwayzz-primary .btn-icon-badge {
-  width: 38px !important;
-  height: 38px !important;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 999px !important;
   background: rgba(255, 255, 255, 0.14) !important;
   display: inline-flex !important;
@@ -1991,7 +1991,7 @@ section.browse-cta {
   border-radius: 999px !important;
   background: #ffffff !important;
   color: #0d2238 !important;
-  padding: 0 26px 0 8px !important;
+  padding: 0 26px 0 10px !important;
   border: 1.5px solid #0d2238 !important;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
   font-size: 15px !important;
