@@ -63,7 +63,7 @@
               </div>
             </div>
             <h2>Real estate guidance <span>alwayzz</span> with Ethan.</h2>
-            <p>Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại <span>Dallas-Fort Worth</span> và chia sẻ <span>kinh nghiệm thực tế</span> về bất động sản tại Mỹ.</p>
+            <p>Tư vấn mua bán nhà Dallas-Fort Worth. Chiến lược rõ ràng, dữ liệu thực tế, hỗ trợ song ngữ Việt-Anh trọn vẹn.</p>
             <div class="alwayzz-actions">
               <a class="alwayzz-primary" href="<?php echo esc_url(home_url('/buyer-guide/')); ?>">
                 <span class="btn-icon-badge"><svg><use href="#icon-home"/></svg></span>
@@ -171,7 +171,7 @@
       <section class="quote-band">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="" />
         <div></div>
-        <p class="reveal">"Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại Dallas-Fort Worth và chia sẻ kinh nghiệm thực tế về bất động sản tại Mỹ."</p>
+        <p class="reveal">"Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại <span>Dallas-Fort Worth</span> và chia sẻ <span>kinh nghiệm thực tế</span> về bất động sản tại Mỹ."</p>
       </section>
 
       <section class="services-dual">
