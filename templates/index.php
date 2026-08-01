@@ -216,7 +216,6 @@
             <span class="h-kicker light"><span>Thành Tích</span></span>
             <h2 class="h-section-title">Hai năm liên tiếp <span>chuyên viên nổi bật</span></h2>
             <p>Được vinh danh Chuyên viên nổi bật của <strong>Texas Ace Team tại eXp Realty</strong> năm 2024 và 2025. Giải thưởng là sự công nhận cho thành tích bán hàng và kết quả thực tế mang lại cho khách hàng tại DFW.</p>
-            <div class="badges"><span>Chuyên viên nổi bật 2024</span><span>Chuyên viên nổi bật 2025</span><span>Cộng Đồng 15K+</span></div>
           </div>
         </div>
       </section>
