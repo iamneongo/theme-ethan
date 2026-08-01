@@ -1752,13 +1752,19 @@ section.browse-cta {
   transform: translateY(-1px) !important;
 }
 
-/* Video Background cho Hero Section Banner (Bao gồm cả ethan-minimal-banner) */
+/* Complete Fix for Hero Video Background */
 .alwayzz-banner,
 .ethan-minimal-banner {
   position: relative !important;
   overflow: hidden !important;
   color: #ffffff !important;
-  background: #0f172a !important;
+  background: #090d16 !important;
+  isolation: isolate !important;
+}
+
+.ethan-minimal-banner:before,
+.ethan-minimal-banner:after {
+  display: none !important;
 }
 
 .hero-video-bg {
@@ -1767,22 +1773,31 @@ section.browse-cta {
   width: 100% !important;
   height: 100% !important;
   overflow: hidden !important;
-  z-index: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
 }
 
 .hero-video-bg video {
+  display: block !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
-  filter: brightness(0.7) contrast(1.05) !important;
+  filter: brightness(0.65) contrast(1.05) !important;
 }
 
 .hero-video-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
+  z-index: 2 !important;
+  background: linear-gradient(180deg, rgba(9, 13, 22, 0.45) 0%, rgba(9, 13, 22, 0.75) 100%) !important;
   pointer-events: none !important;
+}
+
+.ethan-minimal-banner .alwayzz-shell,
+.alwayzz-banner .alwayzz-shell {
+  position: relative !important;
+  z-index: 5 !important;
 }
 
 .ethan-minimal-banner .alwayzz-bg,
@@ -1800,7 +1815,7 @@ section.browse-cta {
 
 .ethan-minimal-banner .alwayzz-content h2 span,
 .alwayzz-banner .alwayzz-content h2 span {
-  color: #ffffff !important; /* Fix chữ alwayzz bị màu đen */
+  color: #ffffff !important;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
 }
 
@@ -1867,6 +1882,7 @@ section.browse-cta {
   background: #22c55e !important;
   box-shadow: 0 0 10px #22c55e !important;
 }
+
 
 
 

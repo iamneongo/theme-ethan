@@ -43,7 +43,7 @@
     <main>
       <section id="top" class="alwayzz-banner ethan-minimal-banner" data-alwayzz-banner aria-label="Ethan Dao real estate banner">
         <div class="hero-video-bg" aria-hidden="true">
-          <video autoplay loop muted playsinline poster="<?php echo esc_url(get_template_directory_uri()); ?>/assets/videos/hero-cover-poster.jpg">
+          <video autoplay loop muted playsinline src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/videos/hero-cover.webm" poster="<?php echo esc_url(get_template_directory_uri()); ?>/assets/videos/hero-cover-poster.jpg">
             <source src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/videos/hero-cover.webm" type="video/webm" />
           </video>
           <div class="hero-video-overlay"></div>
