@@ -174,39 +174,7 @@
         <p class="reveal">"Giúp bạn tìm những căn nhà đẹp, giá hợp lý tại <span>Dallas-Fort Worth</span> và chia sẻ <span>kinh nghiệm thực tế</span> về bất động sản tại Mỹ."</p>
       </section>
 
-      <section class="services-dual">
-        <div class="dual-wrap">
-          
-          <div class="dual-card reveal">
-            <div class="dual-bg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Buy with Confidence" /></div>
-            <div class="dual-overlay"></div>
-            <div class="dual-content">
-              <p class="h-eyebrow">Cho Người Mua</p>
-              <h2 class="h-section-title">Mua nhà tự tin</h2>
-              <p>Dù bạn mua nhà lần đầu hay tìm cơ hội đầu tư tại Dallas-Fort Worth, Ethan sẽ đồng hành cùng bạn với chiến lược rõ ràng, am hiểu địa phương và kỹ năng đàm phán sắc bén.</p>
-              <div class="button-row">
-                <a href="<?php echo esc_url(home_url('/buyer-guide/')); ?>" class="btn-dual">Hướng dẫn mua nhà</a>
-                <a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-dual-outline">Tìm nhà</a>
-              </div>
-            </div>
-          </div>
 
-          <div class="dual-card reveal">
-            <div class="dual-bg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Sell with Strategy" /></div>
-            <div class="dual-overlay"></div>
-            <div class="dual-content">
-              <p class="h-eyebrow">Cho Người Bán</p>
-              <h2 class="h-section-title">Bán nhà có chiến lược</h2>
-              <p>Marketing khác biệt giúp bán nhà nhanh với giá tốt nhất. Tối ưu từ chiến lược định giá, chuẩn bị nhà đến hệ thống video marketing tiếp cận trực tiếp 15.000+ người mua tiềm năng.</p>
-              <div class="button-row">
-                <a href="<?php echo esc_url(home_url('/seller-guide/')); ?>" class="btn-dual">Hướng dẫn bán nhà</a>
-                <a href="<?php echo esc_url(home_url('/home-valuation/')); ?>" class="btn-dual-outline">Định giá nhà</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
 
       <section class="recognition">
         <div class="glow"></div>
