@@ -1929,7 +1929,7 @@ section.browse-cta {
   align-items: center !important;
   justify-content: center !important;
   box-sizing: border-box !important;
-  height: 60px !important;
+  min-height: 54px !important;
   border-radius: 999px !important;
   padding: 0 32px !important;
   font-family: "Google Sans Flex", var(--font-sans) !important;
@@ -1949,7 +1949,7 @@ section.browse-cta {
 .btn-ink, .btn-primary-navy, .btn-dual, .valuation form .btn-ink {
   background: #0d2238 !important;
   color: #ffffff !important;
-  border: 4px solid rgba(220, 230, 245, 0.75) !important;
+  border: none !important;
   box-shadow: 0 6px 20px rgba(13, 34, 56, 0.22) !important;
 }
 .btn-ink:hover, .btn-primary-navy:hover, .btn-dual:hover, .valuation form .btn-ink:hover {
@@ -1960,7 +1960,7 @@ section.browse-cta {
 .btn-gold, .valuation form .btn-gold {
   background: #c5a880 !important;
   color: #0d2238 !important;
-  border: 4px solid rgba(255, 255, 255, 0.35) !important;
+  border: none !important;
   box-shadow: 0 6px 20px rgba(197, 168, 128, 0.3) !important;
 }
 .btn-gold:hover, .valuation form .btn-gold:hover {
@@ -1972,7 +1972,7 @@ section.browse-cta {
 .btn-white, .btn-outline-dark, .btn-dual-outline {
   background: #ffffff !important;
   color: #0d2238 !important;
-  border: 4px solid rgba(13, 34, 56, 0.2) !important;
+  border: 1px solid rgba(13, 34, 56, 0.2) !important;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
 }
 .btn-white:hover, .btn-outline-dark:hover, .btn-dual-outline:hover {
@@ -1984,11 +1984,11 @@ section.browse-cta {
 .btn-outline-light {
   background: rgba(255, 255, 255, 0.05) !important;
   color: #ffffff !important;
-  border: 4px solid rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1) !important;
 }
 .btn-outline-light:hover {
   background: rgba(255, 255, 255, 0.15) !important;
-  border-color: rgba(255, 255, 255, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
 }
