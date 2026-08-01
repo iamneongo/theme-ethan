@@ -51,13 +51,41 @@ document.addEventListener("DOMContentLoaded", () => {
   // 5. Sales track carousel
   const track = document.querySelector('[data-sales-track]');
   const scrollBtns = document.querySelectorAll('[data-scroll-sales]');
-  if(track && scrollBtns) {
-    scrollBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const dir = parseInt(btn.getAttribute('data-scroll-sales'));
-        track.scrollBy({ left: dir * 300, behavior: 'smooth' });
+  if(track) {
+    const scrollNext = () => {
+      const firstArticle = track.querySelector('article');
+      const scrollAmount = firstArticle ? firstArticle.offsetWidth + 18 : 300;
+      
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    };
+
+    let autoScrollTimer = setInterval(scrollNext, 3500);
+
+    const resetTimer = () => {
+      clearInterval(autoScrollTimer);
+      autoScrollTimer = setInterval(scrollNext, 3500);
+    };
+
+    if(scrollBtns) {
+      scrollBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const dir = parseInt(btn.getAttribute('data-scroll-sales'));
+          const firstArticle = track.querySelector('article');
+          const scrollAmount = firstArticle ? firstArticle.offsetWidth + 18 : 300;
+          track.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
+          resetTimer();
+        });
       });
-    });
+    }
+
+    track.addEventListener('mouseenter', () => clearInterval(autoScrollTimer));
+    track.addEventListener('mouseleave', resetTimer);
+    track.addEventListener('touchstart', () => clearInterval(autoScrollTimer), {passive: true});
+    track.addEventListener('touchend', resetTimer);
   }
 
   // 6. Property tabs (Search/Hero)
