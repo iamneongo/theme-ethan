@@ -173,7 +173,7 @@ body,button,input,select,textarea,.navbar,.desktop-nav>a,.nav-group button,.nav-
 .listings{padding:104px 0;background:var(--color-ink);color:#fff}.listings .center{text-align:left}.listings .h-section-title{color:#fff}.listing-grid{gap:18px;margin-top:48px}.listing-grid article{border:1px solid rgba(255,255,255,.12);border-radius:0;background:#111;color:#fff}.listing-grid img{filter:grayscale(.16);transition:transform .7s cubic-bezier(.22,1,.36,1)}.listing-grid article:hover img{transform:scale(1.04)}.listing-grid p,.listing-grid small{color:rgba(255,255,255,.68);letter-spacing:-.01em}.listing-grid article>span.sale{background:var(--color-ink);color:#fff;border:1px solid rgba(255,255,255,.16)}.browse-cta{padding:0 0 96px;background:var(--color-ink)}
 .valuation{padding:112px 0}.valuation .container{position:relative;z-index:1;text-align:center;color:#fff}.valuation .h-section-title{max-width:900px;margin:0 auto}.check-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:28px auto 0}.check-row span{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:10px 14px;color:rgba(255,255,255,.82);font-size:14px;letter-spacing:-.01em}.valuation form{max-width:760px;margin:34px auto 0;display:flex;gap:10px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:#fff;padding:8px}.valuation input{flex:1;border:0;background:transparent;padding:0 18px;color:var(--color-ink);outline:0}
 .neighborhoods{padding:104px 0;background:#fff;color:var(--color-ink)}.neighborhoods .center{text-align:left}.neighborhoods .h-section-title{color:var(--color-ink)}.neighborhood-grid{gap:18px;margin-top:48px}.neighborhood-grid a{border-radius:0;background:var(--color-ink)}.neighborhood-grid img{filter:grayscale(.18)}.neighborhood-grid h3{font-family:"Google Sans Flex",var(--font-sans);font-size:clamp(2rem,3vw,3.2rem);font-weight:600;letter-spacing:-.055em}.neighborhood-grid span{color:#fff;opacity:.8;letter-spacing:-.01em}.neighborhoods .btn-outline-light{border-color:var(--home-line);background:#fff;color:var(--color-ink)}.neighborhoods .btn-outline-light:hover{background:var(--color-ink);color:#fff}
-.newsletter{padding:104px 0;background:#f8f8f8}.newsletter-inner{text-align:left}.newsletter h2{max-width:760px}.newsletter p{max-width:760px;margin-left:0}.newsletter form{justify-content:flex-start;gap:10px}.newsletter input{border:1px solid var(--home-line);border-radius:999px;background:#fff;padding:17px 22px;color:var(--color-ink);letter-spacing:-.01em}.newsletter label{max-width:820px;margin-left:0;color:var(--home-muted)}.work{padding:128px 0}.work-inner{max-width:820px}.work h2{font-size:clamp(3rem,7vw,6rem);letter-spacing:-.06em}.footer{border-top:1px solid var(--home-line);background:#fff;color:var(--color-ink)}.footer-logo svg{display:none}.footer-logo strong{font-family:"Google Sans Flex",var(--font-sans);letter-spacing:.16em}.footer h3{letter-spacing:-.01em;text-transform:none}.footer-cols a,.footer-cols p,.disclaimer,.copyright,.bottom-bar{color:var(--home-muted);letter-spacing:-.01em}.bottom-bar{border-color:var(--home-line)}.floating-social a{box-shadow:none;border:1px solid var(--home-line);background:#fff;color:var(--color-ink)}.floating-social a:hover{background:var(--color-ink);color:#fff}
+.newsletter{padding:104px 0;background:#f8f8f8}.newsletter-inner{text-align:center}.newsletter h2{max-width:760px;margin:0 auto}.newsletter p{max-width:760px;margin:24px auto 0}.newsletter form{justify-content:center;gap:10px}.newsletter input{border:1px solid var(--home-line);border-radius:999px;background:#fff;padding:17px 22px;color:var(--color-ink);letter-spacing:-.01em}.newsletter label{max-width:820px;margin:20px auto 0;color:var(--home-muted)}.work{padding:128px 0}.work-inner{max-width:820px}.work h2{font-size:clamp(3rem,7vw,6rem);letter-spacing:-.06em}.footer{border-top:1px solid var(--home-line);background:#fff;color:var(--color-ink)}.footer-logo svg{display:none}.footer-logo strong{font-family:"Google Sans Flex",var(--font-sans);letter-spacing:.16em}.footer h3{letter-spacing:-.01em;text-transform:none}.footer-cols a,.footer-cols p,.disclaimer,.copyright,.bottom-bar{color:var(--home-muted);letter-spacing:-.01em}.bottom-bar{border-color:var(--home-line)}.floating-social a{box-shadow:none;border:1px solid var(--home-line);background:#fff;color:var(--color-ink)}.floating-social a:hover{background:var(--color-ink);color:#fff}
 @media (max-width:1023px){.alwayzz-banner~.hero,.alwayzz-banner~.hero .hero-inner{min-height:auto}.alwayzz-banner~.hero .hero-copy{padding:140px 0 72px}.alwayzz-banner~.hero .hero-visual{display:block;opacity:.18}.alwayzz-banner~.hero .hero-visual img{width:92%;right:-24%;object-fit:contain}.split-wrap{grid-template-columns:1fr}.split.reverse .split-image,.split.reverse .split-card{order:initial}.split-image{min-height:440px}.media-row{grid-template-columns:1fr;gap:24px}.valuation form{border-radius:24px;flex-direction:column}.valuation input{padding:16px 18px}.valuation form .btn-gold{width:100%}}
 @media (max-width:767px){.navbar{padding:14px 0}.menu-button{width:50px;height:50px}.alwayzz-banner~.hero h1{font-size:clamp(3.3rem,18vw,5.2rem);letter-spacing:-.06em}.search-box{border-radius:24px;flex-direction:column;padding:8px}.search-box>div{width:100%;padding:0 12px}.search-box button{width:100%;min-height:48px}.stats-grid{grid-template-columns:1fr 1fr}.about,.zillow-profile-section,.beyond,.recent,.listings,.neighborhoods,.newsletter{padding:72px 0}.quote-band,.valuation,.work{min-height:440px}.quote-band p{font-size:clamp(2rem,11vw,3.5rem)}.split .split-card{padding:38px 24px}.split-image{min-height:320px}.listing-grid,.neighborhood-grid{grid-template-columns:1fr}.check-row{justify-content:flex-start}.newsletter form{flex-direction:column}.newsletter input{width:100%}}
 
@@ -945,113 +945,7 @@ h1,h2,h3,h4,h5,h6,
   letter-spacing:0!important;
 }
 
-.newsletter{
-  background:#f5f5f5!important;
-}
-.newsletter-inner{
-  display:grid;
-  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
-  column-gap:clamp(48px,7vw,96px);
-  row-gap:20px;
-  align-items:start;
-  text-align:left!important;
-}
-.newsletter h2{
-  grid-column:1;
-  max-width:620px!important;
-  margin:0;
-  font-size:clamp(2.25rem,4.8vw,4.25rem)!important;
-}
-.newsletter> .newsletter-inner>p{
-  grid-column:1;
-  max-width:640px!important;
-  margin:4px 0 0!important;
-  color:#4e4e4e!important;
-}
-.newsletter form{
-  grid-column:2;
-  grid-row:1 / span 2;
-  display:grid!important;
-  grid-template-columns:1fr;
-  gap:12px!important;
-  width:100%;
-  margin:0!important;
-  padding:clamp(24px,3vw,36px);
-  border:1px solid var(--color-line);
-  border-radius:var(--radius-card);
-  background:#fff;
-}
-.newsletter input{
-  width:100%!important;
-  min-height:54px;
-  border-radius:var(--radius-card)!important;
-}
-.newsletter form .btn-gold{
-  width:100%;
-  min-height:54px;
-}
-.newsletter .form-success{
-  margin:0!important;
-  color:var(--color-ink)!important;
-  font-size:.9rem!important;
-}
-.newsletter label{
-  grid-column:1 / -1;
-  max-width:900px!important;
-  margin:12px 0 0!important;
-  color:#555!important;
-  font-size:.78rem!important;
-  line-height:1.65!important;
-}
-.newsletter label a{
-  color:var(--color-ink);
-  font-weight:620;
-}
-.newsletter label input[type="checkbox"]{
-  width:18px!important;
-  min-width:18px!important;
-  height:18px!important;
-  min-height:18px!important;
-  flex:0 0 18px!important;
-  margin-top:2px;
-  padding:0!important;
-  border-radius:3px!important;
-}
 
-@media (max-width:860px){
-  .newsletter-inner{
-    grid-template-columns:1fr;
-    row-gap:20px;
-  }
-  .newsletter h2,
-  .newsletter> .newsletter-inner>p,
-  .newsletter form,
-  .newsletter label{
-    grid-column:1;
-    grid-row:auto;
-  }
-  .newsletter form{
-    margin-top:12px!important;
-  }
-}
-@media (max-width:640px){
-  .zillow-profile-inner h2{
-    font-size:clamp(1.85rem,9vw,2.65rem)!important;
-  }
-  .verified-strip+.page-section .property-list article{
-    grid-template-columns:1fr;
-  }
-  .verified-strip+.page-section .property-list img{
-    min-height:0;
-    aspect-ratio:16/10!important;
-  }
-  .verified-strip+.page-section .property-list article>div{
-    padding:24px 20px 30px!important;
-  }
-  .newsletter form{
-    padding:20px;
-  }
-}
 
 /* Scroll effects must enhance visible content, never gate it. */
 html.ethan-scrollfx-ready .reveal{
@@ -1140,95 +1034,8 @@ html.ethan-scrollfx-ready .reveal.is-visible{
   letter-spacing:0!important;
 }
 
-.newsletter{
-  background:#f5f5f5!important;
-}
-.newsletter-inner{
-  display:grid;
-  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
-  column-gap:clamp(48px,7vw,96px);
-  row-gap:20px;
-  align-items:start;
-  text-align:left!important;
-}
-.newsletter h2{
-  grid-column:1;
-  max-width:620px!important;
-  margin:0;
-  font-size:clamp(2.25rem,4.8vw,4.25rem)!important;
-}
-.newsletter> .newsletter-inner>p{
-  grid-column:1;
-  max-width:640px!important;
-  margin:4px 0 0!important;
-  color:#4e4e4e!important;
-}
-.newsletter form{
-  grid-column:2;
-  grid-row:1 / span 2;
-  display:grid!important;
-  grid-template-columns:1fr;
-  gap:12px!important;
-  width:100%;
-  margin:0!important;
-  padding:clamp(24px,3vw,36px);
-  border:1px solid var(--color-line);
-  border-radius:var(--radius-card);
-  background:#fff;
-}
-.newsletter input{
-  width:100%!important;
-  min-height:54px;
-  border-radius:var(--radius-card)!important;
-}
-.newsletter form .btn-gold{
-  width:100%;
-  min-height:54px;
-}
-.newsletter .form-success{
-  margin:0!important;
-  color:var(--color-ink)!important;
-  font-size:.9rem!important;
-}
-.newsletter label{
-  grid-column:1 / -1;
-  max-width:900px!important;
-  margin:12px 0 0!important;
-  color:#555!important;
-  font-size:.78rem!important;
-  line-height:1.65!important;
-}
-.newsletter label a{
-  color:var(--color-ink);
-  font-weight:620;
-}
-.newsletter label input[type="checkbox"]{
-  width:18px!important;
-  min-width:18px!important;
-  height:18px!important;
-  min-height:18px!important;
-  flex:0 0 18px!important;
-  margin-top:2px;
-  padding:0!important;
-  border-radius:3px!important;
-}
 
-@media (max-width:860px){
-  .newsletter-inner{
-    grid-template-columns:1fr;
-    row-gap:20px;
-  }
-  .newsletter h2,
-  .newsletter> .newsletter-inner>p,
-  .newsletter form,
-  .newsletter label{
-    grid-column:1;
-    grid-row:auto;
-  }
-  .newsletter form{
-    margin-top:12px!important;
-  }
-}
+
 @media (max-width:640px){
   .zillow-profile-inner h2{
     font-size:clamp(1.85rem,9vw,2.65rem)!important;
@@ -1242,9 +1049,6 @@ html.ethan-scrollfx-ready .reveal.is-visible{
   }
   .verified-strip+.page-section .property-list article>div{
     padding:24px 20px 30px!important;
-  }
-  .newsletter form{
-    padding:20px;
   }
 }
 
