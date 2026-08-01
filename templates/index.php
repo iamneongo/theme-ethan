@@ -279,7 +279,7 @@
 
       <section class="neighborhoods">
         <div class="container">
-          <div class="center reveal"><span class="h-kicker light">Where Ethan works</span><h2 class="h-section-title">Khu vực nổi bật</h2></div>
+          <div class="center reveal"><span class="h-kicker light">Where Ethan works</span><h2 class="h-section-title">Khu vực <span>nổi bật</span></h2></div>
           <div class="neighborhood-grid">
             <a href="<?php echo esc_url(home_url('/mckinney/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.20" alt="Homes in McKinney, Texas" /><div><h3>McKinney</h3><span>View homes â†’</span></div></a>
             <a href="<?php echo esc_url(home_url('/lavon/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Homes in Lavon, Texas" /><div><h3>Lavon</h3><span>View homes â†’</span></div></a>
