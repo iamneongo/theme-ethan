@@ -48,19 +48,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 5. Sales track carousel
+  // 5. Sales track carousel (Seamless Infinite Loop)
   const track = document.querySelector('[data-sales-track]');
   const scrollBtns = document.querySelectorAll('[data-scroll-sales]');
   if(track) {
+    const originalChildren = Array.from(track.children);
+    const gap = parseInt(window.getComputedStyle(track).gap) || 18;
+    
+    // Duplicate items for infinite scrolling illusion
+    originalChildren.forEach(child => {
+      const clone = child.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    const getSetWidth = () => {
+      return originalChildren.reduce((acc, child) => acc + child.offsetWidth + gap, 0);
+    };
+
     const scrollNext = () => {
       const firstArticle = track.querySelector('article');
-      const scrollAmount = firstArticle ? firstArticle.offsetWidth + 18 : 300;
-      
-      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
-        track.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-      }
+      const scrollAmount = firstArticle ? firstArticle.offsetWidth + gap : 300;
+      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     };
 
     let autoScrollTimer = setInterval(scrollNext, 3500);
@@ -75,12 +83,39 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener('click', () => {
           const dir = parseInt(btn.getAttribute('data-scroll-sales'));
           const firstArticle = track.querySelector('article');
-          const scrollAmount = firstArticle ? firstArticle.offsetWidth + 18 : 300;
+          const scrollAmount = firstArticle ? firstArticle.offsetWidth + gap : 300;
           track.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
           resetTimer();
         });
       });
     }
+
+    // Seamless teleportation logic on scroll
+    let isHandlingScroll = false;
+    track.addEventListener('scroll', () => {
+      if (isHandlingScroll) return;
+      
+      const setWidth = getSetWidth();
+      
+      // If we scrolled deep into the cloned set
+      if (track.scrollLeft >= setWidth) {
+        isHandlingScroll = true;
+        track.style.scrollBehavior = 'auto';
+        track.scrollLeft -= setWidth;
+        void track.offsetHeight; // force reflow
+        track.style.scrollBehavior = 'smooth';
+        setTimeout(() => isHandlingScroll = false, 50);
+      } 
+      // If we scroll backwards past the beginning
+      else if (track.scrollLeft <= 0) {
+        isHandlingScroll = true;
+        track.style.scrollBehavior = 'auto';
+        track.scrollLeft += setWidth;
+        void track.offsetHeight;
+        track.style.scrollBehavior = 'smooth';
+        setTimeout(() => isHandlingScroll = false, 50);
+      }
+    });
 
     track.addEventListener('mouseenter', () => clearInterval(autoScrollTimer));
     track.addEventListener('touchstart', () => clearInterval(autoScrollTimer), {passive: true});
@@ -115,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - track.offsetLeft;
-      const walk = (x - startX) * 2; // Scroll-fast multiplier
+      const walk = (x - startX) * 2;
       track.scrollLeft = scrollLeft - walk;
     });
   }
