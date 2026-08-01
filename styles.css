@@ -1841,6 +1841,13 @@ section.browse-cta {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15) !important;
 }
 
+.social-links a[aria-label="TikTok"],
+.floating-social a[aria-label="TikTok"] {
+  background: #000000 !important;
+  border-color: #000000 !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3) !important;
+}
+
 .social-links svg, .floating-social svg, .social-links img, .floating-social img {
   width: 22px !important;
   height: 22px !important;
