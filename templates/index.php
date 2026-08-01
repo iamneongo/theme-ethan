@@ -267,15 +267,7 @@
         </div>
       </section>
 
-      <section class="valuation">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="" />
-        <div></div>
-        <div class="container reveal">
-          <h2 class="h-section-title">Căn nhà của bạn tại Dallas-Fort Worth đáng giá bao nhiêu?</h2>
-          <div class="check-row"><span><svg><use href="#icon-check"/></svg>Định giá nhanh</span><span><svg><use href="#icon-check"/></svg>Tư vấn địa phương chuyên sâu</span><span><svg><use href="#icon-check"/></svg>Bán với giá tốt hơn</span></div>
-          <form data-static-form><input type="text" placeholder="Nhập địa chỉ nhà của bạn" /><button class="btn-gold">Nhận định giá nhà miễn phí</button></form>
-        </div>
-      </section>
+
 
       <section class="neighborhoods">
         <div class="container">
