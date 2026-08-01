@@ -168,7 +168,7 @@
             <div class="dual-content">
               <p class="h-eyebrow">Cho Người Mua</p>
               <h2 class="h-section-title">Mua nhà tự tin</h2>
-              <p>Bạn mua nhà lần đầu tại Lavon, McKinney hay tìm cơ hội đầu tư tại Dallas-Fort Worth? Ethan sẽ hướng dẫn từng bước bằng kiến thức địa phương. Với thế mạnh song ngữ Việt-Anh, Ethan giúp bạn nắm rõ tài chính, khu vực và đàm phán thành công.</p>
+              <p>Dù bạn mua nhà lần đầu hay tìm cơ hội đầu tư tại Dallas-Fort Worth, Ethan sẽ đồng hành cùng bạn với chiến lược rõ ràng, am hiểu địa phương và kỹ năng đàm phán sắc bén.</p>
               <div class="button-row">
                 <a href="<?php echo esc_url(home_url('/buyer-guide/')); ?>" class="btn-dual">Hướng dẫn mua nhà</a>
                 <a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-dual-outline">Tìm nhà</a>
@@ -182,7 +182,7 @@
             <div class="dual-content">
               <p class="h-eyebrow">Cho Người Bán</p>
               <h2 class="h-section-title">Bán nhà có chiến lược</h2>
-              <p>Marketing tốt giúp bán nhà giá cao hơn. Ethan kết hợp chiến lược định giá và hệ thống video marketing, đưa nhà của bạn tiếp cận trực tiếp 15.000+ người mua tiềm năng trên mạng xã hội. Từng giao dịch luôn rõ ràng, có kế hoạch và hướng đến kết quả.</p>
+              <p>Marketing khác biệt giúp bán nhà nhanh với giá tốt nhất. Tối ưu từ chiến lược định giá, chuẩn bị nhà đến hệ thống video marketing tiếp cận trực tiếp 15.000+ người mua tiềm năng.</p>
               <div class="button-row">
                 <a href="<?php echo esc_url(home_url('/seller-guide/')); ?>" class="btn-dual">Hướng dẫn bán nhà</a>
                 <a href="<?php echo esc_url(home_url('/home-valuation/')); ?>" class="btn-dual-outline">Định giá nhà</a>

@@ -1561,7 +1561,7 @@ body, p, a, button, input, select, textarea {
 
 .dual-card {
   position: relative;
-  border-radius: 32px;
+  border-radius: 16px;
   overflow: hidden;
   min-height: 580px;
   display: flex;
