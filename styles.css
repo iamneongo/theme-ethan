@@ -1091,7 +1091,22 @@ body, p, a, button, input, select, textarea {
 }
 
 
-/* Video Grid Fixes */
+
+/* About heading — mixed font treatment */
+.about-heading {
+  line-height: 1.05 !important;
+}
+.script-accent {
+  font-family: "Pattaya", cursive !important;
+  font-weight: 400 !important;
+  font-size: 1.25em;
+  letter-spacing: -.01em !important;
+  color: var(--color-ink);
+  display: inline-block;
+  line-height: 1;
+}
+
+
 .video-grid article {
   display: flex;
   flex-direction: column;
@@ -1117,19 +1132,3 @@ body, p, a, button, input, select, textarea {
   transform: scale(1.05);
 }
 
-
-/* About heading — full handwriting style */
-.about .h-section-title {
-  font-family: "Pattaya", cursive !important;
-  font-weight: 400 !important;
-  font-size: clamp(2.4rem, 5.5vw, 4rem) !important;
-  line-height: 1.18 !important;
-  letter-spacing: -.01em !important;
-}
-.about .h-section-title span {
-  font-family: "Pattaya", cursive !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  color: var(--color-ink) !important;
-  opacity: .55;
-}
