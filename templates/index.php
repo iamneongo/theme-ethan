@@ -297,16 +297,7 @@
         </div>
       </section>
 
-      <section id="work" class="work">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="" />
-        <div></div>
-        <div class="work-inner reveal">
-          <span class="h-kicker light">Cùng bắt đầu</span>
-          <h2 class="h-section-title">Làm việc cùng Ethan</h2>
-          <p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p>
-          <a href="tel:(469) 989-5786" class="btn-gold">Kết nối ngay</a>
-        </div>
-      </section>
+
     </main>
     <footer class="footer">
       <div class="container">
