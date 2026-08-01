@@ -516,7 +516,7 @@ h1,h2,h3,h4,h5,h6,
 .banner-header .nav-top,
 .banner-header .nav-group li a,
 .side-menu nav a{
-  text-transform:lowercase!important;
+  text-transform:none!important;
 }
 .banner-header .banner-wordmark span,
 .banner-header .banner-wordmark sup{
