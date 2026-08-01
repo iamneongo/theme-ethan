@@ -73,7 +73,7 @@
 
 .ethan-minimal-banner{background:#fff}.ethan-minimal-banner:before{display:none}.ethan-minimal-banner .alwayzz-content h2 span{color:var(--color-ink);text-shadow:none}.ethan-minimal-banner .alwayzz-marquee span{background:#fbfbfb;color:var(--alwayzz-muted)}.ethan-minimal-banner .alwayzz-book{border-color:#f4f4f4;box-shadow:none}.ethan-minimal-banner .alwayzz-book i{background:var(--color-ink);box-shadow:none}.ethan-minimal-banner .alwayzz-primary:hover,.banner-menu-button:hover{box-shadow:0 4px 20px rgba(0,0,0,.12)}.ethan-minimal-banner .alwayzz-line{border-color:#f1f1f1}.ethan-minimal-banner .alwayzz-trusted{border-top-color:var(--alwayzz-border-soft)}.banner-wordmark sup{color:var(--color-ink)}
 
-:root{--font-sans:"Google Sans Flex",ui-sans-serif,system-ui,sans-serif;--font-display:"Google Sans Flex",var(--font-sans);--font-script:"Pattaya",cursive}
+:root{--font-sans:"Google Sans Flex",ui-sans-serif,system-ui,sans-serif;--font-display:"Google Sans Flex",var(--font-sans);--font-script:"Dancing Script","Pattaya",cursive}
 body,button,input,select,textarea,.navbar,.desktop-nav>a,.nav-group button,.nav-top,.side-menu,.footer,.alwayzz-banner,.btn-outline-dark,.btn-outline-light,.btn-gold,.btn-ink,.form-panel input,.form-panel select,.form-panel textarea,.newsletter input{font-family:var(--font-sans)!important}
 .h-section-title,.hero h1,.subpage-hero h1,.stats-grid strong,.sales-track h3,.listing-grid h3,.area-grid h3,.service-grid h3,.blog-grid h3,.process-timeline h3,.form-panel h2,.zillow-profile-inner h2,.media-row h3,.video-grid h3,.neighborhood-grid h3,.work h2,.footer-logo strong{font-family:var(--font-display)!important}
 .wordmark span,.banner-wordmark span,.alwayzz-logo,.alwayzz-content h2 span,.recognition h2 span,.alwayzz-brand-marquee .airbnb,.alwayzz-brand-marquee .framer,.h-section-title span{font-family:var(--font-script)!important;font-weight:400!important}
@@ -1062,11 +1062,206 @@ html.ethan-scrollfx-ready .reveal.is-visible{
   color: var(--color-invert) !important;
   border-color: var(--color-accent) !important;
 }
+.verified-strip+.page-section .property-list article[hidden]{
+  display:none!important;
+}
+.verified-strip+.page-section .property-list img{
+  width:100%;
+  height:100%;
+  min-height:230px;
+  aspect-ratio:auto!important;
+  object-fit:cover;
+  filter:none!important;
+}
+.verified-strip+.page-section .property-list article>span{
+  left:18px;
+  top:18px;
+  z-index:2;
+  background:#fff!important;
+  color:var(--color-ink)!important;
+  border:0!important;
+}
+.verified-strip+.page-section .property-list article>div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:10px;
+  padding:clamp(28px,4vw,52px)!important;
+}
+.verified-strip+.page-section .property-list h3{
+  order:2;
+  margin:0;
+  color:#6a6a6a;
+  font-size:.95rem!important;
+  font-weight:560!important;
+}
+.verified-strip+.page-section .property-list p{
+  order:1;
+  margin:0!important;
+  color:var(--color-ink)!important;
+  font-size:clamp(1.35rem,2.4vw,2.15rem)!important;
+  font-weight:620;
+  line-height:1.15!important;
+}
+.verified-strip+.page-section .property-list small{
+  order:3;
+  max-width:62ch;
+  margin:4px 0 0!important;
+  border:0!important;
+  padding:0!important;
+  color:#595959!important;
+  font-size:.92rem!important;
+  line-height:1.55;
+  letter-spacing:0!important;
+}
+
+.newsletter{
+  background:#f5f5f5!important;
+}
+.newsletter-inner{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
+  column-gap:clamp(48px,7vw,96px);
+  row-gap:20px;
+  align-items:start;
+  text-align:left!important;
+}
+.newsletter h2{
+  grid-column:1;
+  max-width:620px!important;
+  margin:0;
+  font-size:clamp(2.25rem,4.8vw,4.25rem)!important;
+}
+.newsletter> .newsletter-inner>p{
+  grid-column:1;
+  max-width:640px!important;
+  margin:4px 0 0!important;
+  color:#4e4e4e!important;
+}
+.newsletter form{
+  grid-column:2;
+  grid-row:1 / span 2;
+  display:grid!important;
+  grid-template-columns:1fr;
+  gap:12px!important;
+  width:100%;
+  margin:0!important;
+  padding:clamp(24px,3vw,36px);
+  border:1px solid var(--color-line);
+  border-radius:var(--radius-card);
+  background:#fff;
+}
+.newsletter input{
+  width:100%!important;
+  min-height:54px;
+  border-radius:var(--radius-card)!important;
+}
+.newsletter form .btn-gold{
+  width:100%;
+  min-height:54px;
+}
+.newsletter .form-success{
+  margin:0!important;
+  color:var(--color-ink)!important;
+  font-size:.9rem!important;
+}
+.newsletter label{
+  grid-column:1 / -1;
+  max-width:900px!important;
+  margin:12px 0 0!important;
+  color:#555!important;
+  font-size:.78rem!important;
+  line-height:1.65!important;
+}
+.newsletter label a{
+  color:var(--color-ink);
+  font-weight:620;
+}
+.newsletter label input[type="checkbox"]{
+  width:18px!important;
+  min-width:18px!important;
+  height:18px!important;
+  min-height:18px!important;
+  flex:0 0 18px!important;
+  margin-top:2px;
+  padding:0!important;
+  border-radius:3px!important;
+}
+
+@media (max-width:860px){
+  .newsletter-inner{
+    grid-template-columns:1fr;
+    row-gap:20px;
+  }
+  .newsletter h2,
+  .newsletter> .newsletter-inner>p,
+  .newsletter form,
+  .newsletter label{
+    grid-column:1;
+    grid-row:auto;
+  }
+  .newsletter form{
+    margin-top:12px!important;
+  }
+}
+@media (max-width:640px){
+  .zillow-profile-inner h2{
+    font-size:clamp(1.85rem,9vw,2.65rem)!important;
+  }
+  .verified-strip+.page-section .property-list article{
+    grid-template-columns:1fr;
+  }
+  .verified-strip+.page-section .property-list img{
+    min-height:0;
+    aspect-ratio:16/10!important;
+  }
+  .verified-strip+.page-section .property-list article>div{
+    padding:24px 20px 30px!important;
+  }
+  .newsletter form{
+    padding:20px;
+  }
+}
+
+/* Scroll effects must enhance visible content, never gate it. */
+html.ethan-scrollfx-ready .reveal{
+  opacity:1!important;
+  filter:none!important;
+  transform:translate3d(0,12px,0);
+}
+html.ethan-scrollfx-ready .reveal.is-visible{
+  transform:translate3d(0,0,0);
+}
+
+/* Modern Real Estate Personal Brand Kit Overrides */
+:root {
+  --home-dark: var(--color-dark);
+  --home-gold: var(--color-gold);
+  --home-bg: var(--color-bg);
+  --home-text: var(--color-ink);
+  --home-muted: var(--color-muted);
+  --home-soft: var(--color-surface);
+  --home-line: var(--color-line);
+}
+.btn-ink {
+  background: var(--color-dark) !important;
+  color: var(--color-invert) !important;
+  border-color: var(--color-dark) !important;
+}
+.btn-ink:hover {
+  background: var(--color-ink) !important;
+  color: var(--color-invert) !important;
+}
+.btn-gold {
+  background: var(--color-accent) !important;
+  color: var(--color-invert) !important;
+  border-color: var(--color-accent) !important;
+}
 .btn-gold:hover {
   background: var(--color-dark) !important;
   color: var(--color-invert) !important;
 }
-.h-section-title, .h-section-title span, .hero h1, .hero h1 span {
+.h-section-title, .hero h1, .hero h1 span {
   font-family: var(--font-display) !important;
 }
 body, p, a, button, input, select, textarea {

@@ -124,7 +124,7 @@
           <div class="portrait reveal"><span></span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot-hero.jpg?v=1.0.20" alt="Ethan Dao - Realtor, eXp Realty" /></div>
           <div class="reveal">
             <span class="h-kicker">Gặp Gỡ Ethan</span>
-            <h2 class="h-section-title about-heading">Realtor <span class="script-accent">Của Bạn</span><br />tại Dallas-Fort Worth</h2>
+            <h2 class="h-section-title">Realtor Của Bạn Tại <span>Dallas-Fort Worth</span></h2>
             <p>Ethan Dao (Tùng Đào) là Realtor thuộc eXp Realty và Texas Ace Team, hỗ trợ người mua, người bán và nhà đầu tư tại Dallas-Fort Worth. Anh kết hợp am hiểu địa phương với hệ thống video marketing tiếp cận cộng đồng 15.000+ người theo dõi trên mạng xã hội. Sinh ra tại Tây Hồ (Hà Nội) và tốt nghiệp Đại học FPT, Ethan mang đến góc nhìn quốc tế cùng dịch vụ song ngữ Việt-Anh. Dù bạn mua nhà lần đầu tại Lavon, McKinney hay đầu tư lâu dài tại DFW, Ethan luôn đặt lợi ích và kết quả thực tế của bạn lên hàng đầu.</p>
             <div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Làm việc cùng Ethan</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>">Xem nhà đã bán</a></div>
           </div>
