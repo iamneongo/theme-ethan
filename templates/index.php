@@ -285,7 +285,6 @@
             <a href="<?php echo esc_url(home_url('/lavon/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Homes in Lavon, Texas" /><div><h3>Lavon</h3><span>View homes â†’</span></div></a>
             <a href="<?php echo esc_url(home_url('/garland/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.20" alt="Homes in Garland, Texas" /><div><h3>Garland</h3><span>View homes â†’</span></div></a>
           </div>
-          <div class="center last"><a href="<?php echo esc_url(home_url('/neighborhoods/')); ?>" class="btn-outline-light">Xem tất cả khu vực</a></div>
         </div>
       </section>
 
