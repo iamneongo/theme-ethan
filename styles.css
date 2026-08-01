@@ -1673,3 +1673,11 @@ body, p, a, button, input, select, textarea {
 .sales-track.is-dragging article {
   pointer-events: none; /* Prevent accidental clicks on links/images while dragging */
 }
+
+/* Fix for browse-cta button layout to ensure it sits cleanly inside the blue section */
+section.browse-cta {
+  display: flex !important;
+  justify-content: center;
+  padding: 32px 0 104px !important;
+  background: var(--color-ink) !important;
+}
