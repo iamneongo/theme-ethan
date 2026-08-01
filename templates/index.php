@@ -295,7 +295,7 @@
 
       <section class="newsletter">
         <div class="newsletter-inner reveal">
-          <h2 class="h-section-title">Kinh nghiệm gặp gỡ sự tận tâm</h2>
+          <h2 class="h-section-title">Kinh nghiệm gặp gỡ <span>sự tận tâm</span></h2>
           <p>Đăng ký nhận thông tin nhà mới, phân tích thị trường và ưu đãi nổi bật nhất tại Dallas-Fort Worth.</p>
           <form data-static-form><input type="text" placeholder="Họ tên" /><input type="email" placeholder="Email" /><button class="btn-gold">Gửi thông tin</button></form>
           <label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a>.</span></label>
