@@ -193,19 +193,37 @@
             </div>
           </article>
           <article class="media-row reveal">
-            <a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw/videos" target="_blank" rel="noopener noreferrer" class="media-visual-link"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.20" alt="Nội dung bất động sản cho cộng đồng Việt" /></a>
+            <div class="media-embed">
+              <iframe
+                src="https://www.youtube.com/embed/qsBWEIueBUs?rel=0"
+                title="Tour nhà mới và khu dân cư tại DFW cùng Ethan Dao"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw/videos" target="_blank" rel="noopener noreferrer" class="media-copy-link">bất động sản cho <span>cộng đồng Việt</span></a></h3>
-              <p>Nội dung tập trung vào người Việt mua, bán và đầu tư nhà tại Mỹ, với cách giải thích dễ hiểu về quy trình, chi phí và các lựa chọn thực tế.</p>
+              <h3><a href="https://www.youtube.com/watch?v=PH7ssSv_eoI" target="_blank" rel="noopener noreferrer" class="media-copy-link">tour nhà mới và khu dân cư tại <span>DFW</span></a></h3>
+              <p>Ethan dẫn bạn đi xem nhà thật, phân tích vị trí, mức giá và tiềm năng từng khu vực để dễ hình dung nơi phù hợp trước khi xuống tiền.</p>
             </div>
           </article>
           <article class="media-row reveal">
-            <a href="https://www.tiktok.com/@ethandaorealtor" target="_blank" rel="noopener noreferrer" class="media-visual-link"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="TikTok Ethan Dao Realtor" /></a>
+            <div class="media-embed">
+              <iframe
+                src="https://www.youtube.com/embed/gxwWX1SubZY?rel=0"
+                title="Vlog open house và hành trình môi giới của Ethan Dao"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
             <div>
               <i></i>
-              <h3><a href="https://www.tiktok.com/@ethandaorealtor" target="_blank" rel="noopener noreferrer" class="media-copy-link">cuộc sống và kinh doanh tại <span>Texas</span></a></h3>
-              <p>TikTok của Ethan cập nhật nhanh nhịp sống DFW, nhà mới mở bán, open house và những góc nhìn gần gũi về công việc môi giới mỗi ngày.</p>
+              <h3><a href="https://www.youtube.com/watch?v=gxwWX1SubZY" target="_blank" rel="noopener noreferrer" class="media-copy-link">vlog open house và hành trình <span>môi giới</span></a></h3>
+              <p>Những video hậu trường theo chân Ethan đi open house, closing và xử lý công việc thực tế, cho bạn cái nhìn gần hơn về nhịp làm việc tại thị trường Texas.</p>
             </div>
           </article>
         </div>
