@@ -1880,6 +1880,31 @@ section.browse-cta {
   box-shadow: 0 6px 18px rgba(15, 35, 56, 0.35) !important;
 }
 
+/* White Solid Button Style */
+.btn-white {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #ffffff !important;
+  color: #0f2338 !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 999px !important;
+  padding: 0.85rem 1.8rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.btn-white:hover {
+  background-color: #f0f4f8 !important;
+  border-color: #f0f4f8 !important;
+  color: #0f2338 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22) !important;
+}
+
 /* Style mới cho 2 Nút Bấm Hero Actions (Primary Navy + Book Call Outline) */
 
 .alwayzz-actions {
