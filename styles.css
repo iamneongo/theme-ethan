@@ -1815,6 +1815,138 @@ section.browse-cta {
   display: none !important;
 }
 
+/* Style mới cho 2 Nút Bấm Hero Actions (Primary Navy + Book Call Outline) */
+.alwayzz-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  margin-top: 36px !important;
+}
+
+.alwayzz-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 58px !important;
+  border-radius: 999px !important;
+  background: #0d2238 !important;
+  color: #ffffff !important;
+  padding: 6px 28px 6px 10px !important;
+  border: 4px solid rgba(220, 230, 245, 0.75) !important;
+  box-shadow: 0 6px 20px rgba(13, 34, 56, 0.22) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s !important;
+}
+
+.alwayzz-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(13, 34, 56, 0.35) !important;
+  color: #ffffff !important;
+}
+
+.alwayzz-primary .btn-icon-badge {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.14) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.alwayzz-primary .btn-icon-badge svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: #ffffff !important;
+}
+
+.alwayzz-book {
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 58px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  color: #0d2238 !important;
+  padding: 6px 26px 6px 8px !important;
+  border: 1.5px solid #0d2238 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  text-align: left !important;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s, border-color 0.28s !important;
+}
+
+.alwayzz-book:hover {
+  transform: translateY(-2px) !important;
+  border-color: #0d2238 !important;
+  box-shadow: 0 8px 24px rgba(13, 34, 56, 0.12) !important;
+  color: #0d2238 !important;
+}
+
+.alwayzz-book .btn-icon-badge {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  border: 1.5px solid rgba(13, 34, 56, 0.18) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.alwayzz-book .btn-icon-badge svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: #0d2238 !important;
+}
+
+.alwayzz-book .btn-text-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1.2 !important;
+}
+
+.alwayzz-book .btn-text-stack strong {
+  color: #0d2238 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  display: block !important;
+  letter-spacing: -0.01em !important;
+}
+
+.alwayzz-book .btn-text-stack small {
+  color: #526071 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  display: block !important;
+  margin-top: 1px !important;
+  letter-spacing: -0.01em !important;
+}
+
+@media (max-width: 810px) {
+  .alwayzz-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .alwayzz-primary,
+  .alwayzz-book {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+}
+
+
 
 
 
