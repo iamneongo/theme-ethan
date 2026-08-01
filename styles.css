@@ -2018,3 +2018,12 @@ section.browse-cta {
   outline: 2px solid rgba(13, 34, 56, 0.28);
   outline-offset: 8px;
 }
+
+.media-embed {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.media-embed iframe {
+  display: block;
+}

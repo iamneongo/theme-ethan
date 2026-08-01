@@ -54,14 +54,7 @@
         <div class="alwayzz-shell">
 
           <div class="alwayzz-content">
-            <div class="alwayzz-ticker" aria-label="Ethan Dao services">
-              <div class="alwayzz-marquee">
-                <span>Mua nhà DFW</span><span>Bán nhà có chiến lược</span><span>Định giá nhà</span><span>New-build communities</span><span>Đầu tư bất động sản</span>
-                <span>Mua nhà DFW</span><span>Bán nhà có chiến lược</span><span>Định giá nhà</span><span>New-build communities</span><span>Đầu tư bất động sản</span>
-                <span>Mua nhà DFW</span><span>Bán nhà có chiến lược</span><span>Định giá nhà</span><span>New-build communities</span><span>Đầu tư bất động sản</span>
-                <span>Mua nhà DFW</span><span>Bán nhà có chiến lược</span><span>Định giá nhà</span><span>New-build communities</span><span>Đầu tư bất động sản</span>
-              </div>
-            </div>
+
             <h2>Real estate guidance <span>alwayzz</span> with Ethan.</h2>
             <p>Tư vấn mua bán nhà Dallas-Fort Worth. Chiến lược rõ ràng, dữ liệu thực tế, hỗ trợ song ngữ Việt-Anh trọn vẹn.</p>
             <div class="alwayzz-actions">
