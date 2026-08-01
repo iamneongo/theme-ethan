@@ -48,78 +48,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 5. Sales track carousel (Seamless Infinite Loop)
-  const track = document.querySelector('[data-sales-track]');
-  const scrollBtns = document.querySelectorAll('[data-scroll-sales]');
-  if(track) {
-    const originalChildren = Array.from(track.children);
+  // 5. Sales track carousels
+  const tracks = document.querySelectorAll('[data-sales-track]');
+  tracks.forEach(track => {
+    const container = track.closest('.container') || track.parentElement;
+    const scrollBtns = container ? container.querySelectorAll('[data-scroll-sales]') : [];
     const gap = parseInt(window.getComputedStyle(track).gap) || 18;
-    
-    // Duplicate items for infinite scrolling illusion
-    originalChildren.forEach(child => {
-      const clone = child.cloneNode(true);
-      track.appendChild(clone);
-    });
 
-    const getSetWidth = () => {
-      return originalChildren.reduce((acc, child) => acc + child.offsetWidth + gap, 0);
-    };
-
-    const scrollNext = () => {
-      const firstArticle = track.querySelector('article');
-      const scrollAmount = firstArticle ? firstArticle.offsetWidth + gap : 300;
-      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    };
-
-    let autoScrollTimer = setInterval(scrollNext, 3500);
-
-    const resetTimer = () => {
-      clearInterval(autoScrollTimer);
-      autoScrollTimer = setInterval(scrollNext, 3500);
-    };
-
-    if(scrollBtns) {
+    if (scrollBtns) {
       scrollBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           const dir = parseInt(btn.getAttribute('data-scroll-sales'));
           const firstArticle = track.querySelector('article');
-          const scrollAmount = firstArticle ? firstArticle.offsetWidth + gap : 300;
+          const scrollAmount = firstArticle ? firstArticle.offsetWidth + gap : 320;
           track.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
-          resetTimer();
         });
       });
     }
-
-    // Seamless teleportation logic on scroll
-    let isHandlingScroll = false;
-    track.addEventListener('scroll', () => {
-      if (isHandlingScroll) return;
-      
-      const setWidth = getSetWidth();
-      
-      // If we scrolled deep into the cloned set
-      if (track.scrollLeft >= setWidth) {
-        isHandlingScroll = true;
-        track.style.scrollBehavior = 'auto';
-        track.scrollLeft -= setWidth;
-        void track.offsetHeight; // force reflow
-        track.style.scrollBehavior = 'smooth';
-        setTimeout(() => isHandlingScroll = false, 50);
-      } 
-      // If we scroll backwards past the beginning
-      else if (track.scrollLeft <= 0) {
-        isHandlingScroll = true;
-        track.style.scrollBehavior = 'auto';
-        track.scrollLeft += setWidth;
-        void track.offsetHeight;
-        track.style.scrollBehavior = 'smooth';
-        setTimeout(() => isHandlingScroll = false, 50);
-      }
-    });
-
-    track.addEventListener('mouseenter', () => clearInterval(autoScrollTimer));
-    track.addEventListener('touchstart', () => clearInterval(autoScrollTimer), {passive: true});
-    track.addEventListener('touchend', resetTimer);
 
     // Mouse Drag to Scroll
     let isDown = false;
@@ -128,32 +73,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     track.addEventListener('mousedown', (e) => {
       isDown = true;
-      track.classList.add('is-dragging');
+      track.classList.add('active');
       startX = e.pageX - track.offsetLeft;
       scrollLeft = track.scrollLeft;
-      clearInterval(autoScrollTimer);
     });
 
     track.addEventListener('mouseleave', () => {
       isDown = false;
-      track.classList.remove('is-dragging');
-      resetTimer();
+      track.classList.remove('active');
     });
 
     track.addEventListener('mouseup', () => {
       isDown = false;
-      track.classList.remove('is-dragging');
-      resetTimer();
+      track.classList.remove('active');
     });
 
     track.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
+      if(!isDown) return;
       e.preventDefault();
       const x = e.pageX - track.offsetLeft;
       const walk = (x - startX) * 2;
       track.scrollLeft = scrollLeft - walk;
     });
-  }
+  });
 
   // 6. Property tabs (Search/Hero)
   const searchTabs = document.querySelectorAll('.search-tabs button');

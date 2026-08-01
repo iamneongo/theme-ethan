@@ -257,18 +257,19 @@
 
       <section class="listings">
         <div class="container">
-          <div class="center reveal"><span class="h-kicker light">Portfolio across DFW</span><h2 class="h-section-title">Nhà tại Dallas-Fort Worth</h2></div>
-          <div class="listing-grid">
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="" /><span class="sale">Đang bán</span><div><h3>$495,000</h3><p>3508 Almond Ln, McKinney, TX 75070</p><small>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 3,045 Sq.Ft.</small></div></article>
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="" /><span class="sale">Đang bán</span><div><h3>$99,000</h3><p>LOT 156 Bison Ridge Dr, Stephenville, TX 76401</p><small>Lot / Land</small></div></article>
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>Đã bán</h3><p>2610 Dodson St, Garland, TX 75042</p><small>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</small></div></article>
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>Đã bán</h3><p>5816 Mandarin Ln, Sachse, TX 75048</p><small>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</small></div></article>
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-arlington.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>Đã bán</h3><p>1729 Duster Cir, Arlington, TX 76018</p><small>3 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,457 Sq.Ft. &middot; Buyer</small></div></article>
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-lavon.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>Đã bán</h3><p>697 Poppy Ln, Lavon, TX 75166</p><small>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,791 Sq.Ft. &middot; Buyer</small></div></article>
-            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>Đã bán</h3><p>604 Tidal Dr, McKinney, TX 75071</p><small>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 2,059 Sq.Ft. &middot; Buyer</small></div></article>
-          </div>        </div>
+          <div class="reveal" style="margin-bottom: 24px;"><span class="h-kicker">Portfolio across DFW</span><h2 class="h-section-title">Nhà tại Dallas-Fort Worth</h2></div>
+          <div class="sales-track no-scrollbar" data-sales-track>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="" /><span class="sale">Đang bán</span><div><h3>$495,000 &middot; 3508 Almond Ln, McKinney, TX 75070</h3><p>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 3,045 Sq.Ft.</p></div></article>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="" /><span class="sale">Đang bán</span><div><h3>$99,000 &middot; LOT 156 Bison Ridge Dr, Stephenville, TX 76401</h3><p>Lot / Land</p></div></article>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>2610 Dodson St, Garland, TX 75042</h3><p>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</p></div></article>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>5816 Mandarin Ln, Sachse, TX 75048</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</p></div></article>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-arlington.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>1729 Duster Cir, Arlington, TX 76018</h3><p>3 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,457 Sq.Ft. &middot; Buyer</p></div></article>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-lavon.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>697 Poppy Ln, Lavon, TX 75166</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,791 Sq.Ft. &middot; Buyer</p></div></article>
+            <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>604 Tidal Dr, McKinney, TX 75071</h3><p>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 2,059 Sq.Ft. &middot; Buyer</p></div></article>
+          </div>
+          <div class="carousel-actions"><div><button data-scroll-sales="-1" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button data-scroll-sales="1" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-gold">Xem Tất Cả Nhà</a></div>
+        </div>
       </section>
-      <section class="browse-cta"><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-outline-light">tìm nhà</a></section>
 
       <section class="valuation">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="" />
