@@ -71,10 +71,7 @@
               </a>
               <a class="alwayzz-book" href="tel:+14699895786">
                 <span class="btn-icon-badge"><svg><use href="#icon-phone"/></svg></span>
-                <span class="btn-text-stack">
-                  <strong>Gọi Ethan ngay</strong>
-                  <small>(469) 989-5786</small>
-                </span>
+                <span>Gọi Ethan ngay</span>
               </a>
             </div>
           </div>

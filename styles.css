@@ -1994,9 +1994,11 @@ section.browse-cta {
   padding: 0 26px 0 8px !important;
   border: 1.5px solid #0d2238 !important;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
   gap: 12px !important;
   text-decoration: none !important;
-  text-align: left !important;
   transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s, border-color 0.28s !important;
 }
 
