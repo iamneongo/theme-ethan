@@ -1841,10 +1841,11 @@ section.browse-cta {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15) !important;
 }
 
-.social-links svg, .floating-social svg {
+.social-links svg, .floating-social svg, .social-links img, .floating-social img {
   width: 22px !important;
   height: 22px !important;
   display: block !important;
+  object-fit: contain !important;
 }
 
 /* Style mới cho 2 Nút Bấm Hero Actions (Primary Navy + Book Call Outline) */

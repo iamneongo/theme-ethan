@@ -117,11 +117,11 @@
             <div class="hero-social">
               <span>Follow Â· 15K+ community</span>
               <div class="social-links light">
-                <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#icon-facebook"/></svg></a>
-                <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"/></svg></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#icon-instagram"/></svg></a>
-                <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"/></svg></a>
-                <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><svg><use href="#icon-zillow"/></svg></a>
+                <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>
+                <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>
+                <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>
+                <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>
               </div>
             </div>
           </div>
@@ -323,11 +323,11 @@
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
     <div class="floating-social">
-      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#icon-facebook"/></svg></a>
-      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"/></svg></a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#icon-instagram"/></svg></a>
-      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"/></svg></a>
-      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><svg><use href="#icon-zillow"/></svg></a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>
+      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>
+      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>
     </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.3"></script>

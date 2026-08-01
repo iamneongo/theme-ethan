@@ -337,11 +337,11 @@ function ethan_dao_vanilla_render_drawer_nav(): string
 function ethan_dao_vanilla_render_footer_nav(): string
 {
     $social = '<div class="social-links gold">'
-        . '<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#icon-facebook"/></svg></a>'
-        . '<a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"/></svg></a>'
-        . '<a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#icon-instagram"/></svg></a>'
-        . '<a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"/></svg></a>'
-        . '<a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><svg><use href="#icon-zillow"/></svg></a>'
+        . '<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>'
+        . '<a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>'
+        . '<a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>'
+        . '<a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>'
+        . '<a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>'
         . '</div>';
     return '<div class="footer-nav"><nav>' . ethan_dao_vanilla_flat_menu_links('footer') . '</nav>' . $social . '</div>';
 }
