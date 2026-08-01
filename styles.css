@@ -1117,3 +1117,19 @@ body, p, a, button, input, select, textarea {
   transform: scale(1.05);
 }
 
+
+/* About heading — full handwriting style */
+.about .h-section-title {
+  font-family: "Pattaya", cursive !important;
+  font-weight: 400 !important;
+  font-size: clamp(2.4rem, 5.5vw, 4rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: -.01em !important;
+}
+.about .h-section-title span {
+  font-family: "Pattaya", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: var(--color-ink) !important;
+  opacity: .55;
+}
