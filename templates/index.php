@@ -244,7 +244,7 @@
       <section id="recent" class="recent">
         <div class="container">
           <span class="h-kicker">Proven track record</span>
-          <h2 class="h-section-title">Nhà đã bán gần đây</h2>
+          <h2 class="h-section-title">Nhà đã bán <span>gần đây</span></h2>
           <div class="sales-track no-scrollbar" data-sales-track>
             <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>2610 Dodson St, Garland, TX 75042</h3><p>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</p></div></article>
             <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.20" alt="" /><span>Đã bán</span><div><h3>5816 Mandarin Ln, Sachse, TX 75048</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</p></div></article>
@@ -257,7 +257,7 @@
 
       <section class="listings">
         <div class="container">
-          <div class="reveal" style="margin-bottom: 24px;"><span class="h-kicker">Portfolio across DFW</span><h2 class="h-section-title">Nhà tại Dallas-Fort Worth</h2></div>
+          <div class="reveal" style="margin-bottom: 24px;"><span class="h-kicker">Portfolio across DFW</span><h2 class="h-section-title">Nhà tại <span>Dallas-Fort Worth</span></h2></div>
           <div class="sales-track no-scrollbar" data-sales-track>
             <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="" /><span class="sale">Đang bán</span><div><h3>$495,000 &middot; 3508 Almond Ln, McKinney, TX 75070</h3><p>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 3,045 Sq.Ft.</p></div></article>
             <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="" /><span class="sale">Đang bán</span><div><h3>$99,000 &middot; LOT 156 Bison Ridge Dr, Stephenville, TX 76401</h3><p>Lot / Land</p></div></article>
