@@ -256,4 +256,49 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // 7. Animated Counters for Stats Section
+  const statElements = document.querySelectorAll('.stats-grid strong');
+  if(statElements.length > 0) {
+    const animateCounter = (el) => {
+      const originalText = el.textContent.trim();
+      const prefixMatch = originalText.match(/^[^\d]+/);
+      const suffixMatch = originalText.match(/[^\d]+$/);
+      const prefix = prefixMatch ? prefixMatch[0] : '';
+      const suffix = suffixMatch ? suffixMatch[0] : '';
+      const numMatch = originalText.match(/\d+/);
+      if(!numMatch) return;
+      const targetNum = parseInt(numMatch[0], 10);
+      const duration = 1600;
+      const startTime = performance.now();
+
+      const updateCount = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 4);
+        const currentNum = Math.floor(easeProgress * targetNum);
+        el.textContent = `${prefix}${currentNum}${suffix}`;
+        if(progress < 1) {
+          requestAnimationFrame(updateCount);
+        } else {
+          el.textContent = originalText;
+        }
+      };
+      requestAnimationFrame(updateCount);
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          const strongs = entry.target.querySelectorAll('strong');
+          strongs.forEach(s => animateCounter(s));
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    const statsSection = document.querySelector('.stats');
+    if(statsSection) statsObserver.observe(statsSection);
+  }
 });
+

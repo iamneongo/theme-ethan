@@ -1752,138 +1752,45 @@ section.browse-cta {
   transform: translateY(-1px) !important;
 }
 
-/* Complete Fix for Hero Video Background */
-.alwayzz-banner,
-.ethan-minimal-banner {
+/* Giảm padding section stats & Thêm vạch ngăn line đứng giữa các số */
+.stats {
+  padding: 44px 0 !important;
+  padding-block: 44px !important;
+}
+
+.stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px 0 !important;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+.stats-grid > div {
   position: relative !important;
-  overflow: hidden !important;
-  color: #ffffff !important;
-  background: #090d16 !important;
-  isolation: isolate !important;
+  padding: 0 16px !important;
+  text-align: center !important;
 }
 
-.ethan-minimal-banner:before,
-.ethan-minimal-banner:after {
-  display: none !important;
-}
-
-.hero-video-bg {
+.stats-grid > div:not(:last-child)::after {
+  content: "" !important;
   position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  overflow: hidden !important;
-  z-index: 1 !important;
-  pointer-events: none !important;
-}
-
-.hero-video-bg video {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  filter: brightness(0.65) contrast(1.05) !important;
-}
-
-.hero-video-overlay {
-  position: absolute !important;
-  inset: 0 !important;
-  z-index: 2 !important;
-  background: linear-gradient(180deg, rgba(9, 13, 22, 0.45) 0%, rgba(9, 13, 22, 0.75) 100%) !important;
-  pointer-events: none !important;
-}
-
-.ethan-minimal-banner .alwayzz-shell,
-.alwayzz-banner .alwayzz-shell {
-  position: relative !important;
-  z-index: 5 !important;
-}
-
-.ethan-minimal-banner .alwayzz-bg,
-.alwayzz-banner .alwayzz-bg,
-.ethan-minimal-banner .alwayzz-blur,
-.alwayzz-banner .alwayzz-blur {
-  display: none !important;
-}
-
-.ethan-minimal-banner .alwayzz-content h2,
-.alwayzz-banner .alwayzz-content h2 {
-  color: #ffffff !important;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
-}
-
-.ethan-minimal-banner .alwayzz-content h2 span,
-.alwayzz-banner .alwayzz-content h2 span {
-  color: #ffffff !important;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
-}
-
-.ethan-minimal-banner .alwayzz-content p,
-.alwayzz-banner .alwayzz-content p {
-  color: rgba(255, 255, 255, 0.9) !important;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
-}
-
-.ethan-minimal-banner .alwayzz-trusted p,
-.alwayzz-banner .alwayzz-trusted p {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.ethan-minimal-banner .alwayzz-brand-marquee span,
-.alwayzz-banner .alwayzz-brand-marquee span {
-  color: #ffffff !important;
-  opacity: 0.95 !important;
-}
-
-.ethan-minimal-banner .alwayzz-marquee span,
-.alwayzz-banner .alwayzz-marquee span {
+  right: 0 !important;
+  top: 15% !important;
+  height: 70% !important;
+  width: 1px !important;
   background: rgba(255, 255, 255, 0.18) !important;
-  color: #ffffff !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
-.ethan-minimal-banner .alwayzz-primary,
-.alwayzz-banner .alwayzz-primary {
-  background: #ffffff !important;
-  color: #0f2338 !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+@media (max-width: 767px) {
+  .stats-grid > div:nth-child(2n)::after {
+    display: none !important;
+  }
 }
-
-.ethan-minimal-banner .alwayzz-primary:hover,
-.alwayzz-banner .alwayzz-primary:hover {
-  background: #f1f5f9 !important;
-  transform: translateY(-2px) !important;
-}
-
-.ethan-minimal-banner .alwayzz-book,
-.alwayzz-banner .alwayzz-book {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border-color: rgba(255, 255, 255, 0.35) !important;
-  color: #ffffff !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-}
-
-.ethan-minimal-banner .alwayzz-book strong,
-.alwayzz-banner .alwayzz-book strong {
-  color: #ffffff !important;
-}
-
-.ethan-minimal-banner .alwayzz-book small,
-.alwayzz-banner .alwayzz-book small {
-  color: rgba(255, 255, 255, 0.85) !important;
-}
-
-.ethan-minimal-banner .alwayzz-book i,
-.alwayzz-banner .alwayzz-book i {
-  background: #22c55e !important;
-  box-shadow: 0 0 10px #22c55e !important;
-}
-
-
 
 
 
