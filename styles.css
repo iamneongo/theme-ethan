@@ -1097,9 +1097,9 @@ body, p, a, button, input, select, textarea {
   line-height: 1.05 !important;
 }
 .script-accent {
-  font-family: "Pattaya", cursive !important;
-  font-weight: 400 !important;
-  font-size: 1.25em;
+  font-family: "Dancing Script", cursive !important;
+  font-weight: 700 !important;
+  font-size: 1.3em;
   letter-spacing: -.01em !important;
   color: var(--color-ink);
   display: inline-block;
