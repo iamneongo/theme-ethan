@@ -191,17 +191,38 @@
       <section class="beyond">
         <div class="container">
           <h2 class="h-section-title reveal">Không chỉ là bất động sản cùng <span>Ethan</span></h2>
-          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="Ethan Dao - Mua Ban Nha Dallas Texas" /><div><h3>Ethan Dao - <span>Mua Bán Nhà Dallas Texas</span></h3><p>A YouTube channel hunting for beautiful, well-priced homes across Dallas-Fort Worth, with a new video every week.</p></div></article>
-          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.20" alt="Bất động sản cho cộng đồng Việt" /><div><h3>Bất động sản cho <span>cộng đồng Việt</span></h3><p>Bilingual guidance on buying, selling, and investing in the U.S. - breaking down the process step by step.</p></div></article>
-          <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="Life & Business in Texas" /><div><h3>Cuộc sống và kinh doanh tại <span>Texas</span></h3><p>Behind-the-scenes on TikTok and Instagram - neighborhoods, open houses, and everyday life in DFW.</p></div></article>
+          <article class="media-row reveal">
+            <div class="media-visual-link iframe-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=UUzaeoor-IXyqppQcl59dabw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div>
+              <i></i>
+              <h3><a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw" target="_blank" rel="noopener noreferrer" class="media-copy-link">Ethan Dao - <span>mua bán nhà Dallas Texas</span></a></h3>
+              <p>Kênh YouTube chính thức của Ethan Dao, nơi chia sẻ tour nhà, đánh giá khu vực và cơ hội mua nhà đẹp giá tốt quanh Dallas-Fort Worth.</p>
+            </div>
+          </article>
+          <article class="media-row reveal">
+            <a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw/videos" target="_blank" rel="noopener noreferrer" class="media-visual-link"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.20" alt="Nội dung bất động sản cho cộng đồng Việt" /></a>
+            <div>
+              <i></i>
+              <h3><a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw/videos" target="_blank" rel="noopener noreferrer" class="media-copy-link">bất động sản cho <span>cộng đồng Việt</span></a></h3>
+              <p>Nội dung tập trung vào người Việt mua, bán và đầu tư nhà tại Mỹ, với cách giải thích dễ hiểu về quy trình, chi phí và các lựa chọn thực tế.</p>
+            </div>
+          </article>
+          <article class="media-row reveal">
+            <a href="https://www.tiktok.com/@ethandaorealtor" target="_blank" rel="noopener noreferrer" class="media-visual-link"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="TikTok Ethan Dao Realtor" /></a>
+            <div>
+              <i></i>
+              <h3><a href="https://www.tiktok.com/@ethandaorealtor" target="_blank" rel="noopener noreferrer" class="media-copy-link">cuộc sống và kinh doanh tại <span>Texas</span></a></h3>
+              <p>TikTok của Ethan cập nhật nhanh nhịp sống DFW, nhà mới mở bán, open house và những góc nhìn gần gũi về công việc môi giới mỗi ngày.</p>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="videos">
         <div class="video-grid">
-          <article class="reveal"><h3>Lavon 75166 - New-Build Community, 30 Min from Garland</h3><p>From $300K &middot; Attractive builder incentives</p><a href="#" class="video-thumbnail"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="" /><span><svg><use href="#icon-play"/></svg></span></a></article>
-          <article class="reveal"><h3>Wylie 75098 - 2017 Home in Inspiration Community</h3><p>Corner lot &middot; Highly-rated schools</p><a href="#" class="video-thumbnail"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="" /><span><svg><use href="#icon-play"/></svg></span></a></article>
-          <article class="reveal"><h3>nhà mới tại Lavon, Texas - từ $300K</h3><p>Live in or rent out right away</p><a href="#" class="video-thumbnail"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-lavon.jpg?v=1.0.20" alt="" /><span><svg><use href="#icon-play"/></svg></span></a></article>
+          <article class="reveal"><h3>Lavon 75166 | khu nhà mới cách Garland khu người Việt</h3><p>Video tour thực tế về nhà 4 phòng ngủ tại Lavon, giá từ khoảng $315K.</p><a href="https://www.youtube.com/watch?v=PH7ssSv_eoI" target="_blank" rel="noopener noreferrer" class="video-thumbnail"><img src="https://i.ytimg.com/vi/PH7ssSv_eoI/hqdefault.jpg" alt="Thumbnail video Lavon 75166 của Ethan Dao" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" /><span><svg><use href="#icon-play"/></svg></span></a></article>
+          <article class="reveal"><h3>Wylie 75098 | căn nhà đời 2017 tại Inspiration Community</h3><p>Shorts giới thiệu căn nhà hai mặt tiền trong khu Inspiration, phù hợp gia đình tìm cộng đồng đẹp và trường tốt.</p><a href="https://www.youtube.com/shorts/uxfLLkoGMiE" target="_blank" rel="noopener noreferrer" class="video-thumbnail"><img src="https://i.ytimg.com/vi/uxfLLkoGMiE/hqdefault.jpg" alt="Thumbnail shorts Wylie 75098 của Ethan Dao" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" /><span><svg><use href="#icon-play"/></svg></span></a></article>
+          <article class="reveal"><h3>LAVON TEXAS - Lakepointe review 4 mẫu nhà new build</h3><p>Review 4 mẫu nhà trong tầm giá $300K-$400K, phù hợp để ở hoặc đầu tư tại khu Lavon đang phát triển.</p><a href="https://www.youtube.com/watch?v=qsBWEIueBUs" target="_blank" rel="noopener noreferrer" class="video-thumbnail"><img src="https://i.ytimg.com/vi/qsBWEIueBUs/hqdefault.jpg" alt="Thumbnail video review nhà mới Lavon của Ethan Dao" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" /><span><svg><use href="#icon-play"/></svg></span></a></article>
         </div>
       </section>
 
