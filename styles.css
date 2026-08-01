@@ -1908,7 +1908,8 @@ section.browse-cta {
 /* Style cách điệu chữ viết tay font Pattaya cho section titles */
 .h-section-title span,
 .h-kicker span,
-.recognition h2 span {
+.recognition h2 span,
+.alwayzz-content h2 span {
   font-family: "Pattaya", cursive !important;
   font-style: normal !important;
   font-weight: 400 !important;
