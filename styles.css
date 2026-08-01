@@ -1792,5 +1792,21 @@ section.browse-cta {
   }
 }
 
+/* Background image mới cho Banner Hero */
+.alwayzz-banner .alwayzz-bg,
+.ethan-minimal-banner .alwayzz-bg {
+  background-image: url("assets/images/dallas-skyline-hero-bg.png?v=1.0.21") !important;
+  background-size: cover !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.ethan-minimal-banner .alwayzz-bg:after {
+  display: none !important;
+}
+
+
 
 
