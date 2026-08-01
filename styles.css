@@ -1681,3 +1681,27 @@ section.browse-cta {
   padding: 32px 0 104px !important;
   background: var(--color-ink) !important;
 }
+
+/* Fix mờ cho các badge check-row trong phần Định Giá Nhà */
+.check-row span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  background: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-radius: 999px !important;
+  padding: 8px 18px !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+}
+.check-row svg {
+  width: 16px !important;
+  height: 16px !important;
+  color: #f59e0b !important; /* Brighter gold check icon */
+}
+
