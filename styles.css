@@ -1705,3 +1705,51 @@ section.browse-cta {
   color: #f59e0b !important; /* Brighter gold check icon */
 }
 
+/* Form Định Giá Nhà gọn gàng & Nút màu xanh navy mặc định */
+.valuation form {
+  max-width: 640px !important;
+  margin: 32px auto 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  padding: 6px 6px 6px 22px !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2) !important;
+}
+
+.valuation form input {
+  flex: 1 !important;
+  border: 0 !important;
+  background: transparent !important;
+  padding: 10px 8px !important;
+  color: var(--color-ink, #0f2338) !important;
+  font-size: 15px !important;
+  outline: none !important;
+}
+
+.valuation form button,
+.valuation form .btn-gold,
+.valuation form .btn-ink {
+  background: var(--color-ink, #0f2338) !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  padding: 14px 28px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  box-shadow: 0 4px 14px rgba(15, 35, 56, 0.25) !important;
+  transition: background-color 0.25s, transform 0.25s !important;
+  white-space: nowrap !important;
+  min-height: auto !important;
+}
+
+.valuation form button:hover,
+.valuation form .btn-gold:hover,
+.valuation form .btn-ink:hover {
+  background: #1a3654 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+
