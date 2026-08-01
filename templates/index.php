@@ -116,7 +116,13 @@
             </div>
             <div class="hero-social">
               <span>Follow Â· 15K+ community</span>
-              <div class="social-links light"></div>
+              <div class="social-links light">
+                <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#icon-facebook"/></svg></a>
+                <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"/></svg></a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#icon-instagram"/></svg></a>
+                <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"/></svg></a>
+                <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><svg><use href="#icon-zillow"/></svg></a>
+              </div>
             </div>
           </div>
         </div>
@@ -316,7 +322,13 @@
       </div>
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
-    <div class="floating-social"></div>
+    <div class="floating-social">
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#icon-facebook"/></svg></a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"/></svg></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#icon-instagram"/></svg></a>
+      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"/></svg></a>
+      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><svg><use href="#icon-zillow"/></svg></a>
+    </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.3"></script>
   <?php wp_footer(); ?>
