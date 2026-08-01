@@ -1803,9 +1803,18 @@ section.browse-cta {
   transform: none !important;
 }
 
+@media (max-width: 810px) {
+  .alwayzz-banner .alwayzz-bg,
+  .ethan-minimal-banner .alwayzz-bg {
+    background-position: left center !important;
+    transform: none !important;
+  }
+}
+
 .ethan-minimal-banner .alwayzz-bg:after {
   display: none !important;
 }
+
 
 
 
