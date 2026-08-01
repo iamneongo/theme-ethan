@@ -2066,8 +2066,74 @@ section.browse-cta {
   }
 }
 
+/* ========================================= */
+/* UNIVERSAL BUTTON STYLE STANDARDIZATION    */
+/* ========================================= */
+.btn-outline-dark, .btn-outline-light, .btn-gold, .btn-ink, .btn-primary-navy, .btn-white, .btn-dual, .btn-dual-outline, .valuation form .btn-gold, .valuation form .btn-ink {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  height: 60px !important;
+  border-radius: 999px !important;
+  padding: 0 32px !important;
+  font-family: "Google Sans Flex", var(--font-sans) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s, border-color 0.28s, background-color 0.28s, color 0.28s !important;
+}
 
+.btn-outline-dark:hover, .btn-outline-light:hover, .btn-gold:hover, .btn-ink:hover, .btn-primary-navy:hover, .btn-white:hover, .btn-dual:hover, .btn-dual-outline:hover, .valuation form .btn-gold:hover, .valuation form .btn-ink:hover {
+  transform: translateY(-2px) !important;
+}
 
+/* SOLID PRIMARY VARIANTS */
+.btn-ink, .btn-primary-navy, .btn-dual, .valuation form .btn-ink {
+  background: #0d2238 !important;
+  color: #ffffff !important;
+  border: 4px solid rgba(220, 230, 245, 0.75) !important;
+  box-shadow: 0 6px 20px rgba(13, 34, 56, 0.22) !important;
+}
+.btn-ink:hover, .btn-primary-navy:hover, .btn-dual:hover, .valuation form .btn-ink:hover {
+  box-shadow: 0 10px 28px rgba(13, 34, 56, 0.35) !important;
+  background: #0f2a4a !important;
+}
 
+.btn-gold, .valuation form .btn-gold {
+  background: #c5a880 !important;
+  color: #0d2238 !important;
+  border: 4px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 6px 20px rgba(197, 168, 128, 0.3) !important;
+}
+.btn-gold:hover, .valuation form .btn-gold:hover {
+  background: #d4b994 !important;
+  box-shadow: 0 10px 28px rgba(197, 168, 128, 0.45) !important;
+}
 
+/* OUTLINE SECONDARY VARIANTS */
+.btn-white, .btn-outline-dark, .btn-dual-outline {
+  background: #ffffff !important;
+  color: #0d2238 !important;
+  border: 4px solid rgba(13, 34, 56, 0.2) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+}
+.btn-white:hover, .btn-outline-dark:hover, .btn-dual-outline:hover {
+  border-color: rgba(13, 34, 56, 0.4) !important;
+  box-shadow: 0 8px 24px rgba(13, 34, 56, 0.12) !important;
+  background: #ffffff !important;
+}
 
+.btn-outline-light {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+  border: 4px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1) !important;
+}
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+}
