@@ -216,7 +216,7 @@
         <div class="recognition-grid">
           <img class="reveal" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-awards.png?v=1.0.20" alt="Texas Ace Team Chuyên viên nổi bật crystal awards for Ethan Dao, 2024 and 2025" />
           <div class="reveal">
-            <span class="h-kicker light">Thành Tích</span>
+            <span class="h-kicker light"><span>Thành Tích</span></span>
             <h2 class="h-section-title">Hai năm liên tiếp <span>chuyên viên nổi bật</span></h2>
             <p>Được vinh danh Chuyên viên nổi bật của <strong>Texas Ace Team tại eXp Realty</strong> năm 2024 và 2025. Giải thưởng là sự công nhận cho thành tích bán hàng và kết quả thực tế mang lại cho khách hàng tại DFW.</p>
             <div class="badges"><span>Chuyên viên nổi bật 2024</span><span>Chuyên viên nổi bật 2025</span><span>Cộng Đồng 15K+</span></div>
@@ -226,7 +226,7 @@
 
       <section class="beyond">
         <div class="container">
-          <h2 class="h-section-title reveal">Không chỉ là bất động sản cùng Ethan</h2>
+          <h2 class="h-section-title reveal">Không chỉ là bất động sản cùng <span>Ethan</span></h2>
           <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="Ethan Dao - Mua Ban Nha Dallas Texas" /><div><i></i><h3>Ethan Dao - Mua Bán Nhà Dallas Texas</h3><p>A YouTube channel hunting for beautiful, well-priced homes across Dallas-Fort Worth, with a new video every week.</p></div></article>
           <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.20" alt="Bất động sản cho cộng đồng Việt" /><div><i></i><h3>Bất động sản cho cộng đồng Việt</h3><p>Bilingual guidance on buying, selling, and investing in the U.S. - breaking down the process step by step.</p></div></article>
           <article class="media-row reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="Life & Business in Texas" /><div><i></i><h3>Cuộc sống và kinh doanh tại Texas</h3><p>Behind-the-scenes on TikTok and Instagram - neighborhoods, open houses, and everyday life in DFW.</p></div></article>
