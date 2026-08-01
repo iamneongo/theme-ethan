@@ -1752,8 +1752,9 @@ section.browse-cta {
   transform: translateY(-1px) !important;
 }
 
-/* Video Background cho Hero Section Banner */
-.alwayzz-banner {
+/* Video Background cho Hero Section Banner (Bao gồm cả ethan-minimal-banner) */
+.alwayzz-banner,
+.ethan-minimal-banner {
   position: relative !important;
   overflow: hidden !important;
   color: #ffffff !important;
@@ -1774,76 +1775,99 @@ section.browse-cta {
   height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
-  filter: brightness(0.65) contrast(1.05) !important;
+  filter: brightness(0.7) contrast(1.05) !important;
 }
 
 .hero-video-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
   pointer-events: none !important;
 }
 
-.alwayzz-banner .alwayzz-bg {
+.ethan-minimal-banner .alwayzz-bg,
+.alwayzz-banner .alwayzz-bg,
+.ethan-minimal-banner .alwayzz-blur,
+.alwayzz-banner .alwayzz-blur {
   display: none !important;
 }
 
+.ethan-minimal-banner .alwayzz-content h2,
 .alwayzz-banner .alwayzz-content h2 {
   color: #ffffff !important;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.4) !important;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
 }
 
+.ethan-minimal-banner .alwayzz-content h2 span,
+.alwayzz-banner .alwayzz-content h2 span {
+  color: #ffffff !important; /* Fix chữ alwayzz bị màu đen */
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.ethan-minimal-banner .alwayzz-content p,
 .alwayzz-banner .alwayzz-content p {
-  color: rgba(255, 255, 255, 0.88) !important;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
 }
 
+.ethan-minimal-banner .alwayzz-trusted p,
 .alwayzz-banner .alwayzz-trusted p {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
+.ethan-minimal-banner .alwayzz-brand-marquee span,
 .alwayzz-banner .alwayzz-brand-marquee span {
   color: #ffffff !important;
+  opacity: 0.95 !important;
 }
 
+.ethan-minimal-banner .alwayzz-marquee span,
 .alwayzz-banner .alwayzz-marquee span {
   background: rgba(255, 255, 255, 0.18) !important;
   color: #ffffff !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
+.ethan-minimal-banner .alwayzz-primary,
 .alwayzz-banner .alwayzz-primary {
   background: #ffffff !important;
   color: #0f2338 !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
 }
 
+.ethan-minimal-banner .alwayzz-primary:hover,
 .alwayzz-banner .alwayzz-primary:hover {
   background: #f1f5f9 !important;
   transform: translateY(-2px) !important;
 }
 
+.ethan-minimal-banner .alwayzz-book,
 .alwayzz-banner .alwayzz-book {
   background: rgba(255, 255, 255, 0.15) !important;
-  border-color: rgba(255, 255, 255, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
   color: #ffffff !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
 }
 
+.ethan-minimal-banner .alwayzz-book strong,
 .alwayzz-banner .alwayzz-book strong {
   color: #ffffff !important;
 }
 
+.ethan-minimal-banner .alwayzz-book small,
 .alwayzz-banner .alwayzz-book small {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
-.alwayzz-banner .alwayzz-blur {
-  display: none !important;
+.ethan-minimal-banner .alwayzz-book i,
+.alwayzz-banner .alwayzz-book i {
+  background: #22c55e !important;
+  box-shadow: 0 0 10px #22c55e !important;
 }
+
 
 
 
