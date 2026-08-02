@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.57" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.58" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -41,13 +41,13 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.57" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà <span>có chiến lược</span></h1><p>Ethan kết hợp chiến lược định giá chuẩn xác và video marketing trực quan, giúp nhà của bạn tiếp cận đúng tệp người mua tiềm năng tại DFW.</p></div></section>
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà <span>có chiến lược</span></h1><p>Ethan kết hợp chiến lược định giá chuẩn xác và video marketing trực quan, giúp nhà của bạn tiếp cận đúng tệp người mua tiềm năng tại DFW.</p></div></section>
   
   <section class="page-section">
     <div class="about-grid">
       <div class="portrait reveal">
         <span></span>
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.57" alt="Ethan Dao Realtor" />
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.58" alt="Ethan Dao Realtor" />
       </div>
       <div class="reveal">
         <span class="h-kicker">Người đồng hành tin cậy</span>
@@ -98,7 +98,7 @@
   </section>
 
   <section class="subpage-quote-band">
-    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.57" alt="Bất động sản DFW" />
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bất động sản DFW" />
     <div class="overlay"></div>
     <blockquote class="reveal">“Bán nhà đúng cách không chỉ giúp bạn đạt giá tốt — mà còn mang lại <span>sự an tâm</span> tuyệt đối.”</blockquote>
   </section>
@@ -224,7 +224,7 @@
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
     <div class="floating-social"></div>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.57"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.58"></script>
   <?php wp_footer(); ?>
   </body>
 </html>

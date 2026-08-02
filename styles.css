@@ -2736,3 +2736,22 @@ section.browse-cta {
   letter-spacing: 0 !important;
 }
 
+
+.banner-header .desktop-nav > a, 
+.banner-header .desktop-nav .nav-group button, 
+.banner-header .desktop-nav .nav-group li a {
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+.banner-header .desktop-nav>a.is-current, .banner-header .nav-group>a.is-current {
+  font-family: var(--font-script) !important;
+  text-transform: none !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  background: transparent !important;
+  color: var(--color-ink) !important;
+  letter-spacing: 0 !important;
+}
+
