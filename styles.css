@@ -2701,3 +2701,10 @@ section.browse-cta {
   margin: 0 auto !important;
 }
 
+
+.recognition-grid {
+  max-width: var(--site-container) !important;
+  margin: 0 auto !important;
+  padding-inline: var(--site-gutter) !important;
+}
+
