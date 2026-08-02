@@ -2725,3 +2725,14 @@ section.browse-cta {
   color: var(--color-ink) !important;
 }
 
+
+.banner-header .desktop-nav>a.is-current, .banner-header .nav-group>a.is-current {
+  font-family: var(--font-script) !important;
+  text-transform: none !important;
+  font-size: 26px !important;
+  font-weight: 400 !important;
+  background: transparent !important;
+  color: var(--color-ink) !important;
+  letter-spacing: 0 !important;
+}
+
