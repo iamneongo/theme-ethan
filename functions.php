@@ -289,18 +289,26 @@ function ethan_dao_vanilla_render_primary_nav(): string
         return '<nav class="desktop-nav"></nav>';
     }
 
+    $current_url = rtrim(home_url(wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH)), '/');
+    
     $html = '<nav class="desktop-nav"><a href="tel:+14699895786">(469) 989-5786</a>';
     foreach ($items as $item) {
         $title = esc_html($item['title']);
         $url = esc_url($item['url']);
+        $item_url = rtrim($item['url'], '/');
+        
+        $is_current_class = ($item_url === $current_url) ? ' is-current' : '';
+        
         if (!empty($item['children'])) {
-            $html .= '<div class="nav-group"><a class="nav-top" href="' . $url . '">' . $title . ' <svg><use href="#icon-chevron-down"/></svg></a><ul>';
+            $html .= '<div class="nav-group"><a class="nav-top' . $is_current_class . '" href="' . $url . '">' . $title . ' <svg><use href="#icon-chevron-down"/></svg></a><ul>';
             foreach ($item['children'] as $child) {
-                $html .= '<li><a href="' . esc_url($child['url']) . '">' . esc_html($child['title']) . '</a></li>';
+                $child_item_url = rtrim($child['url'], '/');
+                $child_is_current = ($child_item_url === $current_url) ? ' class="is-current"' : '';
+                $html .= '<li><a href="' . esc_url($child['url']) . '"' . $child_is_current . '>' . esc_html($child['title']) . '</a></li>';
             }
             $html .= '</ul></div>';
         } else {
-            $html .= '<a href="' . $url . '">' . $title . '</a>';
+            $html .= '<a href="' . $url . '" class="' . trim($is_current_class) . '">' . $title . '</a>';
         }
     }
     $html .= '<a class="icon-button" href="' . esc_url(home_url('/browse-properties/')) . '" aria-label="Tìm kiếm"><svg><use href="#icon-search"/></svg></a></nav>';

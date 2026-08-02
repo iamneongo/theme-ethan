@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.55" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.56" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -41,13 +41,13 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.55" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người mua</span><h1>Mua nhà <span>tự tin</span></h1><p>Từ nhà mới xây đến nhà chuyển nhượng, Ethan giúp bạn hiểu rõ thị trường DFW, so sánh từng khu vực và tự tin đàm phán.</p></div></section>
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.56" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người mua</span><h1>Mua nhà <span>tự tin</span></h1><p>Từ nhà mới xây đến nhà chuyển nhượng, Ethan giúp bạn hiểu rõ thị trường DFW, so sánh từng khu vực và tự tin đàm phán.</p></div></section>
   
   <section class="page-section">
     <div class="about-grid">
       <div class="portrait reveal">
         <span></span>
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.55" alt="Ethan Dao Realtor" />
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.56" alt="Ethan Dao Realtor" />
       </div>
       <div class="reveal">
         <span class="h-kicker">Người đồng hành tin cậy</span>
@@ -94,7 +94,7 @@
   </section>
 
   <section class="subpage-quote-band">
-    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.55" alt="Dallas-Fort Worth" />
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.56" alt="Dallas-Fort Worth" />
     <div class="overlay"></div>
     <blockquote class="reveal">“Mua nhà không chỉ là một giao dịch. Đó là bước đầu của một <span>chương mới</span> trong cuộc đời.”</blockquote>
   </section>
@@ -106,19 +106,19 @@
       <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Mỗi khu vực tại Dallas-Fort Worth đều có đặc thù riêng. Ethan giúp bạn hiểu rõ từng vùng để chọn nơi phù hợp nhất.</p>
       <div class="area-grid">
         <a class="area-card reveal" href="<?php echo esc_url(home_url('/lavon/')); ?>">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.55" alt="Lavon" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.56" alt="Lavon" />
           <div class="area-card-overlay"><h3>Lavon</h3><p>Nhà mới xây, giá hợp lý, cộng đồng đang phát triển</p></div>
         </a>
         <a class="area-card reveal" href="<?php echo esc_url(home_url('/mckinney/')); ?>">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.55" alt="McKinney" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.56" alt="McKinney" />
           <div class="area-card-overlay"><h3>McKinney</h3><p>Trường học tốt, tiện ích đầy đủ, gia đình lý tưởng</p></div>
         </a>
         <a class="area-card reveal" href="<?php echo esc_url(home_url('/garland/')); ?>">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.55" alt="Garland" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.56" alt="Garland" />
           <div class="area-card-overlay"><h3>Garland</h3><p>Vị trí trung tâm, đa dạng văn hóa, giá cạnh tranh</p></div>
         </a>
         <a class="area-card reveal" href="<?php echo esc_url(home_url('/neighborhoods/')); ?>">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-cutout.png?v=1.0.55" alt="Wylie & các vùng lân cận" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-cutout.png?v=1.0.56" alt="Wylie & các vùng lân cận" />
           <div class="area-card-overlay"><h3>Wylie & Vùng lân cận</h3><p>Không gian rộng, gần hồ, yên tĩnh và giàu tiềm năng</p></div>
         </a>
       </div>
@@ -159,17 +159,17 @@
       <div class="deals-grid">
         <div class="deal-card reveal">
           <span class="deal-badge">Đã bán</span>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.55" alt="Nhà mới Lavon" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.56" alt="Nhà mới Lavon" />
           <div class="deal-card-info"><h3>$385,000</h3><p>Lavon, TX — 4 bed / 3 bath — 2,450 sqft</p></div>
         </div>
         <div class="deal-card reveal">
           <span class="deal-badge">Đã bán</span>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.55" alt="Nhà McKinney" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.56" alt="Nhà McKinney" />
           <div class="deal-card-info"><h3>$425,000</h3><p>McKinney, TX — 4 bed / 2.5 bath — 2,680 sqft</p></div>
         </div>
         <div class="deal-card reveal">
           <span class="deal-badge">Đã bán</span>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.55" alt="Nhà Garland" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.56" alt="Nhà Garland" />
           <div class="deal-card-info"><h3>$310,000</h3><p>Garland, TX — 3 bed / 2 bath — 1,890 sqft</p></div>
         </div>
       </div>
@@ -227,7 +227,7 @@
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
     <div class="floating-social"></div>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.55"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.56"></script>
   <?php wp_footer(); ?>
   </body>
 </html>
