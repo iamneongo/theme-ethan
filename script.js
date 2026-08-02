@@ -242,5 +242,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const statsSection = document.querySelector('.stats');
     if(statsSection) statsObserver.observe(statsSection);
   }
+  // FAQ Accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('is-open');
+      // Close all siblings
+      item.closest('.faq-list').querySelectorAll('.faq-item.is-open').forEach(i => i.classList.remove('is-open'));
+      // Toggle clicked
+      if (!isOpen) item.classList.add('is-open');
+    });
+  });
 });
 

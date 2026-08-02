@@ -128,33 +128,26 @@ function ethan_dao_vanilla_menu_blueprints(): array
 {
     return [
         'primary' => [
-            ['slug' => 'buy', 'title' => 'Mua nhà', 'children' => ['buy', 'buyer-guide', 'buyer-information', 'browse-properties', 'mckinney', 'lavon', 'garland', 'neighborhoods']],
-            ['slug' => 'sell', 'title' => 'Bán nhà', 'children' => ['sell', 'seller-guide', 'selling-consultation', 'home-valuation', 'past-transactions']],
-            ['slug' => 'properties', 'title' => 'Bất động sản', 'children' => ['properties', 'featured-properties', 'browse-properties', 'past-transactions', 'neighborhoods']],
-            ['slug' => 'about', 'title' => 'Giới thiệu', 'children' => ['about', 'testimonials', 'services', 'blog']],
-            ['slug' => 'contact', 'title' => 'Liên hệ', 'children' => ['contact', 'join-team', 'agent-collaborations']],
+            ['slug' => 'buy', 'title' => 'Mua nhà'],
+            ['slug' => 'sell', 'title' => 'Bán nhà'],
+            ['slug' => 'properties', 'title' => 'Bất động sản'],
+            ['slug' => 'about', 'title' => 'Giới thiệu'],
+            ['slug' => 'contact', 'title' => 'Liên hệ'],
         ],
         'drawer' => [
             ['slug' => 'home', 'title' => 'Trang chủ'],
             ['slug' => 'buy', 'title' => 'Mua nhà'],
             ['slug' => 'sell', 'title' => 'Bán nhà'],
             ['slug' => 'properties', 'title' => 'Bất động sản'],
-            ['slug' => 'about', 'title' => 'Về Ethan'],
-            ['slug' => 'testimonials', 'title' => 'Cảm nhận khách hàng'],
-            ['slug' => 'services', 'title' => 'Dịch vụ'],
-            ['slug' => 'neighborhoods', 'title' => 'Khu vực'],
-            ['slug' => 'home-valuation', 'title' => 'Định giá nhà'],
-            ['slug' => 'blog', 'title' => 'Bài viết'],
+            ['slug' => 'about', 'title' => 'Giới thiệu'],
             ['slug' => 'contact', 'title' => 'Liên hệ'],
-            ['slug' => 'join-team', 'title' => 'Gia nhập đội ngũ'],
         ],
         'footer' => [
             ['slug' => 'home', 'title' => 'Trang chủ'],
-            ['slug' => 'about', 'title' => 'Về Ethan'],
-            ['slug' => 'featured-properties', 'title' => 'Nhà nổi bật'],
-            ['slug' => 'past-transactions', 'title' => 'Nhà đã bán gần đây'],
-            ['slug' => 'neighborhoods', 'title' => 'Khu vực'],
-            ['slug' => 'home-valuation', 'title' => 'Định giá nhà'],
+            ['slug' => 'buy', 'title' => 'Mua nhà'],
+            ['slug' => 'sell', 'title' => 'Bán nhà'],
+            ['slug' => 'properties', 'title' => 'Bất động sản'],
+            ['slug' => 'about', 'title' => 'Giới thiệu'],
             ['slug' => 'contact', 'title' => 'Liên hệ'],
         ],
     ];
@@ -206,7 +199,7 @@ function ethan_dao_vanilla_create_menu_item(int $menu_id, array $item, int $pare
 
 function ethan_dao_vanilla_seed_wordpress_menus(): void
 {
-    if (get_option('ethan_dao_vanilla_menu_seeded') === '2026-07-30-2') {
+    if (get_option('ethan_dao_vanilla_menu_seeded') === '2026-08-02-1') {
         return;
     }
 
@@ -224,27 +217,32 @@ function ethan_dao_vanilla_seed_wordpress_menus(): void
             $menu_id = (int) $menu->term_id;
         }
 
+        // Delete existing items to allow re-seeding
         $existing_items = wp_get_nav_menu_items($menu_id);
-        if (empty($existing_items)) {
-            foreach ($items as $item) {
-                $parent_id = ethan_dao_vanilla_create_menu_item($menu_id, $item);
-                foreach (($item['children'] ?? []) as $child_slug) {
-                    $titles = ethan_dao_vanilla_page_titles();
-                    ethan_dao_vanilla_create_menu_item($menu_id, [
-                        'slug' => $child_slug,
-                        'title' => $titles[$child_slug] ?? $child_slug,
-                    ], $parent_id);
-                }
+        if (!empty($existing_items)) {
+            foreach ($existing_items as $ei) {
+                wp_delete_post($ei->ID, true);
             }
         }
 
-        if (empty($locations[$location])) {
+        foreach ($items as $item) {
+            $parent_id = ethan_dao_vanilla_create_menu_item($menu_id, $item);
+            foreach (($item['children'] ?? []) as $child_slug) {
+                $titles = ethan_dao_vanilla_page_titles();
+                ethan_dao_vanilla_create_menu_item($menu_id, [
+                    'slug' => $child_slug,
+                    'title' => $titles[$child_slug] ?? $child_slug,
+                ], $parent_id);
+            }
+        }
+
+        if (empty($locations[$location]) || $locations[$location] != $menu_id) {
             $locations[$location] = $menu_id;
         }
     }
 
     set_theme_mod('nav_menu_locations', $locations);
-    update_option('ethan_dao_vanilla_menu_seeded', '2026-07-30-2');
+    update_option('ethan_dao_vanilla_menu_seeded', '2026-08-02-1');
 }
 add_action('init', 'ethan_dao_vanilla_seed_wordpress_menus', 30);
 

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -7,10 +7,11 @@
     <meta name="description" content="Referral and collaboration opportunities with Ethan Dao." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Pattaya&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.20" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.53" />
   <?php wp_head(); ?>
-  </head>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
   <body <?php body_class(); ?>><?php wp_body_open(); ?>
     <svg class="svg-sprite" aria-hidden="true">
       <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
@@ -39,9 +40,8 @@
     </header>
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
-    <main class="subpage-main"><section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.20" alt="Hợp tác đại lý" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Sẵn sàng nhận referral</span><h1>Hợp tác đại lý</h1><p>Hợp tác cùng Ethan để hỗ trợ khách mua, khách bán, người chuyển đến DFW và khách hàng cần dịch vụ song ngữ Việt-Anh.</p></div></section>
-<section class="verified-strip"><div class="container"><span>Zillow verified profile data</span><strong>38 total sales</strong><strong>15 sales last 12 months</strong><strong>$368K average price</strong><strong>$188K-$529K price range</strong><strong>Service areas: Dallas, Fort Worth, Arlington</strong></div></section>
-<section class="page-section"><div class="content-split form-layout"><div class="split-media reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.20" alt="Hợp tác đại lý" /></div><div class="form-panel reveal"><span class="h-kicker">Hợp tác đại lý</span><h2>Hợp tác đại lý</h2><p>Gửi thông tin referral và mục tiêu của khách. Ethan sẽ phản hồi kèm kế hoạch chi tiết.</p><form data-static-form><input type="text" placeholder="Họ và tên" /><input type="email" placeholder="Email" /><input type="text" placeholder="Số điện thoại" /><input type="text" placeholder="Công ty môi giới" /><select><option>Bạn quan tâm đến...</option><option>Mua nhà</option><option>Bán nhà</option><option>Đầu tư</option><option>Hợp tác đại lý</option></select><textarea placeholder="Tin nhắn"></textarea><label><input type="checkbox" /> Tôi đồng ý để Ethan Dao liên hệ về dịch vụ bất động sản.</label><button class="btn-gold">Gửi thông tin</button><p class="form-success" hidden>Cảm ơn bạn. Đội ngũ của Ethan sẽ liên hệ sớm.</p></form></div></div></section><section id="work" class="work"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Dallas-Fort Worth home exterior" /><div></div><div class="work-inner reveal"><span class="h-kicker light">Cùng bắt đầu</span><h2 class="h-section-title">Làm việc cùng Ethan</h2><p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn-gold">Kết nối ngay</a></div></section></main>
+    <main class="subpage-main"><section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.53" alt="Hợp tác đại lý" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Sẵn sàng nhận referral</span><h1>Hợp tác <span>đại lý</span></h1><p>Hợp tác cùng Ethan để hỗ trợ khách mua, khách bán, người chuyển đến DFW và khách hàng cần dịch vụ song ngữ Việt-Anh.</p></div></section>
+<section class="page-section"><div class="content-split form-layout"><div class="split-media reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.53" alt="Hợp tác đại lý" /></div><div class="form-panel reveal"><span class="h-kicker">Hợp tác đại lý</span><h2>Hợp tác đại lý</h2><p>Gửi thông tin referral và mục tiêu của khách. Ethan sẽ phản hồi kèm kế hoạch chi tiết.</p><form data-static-form><input type="text" placeholder="Họ và tên" /><input type="email" placeholder="Email" /><input type="text" placeholder="Số điện thoại" /><input type="text" placeholder="Công ty môi giới" /><select><option>Bạn quan tâm đến...</option><option>Mua nhà</option><option>Bán nhà</option><option>Đầu tư</option><option>Hợp tác đại lý</option></select><textarea placeholder="Tin nhắn"></textarea><label><input type="checkbox" /> Tôi đồng ý để Ethan Dao liên hệ về dịch vụ bất động sản.</label><button class="btn-gold">Gửi thông tin</button><p class="form-success" hidden>Cảm ơn bạn. Đội ngũ của Ethan sẽ liên hệ sớm.</p></form></div></div></section><section id="work" class="work"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.53" alt="Dallas-Fort Worth home exterior" /><div></div><div class="work-inner reveal"><span class="h-kicker light">Cùng bắt đầu</span><h2 class="h-section-title">Làm việc <span>cùng Ethan</span></h2><p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn-gold">Kết nối ngay</a></div></section></main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
@@ -53,7 +53,7 @@
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
     <div class="floating-social"></div>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.2"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.53"></script>
   <?php wp_footer(); ?>
   </body>
 </html>

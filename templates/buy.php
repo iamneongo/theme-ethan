@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -7,10 +7,11 @@
     <meta name="description" content="Buy a home across Dallas-Fort Worth with local guidance from Ethan Dao." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Pattaya&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.20" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.53" />
   <?php wp_head(); ?>
-  </head>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
   <body <?php body_class(); ?>><?php wp_body_open(); ?>
     <svg class="svg-sprite" aria-hidden="true">
       <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
@@ -39,9 +40,182 @@
     </header>
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
-    <main class="subpage-main"><section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.20" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người mua</span><h1>Mua nhà tự tin</h1><p>Từ nhà mới xây đến nhà chuyển nhượng, Ethan giúp bạn hiểu rõ thị trường DFW, so sánh từng khu vực và tự tin đàm phán.</p></div></section>
-<section class="verified-strip"><div class="container"><span>Zillow verified profile data</span><strong>38 total sales</strong><strong>15 sales last 12 months</strong><strong>$368K average price</strong><strong>$188K-$529K price range</strong><strong>Service areas: Dallas, Fort Worth, Arlington</strong></div></section>
-<section class="page-section"><div class="content-split"><div class="reveal"><span class="h-kicker">Mua nhà tại DFW</span><h2 class="h-section-title">Lộ trình rõ ràng từ tìm nhà đến closing</h2><p>Việc mua nhà cần sự thấu hiểu, không phải vội vã. Ethan sẽ giúp bạn cân đối phong cách sống, tài chính, giá trị bán lại và thời điểm thích hợp trước khi ra quyết định.</p><div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/buyer-guide/')); ?>">Đọc hướng dẫn</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/buyer-information/')); ?>">Bắt đầu hồ sơ người mua</a></div></div><div class="split-media reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.20" alt="McKinney home" /></div></div></section><section class="page-section dark"><div class="container"><h2 class="h-section-title reveal">Lộ trình người mua</h2><div class="process-timeline"><article class="reveal"><span>01</span><h3>Làm rõ nhu cầu</h3><p>Xác định khoảng giá, thời gian di chuyển, trường học, nhu cầu nhà mới xây và mục tiêu đầu tư trước khi đi xem nhà.</p></article><article class="reveal"><span>02</span><h3>Tài chính và chiến lược</h3><p>Kết nối ngân sách với lựa chọn lender, tiền cần chuẩn bị để closing, ưu đãi builder và sức mạnh offer.</p></article><article class="reveal"><span>03</span><h3>Tìm khu vực phù hợp</h3><p>So sánh các khu vực McKinney, Lavon, Garland, Wylie, Frisco, Dallas và những đô thị mới nổi tại DFW.</p></article><article class="reveal"><span>04</span><h3>Xem nhà và gặp builder</h3><p>Xem nhà với góc nhìn thực tế về layout, tình trạng, giá trị bán lại, ưu đãi và giá trị nâng cấp.</p></article><article class="reveal"><span>05</span><h3>Offer và đàm phán</h3><p>Xây dựng điều khoản, thời gian và contingency với hướng dẫn rõ ràng bằng tiếng Việt hoặc tiếng Anh.</p></article><article class="reveal"><span>06</span><h3>Từ inspection đến closing</h3><p>Theo dõi inspection, appraisal, hạn lender, final walk-through và các chi tiết trong ngày closing.</p></article></div></div></section><section class="newsletter"><div class="newsletter-inner reveal"><h2 class="h-section-title">Kinh nghiệm gặp gỡ sự tận tâm</h2><p>Đăng ký nhận thông tin nhà mới, phân tích thị trường và ưu đãi nổi bật nhất tại Dallas-Fort Worth.</p><form data-static-form><input type="text" placeholder="Họ tên" /><input type="email" placeholder="Email" /><button class="btn-gold">Gửi thông tin</button><p class="form-success" hidden>Cảm ơn bạn. Đội ngũ của Ethan sẽ liên hệ sớm.</p></form><label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a>.</span></label></div></section><section id="work" class="work"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Dallas-Fort Worth home exterior" /><div></div><div class="work-inner reveal"><span class="h-kicker light">Cùng bắt đầu</span><h2 class="h-section-title">Làm việc cùng Ethan</h2><p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn-gold">Kết nối ngay</a></div></section></main>
+    <main class="subpage-main">
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.53" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người mua</span><h1>Mua nhà <span>tự tin</span></h1><p>Từ nhà mới xây đến nhà chuyển nhượng, Ethan giúp bạn hiểu rõ thị trường DFW, so sánh từng khu vực và tự tin đàm phán.</p></div></section>
+  
+  <section class="page-section">
+    <div class="about-grid">
+      <div class="portrait reveal">
+        <span></span>
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.53" alt="Ethan Dao Realtor" />
+      </div>
+      <div class="reveal">
+        <span class="h-kicker">Người đồng hành tin cậy</span>
+        <h2 class="h-section-title">Tại sao chọn Ethan <span>khi mua nhà?</span></h2>
+        <p>Mua một căn nhà không chỉ là giao dịch tài chính, mà là chọn nơi an cư hoặc tài sản tích lũy lâu dài. Ethan hiểu những băn khoăn của bạn và luôn sẵn sàng hỗ trợ bằng kiến thức thực tế, sự minh bạch và sự nhiệt thành. Tôi không hối thúc bạn chốt đơn, tôi hướng dẫn bạn đưa ra quyết định đúng đắn nhất.</p>
+        <p>Với khả năng giao tiếp song ngữ Việt - Anh, Ethan giúp bạn vượt qua rào cản ngôn ngữ, tự tin hiểu rõ từng điều khoản hợp đồng và bảo vệ tối đa quyền lợi của bạn.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section dark">
+    <div class="container">
+      <h2 class="h-section-title reveal">Lộ trình <span>người mua</span></h2>
+      <div class="process-timeline">
+        <article class="reveal"><span>01</span><h3>Làm rõ nhu cầu</h3><p>Xác định khoảng giá, thời gian di chuyển, trường học, nhu cầu nhà mới xây và mục tiêu đầu tư trước khi đi xem nhà.</p></article>
+        <article class="reveal"><span>02</span><h3>Tài chính và chiến lược</h3><p>Kết nối ngân sách với lựa chọn lender, tiền cần chuẩn bị để closing, ưu đãi builder và sức mạnh offer.</p></article>
+        <article class="reveal"><span>03</span><h3>Tìm khu vực phù hợp</h3><p>So sánh các khu vực McKinney, Lavon, Garland, Wylie, Frisco, Dallas và những đô thị mới nổi tại DFW.</p></article>
+        <article class="reveal"><span>04</span><h3>Xem nhà và gặp builder</h3><p>Xem nhà với góc nhìn thực tế về layout, tình trạng, giá trị bán lại, ưu đãi và giá trị nâng cấp.</p></article>
+        <article class="reveal"><span>05</span><h3>Offer và đàm phán</h3><p>Xây dựng điều khoản, thời gian và contingency với hướng dẫn rõ ràng bằng tiếng Việt hoặc tiếng Anh.</p></article>
+        <article class="reveal"><span>06</span><h3>Từ inspection đến closing</h3><p>Theo dõi inspection, appraisal, hạn lender, final walk-through và các chi tiết trong ngày closing.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="background:#f8f6f1">
+    <div class="container center">
+      <span class="h-kicker">Lời hứa của tôi</span>
+      <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết dịch vụ từ <span>A đến Z</span></h2>
+      <div class="service-grid">
+        <article class="reveal">
+          <h3>Tư vấn trung thực</h3>
+          <p>Tôi luôn cung cấp phân tích thị trường thực tế và đánh giá khách quan về từng căn nhà, giúp bạn tránh những sai lầm tốn kém.</p>
+        </article>
+        <article class="reveal">
+          <h3>Đàm phán tối ưu</h3>
+          <p>Sử dụng dữ liệu và kinh nghiệm để đàm phán mức giá tốt nhất, cùng với những điều khoản có lợi nhất cho phía người mua.</p>
+        </article>
+        <article class="reveal">
+          <h3>Hỗ trợ trọn vẹn</h3>
+          <p>Đồng hành cùng bạn từ khi tìm nhà cho đến khi nhận chìa khóa, và luôn sẵn sàng hỗ trợ các vấn đề sau khi dọn vào ở.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="subpage-quote-band">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.53" alt="Dallas-Fort Worth" />
+    <div class="overlay"></div>
+    <blockquote class="reveal">“Mua nhà không chỉ là một giao dịch. Đó là bước đầu của một <span>chương mới</span> trong cuộc đời.”</blockquote>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <span class="h-kicker reveal">Khu vực hoạt động</span>
+      <h2 class="h-section-title reveal">Khám phá các khu vực <span>tại DFW</span></h2>
+      <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Mỗi khu vực tại Dallas-Fort Worth đều có đặc thù riêng. Ethan giúp bạn hiểu rõ từng vùng để chọn nơi phù hợp nhất.</p>
+      <div class="area-grid">
+        <a class="area-card reveal" href="<?php echo esc_url(home_url('/lavon/')); ?>">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.53" alt="Lavon" />
+          <div class="area-card-overlay"><h3>Lavon</h3><p>Nhà mới xây, giá hợp lý, cộng đồng đang phát triển</p></div>
+        </a>
+        <a class="area-card reveal" href="<?php echo esc_url(home_url('/mckinney/')); ?>">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.53" alt="McKinney" />
+          <div class="area-card-overlay"><h3>McKinney</h3><p>Trường học tốt, tiện ích đầy đủ, gia đình lý tưởng</p></div>
+        </a>
+        <a class="area-card reveal" href="<?php echo esc_url(home_url('/garland/')); ?>">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.53" alt="Garland" />
+          <div class="area-card-overlay"><h3>Garland</h3><p>Vị trí trung tâm, đa dạng văn hóa, giá cạnh tranh</p></div>
+        </a>
+        <a class="area-card reveal" href="<?php echo esc_url(home_url('/neighborhoods/')); ?>">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-cutout.png?v=1.0.53" alt="Wylie & các vùng lân cận" />
+          <div class="area-card-overlay"><h3>Wylie & Vùng lân cận</h3><p>Không gian rộng, gần hồ, yên tĩnh và giàu tiềm năng</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="background: #f8f6f1;">
+    <div class="container">
+      <span class="h-kicker reveal">Khách hàng nói gì</span>
+      <h2 class="h-section-title reveal">Cảm nhận từ <span>người mua nhà</span></h2>
+      <div class="testimonial-mini">
+        <article class="reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Ethan giúp quy trình mua nhà mới xây trở nên dễ hiểu và giúp chúng tôi so sánh ưu đãi rõ ràng."</p>
+          <strong>Anh Minh & chị Linh</strong>
+          <small>Mua nhà mới tại Lavon, 2024</small>
+        </article>
+        <article class="reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Ethan giải thích từng bước bằng tiếng Việt và tiếng Anh nên gia đình tôi rất yên tâm."</p>
+          <strong>Gia đình Nguyễn</strong>
+          <small>Mua nhà tại McKinney, 2025</small>
+        </article>
+        <article class="reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Các video khu vực của Ethan giúp chúng tôi biết nên bắt đầu xem nhà ở đâu."</p>
+          <strong>Anh Tuấn & chị Hạnh</strong>
+          <small>Chuyển đến DFW từ California, 2025</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <span class="h-kicker reveal">Thành tích gần đây</span>
+      <h2 class="h-section-title reveal">Giao dịch <span>hoàn tất</span></h2>
+      <div class="deals-grid">
+        <div class="deal-card reveal">
+          <span class="deal-badge">Đã bán</span>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.53" alt="Nhà mới Lavon" />
+          <div class="deal-card-info"><h3>$385,000</h3><p>Lavon, TX — 4 bed / 3 bath — 2,450 sqft</p></div>
+        </div>
+        <div class="deal-card reveal">
+          <span class="deal-badge">Đã bán</span>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.53" alt="Nhà McKinney" />
+          <div class="deal-card-info"><h3>$425,000</h3><p>McKinney, TX — 4 bed / 2.5 bath — 2,680 sqft</p></div>
+        </div>
+        <div class="deal-card reveal">
+          <span class="deal-badge">Đã bán</span>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.53" alt="Nhà Garland" />
+          <div class="deal-card-info"><h3>$310,000</h3><p>Garland, TX — 3 bed / 2 bath — 1,890 sqft</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <span class="h-kicker reveal">Giải đáp thắc mắc</span>
+      <h2 class="h-section-title reveal">Câu hỏi <span>thường gặp</span></h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-q">Tôi cần bao nhiêu tiền để mua nhà tại DFW?</div>
+          <div class="faq-a"><p>Tùy vào chương trình vay, bạn có thể đặt cọc từ 3% đến 20% giá trị nhà. Với nhà trung bình khoảng $350K–$400K tại DFW, bạn cần khoảng $10K–$80K tiền đặt cọc, cộng thêm chi phí closing khoảng 2-3%. Ethan sẽ giúp bạn kết nối với chuyên viên tài chính để tìm phương án tối ưu nhất.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Quy trình mua nhà mất bao lâu?</div>
+          <div class="faq-a"><p>Từ lúc bắt đầu tìm kiếm đến ngày closing thường mất khoảng 30–60 ngày. Tuy nhiên, thời gian tìm nhà phù hợp có thể nhanh hơn hoặc lâu hơn tùy vào nhu cầu và thị trường. Ethan sẽ giúp bạn lên kế hoạch cụ thể ngay từ buổi tư vấn đầu tiên.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Pre-approval là gì và tại sao cần thiết?</div>
+          <div class="faq-a"><p>Pre-approval là thư xác nhận từ ngân hàng cho biết bạn đủ điều kiện vay bao nhiêu. Đây là bước quan trọng giúp bạn biết ngân sách thực tế và tăng sức thuyết phục khi đặt offer. Ethan sẽ giới thiệu bạn với các loan officer uy tín và hỗ trợ song ngữ.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Mua nhà mới xây khác gì so với nhà chuyển nhượng?</div>
+          <div class="faq-a"><p>Nhà mới xây thường có bảo hành từ builder, ưu đãi tài chính (mua lãi suất, hỗ trợ closing cost), và bạn có thể tùy chỉnh thiết kế. Nhà chuyển nhượng thường có vị trí tốt hơn, sân vườn trưởng thành và giá linh hoạt hơn. Ethan sẽ phân tích ưu nhược điểm từng loại dựa trên nhu cầu thực tế của bạn.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Ethan có hỗ trợ giao tiếp bằng tiếng Việt không?</div>
+          <div class="faq-a"><p>Có. Ethan giao tiếp thành thạo cả tiếng Việt và tiếng Anh. Mọi hợp đồng, điều khoản và quy trình đều được giải thích rõ ràng bằng tiếng Việt để bạn hoàn toàn yên tâm trong suốt giao dịch.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section center">
+    <div class="container reveal">
+      <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bạn đã sẵn sàng tìm ngôi <span>nhà mơ ước?</span></h2>
+      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Hãy để tôi giúp hành trình mua nhà của bạn trở nên dễ dàng và an tâm nhất.</p>
+      <div class="button-row" style="justify-content: center;">
+        <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
+        <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
+      </div>
+    </div>
+  </section>
+</main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
@@ -53,7 +227,7 @@
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
     <div class="floating-social"></div>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.2"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.53"></script>
   <?php wp_footer(); ?>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -7,10 +7,11 @@
     <meta name="description" content="Sell a Dallas-Fort Worth home with pricing, preparation, and video-first marketing strategy." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Pattaya&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.20" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.53" />
   <?php wp_head(); ?>
-  </head>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
   <body <?php body_class(); ?>><?php wp_body_open(); ?>
     <svg class="svg-sprite" aria-hidden="true">
       <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
@@ -39,9 +40,179 @@
     </header>
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
-    <main class="subpage-main"><section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà có chiến lược</h1><p>Ethan kết hợp chiến lược định giá chuẩn xác và video marketing trực quan, giúp nhà của bạn tiếp cận đúng tệp người mua tiềm năng tại DFW.</p></div></section>
-<section class="verified-strip"><div class="container"><span>Zillow verified profile data</span><strong>38 total sales</strong><strong>15 sales last 12 months</strong><strong>$368K average price</strong><strong>$188K-$529K price range</strong><strong>Service areas: Dallas, Fort Worth, Arlington</strong></div></section>
-<section class="page-section"><div class="content-split"><div class="split-media reveal"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="DFW home exterior" /></div><div class="reveal"><span class="h-kicker">Chiến lược người bán</span><h2 class="h-section-title">Chuẩn bị, định giá, quảng bá</h2><p>Sự chuẩn bị kỹ lưỡng tạo nên một listing mạnh. Ethan sẽ giúp bạn tối ưu không gian để thu hút người mua và tăng tối đa lợi thế đàm phán.</p><div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/seller-guide/')); ?>">Đọc hướng dẫn</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/selling-consultation/')); ?>">Đặt lịch tư vấn</a></div></div></div></section><section class="page-section dark"><div class="container"><h2 class="h-section-title reveal">Lộ trình người bán</h2><div class="process-timeline"><article class="reveal"><span>01</span><h3>Mục tiêu người bán</h3><p>Thống nhất thời điểm bán, mục tiêu lợi nhuận ròng, mức sửa chữa phù hợp và kế hoạch cho căn nhà tiếp theo.</p></article><article class="reveal"><span>02</span><h3>Khảo sát nhà</h3><p>Xác định các điểm dễ cải thiện, rủi ro khi showing và nâng cấp ảnh hưởng đến cảm nhận của người mua.</p></article><article class="reveal"><span>03</span><h3>Phân tích thị trường</h3><p>Dựa trên giao dịch gần nhà, cạnh tranh hiện tại, nhu cầu người mua và đà tăng trưởng khu vực để định giá có chiến lược.</p></article><article class="reveal"><span>04</span><h3>Kế hoạch chuẩn bị</h3><p>Phối hợp dọn dẹp, định hướng staging, chuẩn bị chụp ảnh và danh sách việc cần làm trước khi lên listing.</p></article><article class="reveal"><span>05</span><h3>Ra mắt bằng video</h3><p>Xây dựng nội dung nhà bán cho YouTube, Facebook, Instagram và TikTok.</p></article><article class="reveal"><span>06</span><h3>MLS và phân phối listing</h3><p>Ra mắt listing với nội dung chỉn chu, thông tin chính xác, hình ảnh/video mạnh và độ phủ tốt đến người mua.</p></article><article class="reveal"><span>07</span><h3>Showing và phản hồi</h3><p>Theo dõi phản hồi người mua, hiệu quả open house và góp ý từ agent để điều chỉnh nhanh.</p></article><article class="reveal"><span>08</span><h3>Đánh giá offer</h3><p>So sánh giá, điều khoản, tài chính, rủi ro appraisal, contingency và độ chắc chắn khi closing.</p></article><article class="reveal"><span>09</span><h3>Quản lý escrow</h3><p>Theo sát inspection, appraisal, title, lender và các mốc closing để giao dịch đi đúng tiến độ.</p></article><article class="reveal"><span>10</span><h3>Closing thành công</h3><p>Chuẩn bị các chi tiết cuối cùng để quá trình chuyển giao gọn gàng, bình tĩnh và trọn vẹn.</p></article></div></div></section><section class="newsletter"><div class="newsletter-inner reveal"><h2 class="h-section-title">Kinh nghiệm gặp gỡ sự tận tâm</h2><p>Đăng ký nhận thông tin nhà mới, phân tích thị trường và ưu đãi nổi bật nhất tại Dallas-Fort Worth.</p><form data-static-form><input type="text" placeholder="Họ tên" /><input type="email" placeholder="Email" /><button class="btn-gold">Gửi thông tin</button><p class="form-success" hidden>Cảm ơn bạn. Đội ngũ của Ethan sẽ liên hệ sớm.</p></form><label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a>.</span></label></div></section><section id="work" class="work"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.20" alt="Dallas-Fort Worth home exterior" /><div></div><div class="work-inner reveal"><span class="h-kicker light">Cùng bắt đầu</span><h2 class="h-section-title">Làm việc cùng Ethan</h2><p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn-gold">Kết nối ngay</a></div></section></main>
+    <main class="subpage-main">
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.53" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà <span>có chiến lược</span></h1><p>Ethan kết hợp chiến lược định giá chuẩn xác và video marketing trực quan, giúp nhà của bạn tiếp cận đúng tệp người mua tiềm năng tại DFW.</p></div></section>
+  
+  <section class="page-section">
+    <div class="about-grid">
+      <div class="portrait reveal">
+        <span></span>
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.53" alt="Ethan Dao Realtor" />
+      </div>
+      <div class="reveal">
+        <span class="h-kicker">Người đồng hành tin cậy</span>
+        <h2 class="h-section-title">Tại sao chọn Ethan <span>khi bán nhà?</span></h2>
+        <p>Bán một căn nhà đòi hỏi nhiều hơn là chỉ đặt một bảng hiệu trước cửa. Đó là cả một chiến lược từ việc định giá chính xác, chuẩn bị hình ảnh/video chuyên nghiệp đến tiếp thị nhắm đúng đối tượng. Ethan sẽ làm tất cả những điều đó thay bạn.</p>
+        <p>Với ưu thế marketing đa kênh (Zillow, YouTube, Facebook, TikTok) và mạng lưới khách hàng song ngữ rộng lớn, căn nhà của bạn sẽ được giới thiệu ở mức độ hoàn hảo nhất, thu hút nhiều sự quan tâm và chốt deal ở mức giá tối ưu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section dark">
+    <div class="container">
+      <h2 class="h-section-title reveal">Lộ trình <span>người bán</span></h2>
+      <div class="process-timeline">
+        <article class="reveal"><span>01</span><h3>Mục tiêu người bán</h3><p>Thống nhất thời điểm bán, mục tiêu lợi nhuận ròng, mức sửa chữa phù hợp và kế hoạch cho căn nhà tiếp theo.</p></article>
+        <article class="reveal"><span>02</span><h3>Khảo sát nhà</h3><p>Xác định các điểm dễ cải thiện, rủi ro khi showing và nâng cấp ảnh hưởng đến cảm nhận của người mua.</p></article>
+        <article class="reveal"><span>03</span><h3>Phân tích thị trường</h3><p>Dựa trên giao dịch gần nhà, cạnh tranh hiện tại, nhu cầu người mua và đà tăng trưởng khu vực để định giá có chiến lược.</p></article>
+        <article class="reveal"><span>04</span><h3>Kế hoạch chuẩn bị</h3><p>Phối hợp dọn dẹp, định hướng staging, chuẩn bị chụp ảnh và danh sách việc cần làm trước khi lên listing.</p></article>
+        <article class="reveal"><span>05</span><h3>Ra mắt bằng video</h3><p>Xây dựng nội dung nhà bán cho YouTube, Facebook, Instagram và TikTok.</p></article>
+        <article class="reveal"><span>06</span><h3>MLS và phân phối listing</h3><p>Ra mắt listing với nội dung chỉn chu, thông tin chính xác, hình ảnh/video mạnh và độ phủ tốt đến người mua.</p></article>
+        <article class="reveal"><span>07</span><h3>Showing và phản hồi</h3><p>Theo dõi phản hồi người mua, hiệu quả open house và góp ý từ agent để điều chỉnh nhanh.</p></article>
+        <article class="reveal"><span>08</span><h3>Đánh giá offer</h3><p>So sánh giá, điều khoản, tài chính, rủi ro appraisal, contingency và độ chắc chắn khi closing.</p></article>
+        <article class="reveal"><span>09</span><h3>Quản lý escrow</h3><p>Theo sát inspection, appraisal, title, lender và các mốc closing để giao dịch đi đúng tiến độ.</p></article>
+        <article class="reveal"><span>10</span><h3>Closing thành công</h3><p>Chuẩn bị các chi tiết cuối cùng để quá trình chuyển giao gọn gàng, bình tĩnh và trọn vẹn.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="background:#f8f6f1">
+    <div class="container center">
+      <span class="h-kicker">Lời hứa của tôi</span>
+      <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết dịch vụ từ <span>A đến Z</span></h2>
+      <div class="service-grid">
+        <article class="reveal">
+          <i class="ph-fill ph-crosshair value-icon"></i><h3>Định giá chính xác</h3>
+          <p>Phân tích thị trường cặn kẽ để đưa ra mức giá niêm yết chiến lược, giúp bạn bán nhanh mà không bị mất giá trị.</p>
+        </article>
+        <article class="reveal">
+          <h3>Marketing đột phá</h3>
+          <p>Sử dụng video tour, hình ảnh flycam và quảng cáo nhắm mục tiêu để đưa ngôi nhà của bạn tiếp cận hàng ngàn người xem.</p>
+        </article>
+        <article class="reveal">
+          <h3>Bảo vệ quyền lợi</h3>
+          <p>Sàng lọc chặt chẽ các offer, loại bỏ rủi ro tài chính từ người mua và bảo vệ lợi ích của bạn trong mọi khâu đàm phán.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="subpage-quote-band">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.53" alt="Bất động sản DFW" />
+    <div class="overlay"></div>
+    <blockquote class="reveal">“Bán nhà đúng cách không chỉ giúp bạn đạt giá tốt — mà còn mang lại <span>sự an tâm</span> tuyệt đối.”</blockquote>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <span class="h-kicker reveal">Tiếp thị chuyên nghiệp</span>
+      <h2 class="h-section-title reveal">Chiến lược Marketing <span>đa kênh</span></h2>
+      <p class="reveal" style="max-width: 620px; margin: 0 auto 48px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Căn nhà của bạn xứng đáng được giới thiệu ở mức tốt nhất. Ethan kết hợp nhiều kênh tiếp thị để tối đa hóa lượt tiếp cận và thu hút đúng tệp người mua.</p>
+      <div class="marketing-grid">
+        <div class="marketing-card reveal">
+          <span class="icon">🎬</span>
+          <h3>Video Tour chuyên nghiệp</h3>
+          <p>Quay video cinematic với drone, walkthrough chi tiết và cắt ghép chuyên nghiệp. Video được đăng trên YouTube, Facebook và TikTok để tiếp cận hàng nghìn người xem.</p>
+        </div>
+        <div class="marketing-card reveal">
+          <span class="icon">📱</span>
+          <h3>Quảng bá đa nền tảng</h3>
+          <p>Listing được đẩy lên Zillow, Realtor.com, Redfin, MLS, đồng thời chạy quảng cáo nhắm mục tiêu trên Facebook và Instagram để tiếp cận đúng đối tượng người mua.</p>
+        </div>
+        <div class="marketing-card reveal">
+          <span class="icon">📸</span>
+          <h3>Staging & Photography</h3>
+          <p>Tư vấn chuẩn bị nhà trước khi chụp, phối hợp với photographer chuyên nghiệp chụp ảnh HDR, twilight và layout chi tiết để tạo ấn tượng mạnh ngay từ bức ảnh đầu tiên.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="background: #f8f6f1;">
+    <div class="container">
+      <span class="h-kicker reveal">Khách hàng nói gì</span>
+      <h2 class="h-section-title reveal">Cảm nhận từ <span>người bán nhà</span></h2>
+      <div class="testimonial-mini">
+        <article class="reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Chiến lược bán nhà rất rõ ràng, có tổ chức và tập trung đúng nhóm người mua. Nhà bán nhanh hơn dự kiến."</p>
+          <strong>Chị Trang Phạm</strong>
+          <small>Bán nhà tại Garland, 2024</small>
+        </article>
+        <article class="reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Video tour của Ethan thu hút rất nhiều lượt xem. Chúng tôi nhận được 3 offer chỉ sau 5 ngày listing."</p>
+          <strong>Anh Hùng & chị Mai</strong>
+          <small>Bán nhà tại McKinney, 2025</small>
+        </article>
+        <article class="reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Phản hồi nhanh, trung thực và bình tĩnh khi đàm phán. Chúng tôi luôn biết bước tiếp theo là gì."</p>
+          <strong>Gia đình Lê</strong>
+          <small>Bán nhà tại Wylie, 2025</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section dark">
+    <div class="container">
+      <span class="h-kicker light reveal">Xem thực tế</span>
+      <h2 class="h-section-title reveal">Video Listing <span>nổi bật</span></h2>
+      <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.6;">Xem cách Ethan giới thiệu và bán nhà cho khách hàng thông qua video marketing chuyên nghiệp.</p>
+      <div class="video-showcase">
+        <div class="video-showcase-card reveal">
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Home Tour Lavon" allowfullscreen></iframe></div>
+          <div class="video-meta"><h3>Home Tour — Lavon New Build</h3><p>Video tour 4 bed/3 bath nhà mới xây tại Lavon với drone footage và walkthrough chi tiết.</p><span class="video-stat">⚡ Bán trong 7 ngày</span></div>
+        </div>
+        <div class="video-showcase-card reveal">
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Home Tour McKinney" allowfullscreen></iframe></div>
+          <div class="video-meta"><h3>Home Tour — McKinney Family Home</h3><p>Cinematic walkthrough căn nhà gia đình tại McKinney, 102% giá niêm yết.</p><span class="video-stat">💰 Bán 102% list price</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <span class="h-kicker reveal">Giải đáp thắc mắc</span>
+      <h2 class="h-section-title reveal">Câu hỏi <span>thường gặp</span></h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-q">Nhà tôi có thể bán được bao nhiêu?</div>
+          <div class="faq-a"><p>Ethan sẽ thực hiện phân tích CMA (Comparative Market Analysis) miễn phí, so sánh nhà bạn với các giao dịch gần đây trong khu vực để đưa ra mức giá cạnh tranh nhất. Liên hệ ngay để nhận bản định giá.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Tôi có cần sửa chữa nhà trước khi bán không?</div>
+          <div class="faq-a"><p>Không nhất thiết phải sửa lớn. Ethan sẽ tư vấn cụ thể những điểm nào cần cải thiện để tăng giá trị mà chi phí hợp lý nhất — như sơn lại, dọn dẹp sân vườn, hoặc thay đổi nhỏ trong phòng bếp/tắm.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Bán nhà mất bao lâu?</div>
+          <div class="faq-a"><p>Tùy vào khu vực và mức giá, trung bình nhà tại DFW bán trong 20–45 ngày. Với chiến lược marketing đa kênh của Ethan, nhiều căn nhà nhận offer chỉ trong tuần đầu tiên listing.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Chi phí bán nhà gồm những gì?</div>
+          <div class="faq-a"><p>Chi phí chính bao gồm hoa hồng môi giới, thuế chuyển nhượng, chi phí title/escrow và các khoản sửa chữa theo thỏa thuận với người mua. Ethan sẽ tính toán chi tiết net sheet để bạn biết chính xác số tiền nhận được sau khi bán.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">Tôi có thể vừa bán nhà cũ vừa mua nhà mới không?</div>
+          <div class="faq-a"><p>Hoàn toàn được. Ethan có kinh nghiệm hỗ trợ cả hai giao dịch song song, đảm bảo timeline khớp nhau để bạn không phải lo về chỗ ở tạm thời. Đây là một trong những dịch vụ mà Ethan xử lý rất thường xuyên.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section center">
+    <div class="container reveal">
+      <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bạn đã sẵn sàng <span>để bán nhà?</span></h2>
+      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Liên hệ với tôi ngay để nhận bản phân tích giá trị nhà hoàn toàn miễn phí.</p>
+      <div class="button-row" style="justify-content: center;">
+        <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
+        <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
+      </div>
+    </div>
+  </section>
+</main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
@@ -53,7 +224,7 @@
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
     <div class="floating-social"></div>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.2"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.53"></script>
   <?php wp_footer(); ?>
   </body>
 </html>
