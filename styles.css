@@ -2103,7 +2103,7 @@ section.browse-cta {
 .marketing-card p { color: #6b6b6b; font-size: 15px; line-height: 1.65; margin: 0; }
 
 /* === Stats Band === */
-.stats-band { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px;  text-align: center; }
+.stats-band { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px; text-align: center; margin-top: 48px; }
 .stats-band .stat-item { }
 .stats-band .stat-number { font-size: clamp(36px, 5vw, 52px); font-weight: 700; letter-spacing: -.04em; color: var(--color-ink); line-height: 1; }
 .stats-band .stat-number span { color: var(--gold) !important; font-family: var(--font-script) !important; font-weight: 400 !important; }
