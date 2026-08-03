@@ -2465,6 +2465,7 @@ section.browse-cta {
 .newsletter .nested-input {
   position: relative;
   display: flex;
+  align-items: center;
   background: var(--color-bg, #fff);
   border: 1px solid var(--color-line, #ddd);
   border-radius: 999px;
@@ -2485,18 +2486,20 @@ section.browse-cta {
   border-radius: 0 !important;
   min-width: 0;
   margin: 0 !important;
-  height: 44px;
+  height: 38px;
 }
 .newsletter .nested-input button {
   border-radius: 999px !important;
   margin: 0 !important;
   padding: 0 28px !important;
   white-space: nowrap;
-  height: 44px;
+  height: 38px !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
+  background-color: #0F2742 !important;
+  color: #fff !important;
 }
 @media (max-width: 480px) {
   .newsletter .nested-input {
@@ -2505,12 +2508,12 @@ section.browse-cta {
   .newsletter .nested-input input {
     padding: 0 10px 0 16px !important;
     font-size: 14px !important;
-    height: 40px;
+    height: 36px;
   }
   .newsletter .nested-input button {
     padding: 0 20px !important;
     font-size: 14px !important;
-    height: 40px;
+    height: 36px !important;
   }
 }
 
