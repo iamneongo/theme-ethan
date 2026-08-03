@@ -39,7 +39,7 @@
                 <?php echo ethan_dao_vanilla_render_primary_nav(); ?>
         <button class="menu-button banner-menu-button" data-open-menu aria-label="Open menu">
           <span>Menu</span>
-          <svg><use href="#icon-chevron-up"/></svg>
+          <svg><use href="#icon-menu"/></svg>
         </button>
       </div>
     </header>

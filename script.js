@@ -1,20 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Mobile Menu
   const menuBtn = document.querySelector('[data-open-menu]');
-  const navbar = document.querySelector('[data-navbar]');
+  const closeBtn = document.querySelector('[data-close-menu]');
+  const sideMenu = document.querySelector('[data-side-menu]');
   const overlay = document.querySelector('[data-menu-overlay]');
-  if(menuBtn && navbar) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = navbar.classList.toggle('menu-open');
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-      if(overlay) overlay.style.display = isOpen ? 'block' : 'none';
-    });
-    if(overlay) overlay.addEventListener('click', () => {
-      navbar.classList.remove('menu-open');
+  
+  const toggleMenu = (forceClose = false) => {
+    if (!sideMenu || !overlay) return;
+    const isOpening = !forceClose && !sideMenu.classList.contains('open');
+    
+    if (isOpening) {
+      sideMenu.classList.add('open');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    } else {
+      sideMenu.classList.remove('open');
+      overlay.classList.remove('open');
       document.body.style.overflow = '';
-      overlay.style.display = 'none';
-    });
-  }
+    }
+  };
+
+  if(menuBtn) menuBtn.addEventListener('click', () => toggleMenu(false));
+  if(closeBtn) closeBtn.addEventListener('click', () => toggleMenu(true));
+  if(overlay) overlay.addEventListener('click', () => toggleMenu(true));
 
   // 2. Reveal animations
   const reveals = document.querySelectorAll('.reveal');
@@ -252,6 +260,35 @@ document.addEventListener("DOMContentLoaded", () => {
       // Toggle clicked
       if (!isOpen) item.classList.add('is-open');
     });
+  });
+
+  // Custom Select
+  const customSelects = document.querySelectorAll('[data-custom-select]');
+  customSelects.forEach(select => {
+    const trigger = select.querySelector('[data-select-trigger]');
+    const options = select.querySelectorAll('[data-select-options] div');
+    const input = select.querySelector('input[type="hidden"]');
+    
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = select.classList.contains('is-open');
+      document.querySelectorAll('[data-custom-select].is-open').forEach(s => s.classList.remove('is-open'));
+      if(!isOpen) select.classList.add('is-open');
+    });
+    
+    options.forEach(opt => {
+      opt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        trigger.innerHTML = opt.innerHTML + ' <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5l3 3 3-3"/></svg>';
+        trigger.classList.add('has-value');
+        input.value = opt.getAttribute('data-value');
+        select.classList.remove('is-open');
+      });
+    });
+  });
+
+  document.addEventListener('click', () => {
+    document.querySelectorAll('[data-custom-select].is-open').forEach(s => s.classList.remove('is-open'));
   });
 });
 
