@@ -56,8 +56,8 @@
 
           <div class="alwayzz-content">
 
-            <h2>Real estate guidance <span>alwayzz</span> with Ethan.</h2>
-            <p>Mua bán nhà Dallas-Fort Worth. Hỗ trợ tiếng Việt và tiếng Anh.</p>
+            <h2>Mua bán nhà <span>Dallas-Fort Worth</span> với Ethan.</h2>
+            <p>Tôi giúp bạn tìm nhà, đàm phán giá và hoàn tất thủ tục bằng tiếng Việt.</p>
             <div class="alwayzz-actions">
               <a class="alwayzz-primary" href="<?php echo esc_url(home_url('/buyer-guide/')); ?>">
                 <span class="btn-icon-badge"><svg><use href="#icon-home"/></svg></span>
@@ -132,10 +132,10 @@
         <div class="about-grid">
           <div class="portrait reveal"><span></span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot-hero.jpg?v=1.0.58" alt="Ethan Dao - Realtor, eXp Realty" /></div>
           <div class="reveal">
-            <span class="h-kicker">Về Ethan</span>
-            <h2 class="h-section-title">Ethan Dao, Realtor tại <span>DFW</span></h2>
-            <p>Ethan Dao (Tùng Đào) bán nhà tại Dallas-Fort Worth, thuộc eXp Realty và Texas Ace Team. Anh lớn lên ở Hà Nội, tốt nghiệp Đại học FPT, và làm việc song ngữ Việt-Anh. Ethan tập trung vào khu vực Lavon, McKinney, Garland và các vùng lân cận, đặc biệt hỗ trợ cộng đồng người Việt tìm nhà tại DFW.</p>
-            <div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Làm việc cùng Ethan</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>">Xem nhà đã bán</a></div>
+            <span class="h-kicker">Giới thiệu ngắn</span>
+            <h2 class="h-section-title">Môi giới bất động sản tại <span>DFW</span></h2>
+            <p>Tôi là Ethan (Tùng Đào), chuyên môi giới nhà ở Dallas-Fort Worth. Tôi làm việc song ngữ để giúp người Việt tìm mua và đàm phán giá nhà ở khu vực Lavon, McKinney, Garland.</p>
+            <div class="button-row"><a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Nhắn tin cho tôi</a><a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>">Xem nhà đã bán</a></div>
           </div>
         </div>
       </section>
@@ -184,13 +184,13 @@
 
       <section class="beyond">
         <div class="container">
-          <h2 class="h-section-title reveal">Không chỉ là bất động sản cùng <span>Ethan</span></h2>
+          <h2 class="h-section-title reveal">Kênh YouTube hướng dẫn mua nhà <span>DFW</span></h2>
           <article class="media-row reveal">
             <div class="media-visual-link iframe-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=UUzaeoor-IXyqppQcl59dabw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw" target="_blank" rel="noopener noreferrer" class="media-copy-link">Ethan Dao - <span>mua bán nhà Dallas Texas</span></a></h3>
-              <p>Kênh YouTube chính thức của Ethan Dao, nơi chia sẻ tour nhà, đánh giá khu vực và cơ hội mua nhà đẹp giá tốt quanh Dallas-Fort Worth.</p>
+              <h3><a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw" target="_blank" rel="noopener noreferrer" class="media-copy-link">Tour nhà thực tế <span>Dallas Texas</span></a></h3>
+              <p>Xem tôi quay chi tiết bên trong từng căn nhà, đánh giá khu dân cư và phân tích mức giá thực tế tại Dallas-Fort Worth.</p>
             </div>
           </article>
           <article class="media-row reveal">
@@ -206,8 +206,8 @@
             </div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/watch?v=PH7ssSv_eoI" target="_blank" rel="noopener noreferrer" class="media-copy-link">tour nhà mới và khu dân cư tại <span>DFW</span></a></h3>
-              <p>Ethan dẫn bạn đi xem nhà thật, phân tích vị trí, mức giá và tiềm năng từng khu vực để dễ hình dung nơi phù hợp trước khi xuống tiền.</p>
+              <h3><a href="https://www.youtube.com/watch?v=PH7ssSv_eoI" target="_blank" rel="noopener noreferrer" class="media-copy-link">Phân tích nhà mới và khu dân cư <span>DFW</span></a></h3>
+              <p>Tôi sẽ đi xem nhà thực tế cùng bạn, đánh giá vị trí và tiềm năng từng khu vực để bạn tự tin quyết định trước khi đặt cọc.</p>
             </div>
           </article>
           <article class="media-row reveal">
@@ -223,8 +223,8 @@
             </div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/watch?v=gxwWX1SubZY" target="_blank" rel="noopener noreferrer" class="media-copy-link">vlog open house và hành trình <span>môi giới</span></a></h3>
-              <p>Những video hậu trường theo chân Ethan đi open house, closing và xử lý công việc thực tế, cho bạn cái nhìn gần hơn về nhịp làm việc tại thị trường Texas.</p>
+              <h3><a href="https://www.youtube.com/watch?v=gxwWX1SubZY" target="_blank" rel="noopener noreferrer" class="media-copy-link">Hậu trường nghề môi giới tại <span>Texas</span></a></h3>
+              <p>Trải nghiệm thực tế công việc của tôi từ lúc mở cửa xem nhà, đàm phán hợp đồng cho đến ngày khách hàng nhận chìa khóa (closing).</p>
             </div>
           </article>
         </div>
@@ -240,8 +240,8 @@
 
       <section id="recent" class="recent">
         <div class="container">
-          <span class="h-kicker">Proven track record</span>
-          <h2 class="h-section-title">Nhà đã bán <span>gần đây</span></h2>
+          <span class="h-kicker">Giao dịch thực tế</span>
+          <h2 class="h-section-title">Những căn nhà tôi vừa <span>chốt xong</span></h2>
           <div class="sales-track no-scrollbar" data-sales-track>
             <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>2610 Dodson St, Garland, TX 75042</h3><p>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</p></div></article>
             <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>5816 Mandarin Ln, Sachse, TX 75048</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</p></div></article>

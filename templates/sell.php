@@ -41,7 +41,7 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà <span>tại DFW</span></h1><p>Ethan giúp bạn định giá chuẩn xác và marketing bằng video, giúp nhà của bạn tiếp cận đúng người mua tại DFW.</p></div></section>
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Người bán nhà</span><h1>Bán nhà <span>tại DFW</span></h1><p>Đừng để căn nhà của bạn bị lướt qua. Tôi dùng video thực tế và quảng cáo nhắm mục tiêu để chốt giá cao nhất.</p></div></section>
   
   <section class="page-section">
     <div class="about-grid">
@@ -50,10 +50,10 @@
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.58" alt="Ethan Dao Realtor" />
       </div>
       <div class="reveal">
-        <span class="h-kicker">Ethan giúp gì</span>
-        <h2 class="h-section-title">Tại sao chọn Ethan <span>khi bán nhà?</span></h2>
-        <p>Bán một căn nhà đòi hỏi nhiều hơn là chỉ đặt bảng hiệu trước cửa. Ethan sẽ giúp bạn định giá chính xác, chuẩn bị hình ảnh/video chuyên nghiệp và tiếp thị đến đúng đối tượng.</p>
-        <p>Với ưu thế marketing đa kênh (Zillow và mạng xã hội) và mạng lưới khách hàng song ngữ, căn nhà của bạn sẽ tiếp cận nhiều người xem và chốt deal với giá tốt.</p>
+        <span class="h-kicker">Cách làm việc</span>
+        <h2 class="h-section-title">Tôi tìm người mua <span>thế nào?</span></h2>
+        <p>Cắm một tấm bảng bán nhà trước sân là không đủ. Tôi quay video drone, chạy quảng cáo trên Facebook/TikTok và đưa nhà lên đầu trang Zillow.</p>
+        <p>Hình ảnh đẹp và độ phủ sóng mạnh chính là lý do giúp nhà bạn nhận được nhiều offer hơn.</p>
       </div>
     </div>
   </section>
@@ -78,8 +78,8 @@
 
   <section class="page-section" style="background:#f8f6f1">
     <div class="container center">
-      <span class="h-kicker">Dịch vụ</span>
-      <h2 class="h-section-title" style="margin-bottom: 48px;">Ethan làm gì <span>cho người bán</span></h2>
+      <span class="h-kicker">Chiến lược</span>
+      <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết của <span>tôi</span></h2>
       <div class="value-grid">
         <div class="value-card reveal">
           <i class="ph-fill ph-crosshair value-icon"></i>
@@ -108,9 +108,9 @@
 
   <section class="page-section">
     <div class="container">
-      <span class="h-kicker reveal">Tiếp thị chuyên nghiệp</span>
-      <h2 class="h-section-title reveal">Chiến lược Marketing <span>đa kênh</span></h2>
-      <p class="reveal" style="max-width: 620px; margin: 0 auto 48px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Căn nhà của bạn xứng đáng được giới thiệu ở mức tốt nhất. Ethan kết hợp nhiều kênh tiếp thị để tối đa hóa lượt tiếp cận và thu hút đúng tệp người mua.</p>
+      <span class="h-kicker reveal">Quảng cáo</span>
+      <h2 class="h-section-title reveal">Cách quảng cáo <span>căn nhà</span></h2>
+      <p class="reveal" style="max-width: 620px; margin: 0 auto 48px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Nhiều người xem thì mới dễ chọn được giá cao. Đây là cách tôi đẩy căn nhà của bạn lên các nền tảng.</p>
       <div class="marketing-grid">
         <div class="marketing-card reveal">
           <i class="ph-fill ph-video-camera icon"></i>
@@ -182,8 +182,8 @@
       <h2 class="h-section-title reveal">Câu hỏi <span>thường gặp</span></h2>
       <div class="faq-list">
         <div class="faq-item reveal">
-          <div class="faq-q">Nhà tôi có thể bán được bao nhiêu?</div>
-          <div class="faq-a"><p>Ethan sẽ thực hiện phân tích CMA (Comparative Market Analysis) miễn phí, so sánh nhà bạn với các giao dịch gần đây trong khu vực để đưa ra mức giá cạnh tranh nhất. Liên hệ ngay để nhận bản định giá.</p></div>
+          <div class="faq-q">Nhà tôi hiện tại giá bao nhiêu?</div>
+          <div class="faq-a"><p>Bạn chỉ cần nhắn địa chỉ, tôi sẽ chạy báo cáo định giá so sánh (CMA) với các căn vừa bán xung quanh để ra con số thực tế nhất. Hoàn toàn miễn phí.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Tôi có cần sửa chữa nhà trước khi bán không?</div>
@@ -208,7 +208,7 @@
   <section class="page-section center">
     <div class="container reveal">
       <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bạn đã sẵn sàng <span>để bán nhà?</span></h2>
-      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Liên hệ với tôi ngay để nhận bản phân tích giá trị nhà hoàn toàn miễn phí.</p>
+      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Nhắn tin địa chỉ nhà, tôi sẽ gửi ngay báo cáo giá thị trường.</p>
       <div class="button-row" style="justify-content: center;">
         <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
         <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
