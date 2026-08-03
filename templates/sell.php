@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -41,7 +41,7 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà <span>có chiến lược</span></h1><p>Ethan kết hợp chiến lược định giá chuẩn xác và video marketing trực quan, giúp nhà của bạn tiếp cận đúng tệp người mua tiềm năng tại DFW.</p></div></section>
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người bán</span><h1>Bán nhà <span>tại DFW</span></h1><p>Ethan giúp bạn định giá chuẩn xác và marketing bằng video, giúp nhà của bạn tiếp cận đúng người mua tại DFW.</p></div></section>
   
   <section class="page-section">
     <div class="about-grid">
@@ -50,10 +50,10 @@
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.58" alt="Ethan Dao Realtor" />
       </div>
       <div class="reveal">
-        <span class="h-kicker">Người đồng hành tin cậy</span>
+        <span class="h-kicker">Ethan giúp gì</span>
         <h2 class="h-section-title">Tại sao chọn Ethan <span>khi bán nhà?</span></h2>
-        <p>Bán một căn nhà đòi hỏi nhiều hơn là chỉ đặt một bảng hiệu trước cửa. Đó là cả một chiến lược từ việc định giá chính xác, chuẩn bị hình ảnh/video chuyên nghiệp đến tiếp thị nhắm đúng đối tượng. Ethan sẽ làm tất cả những điều đó thay bạn.</p>
-        <p>Với ưu thế marketing đa kênh (Zillow, YouTube, Facebook, TikTok) và mạng lưới khách hàng song ngữ rộng lớn, căn nhà của bạn sẽ được giới thiệu ở mức độ hoàn hảo nhất, thu hút nhiều sự quan tâm và chốt deal ở mức giá tối ưu.</p>
+        <p>Bán một căn nhà đòi hỏi nhiều hơn là chỉ đặt bảng hiệu trước cửa. Ethan sẽ giúp bạn định giá chính xác, chuẩn bị hình ảnh/video chuyên nghiệp và tiếp thị đến đúng đối tượng.</p>
+        <p>Với ưu thế marketing đa kênh (Zillow và mạng xã hội) và mạng lưới khách hàng song ngữ, căn nhà của bạn sẽ tiếp cận nhiều người xem và chốt deal với giá tốt.</p>
       </div>
     </div>
   </section>
@@ -64,27 +64,27 @@
       <div class="process-timeline">
         <article class="reveal"><span>01</span><h3>Mục tiêu người bán</h3><p>Thống nhất thời điểm bán, mục tiêu lợi nhuận ròng, mức sửa chữa phù hợp và kế hoạch cho căn nhà tiếp theo.</p></article>
         <article class="reveal"><span>02</span><h3>Khảo sát nhà</h3><p>Xác định các điểm dễ cải thiện, rủi ro khi showing và nâng cấp ảnh hưởng đến cảm nhận của người mua.</p></article>
-        <article class="reveal"><span>03</span><h3>Phân tích thị trường</h3><p>Dựa trên giao dịch gần nhà, cạnh tranh hiện tại, nhu cầu người mua và đà tăng trưởng khu vực để định giá có chiến lược.</p></article>
-        <article class="reveal"><span>04</span><h3>Kế hoạch chuẩn bị</h3><p>Phối hợp dọn dẹp, định hướng staging, chuẩn bị chụp ảnh và danh sách việc cần làm trước khi lên listing.</p></article>
+        <article class="reveal"><span>03</span><h3>Phân tích thị trường</h3><p>Dựa trên giao dịch gần nhà và cạnh tranh hiện tại để định giá chính xác.</p></article>
+        <article class="reveal"><span>04</span><h3>Kế hoạch chuẩn bị</h3><p>Phối hợp dọn dẹp và chuẩn bị chụp ảnh trước khi lên listing.</p></article>
         <article class="reveal"><span>05</span><h3>Ra mắt bằng video</h3><p>Xây dựng nội dung nhà bán cho YouTube, Facebook, Instagram và TikTok.</p></article>
         <article class="reveal"><span>06</span><h3>MLS và phân phối listing</h3><p>Ra mắt listing với nội dung chỉn chu, thông tin chính xác, hình ảnh/video mạnh và độ phủ tốt đến người mua.</p></article>
         <article class="reveal"><span>07</span><h3>Showing và phản hồi</h3><p>Theo dõi phản hồi người mua, hiệu quả open house và góp ý từ agent để điều chỉnh nhanh.</p></article>
         <article class="reveal"><span>08</span><h3>Đánh giá offer</h3><p>So sánh giá, điều khoản, tài chính, rủi ro appraisal, contingency và độ chắc chắn khi closing.</p></article>
-        <article class="reveal"><span>09</span><h3>Quản lý escrow</h3><p>Theo sát inspection, appraisal, title, lender và các mốc closing để giao dịch đi đúng tiến độ.</p></article>
-        <article class="reveal"><span>10</span><h3>Closing thành công</h3><p>Chuẩn bị các chi tiết cuối cùng để quá trình chuyển giao gọn gàng, bình tĩnh và trọn vẹn.</p></article>
+        <article class="reveal"><span>09</span><h3>Quản lý escrow</h3><p>Theo sát inspection, appraisal và các mốc closing để giao dịch đi đúng tiến độ.</p></article>
+        <article class="reveal"><span>10</span><h3>Closing thành công</h3><p>Chuẩn bị các chi tiết cuối cùng để quá trình chuyển giao diễn ra suôn sẻ.</p></article>
       </div>
     </div>
   </section>
 
   <section class="page-section" style="background:#f8f6f1">
     <div class="container center">
-      <span class="h-kicker">Lời hứa của tôi</span>
-      <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết dịch vụ từ <span>A đến Z</span></h2>
+      <span class="h-kicker">Dịch vụ</span>
+      <h2 class="h-section-title" style="margin-bottom: 48px;">Ethan làm gì <span>cho người bán</span></h2>
       <div class="value-grid">
         <div class="value-card reveal">
           <i class="ph-fill ph-crosshair value-icon"></i>
           <h3>Định giá chính xác</h3>
-          <p>Phân tích thị trường cặn kẽ để đưa ra mức giá niêm yết chiến lược, giúp bạn bán nhanh mà không bị mất giá trị.</p>
+          <p>Phân tích thị trường cặn kẽ để đưa ra mức giá niêm yết chính xác, giúp bạn bán nhanh với giá tốt.</p>
         </div>
         <div class="value-card reveal">
           <i class="ph-fill ph-rocket value-icon"></i>
@@ -103,7 +103,7 @@
   <section class="subpage-quote-band">
     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bất động sản DFW" />
     <div class="overlay"></div>
-    <blockquote class="reveal">“Bán nhà đúng cách không chỉ giúp bạn đạt giá tốt — mà còn mang lại <span>sự an tâm</span> tuyệt đối.”</blockquote>
+    
   </section>
 
   <section class="page-section">
@@ -199,7 +199,7 @@
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Tôi có thể vừa bán nhà cũ vừa mua nhà mới không?</div>
-          <div class="faq-a"><p>Hoàn toàn được. Ethan có kinh nghiệm hỗ trợ cả hai giao dịch song song, đảm bảo timeline khớp nhau để bạn không phải lo về chỗ ở tạm thời. Đây là một trong những dịch vụ mà Ethan xử lý rất thường xuyên.</p></div>
+          <div class="faq-a"><p>Được. Ethan có kinh nghiệm hỗ trợ cả hai giao dịch song song, đảm bảo timeline khớp nhau để bạn không phải lo về chỗ ở tạm thời. Đây là dịch vụ mà Ethan xử lý thường xuyên.</p></div>
         </div>
       </div>
     </div>
@@ -237,6 +237,7 @@
   <?php wp_footer(); ?>
   </body>
 </html>
+
 
 
 

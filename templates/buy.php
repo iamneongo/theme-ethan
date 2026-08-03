@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -41,7 +41,7 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.58" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người mua</span><h1>Mua nhà <span>tự tin</span></h1><p>Từ nhà mới xây đến nhà chuyển nhượng, Ethan giúp bạn hiểu rõ thị trường DFW, so sánh từng khu vực và tự tin đàm phán.</p></div></section>
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.58" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Cho người mua</span><h1>Mua nhà <span>tại DFW</span></h1><p>Ethan giúp bạn tìm nhà, so sánh khu vực và đàm phán giá tại Dallas-Fort Worth.</p></div></section>
   
   <section class="page-section">
     <div class="about-grid">
@@ -50,10 +50,10 @@
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.58" alt="Ethan Dao Realtor" />
       </div>
       <div class="reveal">
-        <span class="h-kicker">Người đồng hành tin cậy</span>
-        <h2 class="h-section-title">Tại sao chọn Ethan <span>khi mua nhà?</span></h2>
-        <p>Mua một căn nhà không chỉ là giao dịch tài chính, mà là chọn nơi an cư hoặc tài sản tích lũy lâu dài. Ethan hiểu những băn khoăn của bạn và luôn sẵn sàng hỗ trợ bằng kiến thức thực tế, sự minh bạch và sự nhiệt thành. Tôi không hối thúc bạn chốt đơn, tôi hướng dẫn bạn đưa ra quyết định đúng đắn nhất.</p>
-        <p>Với khả năng giao tiếp song ngữ Việt - Anh, Ethan giúp bạn vượt qua rào cản ngôn ngữ, tự tin hiểu rõ từng điều khoản hợp đồng và bảo vệ tối đa quyền lợi của bạn.</p>
+        <span class="h-kicker">Ethan giúp gì</span>
+        <h2 class="h-section-title">Ethan giúp gì <span>khi bạn mua nhà</span></h2>
+        <p>Bạn chọn nhà, Ethan lo phần còn lại: tìm listing phù hợp, giải thích hợp đồng bằng tiếng Việt, đàm phán với seller và theo sát đến ngày closing.</p>
+        <p>Ethan giải thích hợp đồng và điều khoản bằng tiếng Việt để bạn hiểu rõ trước khi ký.</p>
       </div>
     </div>
   </section>
@@ -74,20 +74,20 @@
 
   <section class="page-section" style="background:#f8f6f1">
     <div class="container center">
-      <span class="h-kicker">Lời hứa của tôi</span>
-      <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết dịch vụ từ <span>A đến Z</span></h2>
+      <span class="h-kicker">Dịch vụ</span>
+      <h2 class="h-section-title" style="margin-bottom: 48px;">Ethan làm gì <span>cho người mua</span></h2>
       <div class="value-grid">
         <div class="value-card reveal">
           <h3>Tư vấn trung thực</h3>
-          <p>Tôi luôn cung cấp phân tích thị trường thực tế và đánh giá khách quan về từng căn nhà, giúp bạn tránh những sai lầm tốn kém.</p>
+          <p>Ethan cho bạn biết giá thị trường thật và nói thẳng nếu căn nhà có vấn đề.</p>
         </div>
         <div class="value-card reveal">
-          <h3>Đàm phán tối ưu</h3>
-          <p>Sử dụng dữ liệu và kinh nghiệm để đàm phán mức giá tốt nhất, cùng với những điều khoản có lợi nhất cho phía người mua.</p>
+          <h3>Đàm phán giá</h3>
+          <p>Ethan dùng dữ liệu comp và kinh nghiệm để đàm phán giá tốt cho bạn.</p>
         </div>
         <div class="value-card reveal">
-          <h3>Hỗ trợ trọn vẹn</h3>
-          <p>Đồng hành cùng bạn từ khi tìm nhà cho đến khi nhận chìa khóa, và luôn sẵn sàng hỗ trợ các vấn đề sau khi dọn vào ở.</p>
+          <h3>Hỗ trợ sau mua</h3>
+          <p>Ethan hỗ trợ từ lúc tìm nhà đến khi nhận chìa khóa, và vẫn giúp nếu bạn cần sau khi dọn vào.</p>
         </div>
       </div>
     </div>
@@ -96,14 +96,14 @@
   <section class="subpage-quote-band">
     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.58" alt="Dallas-Fort Worth" />
     <div class="overlay"></div>
-    <blockquote class="reveal">“Mua nhà không chỉ là một giao dịch. Đó là bước đầu của một <span>chương mới</span> trong cuộc đời.”</blockquote>
+    <blockquote class="reveal">“Tìm đúng căn nhà mất thời gian, nhưng khi tìm được thì <span>xứng đáng</span>.”</blockquote>
   </section>
 
 
   <section class="page-section" style="background: #f8f6f1;">
     <div class="container">
-      <span class="h-kicker reveal">Khách hàng nói gì</span>
-      <h2 class="h-section-title reveal">Cảm nhận từ <span>người mua nhà</span></h2>
+      <span class="h-kicker reveal">Khách hàng</span>
+      <h2 class="h-section-title reveal">Từ <span>khách mua nhà</span></h2>
       <div class="testimonial-mini">
         <article class="reveal">
           <div class="stars">★★★★★</div>
@@ -144,12 +144,12 @@
 
   <section class="page-section">
     <div class="container">
-      <span class="h-kicker reveal">Giải đáp thắc mắc</span>
-      <h2 class="h-section-title reveal">Câu hỏi <span>thường gặp</span></h2>
+      <span class="h-kicker reveal">Hỏi đáp</span>
+      <h2 class="h-section-title reveal">Câu hỏi <span>về mua nhà</span></h2>
       <div class="faq-list">
         <div class="faq-item reveal">
           <div class="faq-q">Tôi cần bao nhiêu tiền để mua nhà tại DFW?</div>
-          <div class="faq-a"><p>Tùy vào chương trình vay, bạn có thể đặt cọc từ 3% đến 20% giá trị nhà. Với nhà trung bình khoảng $350K–$400K tại DFW, bạn cần khoảng $10K–$80K tiền đặt cọc, cộng thêm chi phí closing khoảng 2-3%. Ethan sẽ giúp bạn kết nối với chuyên viên tài chính để tìm phương án tối ưu nhất.</p></div>
+          <div class="faq-a"><p>Tùy vào chương trình vay, bạn có thể đặt cọc từ 3% đến 20% giá trị nhà. Với nhà trung bình khoảng $350K–$400K tại DFW, bạn cần khoảng $10K–$80K tiền đặt cọc, cộng thêm chi phí closing khoảng 2-3%. Ethan sẽ giúp bạn kết nối với chuyên viên tài chính để tìm phương án phù hợp.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Quy trình mua nhà mất bao lâu?</div>
@@ -165,7 +165,7 @@
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Ethan có hỗ trợ giao tiếp bằng tiếng Việt không?</div>
-          <div class="faq-a"><p>Có. Ethan giao tiếp thành thạo cả tiếng Việt và tiếng Anh. Mọi hợp đồng, điều khoản và quy trình đều được giải thích rõ ràng bằng tiếng Việt để bạn hoàn toàn yên tâm trong suốt giao dịch.</p></div>
+          <div class="faq-a"><p>Có. Ethan giao tiếp thành thạo cả tiếng Việt và tiếng Anh. Mọi hợp đồng, điều khoản và quy trình đều được giải thích rõ ràng bằng tiếng Việt để bạn yên tâm trong suốt giao dịch.</p></div>
         </div>
       </div>
     </div>
@@ -173,8 +173,8 @@
 
   <section class="page-section center">
     <div class="container reveal">
-      <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bạn đã sẵn sàng tìm ngôi <span>nhà mơ ước?</span></h2>
-      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Hãy để tôi giúp hành trình mua nhà của bạn trở nên dễ dàng và an tâm nhất.</p>
+      <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bắt đầu <span>tìm nhà</span></h2>
+      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Gọi Ethan hoặc điền form để bắt đầu.</p>
       <div class="button-row" style="justify-content: center;">
         <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
         <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
@@ -203,10 +203,3 @@
   <?php wp_footer(); ?>
   </body>
 </html>
-
-
-
-
-
-
-
