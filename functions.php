@@ -99,28 +99,28 @@ add_action('after_setup_theme', 'ethan_dao_vanilla_register_menu_locations');
 function ethan_dao_vanilla_page_titles(): array
 {
     return [
-        'buy' => 'Mua nhà',
-        'buyer-guide' => 'Hướng dẫn mua nhà',
-        'buyer-information' => 'Thông tin người mua',
-        'browse-properties' => 'Xem nhà',
-        'sell' => 'Bán nhà',
-        'seller-guide' => 'Hướng dẫn bán nhà',
-        'selling-consultation' => 'Tư vấn bán nhà',
-        'home-valuation' => 'Định giá nhà',
-        'past-transactions' => 'Nhà đã bán gần đây',
-        'properties' => 'Bất động sản',
-        'featured-properties' => 'Nhà nổi bật',
-        'neighborhoods' => 'Khu vực',
+        'buy' => 'Mua nhÃ ',
+        'buyer-guide' => 'HÆ°á»›ng dáº«n mua nhÃ ',
+        'buyer-information' => 'ThÃ´ng tin ngÆ°á»i mua',
+        'browse-properties' => 'Xem nhÃ ',
+        'sell' => 'BÃ¡n nhÃ ',
+        'seller-guide' => 'HÆ°á»›ng dáº«n bÃ¡n nhÃ ',
+        'selling-consultation' => 'TÆ° váº¥n bÃ¡n nhÃ ',
+        'home-valuation' => 'Äá»‹nh giÃ¡ nhÃ ',
+        'past-transactions' => 'NhÃ  Ä‘Ã£ bÃ¡n gáº§n Ä‘Ã¢y',
+        'properties' => 'Báº¥t Ä‘á»™ng sáº£n',
+        'featured-properties' => 'NhÃ  ná»•i báº­t',
+        'neighborhoods' => 'Khu vá»±c',
         'mckinney' => 'McKinney',
         'lavon' => 'Lavon',
         'garland' => 'Garland',
-        'about' => 'Về Ethan',
-        'testimonials' => 'Cảm nhận khách hàng',
-        'services' => 'Dịch vụ',
-        'blog' => 'Bài viết',
-        'contact' => 'Liên hệ',
-        'join-team' => 'Gia nhập đội ngũ',
-        'agent-collaborations' => 'Hợp tác đại lý',
+        'about' => 'Vá» Ethan',
+        'testimonials' => 'Cáº£m nháº­n khÃ¡ch hÃ ng',
+        'services' => 'Dá»‹ch vá»¥',
+        'blog' => 'BÃ i viáº¿t',
+        'contact' => 'LiÃªn há»‡',
+        'join-team' => 'Gia nháº­p Ä‘á»™i ngÅ©',
+        'agent-collaborations' => 'Há»£p tÃ¡c Ä‘áº¡i lÃ½',
     ];
 }
 
@@ -128,27 +128,27 @@ function ethan_dao_vanilla_menu_blueprints(): array
 {
     return [
         'primary' => [
-            ['slug' => 'buy', 'title' => 'Mua nhà'],
-            ['slug' => 'sell', 'title' => 'Bán nhà'],
-            ['slug' => 'properties', 'title' => 'Bất động sản'],
-            ['slug' => 'about', 'title' => 'Giới thiệu'],
-            ['slug' => 'contact', 'title' => 'Liên hệ'],
+            ['slug' => 'buy', 'title' => 'Mua nhÃ '],
+            ['slug' => 'sell', 'title' => 'BÃ¡n nhÃ '],
+            ['slug' => 'properties', 'title' => 'Báº¥t Ä‘á»™ng sáº£n'],
+            ['slug' => 'about', 'title' => 'Giá»›i thiá»‡u'],
+            ['slug' => 'contact', 'title' => 'LiÃªn há»‡'],
         ],
         'drawer' => [
-            ['slug' => 'home', 'title' => 'Trang chủ'],
-            ['slug' => 'buy', 'title' => 'Mua nhà'],
-            ['slug' => 'sell', 'title' => 'Bán nhà'],
-            ['slug' => 'properties', 'title' => 'Bất động sản'],
-            ['slug' => 'about', 'title' => 'Giới thiệu'],
-            ['slug' => 'contact', 'title' => 'Liên hệ'],
+            ['slug' => 'home', 'title' => 'Trang chá»§'],
+            ['slug' => 'buy', 'title' => 'Mua nhÃ '],
+            ['slug' => 'sell', 'title' => 'BÃ¡n nhÃ '],
+            ['slug' => 'properties', 'title' => 'Báº¥t Ä‘á»™ng sáº£n'],
+            ['slug' => 'about', 'title' => 'Giá»›i thiá»‡u'],
+            ['slug' => 'contact', 'title' => 'LiÃªn há»‡'],
         ],
         'footer' => [
-            ['slug' => 'home', 'title' => 'Trang chủ'],
-            ['slug' => 'buy', 'title' => 'Mua nhà'],
-            ['slug' => 'sell', 'title' => 'Bán nhà'],
-            ['slug' => 'properties', 'title' => 'Bất động sản'],
-            ['slug' => 'about', 'title' => 'Giới thiệu'],
-            ['slug' => 'contact', 'title' => 'Liên hệ'],
+            ['slug' => 'home', 'title' => 'Trang chá»§'],
+            ['slug' => 'buy', 'title' => 'Mua nhÃ '],
+            ['slug' => 'sell', 'title' => 'BÃ¡n nhÃ '],
+            ['slug' => 'properties', 'title' => 'Báº¥t Ä‘á»™ng sáº£n'],
+            ['slug' => 'about', 'title' => 'Giá»›i thiá»‡u'],
+            ['slug' => 'contact', 'title' => 'LiÃªn há»‡'],
         ],
     ];
 }
@@ -311,7 +311,7 @@ function ethan_dao_vanilla_render_primary_nav(): string
             $html .= '<a href="' . $url . '" class="' . trim($is_current_class) . '">' . $title . '</a>';
         }
     }
-    $html .= '<a class="icon-button" href="' . esc_url(home_url('/browse-properties/')) . '" aria-label="Tìm kiếm"><svg><use href="#icon-search"/></svg></a></nav>';
+    $html .= '<a class="icon-button" href="' . esc_url(home_url('/browse-properties/')) . '" aria-label="TÃ¬m kiáº¿m"><svg><use href="#icon-search"/></svg></a></nav>';
 
     return $html;
 }
@@ -335,7 +335,7 @@ function ethan_dao_vanilla_flat_menu_links(string $location): string
 
 function ethan_dao_vanilla_render_drawer_nav(): string
 {
-    return '<aside class="side-menu" data-side-menu><button class="close-menu" data-close-menu aria-label="Đóng menu">&times;</button><nav>' .
+    return '<aside class="side-menu" data-side-menu><button class="close-menu" data-close-menu aria-label="ÄÃ³ng menu">&times;</button><nav>' .
         ethan_dao_vanilla_flat_menu_links('drawer') .
         '</nav><div class="side-contact"><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandao.realtor@gmail.com">ethandao.realtor@gmail.com</a><div class="social-links gold"></div></div></aside>';
 }
@@ -353,3 +353,9 @@ function ethan_dao_vanilla_render_footer_nav(): string
 }
 
 
+
+function ethan_dao_vanilla_enqueue_assets() {
+    wp_enqueue_style('flickity-css', 'https://cdn.jsdelivr.net/npm/flickity@2.3.0/dist/flickity.min.css', array(), '2.3.0');
+    wp_enqueue_script('flickity-js', 'https://cdn.jsdelivr.net/npm/flickity@2.3.0/dist/flickity.pkgd.min.js', array(), '2.3.0', false);
+}
+add_action('wp_enqueue_scripts', 'ethan_dao_vanilla_enqueue_assets');

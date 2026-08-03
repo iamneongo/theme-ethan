@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -34,7 +34,7 @@
                 <?php echo ethan_dao_vanilla_render_primary_nav(); ?>
         <button class="menu-button banner-menu-button" data-open-menu aria-label="Open menu">
           <span>Menu</span>
-          <svg><use href="#icon-chevron-up"/></svg>
+          <svg><use href="#icon-menu"/></svg>
         </button>
       </div>
     </header>
@@ -80,19 +80,22 @@
     <div class="container center">
       <span class="h-kicker">Lời hứa của tôi</span>
       <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết dịch vụ từ <span>A đến Z</span></h2>
-      <div class="service-grid">
-        <article class="reveal">
-          <i class="ph-fill ph-crosshair value-icon"></i><h3>Định giá chính xác</h3>
+      <div class="value-grid">
+        <div class="value-card reveal">
+          <i class="ph-fill ph-crosshair value-icon"></i>
+          <h3>Định giá chính xác</h3>
           <p>Phân tích thị trường cặn kẽ để đưa ra mức giá niêm yết chiến lược, giúp bạn bán nhanh mà không bị mất giá trị.</p>
-        </article>
-        <article class="reveal">
+        </div>
+        <div class="value-card reveal">
+          <i class="ph-fill ph-rocket value-icon"></i>
           <h3>Marketing đột phá</h3>
           <p>Sử dụng video tour, hình ảnh flycam và quảng cáo nhắm mục tiêu để đưa ngôi nhà của bạn tiếp cận hàng ngàn người xem.</p>
-        </article>
-        <article class="reveal">
+        </div>
+        <div class="value-card reveal">
+          <i class="ph-fill ph-shield-check value-icon"></i>
           <h3>Bảo vệ quyền lợi</h3>
           <p>Sàng lọc chặt chẽ các offer, loại bỏ rủi ro tài chính từ người mua và bảo vệ lợi ích của bạn trong mọi khâu đàm phán.</p>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -110,17 +113,17 @@
       <p class="reveal" style="max-width: 620px; margin: 0 auto 48px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Căn nhà của bạn xứng đáng được giới thiệu ở mức tốt nhất. Ethan kết hợp nhiều kênh tiếp thị để tối đa hóa lượt tiếp cận và thu hút đúng tệp người mua.</p>
       <div class="marketing-grid">
         <div class="marketing-card reveal">
-          <span class="icon">🎬</span>
+          <i class="ph-fill ph-video-camera icon"></i>
           <h3>Video Tour chuyên nghiệp</h3>
           <p>Quay video cinematic với drone, walkthrough chi tiết và cắt ghép chuyên nghiệp. Video được đăng trên YouTube, Facebook và TikTok để tiếp cận hàng nghìn người xem.</p>
         </div>
         <div class="marketing-card reveal">
-          <span class="icon">📱</span>
+          <i class="ph-fill ph-megaphone icon"></i>
           <h3>Quảng bá đa nền tảng</h3>
           <p>Listing được đẩy lên Zillow, Realtor.com, Redfin, MLS, đồng thời chạy quảng cáo nhắm mục tiêu trên Facebook và Instagram để tiếp cận đúng đối tượng người mua.</p>
         </div>
         <div class="marketing-card reveal">
-          <span class="icon">📸</span>
+          <i class="ph-fill ph-camera icon"></i>
           <h3>Staging & Photography</h3>
           <p>Tư vấn chuẩn bị nhà trước khi chụp, phối hợp với photographer chuyên nghiệp chụp ảnh HDR, twilight và layout chi tiết để tạo ấn tượng mạnh ngay từ bức ảnh đầu tiên.</p>
         </div>
@@ -223,7 +226,13 @@
       </div>
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
-    <div class="floating-social"></div>
+    <div class="floating-social">
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>
+      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>
+      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>
+    </div>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.58"></script>
   <?php wp_footer(); ?>
   </body>

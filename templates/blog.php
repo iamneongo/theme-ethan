@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -34,14 +34,14 @@
                 <?php echo ethan_dao_vanilla_render_primary_nav(); ?>
         <button class="menu-button banner-menu-button" data-open-menu aria-label="Open menu">
           <span>Menu</span>
-          <svg><use href="#icon-chevron-up"/></svg>
+          <svg><use href="#icon-menu"/></svg>
         </button>
       </div>
     </header>
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main"><section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-neighborhood.jpg?v=1.0.58" alt="Ghi chú bất động sản DFW" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Bài viết</span><h1>Ghi chú bất <span>động sản DFW</span></h1><p>Ghi chú thị trường, hướng dẫn mua nhà mới xây và kiến thức bất động sản dành cho người mua và người bán.</p></div></section>
-<section class="page-section"><div class="container"><div class="blog-grid"><article class="reveal"><span class="h-eyebrow">Ghi chú thị trường</span><h3>Ưu đãi nhà mới xây tại Lavon</h3><p>Cách so sánh credit từ builder, hỗ trợ giảm lãi suất và gói nâng cấp.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hỏi Ethan</a></article><article class="reveal"><span class="h-eyebrow">Ghi chú thị trường</span><h3>Chọn giữa McKinney và Garland</h3><p>So sánh thực tế về lối sống, di chuyển và ngân sách.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hỏi Ethan</a></article><article class="reveal"><span class="h-eyebrow">Ghi chú thị trường</span><h3>Chuẩn bị nhà tại DFW cho video marketing</h3><p>Những yếu tố giúp video tour nhà chỉn chu và sẵn sàng thu hút người mua.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hỏi Ethan</a></article></div></div></section><section class="newsletter"><div class="newsletter-inner reveal"><h2 class="h-section-title">Kinh nghiệm gặp gỡ <span>sự tận tâm</span></h2><p>Đăng ký nhận thông tin nhà mới, phân tích thị trường và ưu đãi nổi bật nhất tại Dallas-Fort Worth.</p><form data-static-form class="newsletter-form"><div class="nested-input"><input type="email" placeholder="Địa chỉ email của bạn..." required /><button class="btn-gold">Gửi thông tin</button></div><p class="form-success" hidden>Cảm ơn bạn. Đội ngũ của Ethan sẽ liên hệ sớm.</p></form><label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a>.</span></label></div></section><section id="work" class="work"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Dallas-Fort Worth home exterior" /><div></div><div class="work-inner reveal"><span class="h-kicker light">Cùng bắt đầu</span><h2 class="h-section-title">Làm việc <span>cùng Ethan</span></h2><p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn-gold">Kết nối ngay</a></div></section></main>
+<section class="page-section"><div class="container"><div class="blog-grid"><article class="reveal"><span class="h-eyebrow">Ghi chú thị trường</span><h3>Ưu đãi nhà mới xây tại Lavon</h3><p>Cách so sánh credit từ builder, hỗ trợ giảm lãi suất và gói nâng cấp.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hỏi Ethan</a></article><article class="reveal"><span class="h-eyebrow">Ghi chú thị trường</span><h3>Chọn giữa McKinney và Garland</h3><p>So sánh thực tế về lối sống, di chuyển và ngân sách.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hỏi Ethan</a></article><article class="reveal"><span class="h-eyebrow">Ghi chú thị trường</span><h3>Chuẩn bị nhà tại DFW cho video marketing</h3><p>Những yếu tố giúp video tour nhà chỉn chu và sẵn sàng thu hút người mua.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hỏi Ethan</a></article></div></div></section><section class="newsletter"><div class="newsletter-inner reveal"><h2 class="h-section-title">Kinh nghiệm gặp gỡ <span>sự tận tâm</span></h2><p>Đăng ký nhận thông tin nhà mới, phân tích thị trường và ưu đãi nổi bật nhất tại Dallas-Fort Worth.</p><form data-static-form class="newsletter-form"><div class="nested-input"><input type="email" placeholder="Địa chỉ email của bạn..." required /><button class="btn-ink">Gửi thông tin</button></div><p class="form-success" hidden>Cảm ơn bạn. Đội ngũ của Ethan sẽ liên hệ sớm.</p></form></div></section><section id="work" class="work"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Dallas-Fort Worth home exterior" /><div></div><div class="work-inner reveal"><span class="h-kicker light">Cùng bắt đầu</span><h2 class="h-section-title">Làm việc <span>cùng Ethan</span></h2><p>Bạn cần mua bán nhà tại Dallas-Fort Worth? Dù mua, bán hay đầu tư, Ethan sẽ đồng hành cùng bạn với chiến lược thực tế và sự tận tâm từ ngày đầu tiên đến khi closing.</p><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn-gold">Kết nối ngay</a></div></section></main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
@@ -52,7 +52,13 @@
       </div>
       <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
     </footer>
-    <div class="floating-social"></div>
+    <div class="floating-social">
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>
+      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>
+      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>
+    </div>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.58"></script>
   <?php wp_footer(); ?>
   </body>

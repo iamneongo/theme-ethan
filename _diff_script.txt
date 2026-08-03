@@ -1,0 +1,60 @@
+﻿diff --git a/script.js b/script.js
+index 6c99bbd..8a9281f 100644
+--- a/script.js
++++ b/script.js
+@@ -152,11 +152,11 @@ document.addEventListener("DOMContentLoaded", () => {
+ 
+     const locations = [
+       { coords: [33.1976, -96.6154], status: 'sale', title: '3508 Almond Ln', city: 'McKinney, TX 75070', price: '$495,000' },
+-      { coords: [32.9126, -96.6389], status: 'sold', title: '2610 Dodson St', city: 'Garland, TX 75042', price: '─É├ú b├ín' },
+-      { coords: [32.9771, -96.5906], status: 'sold', title: '5816 Mandarin Ln', city: 'Sachse, TX 75048', price: '─É├ú b├ín' },
+-      { coords: [32.6565, -97.1089], status: 'sold', title: '1729 Duster Cir', city: 'Arlington, TX 76018', price: '─É├ú b├ín' },
+-      { coords: [33.0298, -96.4355], status: 'sold', title: '697 Poppy Ln', city: 'Lavon, TX 75166', price: '─É├ú b├ín' },
+-      { coords: [33.2084, -96.6146], status: 'sold', title: '604 Tidal Dr', city: 'McKinney, TX 75071', price: '─É├ú b├ín' },
++      { coords: [32.9126, -96.6389], status: 'sold', title: '2610 Dodson St', city: 'Garland, TX 75042', price: '├ä┬É├â┬ú b├â┬ín' },
++      { coords: [32.9771, -96.5906], status: 'sold', title: '5816 Mandarin Ln', city: 'Sachse, TX 75048', price: '├ä┬É├â┬ú b├â┬ín' },
++      { coords: [32.6565, -97.1089], status: 'sold', title: '1729 Duster Cir', city: 'Arlington, TX 76018', price: '├ä┬É├â┬ú b├â┬ín' },
++      { coords: [33.0298, -96.4355], status: 'sold', title: '697 Poppy Ln', city: 'Lavon, TX 75166', price: '├ä┬É├â┬ú b├â┬ín' },
++      { coords: [33.2084, -96.6146], status: 'sold', title: '604 Tidal Dr', city: 'McKinney, TX 75071', price: '├ä┬É├â┬ú b├â┬ín' },
+       { coords: [32.2207, -98.2023], status: 'sale', title: 'LOT 156 Bison Ridge Dr', city: 'Stephenville, TX 76401', price: '$99,000' }
+     ];
+ 
+@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
+       const marker = L.marker(loc.coords, { icon }).addTo(map);
+       marker.bindPopup(`
+         <div class="map-popup-card">
+-          <span class="popup-tag ${loc.status}">${isSale ? '─Éang b├ín' : '─É├ú b├ín'}</span>
++          <span class="popup-tag ${loc.status}">${isSale ? '├ä┬Éang b├â┬ín' : '├ä┬É├â┬ú b├â┬ín'}</span>
+           <strong>${loc.title}</strong>
+           <small>${loc.city}</small>
+           <div class="popup-price">${loc.price}</div>
+@@ -253,5 +253,28 @@ document.addEventListener("DOMContentLoaded", () => {
+       if (!isOpen) item.classList.add('is-open');
+     });
+   });
+-});
+ 
++  // Flickity initialization
++  const flickityCarousels = document.querySelectorAll('[data-flickity-carousel]');
++  if (flickityCarousels.length > 0 && typeof Flickity !== 'undefined') {
++    flickityCarousels.forEach(container => {
++      const section = container.closest('section') || container.parentElement;
++      const prevBtn = section ? section.querySelector('.flkty-btn-prev') : null;
++      const nextBtn = section ? section.querySelector('.flkty-btn-next') : null;
++
++      const flkty = new Flickity(container, {
++        cellAlign: 'left',
++        contain: true,
++        freeScroll: false,
++        prevNextButtons: false,
++        pageDots: false,
++        draggable: true,
++        wrapAround: false,
++        percentPosition: true
++      });
++
++      if (prevBtn) prevBtn.addEventListener('click', () => flkty.previous(true));
++      if (nextBtn) nextBtn.addEventListener('click', () => flkty.next(true));
++    });
++  }
++});

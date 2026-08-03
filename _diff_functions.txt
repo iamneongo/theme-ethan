@@ -1,0 +1,125 @@
+﻿diff --git a/functions.php b/functions.php
+index f4cdf4b..9250318 100644
+--- a/functions.php
++++ b/functions.php
+@@ -99,28 +99,28 @@ add_action('after_setup_theme', 'ethan_dao_vanilla_register_menu_locations');
+ function ethan_dao_vanilla_page_titles(): array
+ {
+     return [
+-        'buy' => 'Mua nh├á',
+-        'buyer-guide' => 'H╞░ß╗¢ng dß║½n mua nh├á',
+-        'buyer-information' => 'Th├┤ng tin ng╞░ß╗¥i mua',
+-        'browse-properties' => 'Xem nh├á',
+-        'sell' => 'B├ín nh├á',
+-        'seller-guide' => 'H╞░ß╗¢ng dß║½n b├ín nh├á',
+-        'selling-consultation' => 'T╞░ vß║Ñn b├ín nh├á',
+-        'home-valuation' => '─Éß╗ïnh gi├í nh├á',
+-        'past-transactions' => 'Nh├á ─æ├ú b├ín gß║ºn ─æ├óy',
+-        'properties' => 'Bß║Ñt ─æß╗Öng sß║ún',
+-        'featured-properties' => 'Nh├á nß╗òi bß║¡t',
+-        'neighborhoods' => 'Khu vß╗▒c',
++        'buy' => 'Mua nh├â┬á',
++        'buyer-guide' => 'H├å┬░├í┬╗ΓÇ║ng d├í┬║┬½n mua nh├â┬á',
++        'buyer-information' => 'Th├â┬┤ng tin ng├å┬░├í┬╗┬¥i mua',
++        'browse-properties' => 'Xem nh├â┬á',
++        'sell' => 'B├â┬ín nh├â┬á',
++        'seller-guide' => 'H├å┬░├í┬╗ΓÇ║ng d├í┬║┬½n b├â┬ín nh├â┬á',
++        'selling-consultation' => 'T├å┬░ v├í┬║┬Ñn b├â┬ín nh├â┬á',
++        'home-valuation' => '├ä┬É├í┬╗ΓÇ╣nh gi├â┬í nh├â┬á',
++        'past-transactions' => 'Nh├â┬á ├äΓÇÿ├â┬ú b├â┬ín g├í┬║┬ºn ├äΓÇÿ├â┬óy',
++        'properties' => 'B├í┬║┬Ñt ├äΓÇÿ├í┬╗Γäóng s├í┬║┬ún',
++        'featured-properties' => 'Nh├â┬á n├í┬╗ΓÇói b├í┬║┬¡t',
++        'neighborhoods' => 'Khu v├í┬╗┬▒c',
+         'mckinney' => 'McKinney',
+         'lavon' => 'Lavon',
+         'garland' => 'Garland',
+-        'about' => 'Vß╗ü Ethan',
+-        'testimonials' => 'Cß║úm nhß║¡n kh├ích h├áng',
+-        'services' => 'Dß╗ïch vß╗Ñ',
+-        'blog' => 'B├ái viß║┐t',
+-        'contact' => 'Li├¬n hß╗ç',
+-        'join-team' => 'Gia nhß║¡p ─æß╗Öi ng┼⌐',
+-        'agent-collaborations' => 'Hß╗úp t├íc ─æß║íi l├╜',
++        'about' => 'V├í┬╗┬ü Ethan',
++        'testimonials' => 'C├í┬║┬úm nh├í┬║┬¡n kh├â┬ích h├â┬áng',
++        'services' => 'D├í┬╗ΓÇ╣ch v├í┬╗┬Ñ',
++        'blog' => 'B├â┬ái vi├í┬║┬┐t',
++        'contact' => 'Li├â┬¬n h├í┬╗ΓÇí',
++        'join-team' => 'Gia nh├í┬║┬¡p ├äΓÇÿ├í┬╗Γäói ng├à┬⌐',
++        'agent-collaborations' => 'H├í┬╗┬úp t├â┬íc ├äΓÇÿ├í┬║┬íi l├â┬╜',
+     ];
+ }
+ 
+@@ -128,27 +128,27 @@ function ethan_dao_vanilla_menu_blueprints(): array
+ {
+     return [
+         'primary' => [
+-            ['slug' => 'buy', 'title' => 'Mua nh├á'],
+-            ['slug' => 'sell', 'title' => 'B├ín nh├á'],
+-            ['slug' => 'properties', 'title' => 'Bß║Ñt ─æß╗Öng sß║ún'],
+-            ['slug' => 'about', 'title' => 'Giß╗¢i thiß╗çu'],
+-            ['slug' => 'contact', 'title' => 'Li├¬n hß╗ç'],
++            ['slug' => 'buy', 'title' => 'Mua nh├â┬á'],
++            ['slug' => 'sell', 'title' => 'B├â┬ín nh├â┬á'],
++            ['slug' => 'properties', 'title' => 'B├í┬║┬Ñt ├äΓÇÿ├í┬╗Γäóng s├í┬║┬ún'],
++            ['slug' => 'about', 'title' => 'Gi├í┬╗ΓÇ║i thi├í┬╗ΓÇíu'],
++            ['slug' => 'contact', 'title' => 'Li├â┬¬n h├í┬╗ΓÇí'],
+         ],
+         'drawer' => [
+-            ['slug' => 'home', 'title' => 'Trang chß╗º'],
+-            ['slug' => 'buy', 'title' => 'Mua nh├á'],
+-            ['slug' => 'sell', 'title' => 'B├ín nh├á'],
+-            ['slug' => 'properties', 'title' => 'Bß║Ñt ─æß╗Öng sß║ún'],
+-            ['slug' => 'about', 'title' => 'Giß╗¢i thiß╗çu'],
+-            ['slug' => 'contact', 'title' => 'Li├¬n hß╗ç'],
++            ['slug' => 'home', 'title' => 'Trang ch├í┬╗┬º'],
++            ['slug' => 'buy', 'title' => 'Mua nh├â┬á'],
++            ['slug' => 'sell', 'title' => 'B├â┬ín nh├â┬á'],
++            ['slug' => 'properties', 'title' => 'B├í┬║┬Ñt ├äΓÇÿ├í┬╗Γäóng s├í┬║┬ún'],
++            ['slug' => 'about', 'title' => 'Gi├í┬╗ΓÇ║i thi├í┬╗ΓÇíu'],
++            ['slug' => 'contact', 'title' => 'Li├â┬¬n h├í┬╗ΓÇí'],
+         ],
+         'footer' => [
+-            ['slug' => 'home', 'title' => 'Trang chß╗º'],
+-            ['slug' => 'buy', 'title' => 'Mua nh├á'],
+-            ['slug' => 'sell', 'title' => 'B├ín nh├á'],
+-            ['slug' => 'properties', 'title' => 'Bß║Ñt ─æß╗Öng sß║ún'],
+-            ['slug' => 'about', 'title' => 'Giß╗¢i thiß╗çu'],
+-            ['slug' => 'contact', 'title' => 'Li├¬n hß╗ç'],
++            ['slug' => 'home', 'title' => 'Trang ch├í┬╗┬º'],
++            ['slug' => 'buy', 'title' => 'Mua nh├â┬á'],
++            ['slug' => 'sell', 'title' => 'B├â┬ín nh├â┬á'],
++            ['slug' => 'properties', 'title' => 'B├í┬║┬Ñt ├äΓÇÿ├í┬╗Γäóng s├í┬║┬ún'],
++            ['slug' => 'about', 'title' => 'Gi├í┬╗ΓÇ║i thi├í┬╗ΓÇíu'],
++            ['slug' => 'contact', 'title' => 'Li├â┬¬n h├í┬╗ΓÇí'],
+         ],
+     ];
+ }
+@@ -311,7 +311,7 @@ function ethan_dao_vanilla_render_primary_nav(): string
+             $html .= '<a href="' . $url . '" class="' . trim($is_current_class) . '">' . $title . '</a>';
+         }
+     }
+-    $html .= '<a class="icon-button" href="' . esc_url(home_url('/browse-properties/')) . '" aria-label="T├¼m kiß║┐m"><svg><use href="#icon-search"/></svg></a></nav>';
++    $html .= '<a class="icon-button" href="' . esc_url(home_url('/browse-properties/')) . '" aria-label="T├â┬¼m ki├í┬║┬┐m"><svg><use href="#icon-search"/></svg></a></nav>';
+ 
+     return $html;
+ }
+@@ -335,7 +335,7 @@ function ethan_dao_vanilla_flat_menu_links(string $location): string
+ 
+ function ethan_dao_vanilla_render_drawer_nav(): string
+ {
+-    return '<aside class="side-menu" data-side-menu><button class="close-menu" data-close-menu aria-label="─É├│ng menu">&times;</button><nav>' .
++    return '<aside class="side-menu" data-side-menu><button class="close-menu" data-close-menu aria-label="├ä┬É├â┬│ng menu">&times;</button><nav>' .
+         ethan_dao_vanilla_flat_menu_links('drawer') .
+         '</nav><div class="side-contact"><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandao.realtor@gmail.com">ethandao.realtor@gmail.com</a><div class="social-links gold"></div></div></aside>';
+ }
+@@ -353,3 +353,9 @@ function ethan_dao_vanilla_render_footer_nav(): string
+ }
+ 
+ 
++
++function ethan_dao_vanilla_enqueue_assets() {
++    wp_enqueue_style('flickity-css', 'https://cdn.jsdelivr.net/npm/flickity@2.3.0/dist/flickity.min.css', array(), '2.3.0');
++    wp_enqueue_script('flickity-js', 'https://cdn.jsdelivr.net/npm/flickity@2.3.0/dist/flickity.pkgd.min.js', array(), '2.3.0', false);
++}
++add_action('wp_enqueue_scripts', 'ethan_dao_vanilla_enqueue_assets');

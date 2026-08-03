@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Repro - recent section spacing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/styles.css?ver=1.0.58" />
+</head>
+<body>
+  <div style="height:88px;background:#fff;border-bottom:1px solid #eee;display:flex;align-items:center;padding:0 40px;">
+    <strong style="font-family:'Dancing Script',cursive;font-size:28px;">Ethan Dao</strong>
+    <span style="margin-left:auto;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">(469) 989-5786 &nbsp; Mua nhà &nbsp; Bán nhà &nbsp; Bất động sản &nbsp; Giới thiệu &nbsp; Liên hệ</span>
+  </div>
+
+  <section id="recent" class="recent">
+    <div class="container">
+      <span class="h-kicker">Proven track record</span>
+      <h2 class="h-section-title">Nhà đã bán <span>gần đây</span></h2>
+      <div class="swiper sales-swiper" data-sales-swiper><div class="swiper-wrapper sales-track">
+        <article class="swiper-slide">
+          <img src="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/assets/images/ethan-listing-garland.jpg?v=1.0.58" alt="" />
+          <div>
+            <h3>2610 Dodson St, Garland, TX 75042</h3>
+            <div class="property-meta">
+              <span><i class="ph ph-bed"></i> 2 Bed</span>
+              <span><i class="ph ph-bathtub"></i> 3 Bath</span>
+              <span><i class="ph ph-ruler"></i> 1,542 Sq.Ft.</span>
+              <span><i class="ph ph-tag"></i> Seller</span>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <img src="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/assets/images/ethan-home-8.jpg?v=1.0.58" alt="" />
+          <div>
+            <h3>5816 Mandarin Ln, Sachse, TX 75048</h3>
+            <div class="property-meta">
+              <span><i class="ph ph-bed"></i> 4 Bed</span>
+              <span><i class="ph ph-bathtub"></i> 2 Bath</span>
+              <span><i class="ph ph-ruler"></i> 2,081 Sq.Ft.</span>
+              <span><i class="ph ph-tag"></i> Buyer</span>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <img src="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/assets/images/ethan-listing-arlington.jpg?v=1.0.58" alt="" />
+          <div>
+            <h3>1729 Duster Cir, Arlington, TX 76018</h3>
+            <div class="property-meta">
+              <span><i class="ph ph-bed"></i> 3 Bed</span>
+              <span><i class="ph ph-bathtub"></i> 2 Bath</span>
+              <span><i class="ph ph-ruler"></i> 1,457 Sq.Ft.</span>
+              <span><i class="ph ph-tag"></i> Buyer</span>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <img src="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/assets/images/ethan-listing-lavon.jpg?v=1.0.58" alt="" />
+          <div>
+            <h3>697 Poppy Ln, Lavon, TX 75166</h3>
+            <div class="property-meta">
+              <span><i class="ph ph-bed"></i> 4 Bed</span>
+              <span><i class="ph ph-bathtub"></i> 2 Bath</span>
+              <span><i class="ph ph-ruler"></i> 1,791 Sq.Ft.</span>
+              <span><i class="ph ph-tag"></i> Buyer</span>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <img src="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.58" alt="" />
+          <div>
+            <h3>604 Tidal Dr, McKinney, TX 75071</h3>
+            <div class="property-meta">
+              <span><i class="ph ph-bed"></i> 4 Bed</span>
+              <span><i class="ph ph-bathtub"></i> 3 Bath</span>
+              <span><i class="ph ph-ruler"></i> 2,059 Sq.Ft.</span>
+              <span><i class="ph ph-tag"></i> Buyer</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="carousel-actions"><div><button class="swiper-btn-prev" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button class="swiper-btn-next" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div><a href="#" class="btn-primary-navy">View Tất cả</a></div>
+      </div>
+  </section>
+
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="http://ethandao.local/wp-content/themes/ethan-dao-vanilla/script.js?ver=1.0.58"></script>
+</body>
+</html>
