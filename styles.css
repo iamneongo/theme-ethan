@@ -2882,3 +2882,5 @@ section.browse-cta {
     margin-bottom: 16px !important;
   }
 }
+
+.h-kicker + .h-section-title { margin-top: 12px; }
