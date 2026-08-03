@@ -260,6 +260,9 @@ function ethan_dao_vanilla_menu_tree(string $location): array
 
     $nodes = [];
     foreach ($items as $item) {
+        if (trim($item->title) === 'Mua nhà') {
+            continue;
+        }
         $nodes[(int) $item->ID] = [
             'id' => (int) $item->ID,
             'parent' => (int) $item->menu_item_parent,

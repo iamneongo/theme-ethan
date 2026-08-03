@@ -40,13 +40,17 @@
     </header>
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
-    <main class="subpage-main"><section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.58" alt="Kết nối ngay" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Contact</span><h1>Kết nối <span>với tôi</span></h1><p>Bạn có câu hỏi? Cứ nhắn tin thẳng cho tôi. Tôi sẽ trả lời bạn ngay lập tức.</p></div></section>
+    <main class="subpage-main">
 <section class="page-section">
-<div class="container" style="max-width: 600px; margin: 0 auto; padding: 0 20px;">
-  <div class="reveal" style="text-align: center; margin-bottom: 40px;">
+<div class="content-split">
+  <div class="reveal" style="align-self: start;">
     <span class="h-kicker">Thông tin</span>
-    <h2>Để lại lời nhắn</h2>
+    <h2 class="h-section-title">Để lại <span>lời nhắn</span></h2>
     <p>Tôi sẽ gửi tin nhắn trực tiếp vào số điện thoại của bạn.</p>
+    <div style="margin-top: 40px; font-size: 16px;">
+      <p style="margin-bottom: 24px;"><strong>Gọi hoặc nhắn tin:</strong><br><a href="tel:+14699895786" style="color: var(--ink-strong); font-weight: 500; text-decoration: none;">(469) 989-5786</a></p>
+      <p><strong>Email:</strong><br><a href="mailto:ethandaorealtor@gmail.com" style="color: var(--ink-strong); font-weight: 500; text-decoration: none;">ethandaorealtor@gmail.com</a></p>
+    </div>
   </div>
   <div class="form-panel reveal" style="border: none; background: transparent; padding: 0; box-shadow: none;">
     <form data-static-form>

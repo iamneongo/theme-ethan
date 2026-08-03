@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -41,7 +41,7 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Bán nhà có chiến lược" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Người bán nhà</span><h1>Bán nhà <span>tại DFW</span></h1><p>Đừng để căn nhà của bạn bị lướt qua. Tôi dùng video thực tế và quảng cáo nhắm mục tiêu để chốt giá cao nhất.</p></div></section>
+
   
   <section class="page-section">
     <div class="about-grid">
@@ -106,30 +106,6 @@
     
   </section>
 
-  <section class="page-section">
-    <div class="container">
-      <span class="h-kicker reveal">Quảng cáo</span>
-      <h2 class="h-section-title reveal">Cách quảng cáo <span>căn nhà</span></h2>
-      <p class="reveal" style="max-width: 620px; margin: 0 auto 48px; text-align: center; color: #6b6b6b; font-size: 16px; line-height: 1.6;">Nhiều người xem thì mới dễ chọn được giá cao. Đây là cách tôi đẩy căn nhà của bạn lên các nền tảng.</p>
-      <div class="marketing-grid">
-        <div class="marketing-card reveal">
-          <i class="ph-fill ph-video-camera icon"></i>
-          <h3>Video Tour chuyên nghiệp</h3>
-          <p>Quay video cinematic với drone, walkthrough chi tiết và cắt ghép chuyên nghiệp. Video được đăng trên YouTube, Facebook và TikTok để tiếp cận hàng nghìn người xem.</p>
-        </div>
-        <div class="marketing-card reveal">
-          <i class="ph-fill ph-megaphone icon"></i>
-          <h3>Quảng bá đa nền tảng</h3>
-          <p>Listing được đẩy lên Zillow, Realtor.com, Redfin, MLS, đồng thời chạy quảng cáo nhắm mục tiêu trên Facebook và Instagram để tiếp cận đúng đối tượng người mua.</p>
-        </div>
-        <div class="marketing-card reveal">
-          <i class="ph-fill ph-camera icon"></i>
-          <h3>Staging & Photography</h3>
-          <p>Tư vấn chuẩn bị nhà trước khi chụp, phối hợp với photographer chuyên nghiệp chụp ảnh HDR, twilight và layout chi tiết để tạo ấn tượng mạnh ngay từ bức ảnh đầu tiên.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="page-section" style="background: #f8f6f1;">
     <div class="container">
@@ -155,6 +131,21 @@
           <small>Bán nhà tại Wylie, 2025</small>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <span class="h-kicker reveal">Thành tích gần đây</span>
+      <h2 class="h-section-title reveal">Giao dịch <span>hoàn tất</span></h2>
+      <div class="flickity-carousel sales-track" data-flickity-carousel>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>2610 Dodson St, Garland, TX 75042</h3><p>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>5816 Mandarin Ln, Sachse, TX 75048</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-arlington.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>1729 Duster Cir, Arlington, TX 76018</h3><p>3 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,457 Sq.Ft. &middot; Buyer</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-lavon.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>697 Poppy Ln, Lavon, TX 75166</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,791 Sq.Ft. &middot; Buyer</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>604 Tidal Dr, McKinney, TX 75071</h3><p>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 2,059 Sq.Ft. &middot; Buyer</p></div></article>
+      </div>
+      <div class="carousel-actions"><div><button class="flkty-btn-prev" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button class="flkty-btn-next" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div></div>
     </div>
   </section>
 

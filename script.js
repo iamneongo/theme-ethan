@@ -57,52 +57,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 5. Sales track carousels
-  const tracks = document.querySelectorAll('[data-sales-track]');
+  const tracks = document.querySelectorAll('[data-sales-track], [data-flickity-carousel]');
   tracks.forEach(track => {
-    const container = track.closest('.container') || track.parentElement;
-    const scrollBtns = container ? container.querySelectorAll('[data-scroll-sales]') : [];
-    const gap = parseInt(window.getComputedStyle(track).gap) || 18;
-
-    if (scrollBtns) {
-      scrollBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const dir = parseInt(btn.getAttribute('data-scroll-sales'));
-          const firstArticle = track.querySelector('article');
-          const scrollAmount = firstArticle ? firstArticle.offsetWidth + gap : 320;
-          track.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
-        });
+    if (typeof Flickity !== 'undefined') {
+      const flkty = new Flickity(track, {
+        cellAlign: 'left',
+        contain: true,
+        prevNextButtons: false,
+        pageDots: false,
+        groupCells: '80%'
       });
+      
+      const container = track.closest('.container') || track.parentElement;
+      const prevBtn = container.querySelector('[data-scroll-sales="-1"], .flkty-btn-prev');
+      const nextBtn = container.querySelector('[data-scroll-sales="1"], .flkty-btn-next');
+      
+      if (prevBtn) prevBtn.addEventListener('click', () => flkty.previous());
+      if (nextBtn) nextBtn.addEventListener('click', () => flkty.next());
     }
-
-    // Mouse Drag to Scroll
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    track.addEventListener('mousedown', (e) => {
-      isDown = true;
-      track.classList.add('active');
-      startX = e.pageX - track.offsetLeft;
-      scrollLeft = track.scrollLeft;
-    });
-
-    track.addEventListener('mouseleave', () => {
-      isDown = false;
-      track.classList.remove('active');
-    });
-
-    track.addEventListener('mouseup', () => {
-      isDown = false;
-      track.classList.remove('active');
-    });
-
-    track.addEventListener('mousemove', (e) => {
-      if(!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - track.offsetLeft;
-      const walk = (x - startX) * 2;
-      track.scrollLeft = scrollLeft - walk;
-    });
   });
 
   // 6. Property tabs (Search/Hero)

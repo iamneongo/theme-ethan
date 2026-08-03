@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -72,26 +72,7 @@
     </div>
   </section>
 
-  <section class="page-section" style="background:#f8f6f1">
-    <div class="container center">
-      <span class="h-kicker">Kỹ năng</span>
-      <h2 class="h-section-title" style="margin-bottom: 48px;">Lợi thế <span>của tôi</span></h2>
-      <div class="value-grid">
-        <div class="value-card reveal">
-          <h3>Chỉ ra điểm xấu của nhà</h3>
-          <p>Tôi sẽ soi kỹ các rủi ro về móng nhà, mái nhà, lịch sử ngập lụt để bạn biết trước khi mua.</p>
-        </div>
-        <div class="value-card reveal">
-          <h3>Ép giá seller</h3>
-          <p>Tôi lấy báo cáo nhà bán xung quanh (comps) làm bằng chứng ép seller giảm giá hoặc hỗ trợ phí giấy tờ.</p>
-        </div>
-        <div class="value-card reveal">
-          <h3>Kết nối dịch vụ</h3>
-          <p>Tôi giới thiệu các bên sửa nhà, vệ sinh, kiểm tra (inspector) uy tín mà người Việt hay dùng.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section class="subpage-quote-band">
     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.58" alt="Dallas-Fort Worth" />
@@ -132,11 +113,11 @@
       <span class="h-kicker reveal">Thành tích gần đây</span>
       <h2 class="h-section-title reveal">Giao dịch <span>hoàn tất</span></h2>
       <div class="flickity-carousel sales-track" data-flickity-carousel>
-        <article class="flickity-cell"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.58" alt="Nhà mới Lavon" /><div><h3>$385,000 &middot; Lavon, TX</h3><p>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 2,450 Sq.Ft.</p></div></article>
-        <article class="flickity-cell"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg?v=1.0.58" alt="Nhà McKinney" /><div><h3>$425,000 &middot; McKinney, TX</h3><p>4 Phòng ngủ &middot; 2.5 Phòng tắm &middot; 2,680 Sq.Ft.</p></div></article>
-        <article class="flickity-cell"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-ranch.jpg?v=1.0.58" alt="Nhà Garland" /><div><h3>$310,000 &middot; Garland, TX</h3><p>3 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,890 Sq.Ft.</p></div></article>
-        <article class="flickity-cell"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-arlington.jpg?v=1.0.58" alt="Nhà Arlington" /><div><h3>$295,000 &middot; Arlington, TX</h3><p>3 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,457 Sq.Ft.</p></div></article>
-        <article class="flickity-cell"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-lavon.jpg?v=1.0.58" alt="Nhà Lavon" /><div><h3>$370,000 &middot; Lavon, TX</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,791 Sq.Ft.</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>2610 Dodson St, Garland, TX 75042</h3><p>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>5816 Mandarin Ln, Sachse, TX 75048</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-arlington.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>1729 Duster Cir, Arlington, TX 76018</h3><p>3 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,457 Sq.Ft. &middot; Buyer</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-lavon.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>697 Poppy Ln, Lavon, TX 75166</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 1,791 Sq.Ft. &middot; Buyer</p></div></article>
+        <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-mckinney-tidal.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>604 Tidal Dr, McKinney, TX 75071</h3><p>4 Phòng ngủ &middot; 3 Phòng tắm &middot; 2,059 Sq.Ft. &middot; Buyer</p></div></article>
       </div>
       <div class="carousel-actions"><div><button class="flkty-btn-prev" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button class="flkty-btn-next" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div></div>
     </div>

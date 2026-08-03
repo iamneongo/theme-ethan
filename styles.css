@@ -650,7 +650,7 @@ h1,h2,h3,h4,h5,h6,
   transform:translateY(-1px)!important;
 }
 .side-menu{
-  width:min(440px,calc(100vw - 20px))!important;
+  width:min(400px,85vw)!important;
   padding:clamp(28px,4vw,42px)!important;
   transform:translate3d(105%,0,0)!important;
   border-left:1px solid var(--color-line);
@@ -1520,6 +1520,7 @@ body, p, a, button, input, select, textarea {
 
 .sales-track.is-dragging {
   scroll-snap-type: none; /* Disable snapping while dragging for smoother feel */
+  scroll-behavior: auto !important; /* Disable smooth scrolling CSS interference during drag */
 }
 
 .sales-track.is-dragging article {
@@ -2501,6 +2502,10 @@ section.browse-cta {
   background-color: #0F2742 !important;
   color: #fff !important;
 }
+.newsletter .nested-input button:hover {
+  background-color: #1b3c63 !important;
+  color: #fff !important;
+}
 @media (max-width: 480px) {
   .newsletter .nested-input {
     padding: 4px;
@@ -2887,3 +2892,52 @@ section.browse-cta {
 }
 
 .h-kicker + .h-section-title { margin-top: 12px; }
+
+/* Flickity Overrides for sales track */
+.sales-track.flickity-enabled {
+  display: block !important;
+}
+.sales-track.flickity-enabled article {
+  margin-right: 18px !important;
+}
+.sales-track.flickity-enabled .flickity-viewport {
+  overflow: hidden !important;
+}
+
+/* Hamburger button icon-only overrides */
+.banner-header .banner-menu-button,
+.navbar .menu-button,
+.banner-menu-button {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+.banner-header .banner-menu-button span,
+.navbar .menu-button span,
+.banner-menu-button span {
+  display: none !important;
+}
+.banner-header .banner-menu-button svg,
+.navbar .menu-button svg,
+.banner-menu-button svg {
+  width: 28px !important;
+  height: 28px !important;
+}
+.banner-header .banner-menu-button:hover,
+.navbar .menu-button:hover,
+.banner-menu-button:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--gold) !important;
+}
+
+/* Force side menu to not be 100vw on mobile */
+.side-menu, .side-menu.open {
+  width: 100% !important;
+  max-width: min(340px, 80vw) !important;
+}
+

@@ -267,6 +267,35 @@
           <div class="carousel-actions"><div><button data-scroll-sales="-1" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button data-scroll-sales="1" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>" class="btn-white">Xem Tất Cả Nhà</a></div>
         </div>
       </section>
+      <section class="page-section">
+        <div class="container">
+          <span class="h-kicker reveal">Giải đáp thắc mắc</span>
+          <h2 class="h-section-title reveal">Câu hỏi <span>thường gặp</span></h2>
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <div class="faq-q">Nhà tôi hiện tại giá bao nhiêu?</div>
+              <div class="faq-a"><p>Bạn chỉ cần nhắn địa chỉ, tôi sẽ chạy báo cáo định giá so sánh (CMA) với các căn vừa bán xung quanh để ra con số thực tế nhất. Hoàn toàn miễn phí.</p></div>
+            </div>
+            <div class="faq-item reveal">
+              <div class="faq-q">Tôi có cần sửa chữa nhà trước khi bán không?</div>
+              <div class="faq-a"><p>Không nhất thiết phải sửa lớn. Ethan sẽ tư vấn cụ thể những điểm nào cần cải thiện để tăng giá trị mà chi phí hợp lý nhất — như sơn lại, dọn dẹp sân vườn, hoặc thay đổi nhỏ trong phòng bếp/tắm.</p></div>
+            </div>
+            <div class="faq-item reveal">
+              <div class="faq-q">Bán nhà mất bao lâu?</div>
+              <div class="faq-a"><p>Tùy vào khu vực và mức giá, trung bình nhà tại DFW bán trong 20–45 ngày. Với chiến lược marketing đa kênh của Ethan, nhiều căn nhà nhận offer chỉ trong tuần đầu tiên listing.</p></div>
+            </div>
+            <div class="faq-item reveal">
+              <div class="faq-q">Chi phí bán nhà gồm những gì?</div>
+              <div class="faq-a"><p>Chi phí chính bao gồm hoa hồng môi giới, thuế chuyển nhượng, chi phí title/escrow và các khoản sửa chữa theo thỏa thuận với người mua. Ethan sẽ tính toán chi tiết net sheet để bạn biết chính xác số tiền nhận được sau khi bán.</p></div>
+            </div>
+            <div class="faq-item reveal">
+              <div class="faq-q">Tôi có thể vừa bán nhà cũ vừa mua nhà mới không?</div>
+              <div class="faq-a"><p>Được. Ethan có kinh nghiệm hỗ trợ cả hai giao dịch song song, đảm bảo timeline khớp nhau để bạn không phải lo về chỗ ở tạm thời. Đây là dịch vụ mà Ethan xử lý thường xuyên.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="newsletter">
         <div class="newsletter-inner reveal">
           <h2 class="h-section-title">Nhận tin <span>nhà mới</span></h2>
