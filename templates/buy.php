@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -41,7 +41,7 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.58" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Người mua nhà</span><h1>Tìm nhà <span>tại DFW</span></h1><p>Tôi sẽ giúp bạn chọn khu vực đúng nhu cầu, kiểm tra tình trạng nhà và đàm phán mức giá tốt nhất.</p></div></section>
+  <section class="subpage-hero"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-newbuild.jpg?v=1.0.58" alt="Mua nhà tự tin" /><div></div><div class="subpage-hero-inner reveal"><span class="h-kicker light">Người mua nhà</span><h1>Tìm nhà <span>tại DFW</span></h1><p>Tôi đi cùng bạn từ lúc chưa biết bắt đầu từ đâu đến ngày nhận chìa khóa. Làm việc bằng tiếng Việt, không để bạn ký thứ gì mà chưa hiểu.</p></div></section>
   
   <section class="page-section">
     <div class="about-grid">
@@ -52,8 +52,7 @@
       <div class="reveal">
         <span class="h-kicker">Hỗ trợ chi tiết</span>
         <h2 class="h-section-title">Tôi xử lý <span>toàn bộ giấy tờ</span></h2>
-        <p>Tìm nhà là việc của bạn, quy trình còn lại để tôi lo. Tôi đọc hợp đồng, giải thích điều khoản bằng tiếng Việt, ép giá seller và đảm bảo hồ sơ của bạn an toàn đến ngày nhận nhà.</p>
-        <p>Không để bạn phải bối rối trước bất kỳ chữ ký nào.</p>
+        <p>Bạn chọn nhà, tôi lo phần còn lại — hợp đồng, đàm phán, hồ sơ. Tôi đọc từng điều khoản và giải thích bằng tiếng Việt trước khi bạn ký bất cứ thứ gì.</p>
       </div>
     </div>
   </section>
@@ -134,15 +133,15 @@
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Quy trình mua nhà mất bao lâu?</div>
-          <div class="faq-a"><p>Từ lúc bắt đầu tìm kiếm đến ngày closing thường mất khoảng 30–60 ngày. Tuy nhiên, thời gian tìm nhà phù hợp có thể nhanh hơn hoặc lâu hơn tùy vào nhu cầu và thị trường. Ethan sẽ giúp bạn lên kế hoạch cụ thể ngay từ buổi tư vấn đầu tiên.</p></div>
+          <div class="faq-a"><p>Từ lúc bắt đầu tìm kiếm đến ngày closing thường mất khoảng 30–60 ngày, tùy nhà và thị trường. Tôi sẽ giúp bạn lên kế hoạch cụ thể từ buổi đầu tiên.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Pre-approval là gì và tại sao cần thiết?</div>
-          <div class="faq-a"><p>Pre-approval là thư xác nhận từ ngân hàng cho biết bạn đủ điều kiện vay bao nhiêu. Đây là bước quan trọng giúp bạn biết ngân sách thực tế và tăng sức thuyết phục khi đặt offer. Ethan sẽ giới thiệu bạn với các loan officer uy tín và hỗ trợ song ngữ.</p></div>
+          <div class="faq-a"><p>Pre-approval là thư xác nhận từ ngân hàng cho biết bạn đủ điều kiện vay bao nhiêu — bước này cần có trước khi đặt offer, vì hầu hết seller yêu cầu. Tôi sẽ giới thiệu bạn với loan officer uy tín, có hỗ trợ tiếng Việt.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Mua nhà mới xây khác gì so với nhà chuyển nhượng?</div>
-          <div class="faq-a"><p>Nhà mới xây thường có bảo hành từ builder, ưu đãi tài chính (mua lãi suất, hỗ trợ closing cost), và bạn có thể tùy chỉnh thiết kế. Nhà chuyển nhượng thường có vị trí tốt hơn, sân vườn trưởng thành và giá linh hoạt hơn. Ethan sẽ phân tích ưu nhược điểm từng loại dựa trên nhu cầu thực tế của bạn.</p></div>
+          <div class="faq-a"><p>Nhà mới xây thường có bảo hành từ builder, ưu đãi tài chính (mua lãi suất, hỗ trợ closing cost), và bạn có thể tùy chỉnh thiết kế. Nhà chuyển nhượng thường có vị trí tốt hơn, sân vườn trưởng thành và giá linh hoạt hơn. Tôi sẽ phân tích theo nhu cầu thực tế của bạn — không phải loại nào cũng phù hợp với ai.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Tôi không thạo tiếng Anh có mua nhà được không?</div>
@@ -155,7 +154,7 @@
   <section class="page-section center">
     <div class="container reveal">
       <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bắt đầu <span>tìm nhà</span></h2>
-      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Nhắn tin cho tôi để được kiểm tra khoản vay miễn phí.</p>
+      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Nhắn tôi để nói chuyện về ngân sách — tôi sẽ kết nối bạn với loan officer phù hợp, miễn phí.</p>
       <div class="button-row" style="justify-content: center;">
         <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
         <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
@@ -166,7 +165,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lý</a></p></div></div>
+        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hợp tác đại lý</a></p></div></div>
         <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
         <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
         <p class="copyright">©2026 NTREIS. All rights reserved.</p>
@@ -184,3 +183,4 @@
   <?php wp_footer(); ?>
   </body>
 </html>
+

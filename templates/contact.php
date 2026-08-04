@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -51,7 +51,7 @@
       </span>
       <h2 style="font-family: var(--font-display); font-size: clamp(42px, 5vw, 56px); font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -0.03em; color: var(--ink-strong);">Để lại lời nhắn</h2>
     </div>
-    <p style="font-size: 18px; line-height: 1.6; color: var(--color-muted); max-width: 400px; margin-bottom: 48px;">Tôi sẽ gửi tin nhắn trực tiếp vào số điện thoại của bạn.</p>
+    <p style="font-size: 18px; line-height: 1.6; color: var(--color-muted); max-width: 400px; margin-bottom: 48px;">Để lại tin nhắn — tôi thường trả lời trong vài tiếng.</p>
     
     <div style="display: flex; flex-direction: column; gap: 32px;">
       <div>
@@ -83,7 +83,7 @@
       </div>
       <textarea placeholder="TIN NHẮN" style="border: none; border-bottom: 1px solid var(--line); border-radius: 0; padding-left: 0; padding-right: 0; min-height: 100px; margin-top: 10px;"></textarea>
       <button class="btn-ink" style="width: 100%; margin-top: 20px;">Gửi thông tin</button>
-      <p class="form-success" hidden style="text-align: center; margin-top: 20px;">Đã nhận. Ethan sẽ liên lạc lại sớm.</p>
+      <p class="form-success" hidden style="text-align: center; margin-top: 20px;">Đã nhận. Tôi sẽ liên lạc sớm.</p>
     </form>
   </div>
 </div>
@@ -91,7 +91,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lý</a></p></div></div>
+        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hợp tác đại lý</a></p></div></div>
         <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
         <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
         <p class="copyright">©2026 NTREIS. All rights reserved.</p>
@@ -109,6 +109,7 @@
   <?php wp_footer(); ?>
   </body>
 </html>
+
 
 
 

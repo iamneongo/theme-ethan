@@ -9,13 +9,17 @@ if (!defined('ABSPATH')) {
 
 require_once get_template_directory() . '/inc/properties.php';
 
+if (is_admin()) {
+    require_once get_template_directory() . '/inc/zillow-import-tool.php';
+}
+
 function ethan_dao_vanilla_static_pages(): array
 {
     return [
         'about' => 'about.php',
         'agent-collaborations' => 'agent-collaborations.php',
         'blog' => 'blog.php',
-        'browse-properties' => 'browse-properties.php',
+        'browse-properties' => 'properties.php',
         'buy' => 'buy.php',
         'buyer-guide' => 'buyer-guide.php',
         'buyer-information' => 'buyer-information.php',
@@ -328,7 +332,7 @@ function ethan_dao_vanilla_render_primary_nav(): string
             $html .= '<a href="' . $url . '" class="' . trim($is_current_class) . '">' . $title . '</a>';
         }
     }
-    $html .= '<a class="icon-button" href="' . esc_url(home_url('/browse-properties/')) . '" aria-label="TÃ¬m kiáº¿m"><svg><use href="#icon-search"/></svg></a></nav>';
+    $html .= '<div class="nav-search-wrap"><button class="icon-button" data-nav-search-toggle aria-label="Tìm kiếm" aria-expanded="false"><svg><use href="#icon-search"/></svg></button><div class="nav-search-panel" aria-hidden="true"><input type="text" class="nav-search-input" placeholder="Tìm địa chỉ, thành phố..." autocomplete="off" spellcheck="false" /><div class="nav-search-results"></div></div></div></nav>';
 
     return $html;
 }
@@ -336,10 +340,13 @@ function ethan_dao_vanilla_render_primary_nav(): string
 function ethan_dao_vanilla_flat_menu_links(string $location): string
 {
     $items = ethan_dao_vanilla_menu_tree($location);
+    $current_url = rtrim(home_url(wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH)), '/');
     $links = '';
-    $walk = function (array $nodes) use (&$walk, &$links): void {
+    $walk = function (array $nodes) use (&$walk, &$links, $current_url): void {
         foreach ($nodes as $node) {
-            $links .= '<a href="' . esc_url($node['url']) . '">' . esc_html($node['title']) . '</a>';
+            $item_url = rtrim($node['url'], '/');
+            $class = ($item_url === $current_url) ? ' class="is-current"' : '';
+            $links .= '<a href="' . esc_url($node['url']) . '"' . $class . '>' . esc_html($node['title']) . '</a>';
             if (!empty($node['children'])) {
                 $walk($node['children']);
             }

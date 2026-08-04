@@ -74,10 +74,75 @@ document.addEventListener("DOMContentLoaded", () => {
       
       if (prevBtn) prevBtn.addEventListener('click', () => flkty.previous());
       if (nextBtn) nextBtn.addEventListener('click', () => flkty.next());
+
+      flkty.on('staticClick', (event, pointer, cellElement) => {
+        if (!cellElement) return;
+        const article = cellElement.matches('article[data-href]')
+          ? cellElement
+          : cellElement.querySelector('article[data-href]');
+        if (article) window.location.href = article.dataset.href;
+      });
     }
   });
 
-  // 6. Property tabs (Search/Hero)
+  // 6. Nav property search
+  const navSearchToggle = document.querySelector('[data-nav-search-toggle]');
+  const navSearchPanel  = document.querySelector('.nav-search-panel');
+  const navSearchInput  = document.querySelector('.nav-search-input');
+  const navSearchResults = document.querySelector('.nav-search-results');
+
+  if (navSearchToggle && navSearchPanel) {
+    const openSearch = () => {
+      navSearchPanel.setAttribute('aria-hidden', 'false');
+      navSearchToggle.setAttribute('aria-expanded', 'true');
+      navSearchInput.focus();
+    };
+    const closeSearch = () => {
+      navSearchPanel.setAttribute('aria-hidden', 'true');
+      navSearchToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    navSearchToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navSearchPanel.getAttribute('aria-hidden') === 'false' ? closeSearch() : openSearch();
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navSearchToggle.closest('.nav-search-wrap').contains(e.target)) closeSearch();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSearch();
+    });
+
+    navSearchInput.addEventListener('input', () => {
+      const q = navSearchInput.value.trim().toLowerCase();
+      if (!q || !window.ethanProperties || window.ethanProperties.length === 0) {
+        navSearchResults.innerHTML = '';
+        return;
+      }
+      const matches = window.ethanProperties.filter(p =>
+        (p.address + ' ' + p.city).toLowerCase().includes(q)
+      ).slice(0, 7);
+
+      if (matches.length === 0) {
+        navSearchResults.innerHTML = '<p class="nav-search-empty">Không tìm thấy kết quả</p>';
+        return;
+      }
+      navSearchResults.innerHTML = matches.map(p => {
+        const isSale = p.status === 'for sale';
+        const label  = isSale ? (p.price || 'Đang bán') : 'Đã bán';
+        const tag    = isSale ? 'sale' : 'sold';
+        return `<a href="${p.url}" class="nav-search-item">
+          <img src="${p.image}" alt="" loading="lazy" />
+          <div><strong>${p.address}</strong><span>${p.city}</span></div>
+          <em class="${tag}">${label}</em>
+        </a>`;
+      }).join('');
+    });
+  }
+
+  // 6b. Property tabs (Search/Hero)
   const searchTabs = document.querySelectorAll('.search-tabs button');
   searchTabs.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -93,13 +158,17 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function filterProperties() {
     const activeFilter = document.querySelector('[data-property-filter].active')?.getAttribute('data-property-filter') || 'all';
-    const query = propSearch ? propSearch.value.toLowerCase() : '';
+    const query = propSearch ? propSearch.value.trim().toLowerCase() : '';
     propItems.forEach(item => {
-      const status = item.getAttribute('data-status');
-      const text = item.textContent.toLowerCase();
+      const status = item.getAttribute('data-status') || '';
+      const city = item.getAttribute('data-city') || '';
+      const text = (item.textContent + ' ' + city).toLowerCase();
       const matchStatus = activeFilter === 'all' || status === activeFilter;
-      const matchQuery = text.includes(query);
-      item.style.display = matchStatus && matchQuery ? '' : 'none';
+      const matchQuery = query === '' || text.includes(query);
+      const show = matchStatus && matchQuery;
+      // Target the parent <a> card so the grid collapses properly
+      const card = item.closest('a') || item;
+      card.style.setProperty('display', show ? '' : 'none', 'important');
     });
   }
 
@@ -122,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const map = L.map('ethan-profile-map', {
       zoomControl: true,
       scrollWheelZoom: false
-    }).setView([32.9000, -96.7970], 9);
+    }).setView([32.820, -96.860], 8);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
@@ -131,22 +200,54 @@ document.addEventListener("DOMContentLoaded", () => {
     }).addTo(map);
 
     const locations = [
-      { coords: [33.1976, -96.6154], status: 'sale', title: '3508 Almond Ln', city: 'McKinney, TX 75070', price: '$495,000' },
-      { coords: [32.9126, -96.6389], status: 'sold', title: '2610 Dodson St', city: 'Garland, TX 75042', price: 'Đã bán' },
-      { coords: [32.9771, -96.5906], status: 'sold', title: '5816 Mandarin Ln', city: 'Sachse, TX 75048', price: 'Đã bán' },
-      { coords: [32.6565, -97.1089], status: 'sold', title: '1729 Duster Cir', city: 'Arlington, TX 76018', price: 'Đã bán' },
-      { coords: [33.0298, -96.4355], status: 'sold', title: '697 Poppy Ln', city: 'Lavon, TX 75166', price: 'Đã bán' },
-      { coords: [33.2084, -96.6146], status: 'sold', title: '604 Tidal Dr', city: 'McKinney, TX 75071', price: 'Đã bán' },
-      { coords: [32.2207, -98.2023], status: 'sale', title: 'LOT 156 Bison Ridge Dr', city: 'Stephenville, TX 76401', price: '$99,000' }
+      { coords: [33.166350, -96.684352], status: 'sale',  title: '3508 Almond Ln',          city: 'McKinney, TX 75070',      price: '$474,900' },
+      { coords: [32.224000, -98.202000], status: 'sale',  title: 'LOT 156 Bison Ridge Dr',   city: 'Stephenville, TX 76401',  price: '$99,000'  },
+      { coords: [32.913000, -96.639000], status: 'sold',  title: '2610 Dodson St',            city: 'Garland, TX 75042',       price: 'Đã bán'   },
+      { coords: [32.975446, -96.583163], status: 'sold',  title: '5816 Mandarin Ln',          city: 'Sachse, TX 75048',        price: 'Đã bán'   },
+      { coords: [32.664928, -97.078593], status: 'sold',  title: '1729 Duster Cir',           city: 'Arlington, TX 76018',     price: 'Đã bán'   },
+      { coords: [33.001064, -96.448097], status: 'sold',  title: '697 Poppy Ln',              city: 'Lavon, TX 75166',         price: 'Đã bán'   },
+      { coords: [33.210000, -96.608000], status: 'sold',  title: '604 Tidal Dr',              city: 'McKinney, TX 75071',      price: 'Đã bán'   },
+      { coords: [32.880000, -96.608000], status: 'sold',  title: '7013 Birdwatch Dr',         city: 'Garland, TX 75043',       price: 'Đã bán'   },
+      { coords: [32.491918, -96.936630], status: 'sold',  title: '4438 Verbena St',           city: 'Midlothian, TX 76065',    price: 'Đã bán'   },
+      { coords: [33.003980, -96.452196], status: 'sold',  title: '815 Sunflower Rd',          city: 'Lavon, TX 75166',         price: 'Đã bán'   },
+      { coords: [32.810991, -96.676071], status: 'sold',  title: '2325 Park Vista Dr',        city: 'Dallas, TX 75228',        price: 'Đã bán'   },
+      { coords: [32.954006, -96.675050], status: 'sold',  title: '3101 Gayle Dr',             city: 'Garland, TX 75044',       price: 'Đã bán'   },
+      { coords: [33.006645, -96.838832], status: 'sold',  title: '4247 Millview Ln',          city: 'Dallas, TX 75287',        price: 'Đã bán'   },
+      { coords: [32.953017, -96.670338], status: 'sold',  title: '2814 Esquire Ln',           city: 'Garland, TX 75044',       price: 'Đã bán'   },
+      { coords: [33.007834, -96.442699], status: 'sold',  title: '569 Sierra Rdg',            city: 'Lavon, TX 75166',         price: 'Đã bán'   },
+      { coords: [33.009000, -96.447000], status: 'sold',  title: '463 Yellowstar Ln',         city: 'Lavon, TX 75166',         price: 'Đã bán'   },
+      { coords: [32.880185, -96.614438], status: 'sold',  title: '3001 Jeremes Lndg',         city: 'Garland, TX 75043',       price: 'Đã bán'   },
+      { coords: [32.879095, -96.754503], status: 'sold',  title: '7510 Holly Hill Dr',        city: 'Dallas, TX 75231',        price: 'Đã bán'   },
+      { coords: [32.308000, -95.481000], status: 'sold',  title: '23010 McFadden Ln',         city: 'Chandler, TX 75758',      price: 'Đã bán'   },
+      { coords: [32.942231, -96.609424], status: 'sold',  title: '1715 Lordsburg Dr',         city: 'Garland, TX 75040',       price: 'Đã bán'   },
+      { coords: [32.699235, -97.129711], status: 'sold',  title: '1306 Ashbury Dr',           city: 'Arlington, TX 76015',     price: 'Đã bán'   },
+      { coords: [32.632516, -97.106133], status: 'sold',  title: '6926 Snowy Owl St',         city: 'Arlington, TX 76002',     price: 'Đã bán'   },
+      { coords: [32.910215, -96.523714], status: 'sold',  title: '8006 Luna Dr',              city: 'Rowlett, TX 75088',       price: 'Đã bán'   },
+      { coords: [32.948493, -96.681326], status: 'sold',  title: '3525 Rockcrest Dr',         city: 'Garland, TX 75044',       price: 'Đã bán'   },
+      { coords: [32.965889, -96.580599], status: 'sold',  title: '4635 Jackson Meadows Dr',   city: 'Sachse, TX 75048',        price: 'Đã bán'   },
+      { coords: [32.934354, -96.676355], status: 'sold',  title: '2202 Moss Trl',             city: 'Garland, TX 75044',       price: 'Đã bán'   },
+      { coords: [32.971797, -96.870068], status: 'sold',  title: '2522 Melissa Ln',           city: 'Carrollton, TX 75006',    price: 'Đã bán'   },
+      { coords: [32.941199, -96.603205], status: 'sold',  title: '2810 Deer Creek Ct',        city: 'Garland, TX 75040',       price: 'Đã bán'   },
+      { coords: [32.615076, -97.360138], status: 'sold',  title: '2541 Prospect Hill Dr',     city: 'Fort Worth, TX 76123',    price: 'Đã bán'   },
+      { coords: [32.995792, -96.869569], status: 'sold',  title: '2613 Silverthorne Dr',      city: 'Dallas, TX 75287',        price: 'Đã bán'   },
+      { coords: [32.957943, -96.681044], status: 'sold',  title: '3413 Janwood Ln',           city: 'Garland, TX 75044',       price: 'Đã bán'   },
+      { coords: [32.867898, -97.272188], status: 'sold',  title: '7001 Deer Run Dr',          city: 'Watauga, TX 76137',       price: 'Đã bán'   },
+      { coords: [32.596730, -97.084540], status: 'sold',  title: '9214 Wild River Dr',        city: 'Arlington, TX 76002',     price: 'Đã bán'   },
+      { coords: [32.658883, -97.022646], status: 'sold',  title: '4687 Sarum Ct',             city: 'Grand Prairie, TX 75052', price: 'Đã bán'   },
+      { coords: [32.912328, -96.684620], status: 'sold',  title: '3606 Norma Dr',             city: 'Garland, TX 75042',       price: 'Đã bán'   },
+      { coords: [32.901618, -96.939118], status: 'sold',  title: '6826 Deseo',                city: 'Irving, TX 75039',        price: 'Đã bán'   },
+      { coords: [32.609146, -97.115948], status: 'sold',  title: '115 Fort Edward Dr',        city: 'Arlington, TX 76002',     price: 'Đã bán'   },
+      { coords: [32.656000, -97.021000], status: 'sold',  title: '5820 Tory Dr',              city: 'Grand Prairie, TX 75052', price: 'Đã bán'   },
+      { coords: [32.653988, -96.897358], status: 'sold',  title: '618 Flamingo Way',          city: 'Duncanville, TX 75116',   price: 'Đã bán'   }
     ];
 
     const markers = locations.map(loc => {
       const isSale = loc.status === 'sale';
       const icon = L.divIcon({
         className: `custom-map-pin pin-${loc.status}`,
-        html: `<div class="pin-badge ${loc.status}"><span class="pin-dot"></span><span class="pin-text">${loc.price}</span></div>`,
-        iconSize: [90, 34],
-        iconAnchor: [45, 17]
+        html: `<span class="pin-dot-only ${loc.status}"></span>`,
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
       });
 
       const marker = L.marker(loc.coords, { icon }).addTo(map);
@@ -155,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="popup-tag ${loc.status}">${isSale ? 'Đang bán' : 'Đã bán'}</span>
           <strong>${loc.title}</strong>
           <small>${loc.city}</small>
-          <div class="popup-price">${loc.price}</div>
+          ${isSale ? `<div class="popup-price">${loc.price}</div>` : ''}
         </div>
       `);
       marker.status = loc.status;
@@ -262,5 +363,23 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('click', () => {
     document.querySelectorAll('[data-custom-select].is-open').forEach(s => s.classList.remove('is-open'));
   });
+
+  // Platforms marquee on mobile
+  if (window.innerWidth <= 767) {
+    const platformsSection = document.querySelector('.platforms');
+    if (platformsSection) {
+      const links = [...platformsSection.querySelectorAll('a')];
+      if (links.length) {
+        const wrap = document.createElement('div');
+        wrap.className = 'platforms-marquee-wrap';
+        const track = document.createElement('div');
+        track.className = 'platforms-marquee-track';
+        [...links, ...links.map(l => l.cloneNode(true))].forEach(l => track.appendChild(l));
+        wrap.appendChild(track);
+        links.forEach(l => l.remove());
+        platformsSection.appendChild(wrap);
+      }
+    }
+  }
 });
 

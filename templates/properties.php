@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
@@ -41,11 +41,11 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-<section class="page-section"><div class="container"><div class="property-filter"><button class="active" data-property-filter="all">Tất cả</button><button data-property-filter="for sale">Đang bán</button><button data-property-filter="sold">Đã bán</button><input type="search" data-property-search placeholder="Tìm theo thành phố hoặc địa chỉ" /></div><div class="listing-grid property-list"><?php echo ethan_dao_vanilla_render_property_list(); ?></div></div></section><section class="newsletter"><div class="newsletter-inner reveal"><h2 class="h-section-title">Nhận tin <span>nhà mới</span></h2><p>Ethan gửi email khi có listing tốt hoặc thay đổi giá đáng chú ý tại khu vực bạn quan tâm.</p><form data-static-form class="newsletter-form"><div class="nested-input"><input type="email" placeholder="Địa chỉ email của bạn..." required /><button class="btn-ink">Gửi thông tin</button></div><p class="form-success" hidden>Đã nhận. Ethan sẽ liên lạc lại sớm.</p></form></div></section></main>
+<section class="page-section"><div class="container"><div class="property-filter"><button class="active" data-property-filter="all">Tất cả</button><button data-property-filter="for sale">Đang bán</button><button data-property-filter="sold">Đã bán</button><input type="search" data-property-search placeholder="Tìm theo thành phố hoặc địa chỉ" /></div><div class="listing-grid property-list"><?php echo ethan_dao_vanilla_render_property_list(); ?></div></div></section><section class="newsletter"><div class="newsletter-inner reveal"><h2 class="h-section-title">Nhận tin <span>nhà mới</span></h2><p>Tôi gửi email khi thấy listing đáng xem hoặc giá khu vực bạn quan tâm thay đổi. Không spam.</p><form data-static-form class="newsletter-form"><div class="nested-input"><input type="email" placeholder="Địa chỉ email của bạn..." required /><button class="btn-ink">Đăng ký nhận tin</button></div><p class="form-success" hidden>Đã nhận. Tôi sẽ liên lạc sớm.</p></form></div></section></main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/browse-properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/home-valuation/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/agent-collaborations/')); ?>">Hợp tác đại lý</a></p></div></div>
+        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hợp tác đại lý</a></p></div></div>
         <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
         <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
         <p class="copyright">©2026 NTREIS. All rights reserved.</p>
@@ -63,6 +63,7 @@
   <?php wp_footer(); ?>
   </body>
 </html>
+
 
 
 
