@@ -47,7 +47,7 @@ function ethan_dao_vanilla_property_meta_fields(): array
         'property_bathrooms' => ['label' => 'Số phòng tắm', 'type' => 'text'],
         'property_sqft' => ['label' => 'Diện tích (Sq.Ft.)', 'type' => 'text'],
         'property_details' => ['label' => 'Chi tiết (vd: Đại diện người mua)', 'type' => 'text'],
-        'property_image' => ['label' => 'URL ảnh (Zillow hoặc local)', 'type' => 'text'],
+        'property_image' => ['label' => 'Ảnh chính (chọn từ thư viện)', 'type' => 'media'],
         'property_sold_date' => ['label' => 'Ngày bán (vd: 7/27/2026)', 'type' => 'text'],
         'property_zpid' => ['label' => 'ZPID', 'type' => 'text'],
         'property_order' => ['label' => 'Thứ tự (nhỏ = lên trước)', 'type' => 'number'],
@@ -60,11 +60,24 @@ function ethan_dao_vanilla_add_property_meta_box(): void
 }
 add_action('add_meta_boxes', 'ethan_dao_vanilla_add_property_meta_box');
 
+function ethan_dao_vanilla_enqueue_property_media(string $hook): void
+{
+    if ('post.php' !== $hook && 'post-new.php' !== $hook) {
+        return;
+    }
+    $screen = get_current_screen();
+    if (!$screen || $screen->post_type !== 'property') {
+        return;
+    }
+    wp_enqueue_media();
+}
+add_action('admin_enqueue_scripts', 'ethan_dao_vanilla_enqueue_property_media');
+
 function ethan_dao_vanilla_render_property_meta_box(WP_Post $post): void
 {
     wp_nonce_field('ethan_property_save', 'ethan_property_nonce');
 
-    echo '<style>#ethan-property-details .ethan-field{margin:0 0 12px;}.ethan-field label{display:block;font-weight:600;margin-bottom:4px;}.ethan-field input{width:100%;max-width:480px;}</style>';
+    echo '<style>#ethan-property-details .ethan-field{margin:0 0 12px;}.ethan-field label{display:block;font-weight:600;margin-bottom:4px;}.ethan-field input{width:100%;max-width:480px;}.ethan-media-preview img{max-width:320px;height:auto;display:block;margin:8px 0;border-radius:6px;border:1px solid #dcdcde;}</style>';
 
     foreach (ethan_dao_vanilla_property_meta_fields() as $key => $field) {
         $value = get_post_meta($post->ID, $key, true);
@@ -75,11 +88,21 @@ function ethan_dao_vanilla_render_property_meta_box(WP_Post $post): void
                 echo '<option value="' . esc_attr($val) . '"' . selected($value, $val, false) . '>' . esc_html($label) . '</option>';
             }
             echo '</select>';
+        } elseif ($field['type'] === 'media') {
+            $preview = $value !== '' ? '<img src="' . esc_url($value) . '" alt="" />' : '';
+            echo '<div class="ethan-media-preview" data-preview-for="' . esc_attr($key) . '">' . $preview . '</div>';
+            echo '<input type="hidden" id="' . esc_attr($key) . '" name="' . esc_attr($key) . '" value="' . esc_attr($value) . '" />';
+            echo '<button type="button" class="button ethan-media-pick" data-target="' . esc_attr($key) . '">Chọn ảnh từ thư viện</button> ';
+            if ($value !== '') {
+                echo '<button type="button" class="button-link-delete ethan-media-clear" data-target="' . esc_attr($key) . '">Xóa ảnh</button>';
+            }
         } else {
             echo '<input type="' . esc_attr($field['type']) . '" id="' . esc_attr($key) . '" name="' . esc_attr($key) . '" value="' . esc_attr($value) . '" />';
         }
         echo '</div>';
     }
+
+    echo '<script>(function($){$(function(){var frame=null;$(document).on("click",".ethan-media-pick",function(e){e.preventDefault();var target=$(this).data("target"),$input=$("#"+target),$preview=$("[data-preview-for=\""+target+"\"]");if(frame){frame.open();return;}frame=wp.media({title:"Chọn ảnh",button:{text:"Dùng ảnh này"},multiple:false,library:{type:"image"}});frame.on("select",function(){var att=frame.state().get("selection").first().toJSON(),url=att.sizes&&att.sizes.large?att.sizes.large.url:att.url;$input.val(url);$preview.html(\'<img src="\'+url+\'" alt="" />\');$(document).find(".ethan-media-clear[data-target=\\""+target+"\\"]").show();});frame.open();});$(document).on("click",".ethan-media-clear",function(e){e.preventDefault();var target=$(this).data("target");$("#"+target).val("");$("[data-preview-for=\\""+target+"\\"]").html("");$(this).hide();});});})(jQuery);</script>';
 }
 
 function ethan_dao_vanilla_save_property_meta(int $post_id): void
