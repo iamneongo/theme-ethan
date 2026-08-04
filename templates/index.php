@@ -152,11 +152,6 @@
               <h2 class="h-section-title">Nhà đã bán và đang bán <span>(40)</span></h2>
               <p>Khu vực hoạt động của Ethan tại DFW.</p>
             </div>
-            <div class="profile-map-filters" role="tablist" aria-label="Sales and listings map filters">
-              <button class="active" type="button" data-profile-map-filter="all">Tất cả (40)</button>
-              <button type="button" data-profile-map-filter="sold"><span class="filter-dot sold"></span>Đã bán</button>
-              <button type="button" data-profile-map-filter="sale"><span class="filter-dot sale"></span>Đang bán</button>
-            </div>
           </div>
           <div id="ethan-profile-map" class="profile-map" data-profile-map aria-label="Ethan Dao sales and listings map"></div>
         </div>

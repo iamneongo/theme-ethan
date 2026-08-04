@@ -1052,6 +1052,73 @@ html.ethan-scrollfx-ready .reveal.is-visible{
   }
 }
 
+/* Property listings grid: 3 cards per row on desktop. */
+.page-section .property-list,
+.verified-strip+.page-section .property-list{
+  display:grid!important;
+  flex-direction:row;
+  gap:var(--space-grid)!important;
+  margin-top:32px!important;
+  border-top:0!important;
+}
+.page-section .property-list .property-card,
+.verified-strip+.page-section .property-list .property-card{
+  display:block!important;
+  min-height:0;
+  color:inherit;
+  text-decoration:none;
+}
+.page-section .property-list article,
+.verified-strip+.page-section .property-list article{
+  display:flex!important;
+  flex-direction:column;
+  min-height:100%;
+  margin:0;
+  border:1px solid var(--color-line)!important;
+  border-bottom:1px solid var(--color-line)!important;
+  border-radius:var(--radius-card)!important;
+  background:var(--color-bg)!important;
+  box-shadow:none!important;
+  transform:none!important;
+  overflow:hidden;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.page-section .property-list .property-card:hover article,
+.verified-strip+.page-section .property-list .property-card:hover article{
+  transform:translateY(-4px)!important;
+  box-shadow:0 12px 32px rgba(0,0,0,.08)!important;
+}
+.page-section .property-list article>div,
+.verified-strip+.page-section .property-list article>div{
+  padding:24px!important;
+  justify-content:flex-start;
+  gap:10px;
+}
+.page-section .property-list article img,
+.verified-strip+.page-section .property-list article img{
+  width:100%;
+  height:auto;
+  min-height:0;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  display:block;
+}
+.page-section .property-list article > img{
+  flex-shrink:0;
+}
+@media (min-width:768px) and (max-width:1023px){
+  .page-section .property-list,
+  .verified-strip+.page-section .property-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media (min-width:1024px){
+  .page-section .property-list,
+  .verified-strip+.page-section .property-list{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
 /* Scroll effects must enhance visible content, never gate it. */
 html.ethan-scrollfx-ready .reveal{
   opacity:1!important;

@@ -1,3 +1,8 @@
+<?php
+$property_id = (int) get_query_var('ethan_property_id');
+$property = $property_id > 0 ? get_post($property_id) : null;
+$is_property = $property && $property->post_type === 'property';
+?>
 <!doctype html>
 <html lang="vi">
   <head>
@@ -7,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1785803813446" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=<?php echo filemtime(get_template_directory() . '/styles.css'); ?>" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -41,14 +46,17 @@
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
 
 <main class="subpage-main">
+  <?php if (!$is_property): ?>
+    <section class="page-section"><div class="container"><h1 style="font-family:var(--font-display);">Không tìm thấy bất động sản</h1><p style="color:var(--color-muted);">Liên kết không hợp lệ. <a href="<?php echo esc_url(home_url('/properties/')); ?>">Quay lại danh sách bất động sản</a></p></div></section>
+  <?php else: $prop_id = $property->ID; $p_addr = ethan_dao_vanilla_property_meta('property_address', $prop_id); $p_status = ethan_dao_vanilla_property_meta('property_status', $prop_id); $p_price = ethan_dao_vanilla_property_meta('property_price', $prop_id); $p_price_text = ethan_dao_vanilla_property_meta('property_price_text', $prop_id); $p_city = ethan_dao_vanilla_property_meta('property_city', $prop_id); $p_beds = ethan_dao_vanilla_property_meta('property_bedrooms', $prop_id); $p_baths = ethan_dao_vanilla_property_meta('property_bathrooms', $prop_id); $p_sqft = ethan_dao_vanilla_property_meta('property_sqft', $prop_id); $p_img = ethan_dao_vanilla_property_meta('property_image', $prop_id); $p_details = ethan_dao_vanilla_property_meta('property_details', $prop_id); $p_sold = ethan_dao_vanilla_property_meta('property_sold_date', $prop_id); $p_zpid = ethan_dao_vanilla_property_meta('property_zpid', $prop_id); $display_price = $p_price_text !== '' ? $p_price_text : (($p_status === 'for sale' && is_numeric($p_price)) ? '$' . number_format((float) $p_price) : (($p_status === 'sold') ? 'Đã bán' : '')); ?>
   <!-- Property Hero (Images) -->
   <section class="property-hero" style="background: #000;">
     <div class="property-hero-grid">
       <div class="main-image">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-brick2story.jpg" alt="2610 Dodson St Main" />
+        <img src="<?php echo esc_url($p_img !== '' ? $p_img : get_template_directory_uri() . '/assets/images/ethan-home-brick2story.jpg'); ?>" alt="<?php echo esc_attr($p_addr); ?>" />
       </div>
       <div class="side-images">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-3.jpg" alt="Interior Living Room" />
+        <img src="<?php echo esc_url($p_img !== '' ? $p_img : get_template_directory_uri() . '/assets/images/ethan-home-3.jpg'); ?>" alt="Interior Living Room" />
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-5.jpg" alt="Kitchen" />
       </div>
     </div>
@@ -57,27 +65,27 @@
   <!-- Property Content -->
   <section class="property-content-section" style="background: #fff;">
     <div class="container" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 380px; gap: 64px; padding: 64px 24px;">
-      
+
       <!-- Left Column: Details -->
       <div class="property-info">
         <!-- Header -->
         <div class="property-header" style="margin-bottom: 48px; border-bottom: 1px solid var(--line); padding-bottom: 40px;">
-          <h1 style="font-family: var(--font-display); font-size: clamp(32px, 4vw, 42px); font-weight: 600; margin: 0 0 8px; letter-spacing: -0.02em;">2610 Dodson St</h1>
-          <p style="font-size: 18px; color: var(--color-muted); margin: 0 0 24px;">Garland, TX 75042</p>
-          
+          <h1 style="font-family: var(--font-display); font-size: clamp(32px, 4vw, 42px); font-weight: 600; margin: 0 0 8px; letter-spacing: -0.02em;"><?php echo esc_html($p_addr); ?></h1>
+          <p style="font-size: 18px; color: var(--color-muted); margin: 0 0 24px;"><?php echo esc_html($p_city); ?></p>
+
           <div class="property-stats" style="display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
-            <div><span style="font-size: 32px; font-weight: 700; color: var(--ink-strong); font-family: var(--font-display);">3</span> <span style="color: var(--color-muted); font-size: 15px;">Beds</span></div>
+            <div><span style="font-size: 32px; font-weight: 700; color: var(--ink-strong); font-family: var(--font-display);"><?php echo esc_html($p_beds !== '' ? $p_beds : '—'); ?></span> <span style="color: var(--color-muted); font-size: 15px;">Beds</span></div>
             <div style="width: 1px; height: 32px; background: var(--line);"></div>
-            <div><span style="font-size: 32px; font-weight: 700; color: var(--ink-strong); font-family: var(--font-display);">2</span> <span style="color: var(--color-muted); font-size: 15px;">Baths</span></div>
+            <div><span style="font-size: 32px; font-weight: 700; color: var(--ink-strong); font-family: var(--font-display);"><?php echo esc_html($p_baths !== '' ? $p_baths : '—'); ?></span> <span style="color: var(--color-muted); font-size: 15px;">Baths</span></div>
             <div style="width: 1px; height: 32px; background: var(--line);"></div>
-            <div><span style="font-size: 32px; font-weight: 700; color: var(--ink-strong); font-family: var(--font-display);">1,500</span> <span style="color: var(--color-muted); font-size: 15px;">Sqft</span></div>
+            <div><span style="font-size: 32px; font-weight: 700; color: var(--ink-strong); font-family: var(--font-display);"><?php echo esc_html($p_sqft !== '' ? number_format((float) str_replace(',', '', $p_sqft)) : '—'); ?></span> <span style="color: var(--color-muted); font-size: 15px;">Sqft</span></div>
           </div>
         </div>
 
         <!-- Overview -->
         <div class="property-overview" style="margin-bottom: 64px;">
           <h2 style="font-family: var(--font-display); font-size: 24px; font-weight: 600; margin-bottom: 24px; color: var(--ink-strong);">Overview</h2>
-          <p style="font-size: 16px; line-height: 1.8; color: #555;">Beautifully updated home in the heart of Garland! This 3 bedroom, 2 bathroom property features a spacious open floor plan, perfect for entertaining. The modern kitchen includes stainless steel appliances, granite countertops, and custom cabinetry. Step outside to a large backyard with a covered patio, ideal for summer barbecues. Conveniently located near parks, schools, and shopping centers. Don't miss this incredible opportunity!</p>
+          <p style="font-size: 16px; line-height: 1.8; color: #555;"><?php echo esc_html($property->post_content !== '' ? wp_trim_words(strip_tags($property->post_content), 60) : 'Chi tiết bất động sản tại ' . $p_addr . '. Vui lòng liên hệ Ethan Dao để được tư vấn và xem nhà.'); ?></p>
         </div>
 
         <!-- Facts and Features -->
@@ -87,43 +95,43 @@
             <div style="display: flex; gap: 16px; align-items: flex-start;">
               <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
               <div>
-                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Type</strong>
-                <span style="font-size: 15px; color: var(--color-muted);">Single Family Residence</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-              <div>
-                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Year built</strong>
-                <span style="font-size: 15px; color: var(--color-muted);">1975</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
-              <div>
-                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Heating / Cooling</strong>
-                <span style="font-size: 15px; color: var(--color-muted);">Central, Electric / Central Air</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-              <div>
-                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Parking</strong>
-                <span style="font-size: 15px; color: var(--color-muted);">2 Attached Garage spaces</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"></path><path d="M12 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path></svg>
-              <div>
-                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Lot</strong>
-                <span style="font-size: 15px; color: var(--color-muted);">7,405 sqft</span>
+                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Trạng thái</strong>
+                <span style="font-size: 15px; color: var(--color-muted);"><?php echo esc_html($p_status === 'for sale' ? 'Đang bán' : 'Đã bán'); ?></span>
               </div>
             </div>
             <div style="display: flex; gap: 16px; align-items: flex-start;">
               <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
               <div>
-                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Price/sqft</strong>
-                <span style="font-size: 15px; color: var(--color-muted);">$200</span>
+                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Giá</strong>
+                <span style="font-size: 15px; color: var(--color-muted);"><?php echo esc_html($display_price); ?></span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <div>
+                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Phòng ngủ</strong>
+                <span style="font-size: 15px; color: var(--color-muted);"><?php echo esc_html($p_beds !== '' ? $p_beds . ' Phòng ngủ' : '—'); ?></span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <div>
+                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Phòng tắm</strong>
+                <span style="font-size: 15px; color: var(--color-muted);"><?php echo esc_html($p_baths !== '' ? $p_baths . ' Phòng tắm' : '—'); ?></span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
+              <div>
+                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Diện tích</strong>
+                <span style="font-size: 15px; color: var(--color-muted);"><?php echo esc_html($p_sqft !== '' ? number_format((float) str_replace(',', '', $p_sqft)) . ' sqft' : '—'); ?></span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <svg style="flex-shrink: 0;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"></path><path d="M12 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path></svg>
+              <div>
+                <strong style="display: block; font-size: 15px; color: var(--ink-strong); margin-bottom: 4px;">Chi tiết</strong>
+                <span style="font-size: 15px; color: var(--color-muted);"><?php echo esc_html($p_details !== '' ? $p_details : '—'); ?></span>
               </div>
             </div>
           </div>
@@ -133,12 +141,12 @@
       <!-- Right Column: Sidebar -->
       <div class="property-sidebar">
         <div style="position: sticky; top: 120px; background: #fff; border: 1px solid rgba(0,0,0,0.08); padding: 32px; border-radius: 12px; box-shadow: 0 16px 40px rgba(0,0,0,0.04);">
-          <div style="font-size: 36px; font-weight: 700; font-family: var(--font-display); color: var(--ink-strong); margin-bottom: 8px;">$300,000</div>
-          <p style="font-size: 15px; color: var(--color-muted); margin-bottom: 32px; font-weight: 500;">Est. payment: $1,950/mo</p>
-          
-          <button class="btn-gold" style="width: 100%; justify-content: center; margin-bottom: 12px; padding: 16px;">Request a tour</button>
-          <button class="btn-outline" style="width: 100%; justify-content: center; margin-bottom: 32px; padding: 16px; background: transparent;">Contact Agent</button>
-          
+          <div style="font-size: 36px; font-weight: 700; font-family: var(--font-display); color: var(--ink-strong); margin-bottom: 8px;"><?php echo esc_html($display_price); ?></div>
+          <p style="font-size: 15px; color: var(--color-muted); margin-bottom: 32px; font-weight: 500;"><?php echo esc_html($p_status === 'for sale' ? 'Liên hệ Ethan để đặt lịch xem nhà' : ($p_sold !== '' ? 'Đã bán ' . $p_sold : 'Đã bán')); ?></p>
+
+          <a class="btn-gold" style="width: 100%; justify-content: center; margin-bottom: 12px; padding: 16px; display:flex; text-decoration:none;" href="<?php echo esc_url(home_url('/contact/')); ?>">Yêu cầu xem nhà</a>
+          <a class="btn-outline" style="width: 100%; justify-content: center; margin-bottom: 32px; padding: 16px; background: transparent; display:flex; text-decoration:none;" href="tel:+14699895786">Gọi Ethan Dao</a>
+
           <div style="border-top: 1px solid var(--line); padding-top: 24px;">
             <div style="display: flex; align-items: center; gap: 16px;">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg" alt="Agent" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover;" />
@@ -154,6 +162,7 @@
 
     </div>
   </section>
+  <?php endif; ?>
 </main>
 
 <style>

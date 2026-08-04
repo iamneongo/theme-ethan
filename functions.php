@@ -7,6 +7,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+require_once get_template_directory() . '/inc/properties.php';
+
 function ethan_dao_vanilla_static_pages(): array
 {
     return [
@@ -40,6 +42,7 @@ function ethan_dao_vanilla_static_pages(): array
 function ethan_dao_vanilla_query_vars(array $vars): array
 {
     $vars[] = 'ethan_static_page';
+    $vars[] = 'ethan_property_id';
     return $vars;
 }
 add_filter('query_vars', 'ethan_dao_vanilla_query_vars');
@@ -52,11 +55,21 @@ function ethan_dao_vanilla_rewrite_rules(): void
         }
         add_rewrite_rule('^' . preg_quote($slug, '/') . '/?$', 'index.php?ethan_static_page=' . $slug, 'top');
     }
+
+    add_rewrite_rule('^property/([0-9]+)/?$', 'index.php?ethan_property_id=$matches[1]', 'top');
 }
 add_action('init', 'ethan_dao_vanilla_rewrite_rules');
 
 function ethan_dao_vanilla_template_include(string $template): string
 {
+    $property_id = (int) get_query_var('ethan_property_id');
+    if ($property_id > 0 && get_post_type($property_id) === 'property') {
+        $candidate = get_template_directory() . '/templates/property-details.php';
+        if (file_exists($candidate)) {
+            return $candidate;
+        }
+    }
+
     $slug = get_query_var('ethan_static_page');
     if (empty($slug) && (is_front_page() || is_home())) {
         $slug = 'index';
