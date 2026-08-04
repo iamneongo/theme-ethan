@@ -28,6 +28,7 @@ function ethan_dao_vanilla_static_pages(): array
         'neighborhoods' => 'neighborhoods.php',
         'past-transactions' => 'past-transactions.php',
         'properties' => 'properties.php',
+        'property-details' => 'property-details.php',
         'sell' => 'sell.php',
         'seller-guide' => 'seller-guide.php',
         'selling-consultation' => 'selling-consultation.php',

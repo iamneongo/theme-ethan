@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Dancing+Script:wght@700&family=Pattaya&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.58" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1785803813450" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -301,7 +301,7 @@
           <h2 class="h-section-title">Nhận tin <span>nhà mới</span></h2>
           <p>Ethan gửi email khi có listing tốt hoặc thay đổi giá đáng chú ý tại khu vực bạn quan tâm.</p>
           <form data-static-form class="newsletter-form"><div class="nested-input"><input type="email" placeholder="Địa chỉ email của bạn..." required /><button class="btn-gold">Gửi thông tin</button></div><p class="form-success" hidden>Đã nhận. Ethan sẽ liên lạc lại sớm.</p></form>
-          <label><input type="checkbox" /> <span>Tôi đồng ý để Ethan Dao liên hệ qua điện thoại, email và tin nhắn về dịch vụ bất động sản. Để dừng nhận tin, hãy trả lời "stop" bất cứ lúc nào hoặc trả lời "help" để được hỗ trợ. Bạn cũng có thể bấm liên kết hủy đăng ký trong email. Có thể phát sinh phí tin nhắn và dữ liệu. Tần suất tin nhắn có thể thay đổi. <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a>.</span></label>
+
         </div>
       </section>
 

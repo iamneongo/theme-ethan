@@ -2941,3 +2941,25 @@ section.browse-cta {
   max-width: min(340px, 80vw) !important;
 }
 
+
+/* Background image for newsletter */
+.newsletter {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/ethan-aerial-neighborhood.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.newsletter h2, .newsletter p, .newsletter label {
+  color: #ffffff !important;
+}
+
+/* Adjust height and padding for newsletter input and button */
+.newsletter .nested-input input {
+  padding: 12px 20px !important;
+  height: auto !important;
+}
+
+.newsletter .nested-input button {
+  padding: 12px 28px !important;
+  height: auto !important;
+}

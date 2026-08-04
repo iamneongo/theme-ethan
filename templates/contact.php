@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.58" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1785803813449" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -41,15 +41,27 @@
     <div class="menu-overlay" data-menu-overlay></div>
     <?php echo ethan_dao_vanilla_render_drawer_nav(); ?>
     <main class="subpage-main">
-<section class="page-section">
-<div class="content-split">
+<section class="page-section" style="padding-top: 140px;">
+<div class="content-split" style="max-width: 1200px; padding: 0; margin: 0 auto;">
   <div class="reveal" style="align-self: start;">
-    <span class="h-kicker">Thông tin</span>
-    <h2 class="h-section-title">Để lại <span>lời nhắn</span></h2>
-    <p>Tôi sẽ gửi tin nhắn trực tiếp vào số điện thoại của bạn.</p>
-    <div style="margin-top: 40px; font-size: 16px;">
-      <p style="margin-bottom: 24px;"><strong>Gọi hoặc nhắn tin:</strong><br><a href="tel:+14699895786" style="color: var(--ink-strong); font-weight: 500; text-decoration: none;">(469) 989-5786</a></p>
-      <p><strong>Email:</strong><br><a href="mailto:ethandaorealtor@gmail.com" style="color: var(--ink-strong); font-weight: 500; text-decoration: none;">ethandaorealtor@gmail.com</a></p>
+    <div style="margin-bottom: 40px;">
+      <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); font-weight: 700; display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+        Thông tin
+        <span style="display: block; width: 40px; height: 1px; background: var(--gold); opacity: 0.5;"></span>
+      </span>
+      <h2 style="font-family: var(--font-display); font-size: clamp(42px, 5vw, 56px); font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -0.03em; color: var(--ink-strong);">Để lại lời nhắn</h2>
+    </div>
+    <p style="font-size: 18px; line-height: 1.6; color: var(--color-muted); max-width: 400px; margin-bottom: 48px;">Tôi sẽ gửi tin nhắn trực tiếp vào số điện thoại của bạn.</p>
+    
+    <div style="display: flex; flex-direction: column; gap: 32px;">
+      <div>
+        <p style="font-family: var(--font-display); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; margin: 0 0 8px;">Gọi hoặc nhắn tin</p>
+        <a href="tel:+14699895786" style="font-family: var(--font-display); font-size: 28px; color: var(--ink-strong); text-decoration: none; font-weight: 500; letter-spacing: -0.02em;">(469) 989-5786</a>
+      </div>
+      <div>
+        <p style="font-family: var(--font-display); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; margin: 0 0 8px;">Email</p>
+        <a href="mailto:ethandaorealtor@gmail.com" style="font-family: var(--font-display); font-size: 26px; color: var(--ink-strong); text-decoration: none; font-weight: 500; letter-spacing: -0.02em; word-break: break-all;">ethandaorealtor@gmail.com</a>
+      </div>
     </div>
   </div>
   <div class="form-panel reveal" style="border: none; background: transparent; padding: 0; box-shadow: none;">
@@ -75,7 +87,7 @@
     </form>
   </div>
 </div>
-</section><section class="page-section"><div class="container"><span class="h-kicker reveal">Câu hỏi nhanh</span><h2 class="h-section-title reveal">Trước khi <span>liên hệ</span></h2><div class="faq-list"><div class="faq-item reveal"><div class="faq-q">Tôi gọi hỏi linh tinh có phiền không?</div><div class="faq-a"><p>Không sao cả. Cứ nhắn tin hỏi tôi bất kỳ lúc nào, kể cả bạn chưa có ý định mua nhà ngay.</p></div></div><div class="faq-item reveal"><div class="faq-q">Cuối tuần tôi đi xem nhà được không?</div><div class="faq-a"><p>Được. Thứ Bảy và Chủ Nhật là thời gian chính tôi đưa khách đi xem nhà mở (Open House).</p></div></div><div class="faq-item reveal"><div class="faq-q">Tôi ở ngoài Dallas có được hỗ trợ không?</div><div class="faq-a"><p>Ethan hoạt động tại Dallas-Fort Worth. Nếu bạn ở bang khác hoặc Việt Nam, Ethan tư vấn qua video call.</p></div></div></div></div></section></main>
+</section></main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>

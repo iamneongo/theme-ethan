@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1.0.58" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1785803813446" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -128,31 +128,32 @@
       <article class="reveal"><span>04</span><h3>Được khách hàng tin chọn</h3><p>Liên tục được công nhận nhờ số lượng giao dịch thành công và 100% đánh giá hài lòng từ những khách hàng đã làm việc trực tiếp.</p></article>
     </div>
   </div>
+</section>
 <section class="page-section" style="background: #f8f6f1;">
   <div class="container">
     <span class="h-kicker reveal">Cam kết</span>
     <h2 class="h-section-title reveal">Nguyên tắc <span>làm việc</span></h2>
-    <div class="value-grid">
-      <div class="value-card reveal">
-        <span class="value-icon" style="font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1; margin-bottom: 24px; display: block; color: var(--gold);">01</span>
-        <h3>Nói thật</h3>
-        <p>Nếu nhà bị lỗi, tôi sẽ chỉ cho bạn. Tôi báo đúng giá thị trường, không hối thúc bạn mua nhà nếu không phù hợp.</p>
-      </div>
-      <div class="value-card reveal">
-        <span class="value-icon" style="font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1; margin-bottom: 24px; display: block; color: var(--gold);">02</span>
-        <h3>Phản hồi nhanh</h3>
-        <p>Tôi luôn trả lời tin nhắn ngay lập tức. Trong lúc đàm phán mua nhà, tốc độ là yếu tố quyết định.</p>
-      </div>
-      <div class="value-card reveal">
-        <span class="value-icon" style="font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1; margin-bottom: 24px; display: block; color: var(--gold);">03</span>
-        <h3>Có cơ sở</h3>
-        <p>Mọi lời khuyên của tôi đều dựa trên báo cáo dữ liệu thị trường thực tế thay vì cảm tính cá nhân.</p>
-      </div>
+    <div class="value-grid" style="margin-top: 56px;">
+      <article class="reveal" style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 32px;">
+        <span style="font-family: var(--font-script); font-size: 42px; color: var(--gold); display: block; margin-bottom: 12px; line-height: 1;">01</span>
+        <h3 style="font-family: var(--font-display); font-size: 22px; font-weight: 620; margin: 0 0 12px;">Nói thật</h3>
+        <p style="color: var(--color-muted); font-size: 15px; line-height: 1.6; margin: 0;">Nếu nhà bị lỗi, tôi sẽ chỉ cho bạn. Tôi báo đúng giá thị trường, không hối thúc bạn mua nhà nếu không phù hợp.</p>
+      </article>
+      <article class="reveal" style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 32px;">
+        <span style="font-family: var(--font-script); font-size: 42px; color: var(--gold); display: block; margin-bottom: 12px; line-height: 1;">02</span>
+        <h3 style="font-family: var(--font-display); font-size: 22px; font-weight: 620; margin: 0 0 12px;">Phản hồi nhanh</h3>
+        <p style="color: var(--color-muted); font-size: 15px; line-height: 1.6; margin: 0;">Tôi luôn trả lời tin nhắn ngay lập tức. Trong lúc đàm phán mua nhà, tốc độ là yếu tố quyết định.</p>
+      </article>
+      <article class="reveal" style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 32px;">
+        <span style="font-family: var(--font-script); font-size: 42px; color: var(--gold); display: block; margin-bottom: 12px; line-height: 1;">03</span>
+        <h3 style="font-family: var(--font-display); font-size: 22px; font-weight: 620; margin: 0 0 12px;">Có cơ sở</h3>
+        <p style="color: var(--color-muted); font-size: 15px; line-height: 1.6; margin: 0;">Mọi lời khuyên của tôi đều dựa trên báo cáo dữ liệu thị trường thực tế thay vì cảm tính cá nhân.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="page-section dark"><div class="container"><span class="h-kicker light reveal">Kết quả</span><h2 class="h-section-title reveal">Thành quả <span>đạt được</span></h2><div class="stats-band"><div class="stat-item reveal"><div class="stat-number">38<span>+</span></div><div class="stat-label">Giao dịch hoàn tất</div></div><div class="stat-item reveal"><div class="stat-number">5<span>★</span></div><div class="stat-label">Đánh giá trung bình</div></div><div class="stat-item reveal"><div class="stat-number">15K<span>+</span></div><div class="stat-label">Người theo dõi</div></div><div class="stat-item reveal"><div class="stat-number">100<span>%</span></div><div class="stat-label">Khách hàng hài lòng</div></div></div></div></section>
+<section class="page-section dark" style="padding: 40px 0;"><div class="container"><div class="stats-band" style="margin-top: 0;"><div class="stat-item reveal"><div class="stat-number">38<span>+</span></div><div class="stat-label">Giao dịch hoàn tất</div></div><div class="stat-item reveal"><div class="stat-number">5<span style="font-family: var(--font-sans) !important; font-size: 0.6em; display: inline-block; transform: translateY(-0.15em); margin-left: 4px;">★</span></div><div class="stat-label">Đánh giá trung bình</div></div><div class="stat-item reveal"><div class="stat-number">15K<span>+</span></div><div class="stat-label">Người theo dõi</div></div><div class="stat-item reveal"><div class="stat-number">100<span>%</span></div><div class="stat-label">Khách hàng hài lòng</div></div></div></div></section>
 
 <section class="page-section"><div class="content-split" style="align-items: center;"><div class="reveal" style="display:flex;flex-direction:column;justify-content:center;"><span class="h-kicker" style="margin-bottom: 12px;">Đội ngũ</span><h2 class="h-section-title">Texas Ace <span>Team</span></h2><p>Tôi là thành viên của Texas Ace Team trực thuộc hệ thống eXp Realty. Chúng tôi là một trong những đội ngũ môi giới hoạt động mạnh nhất và gắn kết nhất tại thị trường Dallas-Fort Worth.</p><p>Khi làm việc với tôi, bạn không chỉ có một người môi giới, mà còn nhận được sự hỗ trợ từ mạng lưới kinh nghiệm của cả một tập thể. Bất kể vấn đề pháp lý hay kết nối nhà thầu sửa chữa, tôi và đội ngũ luôn có giải pháp xử lý nhanh gọn cho bạn.</p></div><div class="reveal" style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: #fff;"><img src="https://images.squarespace-cdn.com/content/v1/62d8fbfb93e6dc1389f0aac3/a6856c67-e056-433b-b43f-c71cf139390d/TexasAce-28.jpg?format=1500w" alt="Ethan Dao and Texas Ace Team" style="width: 100%; display: block; object-fit: cover; aspect-ratio: 4/3; border-radius: 6px;" /></div></div></section>
 
