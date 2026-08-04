@@ -80,21 +80,66 @@
     <div class="container center">
       <span class="h-kicker">Chiến lược</span>
       <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết của <span>tôi</span></h2>
-      <div class="value-grid">
-        <div class="value-card reveal">
-          <i class="ph-fill ph-crosshair value-icon"></i>
-          <h3>Định giá chính xác</h3>
-          <p>Phân tích thị trường cặn kẽ để đưa ra mức giá niêm yết chính xác, giúp bạn bán nhanh với giá tốt.</p>
+      <style>
+        .line-separated-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0;
+          border-top: 1px solid var(--color-line);
+          border-bottom: 1px solid var(--color-line);
+        }
+        .line-separated-grid > div {
+          border-right: 1px solid var(--color-line);
+        }
+        .line-separated-grid > div:last-child {
+          border-right: none;
+        }
+        .line-separated-grid .commitment-number {
+          font-family: var(--font-script);
+          font-size: 64px;
+          line-height: 1;
+          font-weight: 400;
+          color: var(--gold-dark);
+          letter-spacing: .02em;
+          text-shadow: 0 1px 0 rgba(255,255,255,.6);
+        }
+        @media (max-width: 900px) {
+          .line-separated-grid {
+            grid-template-columns: 1fr;
+          }
+          .line-separated-grid > div {
+            border-right: none;
+            border-bottom: 1px solid var(--color-line);
+          }
+          .line-separated-grid > div:last-child {
+            border-bottom: none;
+          }
+          .line-separated-grid .commitment-number {
+            font-size: 52px;
+          }
+        }
+      </style>
+      <div class="line-separated-grid" style="text-align: left; margin-top: 48px;">
+        <div class="reveal" style="padding: 32px 32px 32px 0; display: flex; flex-direction: column; gap: 16px;">
+          <span class="commitment-number">01</span>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;">Định giá chính xác</h3>
+            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;">Phân tích thị trường cặn kẽ để đưa ra mức giá niêm yết chính xác, giúp bạn bán nhanh với giá tốt.</p>
+          </div>
         </div>
-        <div class="value-card reveal">
-          <i class="ph-fill ph-rocket value-icon"></i>
-          <h3>Marketing đột phá</h3>
-          <p>Sử dụng video tour, hình ảnh flycam và quảng cáo nhắm mục tiêu để đưa ngôi nhà của bạn tiếp cận hàng ngàn người xem.</p>
+        <div class="reveal" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+          <span class="commitment-number">02</span>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;">Marketing đột phá</h3>
+            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;">Sử dụng video tour, hình ảnh flycam và quảng cáo nhắm mục tiêu để đưa ngôi nhà của bạn tiếp cận hàng ngàn người xem.</p>
+          </div>
         </div>
-        <div class="value-card reveal">
-          <i class="ph-fill ph-shield-check value-icon"></i>
-          <h3>Bảo vệ quyền lợi</h3>
-          <p>Sàng lọc chặt chẽ các offer, loại bỏ rủi ro tài chính từ người mua và bảo vệ lợi ích của bạn trong mọi khâu đàm phán.</p>
+        <div class="reveal" style="padding: 32px 0 32px 32px; display: flex; flex-direction: column; gap: 16px;">
+          <span class="commitment-number">03</span>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;">Bảo vệ quyền lợi</h3>
+            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;">Sàng lọc chặt chẽ các offer, loại bỏ rủi ro tài chính từ người mua và bảo vệ lợi ích của bạn trong mọi khâu đàm phán.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -154,15 +199,28 @@
       <span class="h-kicker light reveal">Xem thực tế</span>
       <h2 class="h-section-title reveal">Video Listing <span>nổi bật</span></h2>
       <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.6;">Xem cách Ethan giới thiệu và bán nhà cho khách hàng thông qua video marketing chuyên nghiệp.</p>
-      <div class="video-showcase">
-        <div class="video-showcase-card reveal">
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Home Tour Lavon" allowfullscreen></iframe></div>
-          <div class="video-meta"><h3>Home Tour — Lavon New Build</h3><p>Video tour 4 bed/3 bath nhà mới xây tại Lavon với drone footage và walkthrough chi tiết.</p><span class="video-stat">⚡ Bán trong 7 ngày</span></div>
-        </div>
-        <div class="video-showcase-card reveal">
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Home Tour McKinney" allowfullscreen></iframe></div>
-          <div class="video-meta"><h3>Home Tour — McKinney Family Home</h3><p>Cinematic walkthrough căn nhà gia đình tại McKinney, 102% giá niêm yết.</p><span class="video-stat">💰 Bán 102% list price</span></div>
-        </div>
+      <div class="video-grid">
+        <article class="reveal">
+          <h3>LAVON TEXAS - Lakepointe review 4 mẫu nhà new build</h3>
+          <p>Review 4 mẫu nhà trong tầm giá $300K-$400K, phù hợp để ở hoặc đầu tư tại khu Lavon đang phát triển.</p>
+          <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qsBWEIueBUs?rel=0" title="Lavon 75166" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
+          </div>
+        </article>
+        <article class="reveal">
+          <h3>Lavon 75166 | khu nhà mới cách Garland khu người Việt</h3>
+          <p>Video tour thực tế về nhà 4 phòng ngủ tại Lavon, giá từ khoảng $315K.</p>
+          <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PH7ssSv_eoI?rel=0" title="Home Tour Lavon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
+          </div>
+        </article>
+        <article class="reveal">
+          <h3>Wylie 75098 | căn nhà đời 2017 tại Inspiration Community</h3>
+          <p>Shorts giới thiệu căn nhà hai mặt tiền trong khu Inspiration, phù hợp gia đình tìm cộng đồng đẹp và trường tốt.</p>
+          <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxfLLkoGMiE?rel=0" title="Wylie 75098" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -196,11 +254,11 @@
     </div>
   </section>
 
-  <section class="page-section center">
-    <div class="container reveal">
-      <h2 class="h-section-title" style="max-width: 600px; margin: 0 auto 24px;">Bạn đã sẵn sàng <span>để bán nhà?</span></h2>
-      <p style="margin-bottom: 32px; color: var(--muted); font-size: 18px;">Nhắn tin địa chỉ nhà, tôi sẽ gửi ngay báo cáo giá thị trường.</p>
-      <div class="button-row" style="justify-content: center;">
+  <section class="newsletter">
+    <div class="newsletter-inner reveal">
+      <h2 class="h-section-title">Bạn đã sẵn sàng <span>để bán nhà?</span></h2>
+      <p>Nhắn tin địa chỉ nhà, tôi sẽ gửi ngay báo cáo giá thị trường.</p>
+      <div class="button-row" style="justify-content: center; margin-top: 36px;">
         <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
         <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
       </div>

@@ -117,7 +117,7 @@
             </div>
           </article>
         </div>
-      </section><section class="subpage-quote-band"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-aerial-houston.jpg?v=1.0.58" alt="Dallas-Fort Worth" /><div class="overlay"></div><blockquote class="reveal">“Tôi thích giúp người Việt mình tìm được căn nhà phù hợp ở Texas.”</blockquote></section><section class="page-section dark">
+      </section><section class="page-section dark">
   <div class="container">
     <span class="h-kicker light reveal">Câu chuyện</span>
     <h2 class="h-section-title reveal">Kinh nghiệm của <span>tôi</span></h2>
