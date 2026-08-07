@@ -142,13 +142,28 @@
 
       <section class="platforms">
         <span><?php echo esc_html(ethan_mod('home_platforms_label', 'Theo Dõi Ethan Tại')); ?></span>
-        <a href="https://www.exprealty.com/" target="_blank" rel="noopener" class="platforms-pill">eXp Realty</a>
-        <a href="https://www.exprealty.com/us/tx/irving/teams/texas-ace-team" target="_blank" rel="noopener" class="platforms-pill">Texas Ace Team</a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_zillow', 'https://www.zillow.com/profile/ethandaorealtor')); ?>" target="_blank" rel="noopener" aria-label="Zillow" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_youtube', 'https://youtube.com/')); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_facebook', 'https://facebook.com/')); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_instagram', 'https://instagram.com/')); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_tiktok', 'https://tiktok.com/')); ?>" target="_blank" rel="noopener" aria-label="TikTok" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="24" height="24" /></a>
+        <div class="platforms-marquee-wrap">
+          <div class="platforms-marquee-track">
+            <?php
+            $zillow_url   = esc_url(ethan_mod('ethan_social_zillow',    'https://www.zillow.com/profile/ethandaorealtor'));
+            $youtube_url  = esc_url(ethan_mod('ethan_social_youtube',   'https://youtube.com/'));
+            $facebook_url = esc_url(ethan_mod('ethan_social_facebook',  'https://facebook.com/'));
+            $instagram_url= esc_url(ethan_mod('ethan_social_instagram', 'https://instagram.com/'));
+            $tiktok_url   = esc_url(ethan_mod('ethan_social_tiktok',    'https://tiktok.com/'));
+            $cdn = 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons';
+            $items = '<a href="https://www.exprealty.com/" target="_blank" rel="noopener" class="platforms-pill">eXp Realty</a>'
+                   . '<a href="https://www.exprealty.com/us/tx/irving/teams/texas-ace-team" target="_blank" rel="noopener" class="platforms-pill">Texas Ace Team</a>'
+                   . '<a href="' . $zillow_url    . '" target="_blank" rel="noopener" aria-label="Zillow"     class="platforms-icon"><img src="' . $cdn . '/zillow/default.svg"    alt="Zillow"     width="24" height="24" /></a>'
+                   . '<a href="' . $youtube_url   . '" target="_blank" rel="noopener" aria-label="YouTube"    class="platforms-icon"><img src="' . $cdn . '/youtube/default.svg"   alt="YouTube"    width="24" height="24" /></a>'
+                   . '<a href="' . $facebook_url  . '" target="_blank" rel="noopener" aria-label="Facebook"   class="platforms-icon"><img src="' . $cdn . '/facebook/default.svg"  alt="Facebook"   width="24" height="24" /></a>'
+                   . '<a href="' . $instagram_url . '" target="_blank" rel="noopener" aria-label="Instagram"  class="platforms-icon"><img src="' . $cdn . '/instagram/default.svg" alt="Instagram"  width="24" height="24" /></a>'
+                   . '<a href="' . $tiktok_url    . '" target="_blank" rel="noopener" aria-label="TikTok"     class="platforms-icon"><img src="' . $cdn . '/tiktok/default.svg"    alt="TikTok"     width="24" height="24" /></a>';
+            echo $items;
+            // Duplicate for seamless infinite loop
+            echo str_replace('aria-label=', 'aria-hidden="true" tabindex="-1" aria-label=', $items);
+            ?>
+          </div>
+        </div>
       </section>
 
       <section class="map-section zillow-profile-section">
@@ -222,18 +237,17 @@
         <div class="container">
           <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('home_video_title', 'Kênh YouTube hướng dẫn mua nhà')); ?> <span><?php echo esc_html(ethan_mod('home_video_title_accent', 'DFW')); ?></span></h2>
           <article class="media-row reveal">
-            <div class="media-visual-link iframe-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=UUzaeoor-IXyqppQcl59dabw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="media-visual-link iframe-wrap"><iframe width="100%" height="100%" src="<?php echo esc_url(ethan_mod('home_vid1_embed', 'https://www.youtube.com/embed/videoseries?list=UUzaeoor-IXyqppQcl59dabw')); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw" target="_blank" rel="noopener noreferrer" class="media-copy-link">Tour nhà thực tế <span>Dallas Texas</span></a></h3>
-              <p>Tôi quay thực tế bên trong từng căn — không filter, không bỏ qua chỗ xấu. Để bạn xem trước khi đặt lịch.</p>
+              <h3><a href="<?php echo esc_url(ethan_mod('home_vid1_link', 'https://www.youtube.com/channel/UCzaeoor-IXyqppQcl59dabw')); ?>" target="_blank" rel="noopener noreferrer" class="media-copy-link"><?php echo esc_html(ethan_mod('home_vid1_title', 'Tour nhà thực tế')); ?> <span><?php echo esc_html(ethan_mod('home_vid1_accent', 'Dallas Texas')); ?></span></a></h3>
+              <p><?php echo esc_html(ethan_mod('home_vid1_body', 'Tôi quay thực tế bên trong từng căn — không filter, không bỏ qua chỗ xấu. Để bạn xem trước khi đặt lịch.')); ?></p>
             </div>
           </article>
           <article class="media-row reveal">
             <div class="media-embed">
               <iframe
-                src="https://www.youtube.com/embed/qsBWEIueBUs?rel=0"
-                title="Tour nhà mới và khu dân cư tại DFW cùng Ethan Dao"
+                src="<?php echo esc_url(ethan_mod('home_vid2_embed', 'https://www.youtube.com/embed/qsBWEIueBUs?rel=0')); ?>"
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -242,15 +256,14 @@
             </div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/watch?v=PH7ssSv_eoI" target="_blank" rel="noopener noreferrer" class="media-copy-link">Phân tích nhà mới và khu dân cư <span>DFW</span></a></h3>
-              <p>Review thực tế 4 mẫu nhà mới tại Lavon, giá $300K–$400K. Tôi xem từng mẫu và nói thẳng cái nào đáng đặt cọc.</p>
+              <h3><a href="<?php echo esc_url(ethan_mod('home_vid2_link', 'https://www.youtube.com/watch?v=PH7ssSv_eoI')); ?>" target="_blank" rel="noopener noreferrer" class="media-copy-link"><?php echo esc_html(ethan_mod('home_vid2_title', 'Phân tích nhà mới và khu dân cư')); ?> <span><?php echo esc_html(ethan_mod('home_vid2_accent', 'DFW')); ?></span></a></h3>
+              <p><?php echo esc_html(ethan_mod('home_vid2_body', 'Review thực tế 4 mẫu nhà mới tại Lavon, giá $300K–$400K. Tôi xem từng mẫu và nói thẳng cái nào đáng đặt cọc.')); ?></p>
             </div>
           </article>
           <article class="media-row reveal">
             <div class="media-embed">
               <iframe
-                src="https://www.youtube.com/embed/gxwWX1SubZY?rel=0"
-                title="Vlog open house và hành trình môi giới của Ethan Dao"
+                src="<?php echo esc_url(ethan_mod('home_vid3_embed', 'https://www.youtube.com/embed/gxwWX1SubZY?rel=0')); ?>"
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -259,8 +272,8 @@
             </div>
             <div>
               <i></i>
-              <h3><a href="https://www.youtube.com/watch?v=gxwWX1SubZY" target="_blank" rel="noopener noreferrer" class="media-copy-link">Hậu trường nghề môi giới tại <span>Texas</span></a></h3>
-              <p>Vlog thực tế về một buổi closing — từng bước trong ngày hoàn tất giao dịch mua nhà tại Mỹ.</p>
+              <h3><a href="<?php echo esc_url(ethan_mod('home_vid3_link', 'https://www.youtube.com/watch?v=gxwWX1SubZY')); ?>" target="_blank" rel="noopener noreferrer" class="media-copy-link"><?php echo esc_html(ethan_mod('home_vid3_title', 'Hậu trường nghề môi giới tại')); ?> <span><?php echo esc_html(ethan_mod('home_vid3_accent', 'Texas')); ?></span></a></h3>
+              <p><?php echo esc_html(ethan_mod('home_vid3_body', 'Vlog thực tế về một buổi closing — từng bước trong ngày hoàn tất giao dịch mua nhà tại Mỹ.')); ?></p>
             </div>
           </article>
         </div>
@@ -298,7 +311,7 @@
             ?>
             <article data-href="<?php echo esc_url(ethan_dao_vanilla_property_url($_p->ID)); ?>" style="cursor:pointer;"><img src="<?php echo esc_url($_img); ?>" alt="<?php echo esc_attr($_addr); ?>" loading="lazy" /><span>Đã bán</span><div><h3><?php echo esc_html($_addr); ?></h3><?php if ($_parts): ?><p><?php echo esc_html(implode(' · ', $_parts)); ?></p><?php endif; ?></div></article>
             <?php endforeach; ?>
-          </div>          <div class="carousel-actions"><div><button data-scroll-sales="-1" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button data-scroll-sales="1" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div><a href="<?php echo esc_url(home_url('/past-transactions/')); ?>" class="btn-primary-navy">Xem tất cả</a></div>
+          </div>          <div class="carousel-actions"><div><button data-scroll-sales="-1" aria-label="Previous"><svg><use href="#icon-chevron-left"/></svg></button><button data-scroll-sales="1" aria-label="Next"><svg><use href="#icon-chevron-right"/></svg></button></div><a href="<?php echo esc_url(home_url('/past-transactions/')); ?>" class="btn-outline-dark">Xem tất cả</a></div>
         </div>
       </section>
 

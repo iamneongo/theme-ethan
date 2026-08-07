@@ -62,13 +62,28 @@
 
       <section class="platforms">
         <span><?php echo esc_html(ethan_mod('home_platforms_label', 'Theo Dõi Ethan Tại')); ?></span>
-        <a href="https://www.exprealty.com/" target="_blank" rel="noopener" class="platforms-pill">eXp Realty</a>
-        <a href="https://www.exprealty.com/us/tx/irving/teams/texas-ace-team" target="_blank" rel="noopener" class="platforms-pill">Texas Ace Team</a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_zillow', 'https://www.zillow.com/profile/ethandaorealtor')); ?>" target="_blank" rel="noopener" aria-label="Zillow" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_youtube', 'https://youtube.com/')); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_facebook', 'https://facebook.com/')); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_instagram', 'https://instagram.com/')); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="24" height="24" /></a>
-        <a href="<?php echo esc_url(ethan_mod('ethan_social_tiktok', 'https://tiktok.com/')); ?>" target="_blank" rel="noopener" aria-label="TikTok" class="platforms-icon"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="24" height="24" /></a>
+        <div class="platforms-marquee-wrap">
+          <div class="platforms-marquee-track">
+            <?php
+            $zillow_url   = esc_url(ethan_mod('ethan_social_zillow',    'https://www.zillow.com/profile/ethandaorealtor'));
+            $youtube_url  = esc_url(ethan_mod('ethan_social_youtube',   'https://youtube.com/'));
+            $facebook_url = esc_url(ethan_mod('ethan_social_facebook',  'https://facebook.com/'));
+            $instagram_url= esc_url(ethan_mod('ethan_social_instagram', 'https://instagram.com/'));
+            $tiktok_url   = esc_url(ethan_mod('ethan_social_tiktok',    'https://tiktok.com/'));
+            $cdn = 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons';
+            $items = '<a href="https://www.exprealty.com/" target="_blank" rel="noopener" class="platforms-pill">eXp Realty</a>'
+                   . '<a href="https://www.exprealty.com/us/tx/irving/teams/texas-ace-team" target="_blank" rel="noopener" class="platforms-pill">Texas Ace Team</a>'
+                   . '<a href="' . $zillow_url    . '" target="_blank" rel="noopener" aria-label="Zillow"     class="platforms-icon"><img src="' . $cdn . '/zillow/default.svg"    alt="Zillow"     width="24" height="24" /></a>'
+                   . '<a href="' . $youtube_url   . '" target="_blank" rel="noopener" aria-label="YouTube"    class="platforms-icon"><img src="' . $cdn . '/youtube/default.svg"   alt="YouTube"    width="24" height="24" /></a>'
+                   . '<a href="' . $facebook_url  . '" target="_blank" rel="noopener" aria-label="Facebook"   class="platforms-icon"><img src="' . $cdn . '/facebook/default.svg"  alt="Facebook"   width="24" height="24" /></a>'
+                   . '<a href="' . $instagram_url . '" target="_blank" rel="noopener" aria-label="Instagram"  class="platforms-icon"><img src="' . $cdn . '/instagram/default.svg" alt="Instagram"  width="24" height="24" /></a>'
+                   . '<a href="' . $tiktok_url    . '" target="_blank" rel="noopener" aria-label="TikTok"     class="platforms-icon"><img src="' . $cdn . '/tiktok/default.svg"    alt="TikTok"     width="24" height="24" /></a>';
+            echo $items;
+            // Duplicate for seamless infinite loop
+            echo str_replace('aria-label=', 'aria-hidden="true" tabindex="-1" aria-label=', $items);
+            ?>
+          </div>
+        </div>
       </section>
 
       <section class="beyond">

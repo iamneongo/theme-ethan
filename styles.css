@@ -1959,12 +1959,9 @@ section.browse-cta {
   color: var(--gold) !important;
 }
 
-.recent .h-section-title span {
-  color: #c5a880 !important;
-}
-
+.recent .h-section-title span,
 .listings .h-section-title span {
-  color: #e5cfab !important;
+  color: #FFC400 !important;
 }
 
 /* Style má»›i cho 2 NÃºt Báº¥m Hero Actions (Primary Navy + Book Call Outline) */
@@ -3531,7 +3528,7 @@ section.browse-cta {
 .property-list article,
 .highlight-panel,
 .form-panel {
-  background: var(--color-surface) !important;
+  background: transparent !important;
   color: var(--color-ink) !important;
   border-color: var(--color-line) !important;
 }
@@ -3575,11 +3572,14 @@ h1, h2, h3, h4,
 /* --- Sections that were hardcoded white/light -> dark --- */
 .about,
 .zillow-profile,
-.zillow-profile-inner,
 .work,
-.media-row,
 .side-menu {
   background: var(--color-bg) !important;
+  color: var(--color-ink) !important;
+}
+.zillow-profile-inner,
+.media-row {
+  background: transparent !important;
   color: var(--color-ink) !important;
 }
 
@@ -3644,7 +3644,7 @@ h1, h2, h3, h4,
 
 /* Custom select dropdown (contact page) */
 .select-selected {
-  background: var(--color-surface) !important;
+  background: transparent !important;
   color: var(--color-ink) !important;
 }
 .select-items div { color: var(--color-ink) !important; }
@@ -3966,3 +3966,75 @@ form textarea::placeholder { color: rgba(255,255,255,.45) !important; }
 .banner-header .nav-group > a.is-current {
   color: #FFC400 !important;
 }
+
+/* Platforms marquee — active on ALL screen sizes */
+@keyframes platforms-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.platforms {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+.platforms-marquee-wrap {
+  display: block !important;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+.platforms-marquee-track {
+  display: flex !important;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  animation: platforms-scroll 20s linear infinite;
+  padding: 4px 0;
+}
+.platforms-marquee-track:hover { animation-play-state: paused; }
+
+/* Form inputs dark theme — border sáng trên nền tối */
+.form-panel input,
+.form-panel select,
+.form-panel textarea {
+  border-bottom: 1px solid rgba(255,255,255,.22) !important;
+  color: var(--color-ink) !important;
+}
+.form-panel input:focus,
+.form-panel select:focus,
+.form-panel textarea:focus {
+  border-bottom-color: #FFC400 !important;
+  outline: none !important;
+}
+.form-panel .custom-select,
+.form-panel .select-selected {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255,255,255,.22) !important;
+  color: var(--color-ink) !important;
+}
+.form-panel .select-items {
+  background: var(--color-surface) !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  color: var(--color-ink) !important;
+}
+
+/* =========================================================
+   FIX: Legacy CSS vars -> dark-theme values
+   Contact page dùng --gold, --ink-strong, --line (light theme).
+   Ghi đè ở đây để đồng bộ toàn bộ trang.
+   ========================================================= */
+:root {
+  --gold: #FFC400;
+  --gold-light: #FFD64D;
+  --gold-dark: #E6AF00;
+  --ink: var(--color-ink);
+  --ink-strong: var(--color-ink);
+  --muted: var(--color-muted);
+  --line: var(--color-line);
+}
+
+/* FIX: .recent / .listings h2 accent span -> bright gold */
+.recent .h-section-title span,
+.listings .h-section-title span { color: #FFC400 !important; }

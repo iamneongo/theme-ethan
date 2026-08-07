@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Ethan Dao Vanilla theme bootstrap.
  */
@@ -18,30 +18,13 @@ if (is_admin()) {
 function ethan_dao_vanilla_static_pages(): array
 {
     return [
-        'about' => 'about.php',
-        'agent-collaborations' => 'agent-collaborations.php',
-        'blog' => 'blog.php',
-        'browse-properties' => 'properties.php',
-        'buy' => 'buy.php',
-        'buyer-guide' => 'buyer-guide.php',
-        'buyer-information' => 'buyer-information.php',
-        'contact' => 'contact.php',
-        'featured-properties' => 'featured-properties.php',
-        'garland' => 'garland.php',
-        'home-valuation' => 'home-valuation.php',
-        'index' => 'index.php',
-        'join-team' => 'join-team.php',
-        'lavon' => 'lavon.php',
-        'mckinney' => 'mckinney.php',
-        'neighborhoods' => 'neighborhoods.php',
-        'past-transactions' => 'past-transactions.php',
-        'properties' => 'properties.php',
+        'about'           => 'about.php',
+        'buy'             => 'buy.php',
+        'contact'         => 'contact.php',
+        'index'           => 'index.php',
+        'properties'      => 'properties.php',
         'property-details' => 'property-details.php',
-        'sell' => 'sell.php',
-        'seller-guide' => 'seller-guide.php',
-        'selling-consultation' => 'selling-consultation.php',
-        'services' => 'services.php',
-        'testimonials' => 'testimonials.php'
+        'sell'            => 'sell.php',
     ];
 }
 
@@ -119,28 +102,11 @@ add_action('after_setup_theme', 'ethan_dao_vanilla_register_menu_locations');
 function ethan_dao_vanilla_page_titles(): array
 {
     return [
-        'buy' => 'Mua nhÃ ',
-        'buyer-guide' => 'HÆ°á»›ng dáº«n mua nhÃ ',
-        'buyer-information' => 'ThÃ´ng tin ngÆ°á»i mua',
-        'browse-properties' => 'Xem nhÃ ',
-        'sell' => 'BÃ¡n nhÃ ',
-        'seller-guide' => 'HÆ°á»›ng dáº«n bÃ¡n nhÃ ',
-        'selling-consultation' => 'TÆ° váº¥n bÃ¡n nhÃ ',
-        'home-valuation' => 'Äá»‹nh giÃ¡ nhÃ ',
-        'past-transactions' => 'NhÃ  Ä‘Ã£ bÃ¡n gáº§n Ä‘Ã¢y',
-        'properties' => 'Báº¥t Ä‘á»™ng sáº£n',
-        'featured-properties' => 'NhÃ  ná»•i báº­t',
-        'neighborhoods' => 'Khu vá»±c',
-        'mckinney' => 'McKinney',
-        'lavon' => 'Lavon',
-        'garland' => 'Garland',
-        'about' => 'Vá» Ethan',
-        'testimonials' => 'Cáº£m nháº­n khÃ¡ch hÃ ng',
-        'services' => 'Dá»‹ch vá»¥',
-        'blog' => 'BÃ i viáº¿t',
-        'contact' => 'LiÃªn há»‡',
-        'join-team' => 'Gia nháº­p Ä‘á»™i ngÅ©',
-        'agent-collaborations' => 'Há»£p tÃ¡c Ä‘áº¡i lÃ½',
+        'buy'        => 'Mua nhà',
+        'sell'       => 'Bán nhà',
+        'properties' => 'Bất động sản',
+        'about'      => 'Về Ethan',
+        'contact'    => 'Liên hệ',
     ];
 }
 
@@ -148,27 +114,27 @@ function ethan_dao_vanilla_menu_blueprints(): array
 {
     return [
         'primary' => [
-            ['slug' => 'buy', 'title' => 'Mua nhÃ '],
-            ['slug' => 'sell', 'title' => 'BÃ¡n nhÃ '],
-            ['slug' => 'properties', 'title' => 'Báº¥t Ä‘á»™ng sáº£n'],
-            ['slug' => 'about', 'title' => 'Giá»›i thiá»‡u'],
-            ['slug' => 'contact', 'title' => 'LiÃªn há»‡'],
+            ['slug' => 'buy',        'title' => 'Mua nhà'],
+            ['slug' => 'sell',       'title' => 'Bán nhà'],
+            ['slug' => 'properties', 'title' => 'Bất động sản'],
+            ['slug' => 'about',      'title' => 'Giới thiệu'],
+            ['slug' => 'contact',    'title' => 'Liên hệ'],
         ],
         'drawer' => [
-            ['slug' => 'home', 'title' => 'Trang chá»§'],
-            ['slug' => 'buy', 'title' => 'Mua nhÃ '],
-            ['slug' => 'sell', 'title' => 'BÃ¡n nhÃ '],
-            ['slug' => 'properties', 'title' => 'Báº¥t Ä‘á»™ng sáº£n'],
-            ['slug' => 'about', 'title' => 'Giá»›i thiá»‡u'],
-            ['slug' => 'contact', 'title' => 'LiÃªn há»‡'],
+            ['slug' => 'home',       'title' => 'Trang chủ'],
+            ['slug' => 'buy',        'title' => 'Mua nhà'],
+            ['slug' => 'sell',       'title' => 'Bán nhà'],
+            ['slug' => 'properties', 'title' => 'Bất động sản'],
+            ['slug' => 'about',      'title' => 'Giới thiệu'],
+            ['slug' => 'contact',    'title' => 'Liên hệ'],
         ],
         'footer' => [
-            ['slug' => 'home', 'title' => 'Trang chá»§'],
-            ['slug' => 'buy', 'title' => 'Mua nhÃ '],
-            ['slug' => 'sell', 'title' => 'BÃ¡n nhÃ '],
-            ['slug' => 'properties', 'title' => 'Báº¥t Ä‘á»™ng sáº£n'],
-            ['slug' => 'about', 'title' => 'Giá»›i thiá»‡u'],
-            ['slug' => 'contact', 'title' => 'LiÃªn há»‡'],
+            ['slug' => 'home',       'title' => 'Trang chủ'],
+            ['slug' => 'buy',        'title' => 'Mua nhà'],
+            ['slug' => 'sell',       'title' => 'Bán nhà'],
+            ['slug' => 'properties', 'title' => 'Bất động sản'],
+            ['slug' => 'about',      'title' => 'Giới thiệu'],
+            ['slug' => 'contact',    'title' => 'Liên hệ'],
         ],
     ];
 }
@@ -219,7 +185,7 @@ function ethan_dao_vanilla_create_menu_item(int $menu_id, array $item, int $pare
 
 function ethan_dao_vanilla_seed_wordpress_menus(): void
 {
-    if (get_option('ethan_dao_vanilla_menu_seeded') === '2026-08-02-1') {
+    if (get_option('ethan_dao_vanilla_menu_seeded') === '2026-08-07-1') {
         return;
     }
 
@@ -262,9 +228,33 @@ function ethan_dao_vanilla_seed_wordpress_menus(): void
     }
 
     set_theme_mod('nav_menu_locations', $locations);
-    update_option('ethan_dao_vanilla_menu_seeded', '2026-08-02-1');
+    update_option('ethan_dao_vanilla_menu_seeded', '2026-08-07-1');
 }
 add_action('init', 'ethan_dao_vanilla_seed_wordpress_menus', 30);
+
+function ethan_dao_vanilla_cleanup_unused_pages(): void
+{
+    if (get_option('ethan_dao_vanilla_pages_cleaned') === '2026-08-07-1') {
+        return;
+    }
+
+    $unused_slugs = [
+        'agent-collaborations', 'blog', 'browse-properties', 'buyer-guide',
+        'buyer-information', 'featured-properties', 'garland', 'home-valuation',
+        'join-team', 'lavon', 'mckinney', 'neighborhoods', 'past-transactions',
+        'seller-guide', 'selling-consultation', 'services', 'testimonials',
+    ];
+
+    foreach ($unused_slugs as $slug) {
+        $page = get_page_by_path($slug);
+        if ($page instanceof WP_Post) {
+            wp_delete_post($page->ID, true);
+        }
+    }
+
+    update_option('ethan_dao_vanilla_pages_cleaned', '2026-08-07-1');
+}
+add_action('init', 'ethan_dao_vanilla_cleanup_unused_pages', 20);
 
 function ethan_dao_vanilla_menu_tree(string $location): array
 {
