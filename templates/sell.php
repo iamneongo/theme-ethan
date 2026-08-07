@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1785803813453" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=<?php echo filemtime(get_template_directory() . '/styles.css'); ?>" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -47,16 +47,16 @@
     <div class="about-grid">
       <div class="portrait reveal">
         <span></span>
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg?v=1.0.58" alt="Ethan Dao Realtor" />
+        <img src="<?php echo esc_url(ethan_mod('ethan_headshot_small', get_template_directory_uri() . '/assets/images/ethan-headshot.jpg')); ?>" alt="Ethan Dao Realtor" />
       </div>
       <div class="reveal">
-        <span class="h-kicker">Giới thiệu</span>
-        <h2 class="h-section-title">Ethan Dao — <span>Realtor DFW</span></h2>
-        <p>Tôi tên Ethan — Tùng Đào. Tôi là Realtor tại Dallas-Fort Worth, làm việc hoàn toàn bằng tiếng Việt để giúp gia đình người Việt bán nhà đúng giá, đúng thời điểm.</p>
-        <p>Hoạt động chủ yếu ở Lavon, McKinney, Garland — thuộc eXp Realty và Texas Ace Team.</p>
+        <span class="h-kicker"><?php echo esc_html(ethan_mod('sell_hero_kicker', 'Giới thiệu')); ?></span>
+        <h2 class="h-section-title"><?php echo esc_html(ethan_mod('sell_hero_title', 'Ethan Dao —')); ?> <span><?php echo esc_html(ethan_mod('sell_hero_accent', 'Realtor DFW')); ?></span></h2>
+        <p><?php echo esc_html(ethan_mod('sell_hero_body', 'Tôi tên Ethan — Tùng Đào. Tôi là Realtor tại Dallas-Fort Worth, làm việc hoàn toàn bằng tiếng Việt để giúp gia đình người Việt bán nhà đúng giá, đúng thời điểm.')); ?></p>
+        <p><?php echo esc_html(ethan_mod('sell_hero_body2', 'Hoạt động chủ yếu ở Lavon, McKinney, Garland — thuộc eXp Realty và Texas Ace Team.')); ?></p>
         <div class="button-row" style="margin-top: 24px;">
-          <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Liên hệ Ethan</a>
-          <a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>">Xem giao dịch đã bán</a>
+          <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>"><?php echo esc_html(ethan_mod('sell_hero_btn1', 'Liên hệ Ethan')); ?></a>
+          <a class="btn-outline-dark" href="<?php echo esc_url(home_url('/past-transactions/')); ?>"><?php echo esc_html(ethan_mod('sell_hero_btn2', 'Xem giao dịch đã bán')); ?></a>
         </div>
       </div>
     </div>
@@ -64,26 +64,26 @@
 
   <section class="page-section dark">
     <div class="container">
-      <h2 class="h-section-title reveal">Lộ trình <span>người bán</span></h2>
+      <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('sell_steps_title', 'Lộ trình')); ?> <span><?php echo esc_html(ethan_mod('sell_steps_accent', 'người bán')); ?></span></h2>
       <div class="process-timeline">
-        <article class="reveal"><span>01</span><h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p></article>
-        <article class="reveal"><span>02</span><h3>Ut enim ad minim</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></article>
-        <article class="reveal"><span>03</span><h3>Duis aute irure dolor</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></article>
-        <article class="reveal"><span>04</span><h3>Excepteur sint occaecat</h3><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></article>
-        <article class="reveal"><span>05</span><h3>Sed ut perspiciatis</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.</p></article>
-        <article class="reveal"><span>06</span><h3>Nemo enim ipsam</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p></article>
-        <article class="reveal"><span>07</span><h3>Neque porro quisquam</h3><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non.</p></article>
-        <article class="reveal"><span>08</span><h3>Ut labore et dolore</h3><p>Ut labore et dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam quis nostrum exercitationem.</p></article>
-        <article class="reveal"><span>09</span><h3>Quis autem vel eum</h3><p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum.</p></article>
-        <article class="reveal"><span>10</span><h3>At vero eos et accusamus</h3><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p></article>
+        <article class="reveal"><span>01</span><h3><?php echo esc_html(ethan_mod('sell_step1_h', '1. Định giá nhà')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step1_p', 'Tôi phân tích giá thị trường dựa trên các căn đã bán gần đó và tình trạng nhà của bạn để đặt giá đúng — không quá cao gây ế, không quá thấp bỏ tiền.')); ?></p></article>
+        <article class="reveal"><span>02</span><h3><?php echo esc_html(ethan_mod('sell_step2_h', '2. Chuẩn bị nhà bán')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step2_p', 'Dọn dẹp, sửa nhỏ, hoặc dàn dựng nội thất để nhà trông đẹp trên ảnh và thực tế. Tôi tư vấn cụ thể cái gì đáng làm, cái gì không.')); ?></p></article>
+        <article class="reveal"><span>03</span><h3><?php echo esc_html(ethan_mod('sell_step3_h', '3. Chụp ảnh & quay video')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step3_p', 'Tôi quay video tour chuyên nghiệp và đưa lên YouTube để tiếp cận thêm người mua ngoài danh sách MLS.')); ?></p></article>
+        <article class="reveal"><span>04</span><h3><?php echo esc_html(ethan_mod('sell_step4_h', '4. Đăng listing')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step4_p', 'Nhà được đăng trên Zillow, Realtor.com, MLS và mạng xã hội. Tôi gửi thông báo đến danh sách người mua đang tìm kiếm.')); ?></p></article>
+        <article class="reveal"><span>05</span><h3><?php echo esc_html(ethan_mod('sell_step5_h', '5. Tiếp nhận offer')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step5_p', 'Tôi giải thích từng offer bằng tiếng Việt — không chỉ giá mà còn điều khoản, contingency, thời gian closing và mức độ đáng tin của người mua.')); ?></p></article>
+        <article class="reveal"><span>06</span><h3><?php echo esc_html(ethan_mod('sell_step6_h', '6. Đàm phán')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step6_p', 'Tôi đại diện quyền lợi của bạn trong suốt quá trình đàm phán — từ counter offer đến điều khoản sửa chữa sau inspection.')); ?></p></article>
+        <article class="reveal"><span>07</span><h3><?php echo esc_html(ethan_mod('sell_step7_h', '7. Ký hợp đồng')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step7_p', 'Sau khi chốt offer, tôi hướng dẫn từng bước ký hợp đồng bằng tiếng Việt, không để bạn ký bất cứ thứ gì mà chưa hiểu rõ.')); ?></p></article>
+        <article class="reveal"><span>08</span><h3><?php echo esc_html(ethan_mod('sell_step8_h', '8. Inspection & Appraisal')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step8_p', 'Tôi theo dõi và phối hợp với buyer trong quá trình home inspection và appraisal, đảm bảo quyền lợi của bạn được bảo vệ.')); ?></p></article>
+        <article class="reveal"><span>09</span><h3><?php echo esc_html(ethan_mod('sell_step9_h', '9. Xử lý giấy tờ closing')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step9_p', 'Tôi phối hợp với title company, lender của buyer và luật sư để đảm bảo hồ sơ đầy đủ và đúng hạn.')); ?></p></article>
+        <article class="reveal"><span>10</span><h3><?php echo esc_html(ethan_mod('sell_step10_h', '10. Nhận tiền & bàn giao nhà')); ?></h3><p><?php echo esc_html(ethan_mod('sell_step10_p', 'Ngày closing bạn ký bàn giao, nhận tiền net proceeds vào tài khoản. Tôi ở đó để hỗ trợ nếu có vấn đề phút chót.')); ?></p></article>
       </div>
     </div>
   </section>
 
   <section class="page-section" style="background:#f8f6f1">
     <div class="container center">
-      <span class="h-kicker">Chiến lược</span>
-      <h2 class="h-section-title" style="margin-bottom: 48px;">Cam kết của <span>tôi</span></h2>
+      <span class="h-kicker"><?php echo esc_html(ethan_mod('sell_commit_kicker', 'Chiến lược')); ?></span>
+      <h2 class="h-section-title" style="margin-bottom: 48px;"><?php echo esc_html(ethan_mod('sell_commit_title', 'Cam kết của')); ?> <span><?php echo esc_html(ethan_mod('sell_commit_accent', 'tôi')); ?></span></h2>
       <style>
         .line-separated-grid {
           display: grid;
@@ -127,22 +127,22 @@
         <div class="reveal" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
           <span class="commitment-number">01</span>
           <div>
-            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;">Lorem ipsum dolor sit</h3>
-            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;"><?php echo esc_html(ethan_mod('sell_commit1_h', 'Minh bạch giá thực')); ?></h3>
+            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;"><?php echo esc_html(ethan_mod('sell_commit1_p', 'Tôi không nói con số để bạn vui. Tôi đưa ra CMA thực tế dựa trên giao dịch gần nhất, giúp bạn định giá đúng ngay từ đầu.')); ?></p>
           </div>
         </div>
         <div class="reveal" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
           <span class="commitment-number">02</span>
           <div>
-            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;">Ut enim ad minim veniam</h3>
-            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.</p>
+            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;"><?php echo esc_html(ethan_mod('sell_commit2_h', 'Marketing video-first')); ?></h3>
+            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;"><?php echo esc_html(ethan_mod('sell_commit2_p', 'Video listing được đăng lên YouTube và mạng xã hội để tiếp cận người mua xa hơn chỉ MLS — đây là lợi thế tôi mang lại cho người bán.')); ?></p>
           </div>
         </div>
         <div class="reveal" style="padding: 32px; display: flex; flex-direction: column; gap: 16px;">
           <span class="commitment-number">03</span>
           <div>
-            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;">Excepteur sint occaecat</h3>
-            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed perspiciatis.</p>
+            <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--ink-strong); margin-bottom: 12px; font-weight: 600;"><?php echo esc_html(ethan_mod('sell_commit3_h', 'Luôn sẵn sàng tiếng Việt')); ?></h3>
+            <p style="color: var(--color-muted); font-size: 16px; line-height: 1.6; margin: 0;"><?php echo esc_html(ethan_mod('sell_commit3_p', 'Bạn không cần dịch hợp đồng hay nhờ con cái giải thích. Tôi xử lý toàn bộ giao tiếp với buyer và title company, bạn chỉ cần hiểu và ký.')); ?></p>
           </div>
         </div>
       </div>
@@ -158,26 +158,26 @@
 
   <section class="page-section" style="background: #f8f6f1;">
     <div class="container">
-      <span class="h-kicker reveal">Khách hàng nói gì</span>
-      <h2 class="h-section-title reveal">Cảm nhận từ <span>người bán nhà</span></h2>
+      <span class="h-kicker reveal"><?php echo esc_html(ethan_mod('sell_tst_kicker', 'Khách hàng nói gì')); ?></span>
+      <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('sell_tst_title', 'Cảm nhận từ')); ?> <span><?php echo esc_html(ethan_mod('sell_tst_accent', 'người bán nhà')); ?></span></h2>
       <div class="testimonial-mini">
         <article class="reveal">
           <div class="stars">★★★★★</div>
-          <p>"Chiến lược bán nhà rất rõ ràng, có tổ chức và tập trung đúng nhóm người mua. Nhà bán nhanh hơn dự kiến."</p>
-          <strong>Chị Trang Phạm</strong>
-          <small>Bán nhà tại Garland, 2024</small>
+          <p>"<?php echo esc_html(ethan_mod('sell_tst1_p', 'Chiến lược bán nhà rất rõ ràng, có tổ chức và tập trung đúng nhóm người mua. Nhà bán nhanh hơn dự kiến.')); ?>"</p>
+          <strong><?php echo esc_html(ethan_mod('sell_tst1_name', 'Chị Trang Phạm')); ?></strong>
+          <small><?php echo esc_html(ethan_mod('sell_tst1_meta', 'Bán nhà tại Garland, 2024')); ?></small>
         </article>
         <article class="reveal">
           <div class="stars">★★★★★</div>
-          <p>"Video tour của Ethan thu hút rất nhiều lượt xem. Chúng tôi nhận được 3 offer chỉ sau 5 ngày listing."</p>
-          <strong>Anh Hùng & chị Mai</strong>
-          <small>Bán nhà tại McKinney, 2025</small>
+          <p>"<?php echo esc_html(ethan_mod('sell_tst2_p', 'Video tour của Ethan thu hút rất nhiều lượt xem. Chúng tôi nhận được 3 offer chỉ sau 5 ngày listing.')); ?>"</p>
+          <strong><?php echo esc_html(ethan_mod('sell_tst2_name', 'Anh Hùng & chị Mai')); ?></strong>
+          <small><?php echo esc_html(ethan_mod('sell_tst2_meta', 'Bán nhà tại McKinney, 2025')); ?></small>
         </article>
         <article class="reveal">
           <div class="stars">★★★★★</div>
-          <p>"Phản hồi nhanh, trung thực và bình tĩnh khi đàm phán. Chúng tôi luôn biết bước tiếp theo là gì."</p>
-          <strong>Gia đình Lê</strong>
-          <small>Bán nhà tại Wylie, 2025</small>
+          <p>"<?php echo esc_html(ethan_mod('sell_tst3_p', 'Phản hồi nhanh, trung thực và bình tĩnh khi đàm phán. Chúng tôi luôn biết bước tiếp theo là gì.')); ?>"</p>
+          <strong><?php echo esc_html(ethan_mod('sell_tst3_name', 'Gia đình Lê')); ?></strong>
+          <small><?php echo esc_html(ethan_mod('sell_tst3_meta', 'Bán nhà tại Wylie, 2025')); ?></small>
         </article>
       </div>
     </div>
@@ -185,8 +185,8 @@
 
   <section class="page-section">
     <div class="container">
-      <span class="h-kicker reveal">Thành tích gần đây</span>
-      <h2 class="h-section-title reveal">Giao dịch <span>hoàn tất</span></h2>
+      <span class="h-kicker reveal"><?php echo esc_html(ethan_mod('sell_recent_kicker', 'Thành tích gần đây')); ?></span>
+      <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('sell_recent_title', 'Giao dịch')); ?> <span><?php echo esc_html(ethan_mod('sell_recent_accent', 'hoàn tất')); ?></span></h2>
       <div class="flickity-carousel sales-track" data-flickity-carousel>
         <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-listing-garland.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>2610 Dodson St, Garland, TX 75042</h3><p>2 Phòng ngủ &middot; 3 Phòng tắm &middot; 1,542 Sq.Ft. &middot; Seller</p></div></article>
         <article><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-home-8.jpg?v=1.0.58" alt="" /><span>Đã bán</span><div><h3>5816 Mandarin Ln, Sachse, TX 75048</h3><p>4 Phòng ngủ &middot; 2 Phòng tắm &middot; 2,081 Sq.Ft. &middot; Buyer</p></div></article>
@@ -200,27 +200,27 @@
 
   <section class="page-section dark">
     <div class="container">
-      <span class="h-kicker light reveal">Xem thực tế</span>
-      <h2 class="h-section-title reveal">Video <span>listing thực tế</span></h2>
-      <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.6;">Đây là video tôi quay để bán nhà cho khách — bạn có thể xem để biết nhà của mình sẽ được giới thiệu thế nào.</p>
+      <span class="h-kicker light reveal"><?php echo esc_html(ethan_mod('sell_video_kicker', 'Xem thực tế')); ?></span>
+      <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('sell_video_title', 'Video')); ?> <span><?php echo esc_html(ethan_mod('sell_video_accent', 'listing thực tế')); ?></span></h2>
+      <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.6;"><?php echo esc_html(ethan_mod('sell_video_body', 'Đây là video tôi quay để bán nhà cho khách — bạn có thể xem để biết nhà của mình sẽ được giới thiệu thế nào.')); ?></p>
       <div class="video-grid">
         <article class="reveal">
-          <h3>LAVON TEXAS - Lakepointe review 4 mẫu nhà new build</h3>
-          <p>4 mẫu nhà mới ở Lavon, $300K–$400K. Tôi xem và nói thật cái nào đáng tiền, cái nào không.</p>
+          <h3><?php echo esc_html(ethan_mod('sell_vid1_h', 'LAVON TEXAS - Lakepointe review 4 mẫu nhà new build')); ?></h3>
+          <p><?php echo esc_html(ethan_mod('sell_vid1_p', '4 mẫu nhà mới ở Lavon, $300K–$400K. Tôi xem và nói thật cái nào đáng tiền, cái nào không.')); ?></p>
           <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qsBWEIueBUs?rel=0" title="Lavon 75166" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
           </div>
         </article>
         <article class="reveal">
-          <h3>Lavon 75166 | khu nhà mới cách Garland khu người Việt</h3>
-          <p>Cách Garland khoảng 30 phút, giá từ $300K với nhiều ưu đãi từ builder. Nhà mới trong khu Lavon 75166.</p>
+          <h3><?php echo esc_html(ethan_mod('sell_vid2_h', 'Lavon 75166 | khu nhà mới cách Garland khu người Việt')); ?></h3>
+          <p><?php echo esc_html(ethan_mod('sell_vid2_p', 'Cách Garland khoảng 30 phút, giá từ $300K với nhiều ưu đãi từ builder. Nhà mới trong khu Lavon 75166.')); ?></p>
           <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PH7ssSv_eoI?rel=0" title="Home Tour Lavon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
           </div>
         </article>
         <article class="reveal">
-          <h3>Wylie 75098 | căn nhà đời 2017 tại Inspiration Community</h3>
-          <p>Nhà 2017, hai mặt tiền trong khu Inspiration Community. Wylie 75098, trường tốt và cộng đồng yên tĩnh.</p>
+          <h3><?php echo esc_html(ethan_mod('sell_vid3_h', 'Wylie 75098 | căn nhà đời 2017 tại Inspiration Community')); ?></h3>
+          <p><?php echo esc_html(ethan_mod('sell_vid3_p', 'Nhà 2017, hai mặt tiền trong khu Inspiration Community. Wylie 75098, trường tốt và cộng đồng yên tĩnh.')); ?></p>
           <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxfLLkoGMiE?rel=0" title="Wylie 75098" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
           </div>
@@ -231,28 +231,28 @@
 
   <section class="page-section">
     <div class="container">
-      <span class="h-kicker reveal">Giải đáp thắc mắc</span>
-      <h2 class="h-section-title reveal">Câu hỏi <span>thường gặp</span></h2>
+      <span class="h-kicker reveal"><?php echo esc_html(ethan_mod('sell_faq_kicker', 'Giải đáp thắc mắc')); ?></span>
+      <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('sell_faq_title', 'Câu hỏi')); ?> <span><?php echo esc_html(ethan_mod('sell_faq_accent', 'thường gặp')); ?></span></h2>
       <div class="faq-list">
         <div class="faq-item reveal">
-          <div class="faq-q">Nhà tôi hiện tại giá bao nhiêu?</div>
-          <div class="faq-a"><p>Nhắn tôi địa chỉ là được. Tôi kéo dữ liệu những căn đã bán gần đó và cho bạn con số thực tế — không phải con số để bạn vui, mà để bạn quyết định được.</p></div>
+          <div class="faq-q"><?php echo esc_html(ethan_mod('sell_faq1_q', 'Nhà tôi hiện tại giá bao nhiêu?')); ?></div>
+          <div class="faq-a"><p><?php echo esc_html(ethan_mod('sell_faq1_a', 'Nhắn tôi địa chỉ là được. Tôi kéo dữ liệu những căn đã bán gần đó và cho bạn con số thực tế — không phải con số để bạn vui, mà để bạn quyết định được.')); ?></p></div>
         </div>
         <div class="faq-item reveal">
-          <div class="faq-q">Tôi có cần sửa chữa nhà trước khi bán không?</div>
-          <div class="faq-a"><p>Không cần sửa hết. Tôi xem nhà và nói thẳng: cái này đáng làm, cái kia bỏ qua. Thường thì sơn lại và dọn sân vườn là đủ để ảnh đẹp hơn rõ rệt.</p></div>
+          <div class="faq-q"><?php echo esc_html(ethan_mod('sell_faq2_q', 'Tôi có cần sửa chữa nhà trước khi bán không?')); ?></div>
+          <div class="faq-a"><p><?php echo esc_html(ethan_mod('sell_faq2_a', 'Không cần sửa hết. Tôi xem nhà và nói thẳng: cái này đáng làm, cái kia bỏ qua. Thường thì sơn lại và dọn sân vườn là đủ để ảnh đẹp hơn rõ rệt.')); ?></p></div>
         </div>
         <div class="faq-item reveal">
-          <div class="faq-q">Bán nhà mất bao lâu?</div>
-          <div class="faq-a"><p>Ở DFW trung bình 20–45 ngày. Tôi đăng Zillow, quay video tour, gửi email cho danh sách khách đang tìm nhà — mấy căn gần đây nhận offer trong vòng 1 tuần.</p></div>
+          <div class="faq-q"><?php echo esc_html(ethan_mod('sell_faq3_q', 'Bán nhà mất bao lâu?')); ?></div>
+          <div class="faq-a"><p><?php echo esc_html(ethan_mod('sell_faq3_a', 'Ở DFW trung bình 20–45 ngày. Tôi đăng Zillow, quay video tour, gửi email cho danh sách khách đang tìm nhà — mấy căn gần đây nhận offer trong vòng 1 tuần.')); ?></p></div>
         </div>
         <div class="faq-item reveal">
-          <div class="faq-q">Chi phí bán nhà gồm những gì?</div>
-          <div class="faq-a"><p>Chủ yếu là hoa hồng môi giới, thuế, và chi phí title/escrow. Tôi sẽ tính cho bạn một tờ net sheet — bạn biết chính xác mình nhận được bao nhiêu sau khi bán, trước khi ký bất cứ thứ gì.</p></div>
+          <div class="faq-q"><?php echo esc_html(ethan_mod('sell_faq4_q', 'Chi phí bán nhà gồm những gì?')); ?></div>
+          <div class="faq-a"><p><?php echo esc_html(ethan_mod('sell_faq4_a', 'Chủ yếu là hoa hồng môi giới, thuế, và chi phí title/escrow. Tôi sẽ tính cho bạn một tờ net sheet — bạn biết chính xác mình nhận được bao nhiêu sau khi bán, trước khi ký bất cứ thứ gì.')); ?></p></div>
         </div>
         <div class="faq-item reveal">
-          <div class="faq-q">Tôi có thể vừa bán nhà cũ vừa mua nhà mới không?</div>
-          <div class="faq-a"><p>Được, tôi hay làm cái này. Quan trọng là kéo giãn đúng timeline để bạn không phải trả tiền thuê nhà tạm trong khoảng giữa. Tôi sẽ điều phối cả hai phía.</p></div>
+          <div class="faq-q"><?php echo esc_html(ethan_mod('sell_faq5_q', 'Tôi có thể vừa bán nhà cũ vừa mua nhà mới không?')); ?></div>
+          <div class="faq-a"><p><?php echo esc_html(ethan_mod('sell_faq5_a', 'Được, tôi hay làm cái này. Quan trọng là kéo giãn đúng timeline để bạn không phải trả tiền thuê nhà tạm trong khoảng giữa. Tôi sẽ điều phối cả hai phía.')); ?></p></div>
         </div>
       </div>
     </div>
@@ -260,32 +260,17 @@
 
   <section class="newsletter">
     <div class="newsletter-inner reveal">
-      <h2 class="h-section-title">Bạn đã sẵn sàng <span>để bán nhà?</span></h2>
-      <p>Nhắn tin địa chỉ nhà, tôi sẽ gửi ngay báo cáo giá thị trường.</p>
+      <h2 class="h-section-title"><?php echo esc_html(ethan_mod('sell_cta_title', 'Bạn đã sẵn sàng')); ?> <span><?php echo esc_html(ethan_mod('sell_cta_accent', 'để bán nhà?')); ?></span></h2>
+      <p><?php echo esc_html(ethan_mod('sell_cta_body', 'Nhắn tin địa chỉ nhà, tôi sẽ gửi ngay báo cáo giá thị trường.')); ?></p>
       <div class="button-row" style="justify-content: center; margin-top: 36px;">
-        <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn miễn phí</a>
-        <a class="btn-outline-dark" href="tel:+14699895786">Gọi ngay (469) 989-5786</a>
+        <a class="btn-ink" href="<?php echo esc_url(home_url('/contact/')); ?>"><?php echo esc_html(ethan_mod('sell_cta_btn1', 'Đặt lịch tư vấn miễn phí')); ?></a>
+        <a class="btn-outline-dark" href="tel:<?php echo esc_attr(ethan_mod('ethan_phone_raw', '+14699895786')); ?>"><?php echo esc_html(ethan_mod('sell_cta_btn2', 'Gọi ngay (469) 989-5786')); ?></a>
       </div>
     </div>
   </section>
 </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hợp tác đại lý</a></p></div></div>
-        <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
-        <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
-        <p class="copyright">©2026 NTREIS. All rights reserved.</p>
-      </div>
-      <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
-    </footer>
-    <div class="floating-social">
-      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>
-      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>
-      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>
-      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>
-    </div>
+    <?php echo ethan_dao_vanilla_render_footer(); ?>
+    <?php echo ethan_dao_vanilla_render_floating_social(); ?>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.58"></script>
   <?php wp_footer(); ?>
   </body>

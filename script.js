@@ -85,6 +85,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // 5b. Video carousel (mobile) — dùng Flickity như sales-track để kéo MƯỢT (có quán tính),
+  //     không nút chuyển slide. watchCSS: chỉ bật khi CSS khai báo (mobile, xem styles.css).
+  document.querySelectorAll('.vcm-track').forEach(track => {
+    if (typeof Flickity === 'undefined') return;
+    new Flickity(track, {
+      cellSelector: '.vcm-card',
+      cellAlign: 'left',
+      contain: true,
+      prevNextButtons: false,
+      pageDots: false,
+      dragThreshold: 6,
+      watchCSS: true
+    });
+  });
+
   // 6. Nav property search
   const navSearchToggle = document.querySelector('[data-nav-search-toggle]');
   const navSearchPanel  = document.querySelector('.nav-search-panel');

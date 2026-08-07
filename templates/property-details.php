@@ -273,18 +273,18 @@ $is_property = $property && $property->post_type === 'property';
         <div class="pd-contact-price"><?php echo esc_html($display_price); ?></div>
         <p class="pd-contact-note"><?php echo esc_html($sold_note); ?></p>
         <div class="pd-contact-btns">
-          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="pd-cta-primary">Đặt lịch xem nhà</a>
-          <a href="tel:+14699895786" class="pd-cta-secondary">
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="pd-cta-primary"><?php echo esc_html(ethan_mod('props_cta_book', 'Đặt lịch xem nhà')); ?></a>
+          <a href="tel:<?php echo esc_attr(ethan_mod('ethan_phone_raw', '+14699895786')); ?>" class="pd-cta-secondary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02z"/></svg>
-            (469) 989-5786
+            <?php echo esc_html(ethan_mod('ethan_phone_display', '(469) 989-5786')); ?>
           </a>
         </div>
         <div class="pd-agent">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ethan-headshot.jpg" alt="Ethan Dao" width="56" height="56" />
+          <img src="<?php echo esc_url(ethan_mod('ethan_headshot_small', get_template_directory_uri() . '/assets/images/ethan-headshot.jpg')); ?>" alt="Ethan Dao" width="56" height="56" />
           <div class="pd-agent-info">
             <strong>Ethan Dao</strong>
             <span>Texas Ace Team · eXp Realty</span>
-            <a href="tel:+14699895786">(469) 989-5786</a>
+            <a href="tel:<?php echo esc_attr(ethan_mod('ethan_phone_raw', '+14699895786')); ?>"><?php echo esc_html(ethan_mod('ethan_phone_display', '(469) 989-5786')); ?></a>
           </div>
         </div>
       </div>
@@ -709,6 +709,46 @@ $is_property = $property && $property->post_type === 'property';
   .pd-gallery-thumb img,
   .pd-cta-primary, .pd-cta-secondary { transition: none; }
 }
+
+/* ═══ DARK THEME (vàng–đen) OVERRIDES ═══ */
+.pd-page { background: #111 !important; }
+.pd-stats-bar, .pd-content { background: #111 !important; }
+.pd-stats-bar { border-bottom-color: rgba(255,255,255,.1) !important; }
+.pd-stat-item { border-right-color: rgba(255,255,255,.1) !important; }
+.pd-block, .pd-prevnext { border-top-color: rgba(255,255,255,.1) !important; }
+.pd-fact { border-bottom-color: rgba(255,255,255,.08) !important; }
+
+/* Muted text → đọc được trên nền tối */
+.pd-hero-city, .pd-hero-price-note, .pd-stat-label, .pd-block-text,
+.pd-fact-label, .pd-gallery-count, .pd-zillow-link { color: rgba(255,255,255,.6) !important; }
+.pd-zillow-link:hover { color: #FFC400 !important; }
+
+/* Nút "xem tất cả ảnh" trên ảnh → glass tối */
+.pd-mosaic-all {
+  background: rgba(0,0,0,.6) !important;
+  border-color: rgba(255,255,255,.18) !important;
+  color: #F4F4F4 !important;
+}
+.pd-mosaic-all:hover { background: rgba(0,0,0,.75) !important; }
+
+/* Contact card: --ink-strong giờ là màu sáng → ép nền đen */
+.pd-contact-card { background: #000 !important; }
+
+/* Badge "đã bán" trên nền tối */
+.pd-badge--sold {
+  background: rgba(255,255,255,.1) !important;
+  color: #F4F4F4 !important;
+  border-color: rgba(255,255,255,.18) !important;
+}
+
+/* Prev/next hover accent vàng */
+.pd-pn:hover .pd-pn-addr { color: #FFC400 !important; }
+
+@media (max-width: 767px) {
+  .pd-stat-item:nth-child(3), .pd-stat-item:nth-child(4) {
+    border-top-color: rgba(255,255,255,.1) !important;
+  }
+}
 </style>
 
 <script>
@@ -787,16 +827,8 @@ $is_property = $property && $property->post_type === 'property';
 })();
 </script>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hợp tác đại lý</a></p></div></div>
-        <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
-        <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
-        <p class="copyright">©2026 NTREIS. All rights reserved.</p>
-      </div>
-      <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
-    </footer>
+    <?php echo ethan_dao_vanilla_render_footer(); ?>
+    <?php echo ethan_dao_vanilla_render_floating_social(); ?>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.58"></script>
     <?php wp_footer(); ?>
   </body>

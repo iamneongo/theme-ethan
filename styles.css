@@ -224,18 +224,19 @@ body,button,input,select,textarea,.navbar,.desktop-nav>a,.nav-group button,.nav-
   --site-gutter:24px;
   --site-gutter-wide:36px;
 
-  --color-bg:#FFFFFF;
-  --color-surface:#F8F6F1;
-  --color-ink:#22262B;
-  --color-muted:#5E6A75;
-  --color-line:#E5E1DA;
-  --color-line-strong:#C7CCD1;
+  --color-bg:#111111;
+  --color-surface:#1A1A1A;
+  --color-ink:#F4F4F4;
+  --color-muted:rgba(255,255,255,.62);
+  --color-line:rgba(255,255,255,.14);
+  --color-line-strong:rgba(255,255,255,.24);
   --color-invert:#FFFFFF;
-  --color-dark:#0F2742;
-  --color-dark-soft:#22262B;
-  --color-sale:#A7B3A5;
-  --color-accent:#A7B3A5;
-  --color-gold:#DCC9A3;
+  --color-dark:#000000;
+  --color-dark-soft:#1A1A1A;
+  --color-sale:#FFC400;
+  --color-accent:#FFC400;
+  --color-gold:#FFC400;
+  --color-on-accent:#111111;
 
   --font-sans:"Google Sans Flex",ui-sans-serif,system-ui,sans-serif;
   --font-display:"Google Sans Flex",var(--font-sans);
@@ -264,15 +265,15 @@ body,button,input,select,textarea,.navbar,.desktop-nav>a,.nav-group button,.nav-
 
   --header-height:78px;
   --header-height-scrolled:68px;
-  --header-bg:rgba(255,255,255,.94);
-  --header-bg-scrolled:rgba(255,255,255,.96);
+  --header-bg:rgba(17,17,17,.94);
+  --header-bg-scrolled:rgba(17,17,17,.97);
   --header-logo-size:28px;
   --header-menu-height:40px;
   --header-nav-breakpoint:1360px;
 
   --gold:var(--color-gold);
-  --gold-light:#E8DBC0;
-  --gold-dark:#BFA97D;
+  --gold-light:#FFD64D;
+  --gold-dark:#CC9E00;
   --home-gold:var(--color-gold);
   --ink:var(--color-ink);
   --ink-strong:var(--color-ink);
@@ -297,9 +298,9 @@ body{background:var(--color-bg)!important;color:var(--color-ink)!important;font-
 .page-section,.recent,.listings,.neighborhoods,.newsletter,.beyond{padding-block:var(--space-section)!important}.page-section,.subpage-main,.recent,.neighborhoods,.newsletter,.beyond{background:var(--color-bg)!important;color:var(--color-ink)!important}.page-section.dark,.listings,.subpage-main .work,.stats{background:var(--color-dark)!important;color:var(--color-invert)!important}
 .content-split{max-width:var(--site-container)!important;margin:0 auto!important;gap:var(--space-split)!important;padding-inline:var(--site-gutter-wide)!important}.service-grid,.testimonial-grid,.blog-grid,.area-grid,.listing-grid,.neighborhood-grid{gap:var(--space-grid)!important}
 .content-split p,.page-section p,.newsletter p,.media-row p,.service-grid p,.blog-grid p,.testimonial-grid p,.area-grid p,.subpage-hero p{color:var(--color-muted)!important;font-size:var(--text-body)!important;line-height:1.62!important}.page-section.dark p,.listings p,.subpage-main .work p{color:rgba(255,255,255,.7)!important}.sales-track p{color:rgba(255,255,255,.92)!important;font-size:12px!important;line-height:1.5!important;letter-spacing:.02em!important}
-.banner-header{min-height:var(--header-height);background:var(--header-bg)!important;color:var(--color-ink)!important}.banner-header.scrolled{min-height:var(--header-height-scrolled);background:var(--header-bg-scrolled)!important;border-bottom:1px solid var(--color-line)!important}.banner-header .nav-inner{width:min(100%,var(--site-container))!important;max-width:var(--site-container)!important;padding-inline:var(--site-gutter)!important}.banner-header .banner-wordmark span{font-size:var(--header-logo-size)!important}.banner-header .desktop-nav>a,.banner-header .nav-top,.banner-header .nav-group button{font-size:var(--text-nav)!important;color:var(--color-ink)!important}.banner-header .banner-menu-button{height:var(--header-menu-height)!important;min-height:var(--header-menu-height)!important;background:var(--color-dark)!important;color:var(--color-invert)!important;border-radius:var(--radius-pill)!important}
+.banner-header{min-height:var(--header-height);background:var(--header-bg)!important;color:var(--color-ink)!important}.banner-header.scrolled{min-height:var(--header-height-scrolled);background:var(--header-bg-scrolled)!important;border-bottom:1px solid var(--color-line)!important}.banner-header .nav-inner{width:min(100%,var(--site-container))!important;max-width:var(--site-container)!important;padding-inline:var(--site-gutter)!important}.banner-header .banner-wordmark span{font-size:var(--header-logo-size)!important}.banner-header .desktop-nav>a,.banner-header .nav-top,.banner-header .nav-group button{font-size:var(--text-nav)!important;color:var(--color-ink)!important}.banner-header .banner-menu-button{height:var(--header-menu-height)!important;min-height:var(--header-menu-height)!important;background:var(--color-accent)!important;color:var(--color-on-accent)!important;border-radius:var(--radius-pill)!important}
 .subpage-hero{min-height:clamp(500px,58vw,680px)!important;background:var(--color-bg)!important;color:var(--color-ink)!important;border-bottom:1px solid var(--color-line)!important}.subpage-hero-inner{max-width:var(--site-container)!important;padding:var(--space-hero-top) var(--site-gutter-wide) var(--space-hero-bottom)!important}
-.btn-gold,.btn-ink,.alwayzz-primary,.search-box button,.property-filter button.active{background:var(--color-dark)!important;color:var(--color-invert)!important;border-color:var(--color-dark)!important;border-radius:var(--radius-pill)!important;font-size:var(--text-button)!important}.property-filter button,.property-filter input,.form-panel input,.form-panel select,.form-panel textarea,.newsletter input,.service-grid article,.testimonial-grid article,.blog-grid article,.highlight-panel{border-color:var(--color-line)!important;border-radius:var(--radius-card)!important;background:var(--color-bg)!important;color:var(--color-ink)!important}.btn-outline-dark,.btn-outline-light{border-color:var(--color-line)!important;border-radius:var(--radius-pill)!important;background:var(--color-bg)!important;color:var(--color-ink)!important}
+.btn-gold,.btn-ink,.alwayzz-primary,.search-box button,.property-filter button.active{background:var(--color-accent)!important;color:var(--color-on-accent)!important;border-color:var(--color-accent)!important;border-radius:var(--radius-pill)!important;font-size:var(--text-button)!important}.property-filter button,.property-filter input,.form-panel input,.form-panel select,.form-panel textarea,.newsletter input,.service-grid article,.testimonial-grid article,.blog-grid article,.highlight-panel{border-color:var(--color-line)!important;border-radius:var(--radius-card)!important;background:var(--color-bg)!important;color:var(--color-ink)!important}.btn-outline-dark,.btn-outline-light{border-color:var(--color-line)!important;border-radius:var(--radius-pill)!important;background:var(--color-bg)!important;color:var(--color-ink)!important}
 .footer{background:var(--color-bg)!important;color:var(--color-ink)!important;border-top:1px solid var(--color-line)!important}.footer-cols a,.footer-cols p,.disclaimer,.copyright,.bottom-bar,.footer-logo small{color:var(--color-muted)!important}
 .profile-map-filters span,.profile-map-marker .dot{background:var(--color-ink)!important}.profile-map-filters [data-profile-map-filter="sale"] span,.profile-map-marker .price,.map-marker.sold{background:var(--color-sale)!important;border-color:var(--color-sale)!important;color:var(--color-invert)!important}
 @media (max-width:1023px){:root{--site-gutter:24px;--site-gutter-wide:24px;--space-split:38px;--title-hero:clamp(2.2rem,6vw,2.8rem);--title-section:clamp(1.6rem,4vw,2rem);--title-page:clamp(2rem,5vw,2.5rem);--title-panel:clamp(1.5rem,3.5vw,1.8rem);--title-card:clamp(1.1rem,2vw,1.3rem)}}
@@ -307,12 +308,12 @@ body{background:var(--color-bg)!important;color:var(--color-ink)!important;font-
 
 /* Banner-only sage accent from the modern palette. */
 :root{
-  --banner-accent:#A7B3A5;
-  --banner-accent-deep:#8F9A8D;
-  --banner-line-color:rgba(167,179,165,.34);
-  --banner-line-color-soft:rgba(167,179,165,.18);
-  --banner-glow:rgba(167,179,165,.13);
-  --banner-glow-soft:rgba(167,179,165,.04);
+  --banner-accent:#FFC400;
+  --banner-accent-deep:#CC9E00;
+  --banner-line-color:rgba(255,196,0,.34);
+  --banner-line-color-soft:rgba(255,196,0,.18);
+  --banner-glow:rgba(255,196,0,.13);
+  --banner-glow-soft:rgba(255,196,0,.04);
 }
 .banner-wordmark{display:inline-flex!important;flex-direction:row!important;align-items:flex-start!important;gap:4px!important}
 .banner-wordmark sup{position:relative;top:.18em;line-height:1!important;flex:0 0 auto}
@@ -972,17 +973,17 @@ html.ethan-scrollfx-ready .reveal.is-visible{
   --home-line: var(--color-line);
 }
 .btn-ink {
-  background: var(--color-dark) !important;
-  color: var(--color-invert) !important;
-  border-color: var(--color-dark) !important;
+  background: var(--color-accent) !important;
+  color: var(--color-on-accent) !important;
+  border-color: var(--color-accent) !important;
 }
 .btn-ink:hover {
-  background: var(--color-ink) !important;
-  color: var(--color-invert) !important;
+  background: var(--gold-dark) !important;
+  color: var(--color-on-accent) !important;
 }
 .btn-gold {
   background: var(--color-accent) !important;
-  color: var(--color-invert) !important;
+  color: var(--color-on-accent) !important;
   border-color: var(--color-accent) !important;
 }
 .verified-strip+.page-section .property-list article[hidden]{
@@ -1144,17 +1145,17 @@ html.ethan-scrollfx-ready .reveal.is-visible{
   --home-line: var(--color-line);
 }
 .btn-ink {
-  background: var(--color-dark) !important;
-  color: var(--color-invert) !important;
-  border-color: var(--color-dark) !important;
+  background: var(--color-accent) !important;
+  color: var(--color-on-accent) !important;
+  border-color: var(--color-accent) !important;
 }
 .btn-ink:hover {
-  background: var(--color-ink) !important;
-  color: var(--color-invert) !important;
+  background: var(--gold-dark) !important;
+  color: var(--color-on-accent) !important;
 }
 .btn-gold {
   background: var(--color-accent) !important;
-  color: var(--color-invert) !important;
+  color: var(--color-on-accent) !important;
   border-color: var(--color-accent) !important;
 }
 .btn-gold:hover {
@@ -2127,39 +2128,31 @@ section.browse-cta {
 }
 
 /* SOLID PRIMARY VARIANTS */
-.btn-ink, .btn-primary-navy, .btn-dual, .valuation form .btn-ink {
-  background: #0d2238 !important;
-  color: #ffffff !important;
-  border: none !important;
-  box-shadow: 0 6px 20px rgba(13, 34, 56, 0.22) !important;
-}
-.btn-ink:hover, .btn-primary-navy:hover, .btn-dual:hover, .valuation form .btn-ink:hover {
-  box-shadow: 0 10px 28px rgba(13, 34, 56, 0.35) !important;
-  background: #0f2a4a !important;
-}
-
+.btn-ink, .btn-primary-navy, .btn-dual, .valuation form .btn-ink,
 .btn-gold, .valuation form .btn-gold {
-  background: #c5a880 !important;
-  color: #0d2238 !important;
+  background: #FFC400 !important;
+  color: #111111 !important;
   border: none !important;
-  box-shadow: 0 6px 20px rgba(197, 168, 128, 0.3) !important;
+  box-shadow: 0 6px 20px rgba(255, 196, 0, 0.28) !important;
 }
+.btn-ink:hover, .btn-primary-navy:hover, .btn-dual:hover, .valuation form .btn-ink:hover,
 .btn-gold:hover, .valuation form .btn-gold:hover {
-  background: #d4b994 !important;
-  box-shadow: 0 10px 28px rgba(197, 168, 128, 0.45) !important;
+  background: #FFD64D !important;
+  box-shadow: 0 10px 28px rgba(255, 196, 0, 0.45) !important;
 }
 
 /* OUTLINE SECONDARY VARIANTS */
 .btn-white, .btn-outline-dark, .btn-dual-outline {
-  background: #ffffff !important;
-  color: #0d2238 !important;
-  border: 1px solid rgba(13, 34, 56, 0.2) !important;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+  background: transparent !important;
+  color: #F4F4F4 !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  box-shadow: none !important;
 }
 .btn-white:hover, .btn-outline-dark:hover, .btn-dual-outline:hover {
-  border-color: rgba(13, 34, 56, 0.4) !important;
-  box-shadow: 0 8px 24px rgba(13, 34, 56, 0.12) !important;
-  background: #ffffff !important;
+  border-color: #FFC400 !important;
+  color: #FFC400 !important;
+  box-shadow: 0 8px 24px rgba(255, 196, 0, 0.15) !important;
+  background: rgba(255, 196, 0, 0.06) !important;
 }
 
 .btn-outline-light {
@@ -3445,3 +3438,531 @@ section.browse-cta {
 }
 
 
+
+/* =========================================================
+   DARK THEME (VANG-DEN) FINAL OVERRIDE LAYER
+   Nen den + accent vang #FFC400. Dat cuoi file de thang cascade.
+   ========================================================= */
+
+/* --- Hero banner (alwayzz / ethan-minimal-banner) --- */
+.ethan-minimal-banner,
+.alwayzz-banner {
+  background: var(--color-bg) !important;
+  color: var(--color-ink) !important;
+}
+.alwayzz-banner {
+  --alwayzz-bg: var(--color-bg);
+  --alwayzz-text: var(--color-ink);
+  --alwayzz-muted: rgba(255,255,255,.62);
+  --alwayzz-button-bg: #FFC400;
+  --alwayzz-button-text: #111111;
+  --alwayzz-border-soft: rgba(255,255,255,.12);
+}
+/* Darken hero photo overlay so light heading is readable */
+.alwayzz-bg:after {
+  background: rgba(0,0,0,.55) !important;
+}
+/* Bottom fade of hero -> dark */
+.alwayzz-blur {
+  background: linear-gradient(to bottom, rgba(17,17,17,0), rgba(17,17,17,.5) 40%, var(--color-bg)) !important;
+}
+/* Primary hero CTA -> yellow / black */
+.alwayzz-primary {
+  background: #FFC400 !important;
+  color: #111111 !important;
+  border: 4px solid rgba(255,196,0,.35) !important;
+  box-shadow: 0 6px 20px rgba(255,196,0,.28) !important;
+}
+.alwayzz-primary:hover {
+  background: #FFD64D !important;
+  color: #111111 !important;
+  box-shadow: 0 10px 28px rgba(255,196,0,.45) !important;
+}
+.alwayzz-primary .btn-icon-badge { background: rgba(0,0,0,.16) !important; }
+.alwayzz-primary .btn-icon-badge svg { color: #111111 !important; }
+.alwayzz-menu-toggle { background: #FFC400 !important; color: #111111 !important; }
+/* Secondary "book" pill -> dark surface */
+.alwayzz-book,
+.ethan-minimal-banner .alwayzz-book {
+  background: var(--color-surface) !important;
+  color: var(--color-ink) !important;
+  border-color: rgba(255,255,255,.14) !important;
+}
+.alwayzz-book i, .ethan-minimal-banner .alwayzz-book i { background: #FFC400 !important; }
+/* Ticker / marquee pills */
+.alwayzz-marquee span,
+.ethan-minimal-banner .alwayzz-marquee span {
+  background: var(--color-surface) !important;
+  color: var(--color-muted) !important;
+}
+.alwayzz-brand-marquee span { color: var(--color-ink) !important; }
+/* Decorative pulse lines */
+.alwayzz-line,
+.ethan-minimal-banner .alwayzz-line { border-color: rgba(255,196,0,.22) !important; }
+/* Mobile drawer */
+.alwayzz-drawer { background: var(--color-bg) !important; color: var(--color-ink) !important; }
+.alwayzz-drawer button, .alwayzz-drawer a { color: var(--color-ink) !important; }
+.alwayzz-drawer a:hover { color: #FFC400 !important; }
+
+/* --- Section surfaces that were hardcoded white --- */
+.platforms {
+  background: var(--color-surface) !important;
+  border-color: var(--color-line) !important;
+}
+.platforms span, .platforms strong { color: var(--color-muted) !important; }
+.platforms strong:hover { color: #FFC400 !important; }
+.recent,
+.beyond,
+.videos,
+.browse-cta,
+.neighborhoods,
+.listings {
+  background: var(--color-bg) !important;
+  color: var(--color-ink) !important;
+}
+
+/* --- Cards / panels --- */
+.service-grid article,
+.blog-grid article,
+.testimonial-grid article,
+.area-grid article,
+.listing-grid article,
+.neighborhood-grid article,
+.property-list article,
+.highlight-panel,
+.form-panel {
+  background: var(--color-surface) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-line) !important;
+}
+
+/* --- Accent: replace leftover blues / tans with yellow --- */
+.zillow-map-tabs button.active {
+  background: #FFC400 !important;
+  border-color: #FFC400 !important;
+  color: #111111 !important;
+}
+a:hover { color: #FFC400; }
+
+/* --- Leftover tan/gold hex -> yellow --- */
+.h-section-title span,
+.h-kicker span,
+.recognition h2 span,
+.alwayzz-content h2 span,
+.alwayzz-content p span,
+.quote-band p span,
+.recognition .h-kicker span { color: #FFC400 !important; }
+
+/* --- Hero photo readability on dark theme --- */
+.alwayzz-bg:after {
+  background: linear-gradient(180deg, rgba(17,17,17,.72) 0%, rgba(17,17,17,.45) 45%, rgba(17,17,17,.78) 100%) !important;
+}
+.alwayzz-content h2,
+.alwayzz-content p {
+  text-shadow: 0 2px 18px rgba(0,0,0,.55) !important;
+}
+
+/* --- Broad content text -> light (accent spans keep yellow via higher specificity) --- */
+h1, h2, h3, h4,
+.h-section-title,
+.zillow-profile-inner h2,
+.about h2, .about h3,
+.recent h2, .work h2, .form-panel h2,
+.media-row h3, .area-grid h3, .service-grid h3, .blog-grid h3, .listing-grid h3 {
+  color: var(--color-ink) !important;
+}
+
+/* --- Sections that were hardcoded white/light -> dark --- */
+.about,
+.zillow-profile,
+.zillow-profile-inner,
+.work,
+.media-row,
+.side-menu {
+  background: var(--color-bg) !important;
+  color: var(--color-ink) !important;
+}
+
+/* --- Carousel / listing / profile cards -> dark surface --- */
+.sales-track article,
+.sales-track .is-selected,
+.property-list article,
+.listing-grid article,
+.recent article,
+.zillow-profile article,
+.profile-map-cards article {
+  background: var(--color-surface) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-line) !important;
+}
+
+/* --- Property filter tabs (underline style) on dark theme --- */
+.property-filter button { color: rgba(255,255,255,.55) !important; }
+.property-filter button:hover { color: rgba(255,255,255,.9) !important; }
+.property-filter button.active {
+  color: #FFC400 !important;
+  border-bottom: 1px solid #FFC400 !important;
+  background: transparent !important;
+}
+.property-filter input { color: var(--color-ink) !important; }
+.property-filter input:focus { border-bottom-color: #FFC400 !important; }
+.property-filter input::placeholder { color: rgba(255,255,255,.4) !important; }
+
+/* =========================================================
+   DARK THEME CONTRAST FIXES (audit follow-up)
+   ========================================================= */
+
+/* Card status badges: sold = dark glass, for-sale = yellow.
+   General rule first so the more-specific .sale rule wins for for-sale. */
+.sales-track article>span,
+.listing-grid article>span {
+  background: rgba(0,0,0,.6) !important;
+  color: #F4F4F4 !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  backdrop-filter: blur(4px);
+}
+.sales-track article>span.sale,
+.listing-grid article>span.sale {
+  background: #FFC400 !important;
+  color: #111111 !important;
+  border: none !important;
+}
+
+/* Platforms marquee pills / labels */
+.platforms-pill,
+.platforms strong,
+.platforms span { color: var(--color-muted) !important; }
+.platforms-pill:hover,
+.platforms strong:hover { color: #FFC400 !important; }
+
+/* Testimonial cards (sell page) */
+.testimonial-mini article {
+  background: var(--color-surface) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-line) !important;
+}
+
+/* Custom select dropdown (contact page) */
+.select-selected {
+  background: var(--color-surface) !important;
+  color: var(--color-ink) !important;
+}
+.select-items div { color: var(--color-ink) !important; }
+
+/* =========================================================
+   DARK THEME — off-palette (navy/tan) & placeholder fixes
+   ========================================================= */
+
+/* Recognition / awards section: navy #0F2742 -> black */
+.recognition { background: #000000 !important; }
+
+/* Form placeholders (contact + form panels): dark -> light */
+.form-panel input::placeholder,
+.form-panel textarea::placeholder,
+.newsletter input::placeholder,
+form input::placeholder,
+form textarea::placeholder { color: rgba(255,255,255,.45) !important; }
+
+/* Status filter dots: navy/tan -> theme */
+.filter-dot.sold { background: rgba(255,255,255,.4) !important; }
+.filter-dot.sale { background: #FFC400 !important; }
+
+/* Newsletter submit button: navy -> yellow (higher-specificity override) */
+.newsletter .nested-input button {
+  background: #FFC400 !important;
+  color: #111111 !important;
+  border-color: #FFC400 !important;
+}
+
+/* =========================================================
+   HERO BANNER — bỏ ảnh skyline, nền đen-vàng tối giản
+   ========================================================= */
+
+/* 1. Ẩn ảnh dallas-skyline + overlay tối của nó */
+.ethan-minimal-banner .alwayzz-bg,
+.alwayzz-banner .alwayzz-bg { background: none !important; }
+.ethan-minimal-banner .alwayzz-bg:after,
+.alwayzz-bg:after { display: none !important; }
+
+/* 2. Nền đen + 1 quầng vàng ấm mờ ở giữa-trên */
+.ethan-minimal-banner {
+  background:
+    radial-gradient(70% 55% at 50% 30%,
+      rgba(255,196,0,.10), rgba(255,196,0,.035) 42%, transparent 72%),
+    #0d0d0d !important;
+}
+
+/* 3. Đổi 2 quầng xanh sót lại (:before/:after) -> vàng ấm, dịu */
+.ethan-minimal-banner:before {
+  background: radial-gradient(ellipse at 0% 50%,
+    rgba(255,196,0,.08), rgba(255,196,0,.025) 46%, transparent 78%) !important;
+}
+.ethan-minimal-banner:after {
+  background: radial-gradient(ellipse at 100% 50%,
+    rgba(255,196,0,.08), rgba(255,196,0,.025) 46%, transparent 78%) !important;
+}
+
+/* 4. Đường trang trí -> vàng */
+.ethan-minimal-banner .alwayzz-line { border-color: rgba(255,196,0,.28) !important; }
+
+/* 5. Fade đáy hòa vào section kế tiếp */
+.alwayzz-blur {
+  background: linear-gradient(to bottom,
+    rgba(13,13,13,0), rgba(13,13,13,.55) 45%, #0d0d0d) !important;
+}
+
+/* =========================================================
+   SECTION RHYTHM — xen kẽ đen tuyền / than chì + kẻ vàng
+   Phá thế "một khối đen" bằng nhịp sáng/tối tinh tế.
+   ========================================================= */
+:root {
+  --sec-deep: #0d0d0d;   /* đen tuyền  */
+  --sec-raise: #161616;  /* than chì nâng nhẹ */
+  --sec-divider: rgba(255,196,0,.14); /* kẻ vàng mảnh phân cách */
+}
+
+/* Tầng ĐEN TUYỀN */
+.about,
+.platforms,
+.recognition,
+.videos,
+.listings {
+  background: var(--sec-deep) !important;
+}
+
+/* Tầng THAN CHÌ (nâng nhẹ) */
+.stats,
+.map-section.zillow-profile-section,
+.beyond,
+.recent,
+.page-section {
+  background: var(--sec-raise) !important;
+}
+
+/* Đường kẻ vàng mảnh phân cách giữa các section xếp chồng */
+.stats,
+.about,
+.map-section.zillow-profile-section,
+.recognition,
+.beyond,
+.videos,
+.recent,
+.listings,
+.page-section,
+.newsletter {
+  border-top: 1px solid var(--sec-divider) !important;
+}
+
+/* =========================================================
+   SECTION GIAO DỊCH — marker bản đồ theo tông vàng-đen
+   Đang bán = vàng đặc; Đã bán = trắng viền đậm (muted).
+   ========================================================= */
+.pin-dot-only.sale {
+  background: #FFC400 !important;
+  border: 2px solid rgba(0,0,0,.28) !important;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4) !important;
+}
+.pin-dot-only.sold {
+  background: #ffffff !important;
+  border: 2px solid rgba(0,0,0,.45) !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3) !important;
+}
+
+/* Tag & giá trong popup -> đồng bộ vàng-đen */
+.map-popup-card .popup-tag.sale {
+  background: #FFC400 !important;
+  color: #111111 !important;
+}
+.map-popup-card .popup-tag.sold {
+  background: #ececec !important;
+  color: #333333 !important;
+}
+.map-popup-card .popup-price {
+  color: #8a6a00 !important;
+}
+
+/* =========================================================
+   HOVER XANH NƯỚC BIỂN -> VÀNG
+   FAQ (Câu hỏi thường gặp), nút Zillow listings, glow banner.
+   ========================================================= */
+.faq-q:hover { color: #FFC400 !important; }
+
+.zillow-listings button:hover,
+.zillow-listings button.active {
+  border-color: #FFC400 !important;
+  background: rgba(255,196,0,.10) !important;
+}
+
+.ethan-minimal-banner .alwayzz-primary:hover,
+.banner-menu-button:hover {
+  box-shadow: 0 8px 28px rgba(255,196,0,.22), 0 4px 20px rgba(0,0,0,.1) !important;
+}
+
+/* =========================================================
+   KÊNH YOUTUBE — mobile: 1 carousel thumbnail hợp nhất
+   Desktop giữ 2 section (.beyond embeds + .videos grid).
+   Mobile: ẩn 2 section đó, hiện .video-carousel-m (1 hàng cuộn).
+   ========================================================= */
+.video-carousel-m { display: none; }
+/* watchCSS: Flickity TẮT mặc định (desktop). Bật ở mobile bên dưới. */
+.video-carousel-m .vcm-track:after { content: ''; display: none; }
+
+@media (max-width: 767px) {
+  .beyond,
+  .videos { display: none !important; }
+
+  .video-carousel-m {
+    display: block;
+    background: #0d0d0d;
+    padding: 56px 0 60px;
+    border-top: 1px solid rgba(255,196,0,.14);
+  }
+  .video-carousel-m .vcm-inner { padding: 0 20px; }
+  .video-carousel-m h2 {
+    margin: 0 0 22px;
+    color: #F4F4F4;
+    text-align: left;
+  }
+
+  /* Bật Flickity ở mobile (watchCSS đọc chuỗi này trong :after) */
+  .video-carousel-m .vcm-track:after { content: 'flickity'; }
+  .video-carousel-m .vcm-track { cursor: grab; }
+  .video-carousel-m .vcm-track.is-dragging,
+  .video-carousel-m .vcm-track.flickity-enabled.is-pointer-down { cursor: grabbing; }
+
+  /* Fallback khi Flickity chưa init xong: vẫn cuộn ngang bằng native scroll */
+  .video-carousel-m .vcm-track:not(.flickity-enabled) {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 12px;
+  }
+  .video-carousel-m .vcm-track:not(.flickity-enabled)::-webkit-scrollbar { display: none; }
+
+  .video-carousel-m .vcm-card {
+    width: 80%;
+    max-width: 80%;
+    flex: 0 0 80%;
+    margin-right: 16px;           /* khoảng cách card (Flickity + fallback) */
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-carousel-m .video-thumbnail {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.08);
+  }
+  .video-carousel-m .video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .video-carousel-m .video-thumbnail:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.05) 45%, rgba(0,0,0,.15));
+  }
+  .video-carousel-m .video-thumbnail span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 54px;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: rgba(255,255,255,.95);
+    color: #111;
+    box-shadow: 0 8px 24px rgba(0,0,0,.3);
+  }
+  .video-carousel-m .video-thumbnail svg { width: 22px; height: 22px; margin-left: 3px; }
+
+  .video-carousel-m h3 {
+    margin: 12px 0 6px;
+    color: rgba(255,255,255,.95);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .video-carousel-m h3 a { color: inherit; text-decoration: none; }
+  .video-carousel-m h3 a:hover { color: #FFC400; }
+  .video-carousel-m p {
+    margin: 0;
+    color: rgba(255,255,255,.62);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+}
+
+/* =========================================================
+   HERO BANNER — bỏ ảnh skyline, nền đen-vàng tối giản
+   ========================================================= */
+
+/* 1. Ẩn ảnh dallas-skyline + overlay tối */
+.ethan-minimal-banner .alwayzz-bg,
+.alwayzz-banner .alwayzz-bg { background: none !important; }
+.ethan-minimal-banner .alwayzz-bg:after,
+.alwayzz-bg:after { display: none !important; }
+
+/* 2. Nền đen + 1 quầng vàng ấm mờ ở giữa-trên */
+.ethan-minimal-banner {
+  background:
+    radial-gradient(70% 55% at 50% 30%,
+      rgba(255,196,0,.10), rgba(255,196,0,.035) 42%, transparent 72%),
+    #0d0d0d !important;
+}
+
+/* 3. Đổi 2 quầng xanh sót lại (:before/:after) -> vàng ấm */
+.ethan-minimal-banner:before {
+  background: radial-gradient(ellipse at 0% 50%,
+    rgba(255,196,0,.08), rgba(255,196,0,.025) 46%, transparent 78%) !important;
+}
+.ethan-minimal-banner:after {
+  background: radial-gradient(ellipse at 100% 50%,
+    rgba(255,196,0,.08), rgba(255,196,0,.025) 46%, transparent 78%) !important;
+}
+
+/* 4. Đường trang trí -> vàng */
+.ethan-minimal-banner .alwayzz-line { border-color: rgba(255,196,0,.28) !important; }
+
+/* 5. Fade đáy hòa vào section kế tiếp */
+.alwayzz-blur {
+  background: linear-gradient(to bottom,
+    rgba(13,13,13,0), rgba(13,13,13,.55) 45%, #0d0d0d) !important;
+}
+
+/* =========================================================
+   CAROUSEL PREV/NEXT BUTTONS — gold outline trên dark theme
+   ========================================================= */
+.carousel-actions button {
+  background: transparent !important;
+  border: 1px solid rgba(255,196,0,.38) !important;
+  color: #FFC400 !important;
+}
+.carousel-actions button:hover {
+  background: rgba(255,196,0,.12) !important;
+  border-color: rgba(255,196,0,.75) !important;
+  color: #FFC400 !important;
+}
+.carousel-actions button svg {
+  stroke: currentColor;
+}
+
+/* DESKTOP NAV — active link (handwriting/script) = bright gold */
+.banner-header .desktop-nav > a.is-current,
+.banner-header .nav-group > a.is-current {
+  color: #FFC400 !important;
+}

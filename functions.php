@@ -8,6 +8,8 @@ if (!defined('ABSPATH')) {
 }
 
 require_once get_template_directory() . '/inc/properties.php';
+require_once get_template_directory() . '/inc/customizer.php';
+require_once get_template_directory() . '/inc/template-parts.php';
 
 if (is_admin()) {
     require_once get_template_directory() . '/inc/zillow-import-tool.php';

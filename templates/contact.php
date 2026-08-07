@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Dancing+Script:wght@700&family=Pattaya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=1785803813449" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/styles.css?ver=<?php echo filemtime(get_template_directory() . '/styles.css'); ?>" />
   <?php wp_head(); ?>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -46,21 +46,21 @@
   <div class="reveal" style="align-self: start;">
     <div style="margin-bottom: 40px;">
       <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); font-weight: 700; display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-        Thông tin
+        <?php echo esc_html(ethan_mod('contact_kicker', 'Thông tin')); ?>
         <span style="display: block; width: 40px; height: 1px; background: var(--gold); opacity: 0.5;"></span>
       </span>
-      <h2 style="font-family: var(--font-display); font-size: clamp(42px, 5vw, 56px); font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -0.03em; color: var(--ink-strong);">Để lại lời nhắn</h2>
+      <h2 style="font-family: var(--font-display); font-size: clamp(42px, 5vw, 56px); font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -0.03em; color: var(--ink-strong);"><?php echo esc_html(ethan_mod('contact_title', 'Để lại lời nhắn')); ?></h2>
     </div>
-    <p style="font-size: 18px; line-height: 1.6; color: var(--color-muted); max-width: 400px; margin-bottom: 48px;">Để lại tin nhắn — tôi thường trả lời trong vài tiếng.</p>
-    
+    <p style="font-size: 18px; line-height: 1.6; color: var(--color-muted); max-width: 400px; margin-bottom: 48px;"><?php echo esc_html(ethan_mod('contact_sub', 'Để lại tin nhắn — tôi thường trả lời trong vài tiếng.')); ?></p>
+
     <div style="display: flex; flex-direction: column; gap: 32px;">
       <div>
-        <p style="font-family: var(--font-display); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; margin: 0 0 8px;">Gọi hoặc nhắn tin</p>
-        <a href="tel:+14699895786" style="font-family: var(--font-display); font-size: 28px; color: var(--ink-strong); text-decoration: none; font-weight: 500; letter-spacing: -0.02em;">(469) 989-5786</a>
+        <p style="font-family: var(--font-display); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; margin: 0 0 8px;"><?php echo esc_html(ethan_mod('contact_phone_label', 'Gọi hoặc nhắn tin')); ?></p>
+        <a href="tel:<?php echo esc_attr(ethan_mod('ethan_phone_raw', '+14699895786')); ?>" style="font-family: var(--font-display); font-size: 28px; color: var(--ink-strong); text-decoration: none; font-weight: 500; letter-spacing: -0.02em;"><?php echo esc_html(ethan_mod('ethan_phone_display', '(469) 989-5786')); ?></a>
       </div>
       <div>
-        <p style="font-family: var(--font-display); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; margin: 0 0 8px;">Email</p>
-        <a href="mailto:ethandaorealtor@gmail.com" style="font-family: var(--font-display); font-size: 26px; color: var(--ink-strong); text-decoration: none; font-weight: 500; letter-spacing: -0.02em; word-break: break-all;">ethandaorealtor@gmail.com</a>
+        <p style="font-family: var(--font-display); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; margin: 0 0 8px;"><?php echo esc_html(ethan_mod('contact_email_label', 'Email')); ?></p>
+        <a href="mailto:<?php echo esc_attr(ethan_mod('footer_email', 'ethandao.realtor@gmail.com')); ?>" style="font-family: var(--font-display); font-size: 26px; color: var(--ink-strong); text-decoration: none; font-weight: 500; letter-spacing: -0.02em; word-break: break-all;"><?php echo esc_html(ethan_mod('footer_email', 'ethandao.realtor@gmail.com')); ?></a>
       </div>
     </div>
   </div>
@@ -82,29 +82,14 @@
         <input type="hidden" name="interest" value="">
       </div>
       <textarea placeholder="TIN NHẮN" style="border: none; border-bottom: 1px solid var(--line); border-radius: 0; padding-left: 0; padding-right: 0; min-height: 100px; margin-top: 10px;"></textarea>
-      <button class="btn-ink" style="width: 100%; margin-top: 20px;">Gửi thông tin</button>
-      <p class="form-success" hidden style="text-align: center; margin-top: 20px;">Đã nhận. Tôi sẽ liên lạc sớm.</p>
+      <button class="btn-ink" style="width: 100%; margin-top: 20px;"><?php echo esc_html(ethan_mod('contact_btn', 'Gửi thông tin')); ?></button>
+      <p class="form-success" hidden style="text-align: center; margin-top: 20px;"><?php echo esc_html(ethan_mod('contact_success', 'Đã nhận. Tôi sẽ liên lạc sớm.')); ?></p>
     </form>
   </div>
 </div>
 </section></main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-logo" style="gap:0"><a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark banner-wordmark" style="color:var(--ink-strong);text-decoration:none;"><span>Ethan Dao</span><sup>®</sup></a></div>
-        <div class="footer-cols"><div><h3>Ethan Dao</h3><a href="tel:+14699895786">(469) 989-5786</a><a href="mailto:ethandaorealtor@gmail.com">ethandaorealtor@gmail.com</a></div><div><h3>Môi giới</h3><p>eXp Realty - Texas Ace Team</p><p>1431 Greenway Drive, Irving, TX 75038</p></div><div><h3>Tìm kiếm</h3><p><a href="<?php echo esc_url(home_url('/properties/')); ?>">Tìm nhà</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Định giá nhà</a></p></div><div><h3>Liên hệ</h3><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Đặt lịch tư vấn</a></p><p><a href="<?php echo esc_url(home_url('/contact/')); ?>">Hợp tác đại lý</a></p></div></div>
-        <?php echo ethan_dao_vanilla_render_footer_nav(); ?>
-        <p class="disclaimer">Ethan Dao (Tung Dao) is a licensed real estate agent in the State of Texas, affiliated with eXp Realty, LLC and the Texas Ace Team. Listing and sales information is intended solely for personal, non-commercial use to identify properties of interest. While generally considered reliable, this data is not guaranteed accurate; buyers are responsible for verifying all information independently. Equal Housing Opportunity.</p>
-        <p class="copyright">©2026 NTREIS. All rights reserved.</p>
-      </div>
-      <div class="bottom-bar"><span>ETHAN DAO - REALTOR®</span><span>eXp Realty - Texas Ace Team - Dallas-Fort Worth, TX</span><span>Copyright © 2026 | <a href="<?php echo esc_url(home_url('/contact/')); ?>">Chính sách bảo mật</a></span></div>
-    </footer>
-    <div class="floating-social">
-      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg" alt="Facebook" width="22" height="22" /></a>
-      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="22" height="22" /></a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg" alt="Instagram" width="22" height="22" /></a>
-      <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tiktok/default.svg" alt="TikTok" width="22" height="22" /></a>
-      <a href="https://zillow.com/" target="_blank" rel="noopener" aria-label="Zillow"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/zillow/default.svg" alt="Zillow" width="22" height="22" /></a>
-    </div>
+    <?php echo ethan_dao_vanilla_render_footer(); ?>
+    <?php echo ethan_dao_vanilla_render_floating_social(); ?>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/script.js?ver=1.0.58"></script>
   <?php wp_footer(); ?>
   </body>
