@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Ethan Dao Vanilla theme bootstrap.
  */
