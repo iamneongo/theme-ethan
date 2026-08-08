@@ -203,7 +203,8 @@
       <span class="h-kicker light reveal"><?php echo esc_html(ethan_mod('sell_video_kicker', 'Xem thực tế')); ?></span>
       <h2 class="h-section-title reveal"><?php echo esc_html(ethan_mod('sell_video_title', 'Video')); ?> <span><?php echo esc_html(ethan_mod('sell_video_accent', 'listing thực tế')); ?></span></h2>
       <p class="reveal" style="max-width: 620px; margin: 0 auto 40px; text-align: center; color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.6;"><?php echo esc_html(ethan_mod('sell_video_body', 'Đây là video tôi quay để bán nhà cho khách — bạn có thể xem để biết nhà của mình sẽ được giới thiệu thế nào.')); ?></p>
-      <div class="video-grid">
+      <!-- Desktop: embedded iframe grid -->
+      <div class="video-grid sell-video-grid">
         <article class="reveal">
           <h3><?php echo esc_html(ethan_mod('sell_vid1_h', 'LAVON TEXAS - Lakepointe review 4 mẫu nhà new build')); ?></h3>
           <p><?php echo esc_html(ethan_mod('sell_vid1_p', '4 mẫu nhà mới ở Lavon, $300K–$400K. Tôi xem và nói thật cái nào đáng tiền, cái nào không.')); ?></p>
@@ -224,6 +225,34 @@
           <div style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000;">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxfLLkoGMiE?rel=0" title="Wylie 75098" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border:0;"></iframe>
           </div>
+        </article>
+      </div>
+
+      <!-- Mobile: thumbnail carousel (Flickity, same pattern as homepage vcm-track) -->
+      <div class="vcm-track sell-video-m">
+        <article class="vcm-card">
+          <a href="https://www.youtube.com/watch?v=qsBWEIueBUs" target="_blank" rel="noopener noreferrer" class="video-thumbnail">
+            <img src="https://i.ytimg.com/vi/qsBWEIueBUs/hqdefault.jpg" alt="<?php echo esc_attr(ethan_mod('sell_vid1_h', 'LAVON TEXAS - Lakepointe review 4 mẫu nhà new build')); ?>" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" />
+            <span><svg><use href="#icon-play"/></svg></span>
+          </a>
+          <h3><?php echo esc_html(ethan_mod('sell_vid1_h', 'LAVON TEXAS - Lakepointe review 4 mẫu nhà new build')); ?></h3>
+          <p><?php echo esc_html(ethan_mod('sell_vid1_p', '4 mẫu nhà mới ở Lavon, $300K–$400K. Tôi xem và nói thật cái nào đáng tiền, cái nào không.')); ?></p>
+        </article>
+        <article class="vcm-card">
+          <a href="https://www.youtube.com/watch?v=PH7ssSv_eoI" target="_blank" rel="noopener noreferrer" class="video-thumbnail">
+            <img src="https://i.ytimg.com/vi/PH7ssSv_eoI/hqdefault.jpg" alt="<?php echo esc_attr(ethan_mod('sell_vid2_h', 'Lavon 75166 | khu nhà mới cách Garland khu người Việt')); ?>" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" />
+            <span><svg><use href="#icon-play"/></svg></span>
+          </a>
+          <h3><?php echo esc_html(ethan_mod('sell_vid2_h', 'Lavon 75166 | khu nhà mới cách Garland khu người Việt')); ?></h3>
+          <p><?php echo esc_html(ethan_mod('sell_vid2_p', 'Cách Garland khoảng 30 phút, giá từ $300K với nhiều ưu đãi từ builder. Nhà mới trong khu Lavon 75166.')); ?></p>
+        </article>
+        <article class="vcm-card">
+          <a href="https://www.youtube.com/shorts/uxfLLkoGMiE" target="_blank" rel="noopener noreferrer" class="video-thumbnail">
+            <img src="https://i.ytimg.com/vi/uxfLLkoGMiE/hqdefault.jpg" alt="<?php echo esc_attr(ethan_mod('sell_vid3_h', 'Wylie 75098 | căn nhà đời 2017 tại Inspiration Community')); ?>" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" />
+            <span><svg><use href="#icon-play"/></svg></span>
+          </a>
+          <h3><?php echo esc_html(ethan_mod('sell_vid3_h', 'Wylie 75098 | căn nhà đời 2017 tại Inspiration Community')); ?></h3>
+          <p><?php echo esc_html(ethan_mod('sell_vid3_p', 'Nhà 2017, hai mặt tiền trong khu Inspiration Community. Wylie 75098, trường tốt và cộng đồng yên tĩnh.')); ?></p>
         </article>
       </div>
     </div>

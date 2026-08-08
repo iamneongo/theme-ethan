@@ -3369,12 +3369,33 @@ section.browse-cta {
 
 /* 13. Map — shorter height on mobile */
 @media (max-width: 767px) {
-  .profile-map { height: 320px !important; border-radius: 16px !important; }
+  .zillow-profile-section { padding: 48px 0 !important; }
+  #ethan-profile-map,
+  #ethan-profile-map.profile-map,
+  #ethan-profile-map.leaflet-container {
+    height: 200px !important;
+    border-radius: 16px !important;
+  }
 }
 @media (max-width: 480px) {
-  .profile-map { height: 260px !important; }
+  #ethan-profile-map,
+  #ethan-profile-map.profile-map,
+  #ethan-profile-map.leaflet-container {
+    height: 160px !important;
+  }
 }
 
+
+/* 15. Button row — center each button when wrapping to new line on mobile */
+@media (max-width: 560px) {
+  .button-row {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .button-row > a {
+    text-align: center !important;
+  }
+}
 
 /* 14. Map zoom controls — compact and clean */
 .leaflet-bar a,
@@ -4038,3 +4059,164 @@ form textarea::placeholder { color: rgba(255,255,255,.45) !important; }
 /* FIX: .recent / .listings h2 accent span -> bright gold */
 .recent .h-section-title span,
 .listings .h-section-title span { color: #FFC400 !important; }
+
+/* Sell page video section: desktop grid / mobile thumbnail carousel */
+.sell-video-m { display: none; }
+
+@media (max-width: 767px) {
+  .sell-video-grid { display: none !important; }
+
+  .sell-video-m {
+    display: block;
+    margin-top: 8px;
+    cursor: grab;
+  }
+  .sell-video-m.is-dragging,
+  .sell-video-m.flickity-enabled.is-pointer-down { cursor: grabbing; }
+
+  /* Activate Flickity via watchCSS */
+  .sell-video-m:after { content: 'flickity'; display: none; }
+
+  /* Fallback before Flickity init */
+  .sell-video-m:not(.flickity-enabled) {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+    scrollbar-width: none;
+  }
+  .sell-video-m:not(.flickity-enabled)::-webkit-scrollbar { display: none; }
+
+  .sell-video-m .vcm-card {
+    width: 80%;
+    max-width: 320px;
+    flex: 0 0 80%;
+    margin-right: 16px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .sell-video-m .video-thumbnail {
+    position: relative;
+    display: block;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.08);
+  }
+  .sell-video-m .video-thumbnail img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+  }
+  .sell-video-m .video-thumbnail::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.05) 45%, rgba(0,0,0,.15));
+  }
+  .sell-video-m .video-thumbnail span {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex; width: 48px; height: 48px;
+    align-items: center; justify-content: center;
+    border-radius: 999px;
+    background: rgba(255,255,255,.92);
+    color: var(--ink-strong, #0F2742);
+    box-shadow: 0 8px 24px rgba(0,0,0,.3);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .sell-video-m .video-thumbnail:hover span {
+    transform: translate(-50%,-50%) scale(1.1);
+    box-shadow: 0 12px 32px rgba(0,0,0,.4);
+  }
+  .sell-video-m .video-thumbnail svg { width: 20px; height: 20px; margin-left: 3px; }
+  .sell-video-m h3 {
+    margin: 12px 0 6px;
+    color: rgba(255,255,255,.95);
+    font-size: 14px; font-weight: 600; line-height: 1.4;
+  }
+  .sell-video-m h3 a { color: inherit; text-decoration: none; }
+  .sell-video-m p {
+    margin: 0;
+    color: rgba(255,255,255,.62);
+    font-size: 13px; line-height: 1.5;
+  }
+}
+
+/* === Mobile UX fixes === */
+
+/* 1. Newsletter body text: constrain width on mobile for better readability */
+@media (max-width: 640px) {
+  .newsletter .newsletter-inner > p {
+    max-width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* 2. Side menu: correct hover colour for dark sidebar (--color-menu-hover is light-theme white, looks wrong here) */
+.side-menu nav a:hover,
+.side-menu nav a:focus-visible {
+  background: rgba(255,255,255,0.07) !important;
+  color: var(--color-ink) !important;
+}
+/* Touch devices: suppress hover entirely (no sticky hover after tap) */
+@media (hover: none) {
+  .side-menu nav a:hover {
+    background: transparent !important;
+    transform: none !important;
+  }
+}
+/* Current page item: no background on any state, only gold text */
+.side-menu nav a.is-current,
+.side-menu nav a.is-current:hover,
+.side-menu nav a.is-current:focus-visible,
+.side-menu nav a.is-current:active {
+  background: transparent !important;
+  color: var(--gold, #FFC400) !important;
+  transform: none !important;
+}
+
+/* 3. Testimonial mini: auto-scroll marquee on mobile */
+@media (max-width: 767px) {
+  .testimonial-mini.tst-marquee-wrap {
+    overflow: hidden !important;
+    display: block !important;
+    /* Soft fade on left/right edges */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  }
+  .tst-marquee {
+    display: flex !important;
+    gap: 0 !important;
+    width: max-content !important;
+    animation: tst-scroll 24s linear infinite;
+    will-change: transform;
+  }
+  .tst-marquee.is-paused {
+    animation-play-state: paused !important;
+  }
+  .tst-marquee > article {
+    flex: 0 0 272px !important;
+    max-width: 272px !important;
+    margin-right: 16px !important;
+    padding: 24px !important;
+    transform: none !important;
+    transition: box-shadow 0.3s !important;
+  }
+  @keyframes tst-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+}
+@media (max-width: 767px) and (prefers-reduced-motion: reduce) {
+  .tst-marquee { animation: none !important; }
+}
+
+/* 4. Contact page: clear the fixed header on mobile (no subpage-hero on this page) */
+@media (max-width: 767px) {
+  .subpage-main > .page-section:first-child {
+    padding-top: 120px !important;
+  }
+}
